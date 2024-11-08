@@ -10,7 +10,7 @@
         "id": 2,
         "TVShowName": "The Boys",
         "releaseYear": 2019,
-        "genre": "Superhero-Comedy",
+        "genre": "Action-Comedy",
         "description": "In a world where the gods of modern society are no more than mortals in disguise, power corrupts even the purest of ideals. Beneath the gleaming exterior of fame and fortune, violence simmers in the shadows of heroes. A satirical and dark exploration of celebrity, corporate greed, and unchecked power challenges the very idea of heroism. Brutal, cynical, and at times laugh-out-loud absurd, this show dissects the grotesque underbelly of superhero culture with biting wit. With sharp humor and a deeply cynical perspective on the genre, this series redefines what it means to be a hero."
     },
     {
@@ -24,7 +24,7 @@
         "id": 4,
         "TVShowName": "Black Mirror",
         "releaseYear": 2011,
-        "genre": "Sci-Fi",
+        "genre": "Sci-Fi Drama",
         "description": "Reality slips through our fingers, leaving a world shaped by the cold, impersonal march of technology. Every advance comes with a dark side, an uncanny twist that forces us to confront the limits of human nature. A chilling examination of how our digital lives twist and distort our perceptions of identity, love, and power. In every episode, the lines between dystopian fiction and our present reality grow thinner, reflecting our darkest fears of the future. This anthology series paints a chilling portrait of how technology might shape our futures, pushing the boundaries of imagination and morality."
     },
     {

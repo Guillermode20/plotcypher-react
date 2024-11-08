@@ -7,7 +7,7 @@ const GameDescription = lazy(() => import('./components/GameDescription.jsx'));
 const MovieDescription = lazy(() => import('./components/MovieDescription.jsx'));
 const TVDescription = lazy(() => import('./components/TVDescription.jsx'));
 
-const TESTING_MODE = false; // Set to true to disable persistence and daily resets
+const TESTING_MODE = true; // Set to true to disable persistence and daily resets
 
 const LoadingScreen = memo(() => (
   <div className="fixed inset-0 bg-zinc-950 flex items-center justify-center">
@@ -347,7 +347,7 @@ function App() {
     return (
       <div className="fixed inset-0 flex items-center justify-center z-50">
         <div className="fixed inset-0 bg-black/70 backdrop-blur-sm pointer-events-none"></div>
-        <div className="relative bg-zinc-900 border border-white/20 rounded-lg p-8 max-w-md w-full m-4 shadow-xl">
+        <div className="relative bg-zinc-950 border border-white/20 rounded-lg p-8 max-w-md w-full m-4 shadow-xl">
           <h2 className="text-2xl font-bold text-white/90 mb-4 tracking-wider">Success!</h2>
           <p className="text-white/80 mb-6">
             Congratulations! You successfully decrypted the{' '}
@@ -362,7 +362,14 @@ function App() {
           </p>
           <button
             onClick={() => setShowWinModal(false)}
-            className="px-4 py-2 bg-white text-zinc-900 rounded"
+            className="w-full sm:w-auto px-6 py-2
+                        text-white/90 tracking-[0.2em]
+                        border border-white/20 rounded-md
+                        bg-zinc-950/50
+                        hover:bg-zinc-950/70 hover:border-white/30
+                        focus:outline-none focus:border-white/40
+                        focus:ring-2 focus:ring-white/20
+                        transition-all duration-300"
           >
             Close
           </button>
@@ -376,7 +383,7 @@ function App() {
     return (
       <div className="fixed inset-0 flex items-center justify-center z-50">
         <div className="fixed inset-0 bg-black/70 backdrop-blur-sm pointer-events-none"></div>
-        <div className="relative bg-zinc-900 border border-red-500 rounded-lg p-8 max-w-md w-full m-4 shadow-xl">
+        <div className="relative bg-zinc-950 border border-red-500 rounded-lg p-8 max-w-md w-full m-4 shadow-xl">
           <h2 className="text-2xl font-bold text-red-500 mb-4">DECRYPTION FAILED!</h2>
           <p className="text-white/80 mb-3">
             The correct answer was:
@@ -391,7 +398,14 @@ function App() {
           </p>
           <button
             onClick={() => setShowFailModal(false)}
-            className="px-4 py-2 bg-red-500 text-white rounded"
+            className="w-full sm:w-auto px-6 py-2
+                        text-white/90 tracking-[0.2em]
+                        border border-red/20 rounded-md
+                        bg-zinc-950/50
+                        hover:bg-zinc-950/70 hover:border-white/30
+                        focus:outline-none focus:border-white/40
+                        focus:ring-2 focus:ring-white/20
+                        transition-all duration-300"
           >
             Close
           </button>
