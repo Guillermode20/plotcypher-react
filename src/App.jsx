@@ -7,7 +7,7 @@ const GameDescription = lazy(() => import('./components/GameDescription.jsx'));
 const MovieDescription = lazy(() => import('./components/MovieDescription.jsx'));
 const TVDescription = lazy(() => import('./components/TVDescription.jsx'));
 
-const TESTING_MODE = true; // Set to true to disable persistence and daily resets
+const TESTING_MODE = false; // Set to true to disable persistence and daily resets
 
 const LoadingScreen = memo(() => (
   <div className="fixed inset-0 bg-zinc-950 flex items-center justify-center">
