@@ -34,41 +34,72 @@ function initDB() {
     });
 }
 
+// Add caching mechanism
+const cache = {
+    games: new Map(),
+    movies: new Map(),
+    tv: new Map()
+};
+
 // Get game by ID
 async function getGame(id) {
+    if (cache.games.has(id)) {
+        return cache.games.get(id);
+    }
+
     const db = await initDB();
     return new Promise((resolve, reject) => {
         const transaction = db.transaction(["games"], "readonly");
         const store = transaction.objectStore("games");
         const request = store.get(id);
 
-        request.onsuccess = () => resolve(request.result);
+        request.onsuccess = () => {
+            const result = request.result;
+            cache.games.set(id, result);
+            resolve(result);
+        };
         request.onerror = () => reject(request.error);
     });
 }
 
 // Get movie by ID
 async function getMovie(id) {
+    if (cache.movies.has(id)) {
+        return cache.movies.get(id);
+    }
+
     const db = await initDB();
     return new Promise((resolve, reject) => {
         const transaction = db.transaction(["movies"], "readonly");
         const store = transaction.objectStore("movies");
         const request = store.get(id);
 
-        request.onsuccess = () => resolve(request.result);
+        request.onsuccess = () => {
+            const result = request.result;
+            cache.movies.set(id, result);
+            resolve(result);
+        };
         request.onerror = () => reject(request.error);
     });
 }
 
 // Get TV show by ID
 async function getTVShow(id) {
+    if (cache.tv.has(id)) {
+        return cache.tv.get(id);
+    }
+
     const db = await initDB();
     return new Promise((resolve, reject) => {
         const transaction = db.transaction(["tv"], "readonly");
         const store = transaction.objectStore("tv");
         const request = store.get(id);
 
-        request.onsuccess = () => resolve(request.result);
+        request.onsuccess = () => {
+            const result = request.result;
+            cache.tv.set(id, result);
+            resolve(result);
+        };
         request.onerror = () => reject(request.error);
     });
 }
@@ -137,5 +168,12 @@ async function populateDB() {
         populateStore("tv", "tv.json"),
     ]);
 }
+
+// Add cache clearing function for daily resets
+export const clearCache = () => {
+    cache.games.clear();
+    cache.movies.clear();
+    cache.tv.clear();
+};
 
 export { initDB, getGame, getMovie, getTVShow, populateDB };

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback, Suspense, lazy } from 'react';
+import { useState, useEffect, useRef, useCallback, Suspense, lazy, useMemo } from 'react';
 
 const GameDescription = lazy(() => import('./components/GameDescription.jsx'));
 const MovieDescription = lazy(() => import('./components/MovieDescription.jsx'));
@@ -9,7 +9,7 @@ const TESTING_MODE = true; // Set to true to disable persistence and daily reset
 function App() {
   const startDate = '2024-11-08'; // Your game's launch date
 
-  const [selectedDescription, setSelectedDescription] = useState('game');
+  const [selectedDescription, setSelectedDescription] = useState(null);
   const [gameData, setGameData] = useState(null);
   const [searchInput, setSearchInput] = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
@@ -131,7 +131,8 @@ function App() {
     import('./components/TVDescription.jsx');
   }, []);
 
-  const calculateLetterMatch = (str1, str2) => {
+  // Memoize calculateLetterMatch
+  const calculateLetterMatch = useMemo(() => (str1, str2) => {
     const s1 = str1.toLowerCase();
     const s2 = str2.toLowerCase();
     let matches = 0;
@@ -142,7 +143,7 @@ function App() {
     }
     
     return (matches / s1.length) * 100;
-  };
+  }, []);
 
   // Add this function before the return statement
   const updateDropdownDirection = useCallback(() => {
@@ -184,6 +185,76 @@ function App() {
       }
     }
   }, []);
+
+  // Memoize filtered suggestions
+  const filteredSuggestions = useMemo(() => {
+    if (!gameData || !searchInput) return [];
+    
+    const suggestions = selectedDescription === 'game'
+      ? gameData.incorrectGames
+      : selectedDescription === 'movie'
+      ? gameData.incorrectMovies
+      : gameData.incorrectTVShows;
+
+    return suggestions?.filter(item => {
+      const matchPercentage = calculateLetterMatch(searchInput, item);
+      return matchPercentage >= 20 && item.toLowerCase().includes(searchInput.toLowerCase());
+    }) || [];
+  }, [gameData, searchInput, selectedDescription, calculateLetterMatch]);
+
+  // Batch state updates
+  const handleGuessSubmit = useCallback(() => {
+    if (!gameData) return;
+
+    const userInput = searchInput.toLowerCase();
+    let isCorrect = false;
+
+    if (selectedDescription === 'game' && userInput === gameData.correctGame.toLowerCase()) {
+      isCorrect = true;
+    } else if (selectedDescription === 'movie' && userInput === gameData.correctMovie.toLowerCase()) {
+      isCorrect = true;
+    } else if (selectedDescription === 'tv' && userInput === gameData.correctTVShow.toLowerCase()) {
+      isCorrect = true;
+    }
+
+    if (isCorrect) {
+      setGameOverStates(prev => ({
+        ...prev,
+        [selectedDescription]: true
+      }));
+      setShowWinModal(true);
+      return;
+    }
+
+    // Batch updates together
+    const updatedLevel = Math.max(-1, levels[selectedDescription] - 1);
+    const updates = {
+      levels: {
+        ...levels,
+        [selectedDescription]: updatedLevel
+      },
+      attempts: {
+        ...attempts,
+        [selectedDescription]: attempts[selectedDescription] + 1
+      },
+      gameOverStates: updatedLevel <= -1 ? {
+        ...gameOverStates,
+        [selectedDescription]: true
+      } : gameOverStates
+    };
+
+    setLevels(updates.levels);
+    setAttempts(updates.attempts);
+    setGameOverStates(updates.gameOverStates);
+    setShowDropdown(false);
+    
+    if (updatedLevel <= -1) {
+      setShowFailModal(true);
+    }
+
+    setIsFlashing(true);
+    setTimeout(() => setIsFlashing(false), 1000);
+  }, [gameData, searchInput, selectedDescription, levels, attempts, gameOverStates]);
   
   return (
     <div className="relative min-h-screen bg-zinc-950 bg-gradient-to-b from-zinc-950 to-zinc-900 text-white font-mono scrollbar-gutter-stable">
@@ -233,7 +304,16 @@ function App() {
             </button>
           </div>
 
-          {!gameOverStates[selectedDescription] ? (
+          {!selectedDescription ? (
+            <div className="space-y-4 text-center">
+              <p className="text-xl text-white/80 tracking-wider">
+                Select a category above to begin decrypting
+              </p>
+              <p className="text-white/60">
+                Choose between Game, Movie, or TV Show descriptions
+              </p>
+            </div>
+          ) : (
             <div className="space-y-4 relative">
               <Suspense fallback={<div>Loading...</div>}>
                 {selectedDescription === 'game' && (
@@ -294,65 +374,7 @@ function App() {
                   placeholder="ENTER YOUR GUESS..."
                 />
                 <button
-                  onClick={() => {
-                    if (gameData) {
-                      let isCorrect = false;
-                      const userInput = searchInput.toLowerCase();
-                  
-                      if (
-                        selectedDescription === 'game' &&
-                        userInput === gameData.correctGame.toLowerCase()
-                      ) {
-                        isCorrect = true;
-                      } else if (
-                        selectedDescription === 'movie' &&
-                        userInput === gameData.correctMovie.toLowerCase()
-                      ) {
-                        isCorrect = true;
-                      } else if (
-                        selectedDescription === 'tv' &&
-                        userInput === gameData.correctTVShow.toLowerCase()
-                      ) {
-                        isCorrect = true;
-                      }
-                  
-                      if (isCorrect) {
-                        setShowWinModal(true);
-                        setGameOverStates((prevStates) => ({
-                          ...prevStates,
-                          [selectedDescription]: true,
-                        }));
-                        return;
-                      }
-
-                      // Decrease level but not below 0, then check for failure
-                      setLevels((prevLevels) => {
-                        const updatedLevel = Math.max(-1, prevLevels[selectedDescription] - 1);
-                        
-                        if (updatedLevel <= -1) {
-                          setShowFailModal(true);
-                          setGameOverStates((prevStates) => ({
-                            ...prevStates,
-                            [selectedDescription]: true,
-                          }));
-                        }
-                        
-                        return {
-                          ...prevLevels,
-                          [selectedDescription]: updatedLevel,
-                        };
-                      });
-
-                      setAttempts((prevAttempts) => ({
-                        ...prevAttempts,
-                        [selectedDescription]: prevAttempts[selectedDescription] + 1,
-                      }));
-
-                      setShowDropdown(false);
-                      setIsFlashing(true);
-                      setTimeout(() => setIsFlashing(false), 1000);
-                    }
-                  }}
+                  onClick={handleGuessSubmit}
                   className="w-full sm:w-auto px-6 py-2
                     text-white/90 tracking-[0.2em]
                     border border-white/20 rounded-md
@@ -382,15 +404,7 @@ function App() {
                     [&::-webkit-scrollbar-thumb]:border-transparent
                     [&::-webkit-scrollbar-thumb]:bg-clip-padding
                     [&::-webkit-scrollbar-thumb]:hover:bg-white/30`}>
-                    {(selectedDescription === 'game'
-                      ? gameData.incorrectGames || []
-                      : selectedDescription === 'movie'
-                      ? gameData.incorrectMovies || []
-                      : gameData.incorrectTVShows || []
-                    ).filter(item => {
-                      const matchPercentage = calculateLetterMatch(searchInput, item);
-                      return matchPercentage >= 20 && item.toLowerCase().includes(searchInput.toLowerCase());
-                    }).map((item, index) => (
+                    {filteredSuggestions.map((item, index) => (
                       <li
                         key={index}
                         className="px-4 py-2 cursor-pointer
@@ -409,17 +423,6 @@ function App() {
                   </ul>
                 )}
               </div>
-            </div>
-          ) : (
-            <div className="space-y-4 relative">
-              <p className="text-center text-white/90 text-xl">
-                {gameOverStates[selectedDescription] && levels[selectedDescription] >= 0
-                  ? `You succeeded in ${attempts[selectedDescription]+1} attempt(s)!`
-                  : 'You failed to decrypt the cypher.'}
-              </p>
-              <p className="text-center text-white/90 text-xl">
-                New {selectedDescription} cypher available tomorrow :)
-              </p>
             </div>
           )}
         </div>
