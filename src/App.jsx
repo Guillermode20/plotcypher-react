@@ -103,6 +103,9 @@ function App() {
   const inputRef = useRef(null);
   const [isFlashing, setIsFlashing] = useState(false);
 
+  // Add this state with other state declarations
+  const [showInfoModal, setShowInfoModal] = useState(false);
+
   const handleGameData = useCallback((data) => {
     setGameData(data);
   }, []); // Empty dependency array since we don't need any dependencies
@@ -170,6 +173,17 @@ function App() {
       localStorage.setItem('lastPlayedDate', new Date().toDateString());
     }
   }, [gameOverStates, levels, attempts]);
+
+  // Update this effect
+  useEffect(() => {
+    const hasVisited = localStorage.getItem('hasVisitedBefore');
+    if (TESTING_MODE || (!hasVisited && !TESTING_MODE)) {
+      setShowInfoModal(true);
+      if (!TESTING_MODE) {
+        localStorage.setItem('hasVisitedBefore', 'true');
+      }
+    }
+  }, []);
   
   return (
     <div className="relative min-h-screen bg-zinc-950 bg-gradient-to-b from-zinc-950 to-zinc-900 text-white font-mono scrollbar-gutter-stable">
@@ -442,6 +456,14 @@ function App() {
           <div className="fixed inset-0 bg-black/70 backdrop-blur-sm pointer-events-none"></div>
           <div className="relative bg-zinc-900 border border-red-500 rounded-lg p-8 max-w-md w-full m-4 shadow-xl">
             <h2 className="text-2xl font-bold text-red-500 mb-4">DECRYPTION FAILED!</h2>
+            <p className="text-white/80 mb-3">
+              The correct answer was:
+              <span className="block mt-2 text-xl text-white font-bold mb-1">
+                {selectedDescription === 'game' && gameData?.correctGame}
+                {selectedDescription === 'movie' && gameData?.correctMovie}
+                {selectedDescription === 'tv' && gameData?.correctTVShow}
+              </span>
+            </p>
             <p className="text-white/80 mb-6">
               You&apos;ve used all your decryption attempts. Better luck tomorrow!
             </p>
@@ -450,6 +472,35 @@ function App() {
               className="px-4 py-2 bg-red-500 text-white rounded"
             >
               Close
+            </button>
+          </div>
+        </div>
+      )}
+      {/* Add Info Modal - place before closing div */}
+      {showInfoModal && (
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="fixed inset-0 bg-black/70 backdrop-blur-sm pointer-events-none"></div>
+          <div className="relative bg-zinc-900 border border-white/20 rounded-lg p-8 max-w-md w-full m-4 shadow-xl">
+            <h2 className="text-2xl font-bold text-white/90 mb-4 tracking-wider">Welcome to PLOTCYPHER!</h2>
+            <div className="text-white/80 space-y-4 mb-6">
+              <p>
+                PLOTCYPHER is a daily game where you decrypt descriptions of Games, Movies, and TV Shows.
+              </p>
+              <p>
+                Each category gives you 5 attempts to guess correctly. With each failed attempt, 
+                the description becomes less cryptic, making it easier to identify the answer.
+              </p>
+              <p>
+                ⚡ Type your guess in the input field<br/>
+                🎯 Click DECRYPT to submit your answer<br/>
+                🔄 Come back daily for new challenges
+              </p>
+            </div>
+            <button
+              onClick={() => setShowInfoModal(false)}
+              className="px-4 py-2 bg-white text-zinc-900 rounded hover:bg-white/90 transition-colors"
+            >
+              Got it!
             </button>
           </div>
         </div>
