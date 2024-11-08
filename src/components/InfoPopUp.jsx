@@ -21,32 +21,49 @@ const InfoPopUp = ({ showInfoModal, onClose }) => {
       <div
         ref={modalRef}
         tabIndex={-1}
-        className="relative bg-zinc-950 border border-white/20 rounded-lg p-8 max-w-md w-full m-4 shadow-xl focus:outline-none focus:ring-0"
+        className="relative bg-zinc-950 border border-white/20 rounded-lg 
+                   max-w-md w-full mx-2 my-4 sm:my-2 shadow-xl 
+                   focus:outline-none focus:ring-0
+                   flex flex-col max-h-[80vh] sm:max-h-[75vh]"
       >
-        <h2 className="text-2xl font-bold text-white/90 mb-4 tracking-wider">Welcome to PLOTCYPHER!</h2>
-        <div className="text-white/80 space-y-4 mb-6">
-          <p>
-            PLOTCYPHER is a daily challenge game where you decrypt descriptions of Games, Movies, and TV Shows.
-          </p>
-          <p>
-            Each category gives you 5 attempts to guess correctly. With each failed attempt, 
-            the description becomes less cryptic, making it easier to identify the answer.
-          </p>
-          <p>
-            ⚡ Type your guess in the input field<br/>
-            🎯 Click DECRYPT to submit your answer<br/>
-            🔄 Come back daily for new challenges
-          </p>
-          <p>
-            Remember, you&apos;ll only get one shot, and each challenge is only available for 24 hours before it&apos;s gone forever!
-          </p>
+        {/* Fixed Header */}
+        <div className="p-4 border-b border-white/10">
+          <h2 className="text-2xl font-bold text-white/90 tracking-wider">Welcome to PLOTCYPHER!</h2>
         </div>
-        <button
-          onClick={onClose}
-          className="px-4 py-2 border border-white/20 rounded-md bg-zinc-950/50 hover:bg-zinc-950/70 hover:border-white/20 focus:outline-none focus:border-white/20 focus:ring-2 focus:ring-white/20 transition-all duration-300"
-        >
-          Got it!
-        </button>
+
+        {/* Scrollable Content */}
+        <div className="p-4 overflow-y-auto scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent">
+          <div className="text-white/80 space-y-4">
+            <p>
+              PLOTCYPHER is a daily challenge game where you decrypt descriptions of Games, Movies, and TV Shows.
+            </p>
+            <p>
+              Each category gives you 5 attempts to guess correctly. With each failed attempt, 
+              the description becomes less cryptic, making it easier to identify the answer.
+            </p>
+            <p>
+              ⚡ Type your guess in the input field<br/>
+              🎯 Click DECRYPT to submit your answer<br/>
+              🔄 Come back daily for new challenges
+            </p>
+            <p>
+              Remember, you&apos;ll only get one shot, and each challenge is only available for 24 hours before it&apos;s gone forever!
+            </p>
+          </div>
+        </div>
+
+        {/* Fixed Footer */}
+        <div className="p-4 border-t border-white/10">
+          <button
+            onClick={onClose}
+            className="w-full px-4 py-2 border border-white/20 rounded-md 
+                     bg-zinc-950/50 hover:bg-zinc-950/70 hover:border-white/20 
+                     focus:outline-none focus:border-white/20 focus:ring-2 
+                     focus:ring-white/20 transition-all duration-300"
+          >
+            Got it!
+          </button>
+        </div>
       </div>
     </div>
   );
