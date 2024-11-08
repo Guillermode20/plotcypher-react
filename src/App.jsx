@@ -318,111 +318,133 @@ function App() {
               <Suspense fallback={<div>Loading...</div>}>
                 {selectedDescription === 'game' && (
                   <div>
-                    <GameDescription  
-                      onGameDataLoad={handleGameData}
-                      level={levels.game}
-                      startDate={startDate} // Pass startDate as prop
-                    />
+                    {gameOverStates.game ? (
+                      <div className="text-center p-8 border border-white/20 rounded-md bg-zinc-950/50">
+                        <p className="text-2xl text-white/90">new game tomorrow :)</p>
+                      </div>
+                    ) : (
+                      <GameDescription  
+                        onGameDataLoad={handleGameData}
+                        level={levels.game}
+                        startDate={startDate}
+                      />
+                    )}
                   </div>
                 )}
                 {selectedDescription === 'movie' && (
                   <div>
-                    <MovieDescription 
-                      onMovieDataLoad={handleGameData} // Adjust props as needed
-                      level={levels.movie}
-                      startDate={startDate} // Pass startDate as prop
-                    />
+                    {gameOverStates.movie ? (
+                      <div className="text-center p-8 border border-white/20 rounded-md bg-zinc-950/50">
+                        <p className="text-2xl text-white/90">new movie tomorrow :)</p>
+                      </div>
+                    ) : (
+                      <MovieDescription 
+                        onMovieDataLoad={handleGameData}
+                        level={levels.movie}
+                        startDate={startDate}
+                      />
+                    )}
                   </div>
                 )}
                 {selectedDescription === 'tv' && (
                   <div>
-                    <TVDescription 
-                      onTVShowDataLoad={handleGameData}
-                      level={levels.tv}
-                      startDate={startDate} // Pass startDate as prop
-                    />
+                    {gameOverStates.tv ? (
+                      <div className="text-center p-8 border border-white/20 rounded-md bg-zinc-950/50">
+                        <p className="text-2xl text-white/90">new tv show tomorrow :)</p>
+                      </div>
+                    ) : (
+                      <TVDescription 
+                        onTVShowDataLoad={handleGameData}
+                        level={levels.tv}
+                        startDate={startDate}
+                      />
+                    )}
                   </div>
                 )}
               </Suspense>
 
-              <p className={`inline-block px-4 py-2 
-                        text text-white/60 tracking-[0.2em]
+              {!gameOverStates[selectedDescription] && (
+                <>
+                  <p className={`inline-block px-4 py-2 
+                    text text-white/60 tracking-[0.2em]
+                    border border-white/20 rounded-md
+                    bg-zinc-950/50 hover:bg-zinc-950/70
+                    hover:border-white/30
+                    transition-all duration-300
+                    ${isFlashing ? 'animate-flash' : ''}`}>
+                    DECRYPTION ATTEMPTS REMAINING: <span className="text-white/90">{ levels[selectedDescription] + 1 }</span>
+                  </p>
+                  <div className="relative flex flex-col sm:flex-row gap-2" ref={dropdownRef}>
+                    <input
+                      ref={inputRef}
+                      type="text"
+                      value={searchInput}
+                      onChange={(e) => {
+                        setSearchInput(e.target.value);
+                        setShowDropdown(true);
+                      }}
+                      className="w-full px-4 py-2
+                        text text-white/90 tracking-[0.2em] placeholder:text-white/50
                         border border-white/20 rounded-md
-                        bg-zinc-950/50 hover:bg-zinc-950/70
-                        hover:border-white/30
-                        transition-all duration-300
-                        ${isFlashing ? 'animate-flash' : ''}`}>
-                DECRYPTION ATTEMPTS REMAINING: <span className="text-white/90">{ levels[selectedDescription] + 1 }</span>
-              </p>
-              <div className="relative flex flex-col sm:flex-row gap-2" ref={dropdownRef}>
-                <input
-                  ref={inputRef}
-                  type="text"
-                  value={searchInput}
-                  onChange={(e) => {
-                    setSearchInput(e.target.value);
-                    setShowDropdown(true);
-                  }}
-                  className="w-full px-4 py-2
-                    text text-white/90 tracking-[0.2em] placeholder:text-white/50
-                    border border-white/20 rounded-md
-                    bg-zinc-950/50
-                    hover:bg-zinc-950/70 hover:border-white/30
-                    focus:outline-none focus:border-white/40 
-                    focus:ring-2 focus:ring-white/20
-                    transition-all duration-300"
-                  placeholder="ENTER YOUR GUESS..."
-                />
-                <button
-                  onClick={handleGuessSubmit}
-                  className="w-full sm:w-auto px-6 py-2
-                    text-white/90 tracking-[0.2em]
-                    border border-white/20 rounded-md
-                    bg-zinc-950/50
-                    hover:bg-zinc-950/70 hover:border-white/30
-                    focus:outline-none focus:border-white/40
-                    focus:ring-2 focus:ring-white/20
-                    transition-all duration-300"
-                >
-                  DECRYPT
-                </button>
-                {showDropdown && searchInput && gameData && levels[selectedDescription] <= 4 && (
-                  <ul className={`absolute left-0 right-0 ${
-                    dropdownDirection === 'up' 
-                      ? 'bottom-[calc(100%+0.5rem)]' 
-                      : 'top-[calc(100%+0.5rem)]'
-                  }
-                    border border-white/20 rounded-md
-                    bg-zinc-950/90 backdrop-blur-sm
-                    shadow-lg max-h-60 overflow-y-auto z-50
-                    divide-y divide-white/10
-                    [&::-webkit-scrollbar]:w-2
-                    [&::-webkit-scrollbar-track]:bg-transparent
-                    [&::-webkit-scrollbar-thumb]:bg-white/20
-                    [&::-webkit-scrollbar-thumb]:rounded-full
-                    [&::-webkit-scrollbar-thumb]:border-2
-                    [&::-webkit-scrollbar-thumb]:border-transparent
-                    [&::-webkit-scrollbar-thumb]:bg-clip-padding
-                    [&::-webkit-scrollbar-thumb]:hover:bg-white/30`}>
-                    {filteredSuggestions.map((item, index) => (
-                      <li
-                        key={index}
-                        className="px-4 py-2 cursor-pointer
-                                   text-white/70 hover:text-white
-                                   hover:bg-zinc-800/50
-                                   transition-all duration-200
-                                   block w-full text-left"
-                        onClick={() => {
-                          setSearchInput(item);
-                          setShowDropdown(false);
-                        }}
-                      >
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
+                        bg-zinc-950/50
+                        hover:bg-zinc-950/70 hover:border-white/30
+                        focus:outline-none focus:border-white/40 
+                        focus:ring-2 focus:ring-white/20
+                        transition-all duration-300"
+                      placeholder="ENTER YOUR GUESS..."
+                    />
+                    <button
+                      onClick={handleGuessSubmit}
+                      className="w-full sm:w-auto px-6 py-2
+                        text-white/90 tracking-[0.2em]
+                        border border-white/20 rounded-md
+                        bg-zinc-950/50
+                        hover:bg-zinc-950/70 hover:border-white/30
+                        focus:outline-none focus:border-white/40
+                        focus:ring-2 focus:ring-white/20
+                        transition-all duration-300"
+                    >
+                      DECRYPT
+                    </button>
+                    {showDropdown && searchInput && gameData && levels[selectedDescription] <= 4 && (
+                      <ul className={`absolute left-0 right-0 ${
+                        dropdownDirection === 'up' 
+                          ? 'bottom-[calc(100%+0.5rem)]' 
+                          : 'top-[calc(100%+0.5rem)]'
+                      }
+                        border border-white/20 rounded-md
+                        bg-zinc-950/90 backdrop-blur-sm
+                        shadow-lg max-h-60 overflow-y-auto z-50
+                        divide-y divide-white/10
+                        [&::-webkit-scrollbar]:w-2
+                        [&::-webkit-scrollbar-track]:bg-transparent
+                        [&::-webkit-scrollbar-thumb]:bg-white/20
+                        [&::-webkit-scrollbar-thumb]:rounded-full
+                        [&::-webkit-scrollbar-thumb]:border-2
+                        [&::-webkit-scrollbar-thumb]:border-transparent
+                        [&::-webkit-scrollbar-thumb]:bg-clip-padding
+                        [&::-webkit-scrollbar-thumb]:hover:bg-white/30`}>
+                        {filteredSuggestions.map((item, index) => (
+                          <li
+                            key={index}
+                            className="px-4 py-2 cursor-pointer
+                                       text-white/70 hover:text-white
+                                       hover:bg-zinc-800/50
+                                       transition-all duration-200
+                                       block w-full text-left"
+                            onClick={() => {
+                              setSearchInput(item);
+                              setShowDropdown(false);
+                            }}
+                          >
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                </>
+              )}
             </div>
           )}
         </div>
