@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+out/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Environment files
+.env
+
+# IDE files
+.idea/
+.vscode/
+
+# dev files
+gptprompts.txt

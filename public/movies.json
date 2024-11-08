@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "movieName": "The Shawshank Redemption",
+        "releaseYear": 1994,
+        "genre": "Drama",
+        "description": "Behind grey walls, hope flickers faintly in the darkness. A tale unfolds of friendship forged under shadow and hardship, resilience tested against time’s grinding weight. Unyielding resolve clashes with a world built to break the soul. The slow, silent pursuit of freedom defies a system meant to confine every dream. In the end, it’s a story of quiet redemption, where patience and dignity tunnel through despair to the light."
+    },
+    {
+        "id": 2,
+        "movieName": "The Godfather",
+        "releaseYear": 1972,
+        "genre": "Crime",
+        "description": "In a world bound by honor and betrayal, loyalty is the price of survival. Shadows gather around a powerful family, each step tangled in webs of respect and vengeance. Blood ties and business blend into a delicate, deadly dance. The heir to a legacy grapples with duty, drawn deeper into the empire he cannot escape. Ultimately, it’s the saga of a reluctant son rising to rule, where loyalty costs blood and family reigns above all."
+    },
+    {
+        "id": 3,
+        "movieName": "How to Train Your Dragon",
+        "releaseYear": 2010,
+        "genre": "Animation",
+        "description": "In a land of mist and fire, where legends soar, a hidden friendship is forged. Ancient creatures, once feared, now reveal a softer truth beneath scales and fangs. Amid clashing tribes and untamed skies, a new way of life takes flight. Bonds stronger than fear reshape a warrior’s path, bridging worlds thought forever at odds. A young Viking and his dragon defy age-old hatred, showing that courage can change destiny and even rewrite ancient tales."
+    },
+    {
+        "id": 4,
+        "movieName": "Inside Out",
+        "releaseYear": 2015,
+        "genre": "Animation",
+        "description": "In the unseen landscapes of the mind, vivid forces stir and collide. Emotions dance and clash, shaping each thought and memory. Joy and sorrow wrestle in a realm where every color holds a piece of the heart. A journey unfolds through memories and feelings, each one building a child’s inner world. Ultimately, it’s the story of a young girl discovering that all emotions have their place, and sometimes, sadness is the path to true healing."
+    },
+    {
+        "id": 5,
+        "movieName": "Deadpool",
+        "releaseYear": 2016,
+        "genre": "Action-Comedy",
+        "description": "In a world where heroes wear masks, one man breaks all the rules. Sarcasm and wit are his armor, a twisted sense of justice his only guide. Blood splatters and banter fly in his relentless quest for vengeance. A love lost and a life shattered drive him to unhinged extremes, defying villains and social norms alike. Armed with dark humor and endless comebacks, a red-suited antihero rises, rewriting the hero’s code in pure chaos."
+    },
+    {
+        "id": 6,
+        "movieName": "Fantastic Mr. Fox",
+        "releaseYear": 2009,
+        "genre": "Animation-Comedy",
+        "description": "In a world painted with earthy hues and autumn warmth, a wily creature schemes beneath the harvest moon. Cleverness and charm are his armor, but he treads a thin line between adventure and danger. As he outsmarts towering foes and nimbly dodges traps, his family’s safety hangs in the balance. A story unfolds of loyalty, wit, and rebellion, set in a world where animals are as shrewd as any human. Ultimately, it’s a tale of a dapper fox defying the odds, claiming his freedom one clever heist at a time."
+    },
+    {
+        "id": 7,
+        "movieName": "Eternal Sunshine of the Spotless Mind",
+        "releaseYear": 2004,
+        "genre": "Drama",
+        "description": "Memories fade like the last remnants of a dream. A love once bright now slips through time’s grasp, elusive yet persistent. Erasing the past seems simple, but its shadows linger in the mind. A visual tapestry of emotional complexity unfolds under Michel Gondry's inventive direction. Jim Carrey and Kate Winslet star in a beautifully surreal exploration of memory, love, and regret."
+    },
+    {
+        "id": 8,
+        "movieName": "The Room",
+        "releaseYear": 2003,
+        "genre": "Drama",
+        "description": "A man stands at the crossroads of his life, trying to navigate the twists of fate. Betrayal and confusion cloud the choices he makes, yet his journey feels somehow familiar. With moments both absurd and tragic, the lines between comedy and drama blur in this tale. Tommy Wiseau’s unique vision makes this film an inexplicable cult phenomenon. Its unpredictable dialogue and performances make it a modern masterpiece of unintentional humor."
+    },
+    {
+        "id": 9,
+        "movieName": "The Secret Life of Walter Mitty",
+        "releaseYear": 2013,
+        "genre": "Adventure",
+        "description": "An ordinary man finds himself caught between the mundane and the extraordinary. His fantasies spark moments of great adventure, pushing him to explore the world beyond his own. A quest for self-fulfillment takes him from daydreams to reality in a breathtaking visual journey. Ben Stiller directs and stars in this uplifting story about breaking free from life's confines. It’s a meditation on courage, purpose, and the beauty of life’s unknown paths."
+    },
+    {
+        "id": 10,
+        "movieName": "Requiem for a Dream",
+        "releaseYear": 2000,
+        "genre": "Drama",
+        "description": "Lives are shaped by desires, yet those very desires lead to downfall. A dream of success, a desire for love, and a hunger for escape consume the protagonists. Dark, relentless, and haunting, this film explores addiction’s grip with shocking intensity. Darren Aronofsky’s unflinching direction brings a visceral portrayal of human desperation. The vivid cinematography and haunting score create an unforgettable descent into madness."
+    },
+    {
+        "id": 11,
+        "movieName": "Spirited Away",
+        "releaseYear": 2001,
+        "genre": "Animation",
+        "description": "A child’s journey through a strange world brings her closer to understanding herself. In a realm where spirits and gods reign, mysteries unravel in a vivid and whimsical way. Hayao Miyazaki’s animation immerses viewers in a fantastical, hand-drawn universe filled with imagination. Themes of growth, environmentalism, and the clash of cultures are explored in breathtaking detail. A young girl must navigate a magical world to save her parents and discover her own inner strength."
+    },
+    {
+        "id": 12,
+        "movieName": "Her",
+        "releaseYear": 2013,
+        "genre": "Romance",
+        "description": "Loneliness breeds connection in a world where technology becomes more than just a tool. As hearts open through digital means, the lines blur between reality and virtual emotion. Spike Jonze weaves a futuristic love story that feels eerily familiar yet deeply alien. Joaquin Phoenix stars in a poignant narrative exploring the nature of intimacy and human connection in the digital age. This is a meditation on relationships, technology, and the quest for meaning in an increasingly isolated world."
+    },
+    {
+        "id": 13,
+        "movieName": "Moonlight",
+        "releaseYear": 2016,
+        "genre": "Drama",
+        "description": "In a world of shadows and silence, a boy struggles to define himself. Stripped of his identity by external forces, his journey becomes one of survival and self-discovery. Barry Jenkins crafts a delicate portrayal of the challenges of love, identity, and acceptance. Through stunning performances, particularly from Mahershala Ali, the film examines the intersection of race, sexuality, and masculinity. A tender, Oscar-winning narrative about the complexities of growing up and finding one’s place in the world."
+    },
+    {
+        "id": 14,
+        "movieName": "Trainspotting",
+        "releaseYear": 1996,
+        "genre": "Drama",
+        "description": "A group of young men chase thrills in the underbelly of society. The line between pleasure and destruction is razor-thin, as they spiral deeper into addiction. Danny Boyle’s energetic direction pulses with the raw, chaotic energy of youth and rebellion. Ewan McGregor stars in this dark, visceral look at addiction’s grip on those who dare to live on the edge. The film captures the struggle to escape a destructive lifestyle with brutal honesty and unforgettable imagery."
+    },
+    {
+        "id": 15,
+        "movieName": "Mad Max: Fury Road",
+        "releaseYear": 2015,
+        "genre": "Action",
+        "description": "In a barren wasteland, survival is the only law. The fight for freedom rages amid fire, dust, and death. George Miller’s high-octane, post-apocalyptic action film takes its audience on a non-stop ride of explosive intensity. Charlize Theron and Tom Hardy lead a visually stunning and fiercely feminist tale of defiance and resilience. A relentless journey of survival and redemption in a world where humanity is a fading memory."
+    },
+    {
+        "id": 16,
+        "movieName": "The Lobster",
+        "releaseYear": 2015,
+        "genre": "Comedy",
+        "description": "In a society that demands conformity, a man must find love or face a grim fate. A world of peculiar rules and odd rituals breeds strange consequences for those who do not fit in. Yorgos Lanthimos’ dark comedy explores the absurdity of relationships and societal pressure in surreal fashion. Colin Farrell and Rachel Weisz star in this offbeat, dystopian narrative where love is a matter of survival. A razor-sharp satire on modern relationships and the pursuit of belonging."
+    },
+    {
+        "id": 17,
+        "movieName": "The Prestige",
+        "releaseYear": 2006,
+        "genre": "Drama",
+        "description": "Two men compete in a battle of intellect and deception. Their rivalry is fueled by ambition, leading them to challenge the very limits of reality. Christopher Nolan’s twist-laden narrative intertwines magic, obsession, and sacrifice in a labyrinth of secrets. Hugh Jackman and Christian Bale star in this thrilling story of illusion and rivalry. In the end, the true cost of their pursuit of greatness becomes painfully clear."
+    },
+    {
+        "id": 18,
+        "movieName": "Hereditary",
+        "releaseYear": 2018,
+        "genre": "Horror",
+        "description": "Grief lingers like a shadow, and the past refuses to stay buried. Family ties unravel in the face of dark, unspoken forces, threatening to consume all. Ari Aster’s horrifying vision explores the terrifying inheritance of trauma, both psychological and supernatural. Toni Collette’s heart-wrenching performance anchors this disturbing exploration of family, loss, and curse. An unrelenting descent into a nightmare that spans generations."
+    },
+    {
+        "id": 19,
+        "movieName": "The Big Lebowski",
+        "releaseYear": 1998,
+        "genre": "Comedy",
+        "description": "A laid-back man finds himself caught in a web of absurdity and crime. A mix-up turns his life into a chaotic adventure filled with bizarre characters and strange circumstances. The Coen Brothers blend dark humor with surreal situations in a cult classic that defies easy categorization. Jeff Bridges stars as the iconic 'Dude,' whose simple life spirals into a wild, unpredictable journey. It’s a unique tale of mistaken identity, bowling, and an unforgettable cast of characters."
+    },
+    {
+        "id": 20,
+        "movieName": "The Witch",
+        "releaseYear": 2015,
+        "genre": "Horror",
+        "description": "In the darkness of a 17th-century forest, fear takes root. A family is torn apart by suspicion, superstition, and an overwhelming sense of doom. Robert Eggers' chilling folk horror unfolds slowly, building dread and paranoia with every frame. The film explores religious extremism, the breakdown of family bonds, and the supernatural with haunting precision. A terrifying descent into madness and isolation, set against a backdrop of superstition and early American life."
+    },
+    {
+        "id": 21,
+        "movieName": "Inglourious Basterds",
+        "releaseYear": 2009,
+        "genre": "War",
+        "description": "War, revenge, and history collide in a tale of radical retribution. Characters, both villainous and heroic, are bound by the thirst for vengeance. Quentin Tarantino’s revisionist World War II epic subverts history with style, wit, and brutal action. Brad Pitt leads a group of soldiers on a mission to take down the Nazi regime with unforgettable flair. This explosive film twists the narrative of history into a violent and darkly comedic reimagining of revenge."
+    },
+    {
+        "id": 22,
+        "movieName": "The Matrix",
+        "releaseYear": 1999,
+        "genre": "Sci-Fi",
+        "description": "Reality is a construct, and the truth lies beyond what is seen. A man’s life is upended when he uncovers a mind-bending secret about existence itself. The Wachowskis blend philosophy, action, and groundbreaking special effects in a cyberpunk tale of revolution. Keanu Reeves stars in this genre-defining film that asks, 'What is real?' A cybernetic rebellion against a world controlled by machines, with reality itself at stake."
+    },
+    {
+        "id": 23,
+        "movieName": "12 Angry Men",
+        "releaseYear": 1957,
+        "genre": "Drama",
+        "description": "A room full of men debates the fate of a young defendant. What starts as a simple case of justice becomes an exploration of prejudice, doubt, and human nature. Sidney Lumet’s powerful drama focuses on the moral complexities of truth, responsibility, and group dynamics. The film’s single-location setting and intense performances—particularly from Henry Fonda—create an emotionally charged atmosphere. A riveting tale of justice, conviction, and the intricacies of human behavior in a courtroom."
+    },
+    {
+        "id": 24,
+        "movieName": "No Country for Old Men",
+        "releaseYear": 2007,
+        "genre": "Crime",
+        "description": "In the harsh, unforgiving West, violence follows wherever it leads. A pursuit begins that turns the quiet into chaos, leaving destruction in its wake. The Coen Brothers’ tense crime thriller is a stark examination of fate, morality, and the unrelenting nature of evil. Javier Bardem’s chilling portrayal of the hitman Anton Chigurh anchors this gripping, violent tale. A meditation on crime, punishment, and the inevitable passage of time in an unforgiving world."
+    },
+    {
+        "id": 25,
+        "movieName": "Fight Club",
+        "releaseYear": 1999,
+        "genre": "Drama",
+        "description": "A man’s life is turned upside down by his own need for meaning and identity. Consumerism, identity crises, and violence collide in a desperate, anarchistic quest for freedom. David Fincher’s darkly satirical commentary on society’s ills explores masculinity and alienation with brutal honesty. Brad Pitt and Edward Norton star in this provocative, mind-bending exploration of self-destruction and revolution. A film that challenges convention, society, and the very nature of human desire."
+    },
+    {
+        "id": 26,
+        "movieName": "The Revenant",
+        "releaseYear": 2015,
+        "genre": "Adventure",
+        "description": "Nature’s brutal beauty demands survival. A man fights against the elements, betrayal, and his own physical limits, all to seek revenge. Alejandro González Iñárritu’s stunning, visceral film immerses viewers in a wild, unforgiving world. Leonardo DiCaprio delivers an unforgettable performance in this survival epic set against the 19th-century American frontier. A journey of resilience, vengeance, and human endurance in the face of overwhelming odds."
+    },
+    {
+        "id": 27,
+        "movieName": "The Shape of Water",
+        "releaseYear": 2017,
+        "genre": "Fantasy",
+        "description": "A quiet woman’s bond with an extraordinary creature brings forth a tale of love and transformation. In a world of isolation and oppression, the unspoken can speak volumes. Guillermo del Toro’s fairy tale weaves together themes of acceptance, otherness, and human connection. Sally Hawkins delivers a poignant performance in a narrative of untraditional love and courage. A poetic fable where love transcends barriers of language, species, and society."
+    },
+    {
+        "id": 28,
+        "movieName": "Schindler’s List",
+        "releaseYear": 1993,
+        "genre": "Drama",
+        "description": "A man’s transformation from businessman to reluctant savior unfolds against the backdrop of one of history’s darkest chapters. In a world of horror, humanity shines through one man’s choices. Steven Spielberg’s unflinching portrayal of the Holocaust explores both the depths of evil and the heights of redemption. Liam Neeson’s powerful performance as Oskar Schindler anchors this gut-wrenching narrative of survival and moral courage. A testament to the impact one individual can have against a tide of atrocity and despair."
+    },
+    {
+        "id": 29,
+        "movieName": "A Clockwork Orange",
+        "releaseYear": 1971,
+        "genre": "Crime",
+        "description": "A young man’s thirst for chaos drives him to dark and dangerous extremes. Violence becomes both a means of power and a twisted form of expression. Stanley Kubrick’s unsettling masterpiece blends dystopia, satire, and psychological horror in a story of free will and control. Malcolm McDowell’s iconic performance as Alex explores the disturbing depths of human nature. A chilling, thought-provoking journey through a world where morality and madness collide."
+    },
+    {
+        "id": 30,
+        "movieName": "Blade Runner",
+        "releaseYear": 1982,
+        "genre": "Sci-Fi",
+        "description": "The line between man and machine begins to blur in a future defined by technology. A hunt for synthetic life leads to questions about identity, purpose, and humanity. Ridley Scott’s neo-noir sci-fi masterpiece delves into existential themes, set against a dystopian, rain-soaked cityscape. Harrison Ford stars in this atmospheric exploration of what it means to be truly alive. A meditation on artificial intelligence, love, and the impermanence of life in a fractured world."
+    }
+]
