@@ -55,7 +55,15 @@ const applyOpacity = (text) => {
   });
 };
 
-const Description = ({ onTVShowDataLoad, level }) => {
+const getTVShowIdByDate = (startDate) => {
+  const start = new Date(startDate);
+  const today = new Date();
+  const diffTime = Math.abs(today - start);
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  return (diffDays % 30) + 1; // Assuming there are 30 TV shows
+};
+
+const Description = ({ onTVShowDataLoad, level, startDate }) => {
   const [TVShowDetails, setTVShowDetails] = useState({
     TVShowName: '',
     description: '',
@@ -66,31 +74,30 @@ const Description = ({ onTVShowDataLoad, level }) => {
   const [incorrectTVShowNames, setIncorrectTVShowNames] = useState([]);
   const seed = 12345;
   const hashedDescription = TVShowDetails.description ? hash(TVShowDetails.description, level, seed) : '';
+  const TVShowId = getTVShowIdByDate(startDate);
 
   useEffect(() => {
     const loadTVShowData = async () => {
       try {
         await initDB();
         await populateDB();
-        const TVShow = await getTVShow(1); // Gets TVShow by ID
+        const TVShow = await getTVShow(TVShowId); // Gets TV show by ID based on date
         if (TVShow) {
           setTVShowDetails(TVShow);
         } else {
-          console.error('TVShow not found');
-          // Optionally set default TVShow details
-          // setTVShowDetails({ TVShowName: 'Unknown', description: '', releaseYear: '', genre: '', id: null });
+          console.error('TV Show not found');
         }
         // Fetch all TV show names
         const allTVShows = await getAllTVShows();
-        const allTVShowNames = allTVShows.map(show => show.TVShowName);
+        const allTVShowNames = allTVShows.map(tv => tv.TVShowName);
         setIncorrectTVShowNames(allTVShowNames);
       } catch (error) {
-        console.error('Error loading TVShow data:', error);
+        console.error('Error loading TV show data:', error);
       }
     };
 
     loadTVShowData();
-  }, []);
+  }, [TVShowId]);
 
   useEffect(() => {
     const TVShowData = {
@@ -102,11 +109,11 @@ const Description = ({ onTVShowDataLoad, level }) => {
   }, [level, onTVShowDataLoad, TVShowDetails.TVShowName, incorrectTVShowNames]);
 
   return (
-    <div className="border border-white/20 p-8 
+    <div className="border border-white/20 p-4 
                     bg-zinc-950/50 rounded-md
                     backdrop-blur-sm
                     hover:border-white/30 hover:bg-zinc-950/70">
-      <div className="space-y-4">
+      <div className="space-y-2">
         <h2 className="text-lg tracking-[0.2em] text-white/80 uppercase font-mono
                       hover:text-white/90
                       transition-all duration-300">
@@ -135,7 +142,8 @@ const Description = ({ onTVShowDataLoad, level }) => {
 
 Description.propTypes = {
   onTVShowDataLoad: PropTypes.func.isRequired,
-  level: PropTypes.number.isRequired
+  level: PropTypes.number.isRequired,
+  startDate: PropTypes.string.isRequired, // Add prop type
 };
 
 export default Description;

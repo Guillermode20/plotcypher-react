@@ -4,28 +4,98 @@ const GameDescription = lazy(() => import('./components/GameDescription.jsx'));
 const MovieDescription = lazy(() => import('./components/MovieDescription.jsx'));
 const TVDescription = lazy(() => import('./components/TVDescription.jsx'));
 
+const TESTING_MODE = true; // Set to true to disable persistence and daily resets
+
 function App() {
+  const startDate = '2024-11-08'; // Your game's launch date
+
   const [selectedDescription, setSelectedDescription] = useState('game');
   const [gameData, setGameData] = useState(null);
   const [searchInput, setSearchInput] = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
-  const [levels, setLevels] = useState({
-    game: 4,
-    movie: 4,
-    tv: 4,
+  const [levels, setLevels] = useState(() => {
+    if (TESTING_MODE) {
+      return {
+        game: 4,
+        movie: 4,
+        tv: 4
+      };
+    }
+    
+    const saved = localStorage.getItem('levels');
+    const lastDate = localStorage.getItem('lastPlayedDate');
+    const today = new Date().toDateString();
+    
+    // Reset if it's a new day
+    if (lastDate !== today) {
+      return {
+        game: 4,
+        movie: 4,
+        tv: 4
+      };
+    }
+    return saved ? JSON.parse(saved) : {
+      game: 4,
+      movie: 4,
+      tv: 4
+    };
   });
   const dropdownRef = useRef(null);
   const [showWinModal, setShowWinModal] = useState(false);
   const [showFailModal, setShowFailModal] = useState(false);
-  const [gameOverStates, setGameOverStates] = useState({
-    game: false,
-    movie: false,
-    tv: false,
+  const [gameOverStates, setGameOverStates] = useState(() => {
+    if (TESTING_MODE) {
+      return {
+        game: false,
+        movie: false,
+        tv: false
+      };
+    }
+    
+    const saved = localStorage.getItem('gameOverStates');
+    const lastDate = localStorage.getItem('lastPlayedDate');
+    const today = new Date().toDateString();
+    
+    // Reset if it's a new day
+    if (lastDate !== today) {
+      return {
+        game: false,
+        movie: false,
+        tv: false
+      };
+    }
+    return saved ? JSON.parse(saved) : {
+      game: false,
+      movie: false,
+      tv: false
+    };
   });
-  const [attempts, setAttempts] = useState({
-    game: 0,
-    movie: 0,
-    tv: 0,
+  const [attempts, setAttempts] = useState(() => {
+    if (TESTING_MODE) {
+      return {
+        game: 0,
+        movie: 0,
+        tv: 0
+      };
+    }
+    
+    const saved = localStorage.getItem('attempts');
+    const lastDate = localStorage.getItem('lastPlayedDate');
+    const today = new Date().toDateString();
+    
+    // Reset if it's a new day
+    if (lastDate !== today) {
+      return {
+        game: 0,
+        movie: 0,
+        tv: 0
+      };
+    }
+    return saved ? JSON.parse(saved) : {
+      game: 0,
+      movie: 0,
+      tv: 0
+    };
   });
 
   // Add new state near other state declarations
@@ -90,6 +160,16 @@ function App() {
       return () => window.removeEventListener('resize', updateDropdownDirection);
     }
   }, [showDropdown, updateDropdownDirection]);
+
+  // Add effect to persist state changes
+  useEffect(() => {
+    if (!TESTING_MODE) {
+      localStorage.setItem('gameOverStates', JSON.stringify(gameOverStates));
+      localStorage.setItem('levels', JSON.stringify(levels));
+      localStorage.setItem('attempts', JSON.stringify(attempts));
+      localStorage.setItem('lastPlayedDate', new Date().toDateString());
+    }
+  }, [gameOverStates, levels, attempts]);
   
   return (
     <div className="relative min-h-screen bg-zinc-950 bg-gradient-to-b from-zinc-950 to-zinc-900 text-white font-mono scrollbar-gutter-stable">
@@ -147,6 +227,7 @@ function App() {
                     <GameDescription  
                       onGameDataLoad={handleGameData}
                       level={levels.game}
+                      startDate={startDate} // Pass startDate as prop
                     />
                   </div>
                 )}
@@ -155,6 +236,7 @@ function App() {
                     <MovieDescription 
                       onMovieDataLoad={handleGameData} // Adjust props as needed
                       level={levels.movie}
+                      startDate={startDate} // Pass startDate as prop
                     />
                   </div>
                 )}
@@ -163,6 +245,7 @@ function App() {
                     <TVDescription 
                       onTVShowDataLoad={handleGameData}
                       level={levels.tv}
+                      startDate={startDate} // Pass startDate as prop
                     />
                   </div>
                 )}

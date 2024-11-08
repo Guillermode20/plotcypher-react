@@ -55,7 +55,15 @@ const applyOpacity = (text) => {
   });
 };
 
-const Description = ({ onGameDataLoad, level }) => {
+const getGameIdByDate = (startDate) => {
+  const start = new Date(startDate);
+  const today = new Date();
+  const diffTime = Math.abs(today - start);
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  return (diffDays % 30) + 1; // Assuming there are 30 games
+};
+
+const Description = ({ onGameDataLoad, level, startDate }) => {
   const [gameDetails, setGameDetails] = useState({
     gameName: '',
     description: '',
@@ -65,13 +73,14 @@ const Description = ({ onGameDataLoad, level }) => {
   const [incorrectGameNames, setIncorrectGameNames] = useState([]);
   const seed = 12345;
   const hashedDescription = hash(gameDetails.description, level, seed);
+  const gameId = getGameIdByDate(startDate);
 
   useEffect(() => {
     const loadGameData = async () => {
       try {
         await initDB();
         await populateDB();
-        const game = await getGame(2); // Gets game by ID
+        const game = await getGame(gameId); // Gets game by ID based on date
         if (game) {
           setGameDetails(game);
         } else {
@@ -87,7 +96,7 @@ const Description = ({ onGameDataLoad, level }) => {
     };
 
     loadGameData();
-  }, []);
+  }, [gameId]);
 
   useEffect(() => {
     const gameData = {
@@ -132,7 +141,8 @@ const Description = ({ onGameDataLoad, level }) => {
 
 Description.propTypes = {
   onGameDataLoad: PropTypes.func.isRequired,
-  level: PropTypes.number.isRequired
+  level: PropTypes.number.isRequired,
+  startDate: PropTypes.string.isRequired, // Add prop type
 };
 
 export default Description;

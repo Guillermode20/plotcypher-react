@@ -55,7 +55,15 @@ const applyOpacity = (text) => {
   });
 };
 
-const Description = ({ onMovieDataLoad, level }) => {
+const getMovieIdByDate = (startDate) => {
+  const start = new Date(startDate);
+  const today = new Date();
+  const diffTime = Math.abs(today - start);
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  return (diffDays % 30) + 1; // Assuming there are 30 movies
+};
+
+const Description = ({ onMovieDataLoad, level, startDate }) => {
   const [movieDetails, setMovieDetails] = useState({
     movieName: '',
     description: '',
@@ -66,13 +74,14 @@ const Description = ({ onMovieDataLoad, level }) => {
   const [incorrectMovieNames, setIncorrectMovieNames] = useState([]); // Added state for incorrect movie names
   const seed = 12345;
   const hashedDescription = movieDetails.description ? hash(movieDetails.description, level, seed) : '';
+  const movieId = getMovieIdByDate(startDate);
 
   useEffect(() => {
     const loadMovieData = async () => {
       try {
         await initDB();
         await populateDB();
-        const movie = await getMovie(1); // Gets movie by ID
+        const movie = await getMovie(movieId); // Gets movie by ID based on date
         if (movie) {
           setMovieDetails(movie);
         } else {
@@ -88,7 +97,7 @@ const Description = ({ onMovieDataLoad, level }) => {
     };
 
     loadMovieData();
-  }, []);
+  }, [movieId]);
 
   useEffect(() => {
     const movieData = {
@@ -100,11 +109,11 @@ const Description = ({ onMovieDataLoad, level }) => {
   }, [level, onMovieDataLoad, movieDetails.movieName, incorrectMovieNames]); // Added incorrectMovieNames to dependencies
 
   return (
-    <div className="border border-white/20 p-8 
+    <div className="border border-white/20 p-4 
                     bg-zinc-950/50 rounded-md
                     backdrop-blur-sm
                     hover:border-white/30 hover:bg-zinc-950/70">
-      <div className="space-y-4">
+      <div className="space-y-2">
         <h2 className="text-lg tracking-[0.2em] text-white/80 uppercase font-mono
                       hover:text-white/90
                       transition-all duration-300">
@@ -133,7 +142,8 @@ const Description = ({ onMovieDataLoad, level }) => {
 
 Description.propTypes = {
   onMovieDataLoad: PropTypes.func.isRequired,
-  level: PropTypes.number.isRequired
+  level: PropTypes.number.isRequired,
+  startDate: PropTypes.string.isRequired, // Add prop type
 };
 
 export default Description;
