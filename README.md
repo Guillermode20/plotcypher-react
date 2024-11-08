@@ -2,6 +2,10 @@
 
 A daily cryptography puzzle game where players decrypt encoded descriptions of games, movies, and TV shows.
 
+## Website
+
+[Plotcypher.top](www.plotcypher.top)
+
 ## Description
 
 PlotCypher presents players with encoded descriptions of popular media and challenges them to guess the title. Each day features new puzzles across three categories:
@@ -49,12 +53,6 @@ npm run preview
 - Responsive design
 - Local progress tracking
 - Search suggestions while guessing
-
-## Live Demo
-Try it out at: WIP
-
-## Project Status
-🚧 Currently in active development - Alpha version 0.1.0
 
 ## Prerequisites
 - Node.js 16.x or higher
