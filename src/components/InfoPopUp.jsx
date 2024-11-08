@@ -24,7 +24,7 @@ const InfoPopUp = ({ showInfoModal, onClose }) => {
         className="relative bg-zinc-950 border border-white/20 rounded-lg 
                    max-w-md w-full mx-2 my-4 sm:my-2 shadow-xl 
                    focus:outline-none focus:ring-0
-                   flex flex-col max-h-[80vh] sm:max-h-[75vh]"
+                   flex flex-col max-h-[90vh] sm:max-h-[85vh]"
       >
         {/* Fixed Header */}
         <div className="p-4 border-b border-white/10">
