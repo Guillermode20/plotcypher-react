@@ -38,7 +38,7 @@ const ProjectInfoPopUp = ({ showProjectModal, onClose }) => {
         {/* Scrollable Content */}
         <div className="p-4 overflow-y-auto scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent">
           <div className="text-white/80 space-y-4">
-            <p className="text-white/60">Version Date: {latestCommitDate}</p>
+            <p className="text-white/60">Version v0.1.5</p>
             <p>Created by Will Hick</p>
             <div className="flex flex-col gap-2 pt-2">
               {/* GitHub Link */}
