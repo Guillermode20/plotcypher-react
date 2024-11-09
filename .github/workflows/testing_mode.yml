@@ -1,0 +1,30 @@
+# .github/workflows/test-mode-check.yml
+
+name: Test Mode Check
+
+on:
+  pull_request:
+    branches: [ prod ]
+  push:
+    branches: [ prod ]
+
+jobs:
+  check-test-mode:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+      
+    - name: Check TESTING_MODE value
+      run: |
+        if grep -q "const TESTING_MODE = true" src/App.jsx; then
+          echo "Error: TESTING_MODE must be set to false in production branch"
+          exit 1
+        fi
+
+    - name: Verify TESTING_MODE is false
+      run: |
+        if ! grep -q "const TESTING_MODE = false" src/App.jsx; then
+          echo "Error: TESTING_MODE must be explicitly set to false"
+          exit 1
+        fi
