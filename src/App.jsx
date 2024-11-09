@@ -10,7 +10,7 @@ const MovieDescription = lazy(() => import('./components/MovieDescription.jsx'))
 const TVDescription = lazy(() => import('./components/TVDescription.jsx'));
 const CountdownTimer = lazy(() => import('./components/CountdownTimer.jsx'));
 
-const TESTING_MODE = true; // Set to true to disable persistence and daily resets
+const TESTING_MODE = false; // Set to true to disable persistence and daily resets
 
 const CategoryButtons = memo(({ selectedDescription, onSelect }) => (
   <div className="flex w-full rounded-md shadow-sm mb-4" role="group">
