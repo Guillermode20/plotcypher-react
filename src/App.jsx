@@ -135,20 +135,6 @@ function App() {
     import('./components/TVDescription.jsx');
   }, []);
 
-  // Memoize calculateLetterMatch
-  const calculateLetterMatch = useMemo(() => (str1, str2) => {
-    const s1 = str1.toLowerCase();
-    const s2 = str2.toLowerCase();
-    let matches = 0;
-    const minLength = Math.min(s1.length, s2.length);
-    
-    for (let i = 0; i < minLength; i++) {
-      if (s1[i] === s2[i]) matches++;
-    }
-    
-    return (matches / s1.length) * 100;
-  }, []);
-
   // Add this function before the return statement
   const updateDropdownDirection = useCallback(() => {
     if (!inputRef.current) return;
@@ -207,24 +193,38 @@ function App() {
       : gameData.incorrectTVShows;
 
     const searchQuery = searchInput.toLowerCase();
+    const maxResults = 10; // Limit number of results
+    let results = [];
     
-    return suggestions?.filter(item => {
-      const itemLower = item.toLowerCase();
-      if (!itemLower.includes(searchQuery)) return false;
-      
-      const matchIndex = itemLower.indexOf(searchQuery);
-      const matchSegment = itemLower.slice(matchIndex, matchIndex + searchQuery.length);
-      const matchPercentage = calculateLetterMatch(searchQuery, matchSegment);
-      
-      return matchPercentage >= 10;
-    }).sort((a, b) => {
-      const aStartsWith = a.toLowerCase().startsWith(searchQuery);
-      const bStartsWith = b.toLowerCase().startsWith(searchQuery);
-      if (aStartsWith && !bStartsWith) return -1;
-      if (!aStartsWith && bStartsWith) return 1;
-      return 0;
-    }) || [];
-  }, [gameData, searchInput, selectedDescription, calculateLetterMatch]);
+    // Early return for exact matches
+    const exactMatch = suggestions?.find(item => 
+      item.toLowerCase() === searchQuery
+    );
+    if (exactMatch) return [exactMatch];
+
+    // Fast prefix matching first
+    suggestions?.some(item => {
+      if (item.toLowerCase().startsWith(searchQuery)) {
+        results.push(item);
+        if (results.length >= maxResults) return true;
+      }
+      return false;
+    });
+
+    // If we need more results, do contains matching
+    if (results.length < maxResults) {
+      suggestions?.some(item => {
+        const itemLower = item.toLowerCase();
+        if (!itemLower.startsWith(searchQuery) && itemLower.includes(searchQuery)) {
+          results.push(item);
+          if (results.length >= maxResults) return true;
+        }
+        return false;
+      });
+    }
+
+    return results;
+  }, [gameData, searchInput, selectedDescription]);
 
   // Batch state updates
   const handleGuessSubmit = useCallback(() => {
@@ -375,9 +375,18 @@ function App() {
     let timeoutId;
     return (value) => {
       clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => setSearchInput(value), 150);
+      timeoutId = setTimeout(() => setSearchInput(value), 50); // Reduced from 150ms to 50ms
     };
   }, []);
+
+  // Update input handler to prevent lag
+  const handleInputChange = useCallback((e) => {
+    const value = e.target.value;
+    // Immediately update visible input value
+    e.target.value = value;
+    debouncedSetSearchInput(value);
+    setShowDropdown(true);
+  }, [debouncedSetSearchInput]);
 
   if (isLoading) {
     return <LoadingScreen />;
@@ -562,11 +571,8 @@ function App() {
                       <input
                         ref={inputRef}
                         type="text"
-                        value={searchInput}
-                        onChange={(e) => {
-                          debouncedSetSearchInput(e.target.value);
-                          setShowDropdown(true);
-                        }}
+                        defaultValue={searchInput} // Change from value to defaultValue
+                        onChange={handleInputChange}
                         className="w-full px-4 py-2
                           text text-white/90 tracking-[0.2em] placeholder:text-white/50
                           border border-white/20 rounded-md
