@@ -1,212 +1,212 @@
 [
     {
         "id": 1,
-        "movieName": "The Shawshank Redemption",
+        "gameName": "The Shawshank Redemption",
         "releaseYear": 1994,
         "genre": "Drama",
-        "description": "Behind grey walls, hope flickers faintly in the darkness. A tale unfolds of friendship forged under shadow and hardship, resilience tested against time’s grinding weight. Unyielding resolve clashes with a world built to break the soul. The slow, silent pursuit of freedom defies a system meant to confine every dream. In the end, it’s a story of quiet redemption, where patience and dignity tunnel through despair to the light."
+        "description": "A fortress of stone holds more than just the innocent. Time moves slowly, but hearts can beat faster in the stillness. Choices are made in the dark, and trust becomes a fragile bridge. Redemption is a fire you build with your own hands. Freedom doesn’t come from a gate; it comes from the heart."
     },
     {
         "id": 2,
-        "movieName": "The Godfather",
-        "releaseYear": 1972,
-        "genre": "Crime",
-        "description": "In a world bound by honor and betrayal, loyalty is the price of survival. Shadows gather around a powerful family, each step tangled in webs of respect and vengeance. Blood ties and business blend into a delicate, deadly dance. The heir to a legacy grapples with duty, drawn deeper into the empire he cannot escape. Ultimately, it’s the saga of a reluctant son rising to rule, where loyalty costs blood and family reigns above all."
+        "gameName": "Inception",
+        "releaseYear": 2010,
+        "genre": "Sci-Fi",
+        "description": "You’re never sure if your feet are on solid ground. A maze with no clear path, each turn more twisted than the last. The deeper you dig, the further from the surface you fall. But is it real, or just another dream within a dream? When the dream ends, does it ever truly end?"
     },
     {
         "id": 3,
-        "movieName": "How to Train Your Dragon",
-        "releaseYear": 2010,
-        "genre": "Animation",
-        "description": "In a land of mist and fire, where legends soar, a hidden friendship is forged. Ancient creatures, once feared, now reveal a softer truth beneath scales and fangs. Amid clashing tribes and untamed skies, a new way of life takes flight. Bonds stronger than fear reshape a warrior’s path, bridging worlds thought forever at odds. A young Viking and his dragon defy age-old hatred, showing that courage can change destiny and even rewrite ancient tales."
+        "gameName": "The Godfather",
+        "releaseYear": 1972,
+        "genre": "Crime/Drama",
+        "description": "In the shadows, power whispers. Loyalty is a bond thicker than blood, but betrayal is always close. One word can send empires crumbling. A man of power never acts without purpose, nor without consequence. In the end, even the strongest must face their family's legacy."
     },
     {
         "id": 4,
-        "movieName": "Inside Out",
-        "releaseYear": 2015,
-        "genre": "Animation",
-        "description": "In the unseen landscapes of the mind, vivid forces stir and collide. Emotions dance and clash, shaping each thought and memory. Joy and sorrow wrestle in a realm where every color holds a piece of the heart. A journey unfolds through memories and feelings, each one building a child’s inner world. Ultimately, it’s the story of a young girl discovering that all emotions have their place, and sometimes, sadness is the path to true healing."
+        "gameName": "Forrest Gump",
+        "releaseYear": 1994,
+        "genre": "Drama/Romance",
+        "description": "The world spins on paths both strange and simple. Uncertainty clouds every step, but some things remain clear. The journey isn't about destination; it's about the unexpected moments. Each day offers a new puzzle, but some pieces fit better than others. Life is a box, and its contents can surprise you."
     },
     {
         "id": 5,
-        "movieName": "Deadpool",
-        "releaseYear": 2016,
-        "genre": "Action-Comedy",
-        "description": "In a world where heroes wear masks, one man breaks all the rules. Sarcasm and wit are his armor, a twisted sense of justice his only guide. Blood splatters and banter fly in his relentless quest for vengeance. A love lost and a life shattered drive him to unhinged extremes, defying villains and social norms alike. Armed with dark humor and endless comebacks, a red-suited antihero rises, rewriting the hero’s code in pure chaos."
+        "gameName": "Pulp Fiction",
+        "releaseYear": 1994,
+        "genre": "Crime/Thriller",
+        "description": "Every story hides beneath layers of chaos. People make decisions they don’t fully understand, driven by forces unseen. The clock ticks, but moments fold into one another without rhyme or reason. Choices cross paths in unexpected ways. Time, it seems, doesn’t obey anyone."
     },
     {
         "id": 6,
-        "movieName": "Fantastic Mr. Fox",
-        "releaseYear": 2009,
-        "genre": "Animation-Comedy",
-        "description": "In a world painted with earthy hues and autumn warmth, a wily creature schemes beneath the harvest moon. Cleverness and charm are his armor, but he treads a thin line between adventure and danger. As he outsmarts towering foes and nimbly dodges traps, his family’s safety hangs in the balance. A story unfolds of loyalty, wit, and rebellion, set in a world where animals are as shrewd as any human. Ultimately, it’s a tale of a dapper fox defying the odds, claiming his freedom one clever heist at a time."
+        "gameName": "The Dark Knight",
+        "releaseYear": 2008,
+        "genre": "Action/Crime",
+        "description": "A city on the brink teeters between order and madness. Justice is not absolute, but it never loses its power. Faces can hide behind masks, but truth has a way of exposing them. One man rises, not to save, but to show the world's brokenness. The line between hero and villain is razor-thin."
     },
     {
         "id": 7,
-        "movieName": "Eternal Sunshine of the Spotless Mind",
-        "releaseYear": 2004,
-        "genre": "Drama",
-        "description": "Memories fade like the last remnants of a dream. A love once bright now slips through time’s grasp, elusive yet persistent. Erasing the past seems simple, but its shadows linger in the mind. A visual tapestry of emotional complexity unfolds under Michel Gondry's inventive direction. Jim Carrey and Kate Winslet star in a beautifully surreal exploration of memory, love, and regret."
+        "gameName": "Titanic",
+        "releaseYear": 1997,
+        "genre": "Romance/Drama",
+        "description": "The sea calls, but so does fate. Beneath the weight of history, two lives unfold in a fleeting moment. Time doesn’t heal all wounds, but it can drown them. Love found in the most desperate of circumstances might be the truest of all. The iceberg looms, but not in the way you expect."
     },
     {
         "id": 8,
-        "movieName": "The Room",
-        "releaseYear": 2003,
-        "genre": "Drama",
-        "description": "A man stands at the crossroads of his life, trying to navigate the twists of fate. Betrayal and confusion cloud the choices he makes, yet his journey feels somehow familiar. With moments both absurd and tragic, the lines between comedy and drama blur in this tale. Tommy Wiseau’s unique vision makes this film an inexplicable cult phenomenon. Its unpredictable dialogue and performances make it a modern masterpiece of unintentional humor."
+        "gameName": "The Matrix",
+        "releaseYear": 1999,
+        "genre": "Sci-Fi/Action",
+        "description": "A world of endless green flickers in a seemingly tranquil reality. Every question is met with a silence louder than the truth itself. Time bends, but only if you’re paying attention. The truth doesn’t set you free; it binds you in its waking chaos. The choice is simple: live in ignorance or awaken."
     },
     {
         "id": 9,
-        "movieName": "The Secret Life of Walter Mitty",
-        "releaseYear": 2013,
-        "genre": "Adventure",
-        "description": "An ordinary man finds himself caught between the mundane and the extraordinary. His fantasies spark moments of great adventure, pushing him to explore the world beyond his own. A quest for self-fulfillment takes him from daydreams to reality in a breathtaking visual journey. Ben Stiller directs and stars in this uplifting story about breaking free from life's confines. It’s a meditation on courage, purpose, and the beauty of life’s unknown paths."
+        "gameName": "The Lion King",
+        "releaseYear": 1994,
+        "genre": "Animation/Drama",
+        "description": "A circle of life draws everyone to its center. The earth turns, but not everyone is ready for the weight of its crown. The past never lets go, and the future is shaped by the mistakes of those before us. Sometimes, the heart leads the way, even when the mind can’t understand. A king rises when the pride calls."
     },
     {
         "id": 10,
-        "movieName": "Requiem for a Dream",
+        "gameName": "Gladiator",
         "releaseYear": 2000,
-        "genre": "Drama",
-        "description": "Lives are shaped by desires, yet those very desires lead to downfall. A dream of success, a desire for love, and a hunger for escape consume the protagonists. Dark, relentless, and haunting, this film explores addiction’s grip with shocking intensity. Darren Aronofsky’s unflinching direction brings a visceral portrayal of human desperation. The vivid cinematography and haunting score create an unforgettable descent into madness."
+        "genre": "Action/Drama",
+        "description": "A warrior’s rage burns brighter than the sun itself. Betrayal festers within the blood of the empire. The strength of the body cannot match the force of the will. Victory can only be found in a deathless battle for justice. The arena of life is unforgiving, but its consequences eternal."
     },
     {
         "id": 11,
-        "movieName": "Spirited Away",
-        "releaseYear": 2001,
-        "genre": "Animation",
-        "description": "A child’s journey through a strange world brings her closer to understanding herself. In a realm where spirits and gods reign, mysteries unravel in a vivid and whimsical way. Hayao Miyazaki’s animation immerses viewers in a fantastical, hand-drawn universe filled with imagination. Themes of growth, environmentalism, and the clash of cultures are explored in breathtaking detail. A young girl must navigate a magical world to save her parents and discover her own inner strength."
+        "gameName": "The Avengers",
+        "releaseYear": 2012,
+        "genre": "Action/Sci-Fi",
+        "description": "A gathering of warriors torn from distant worlds. Foes unite, and alliances fracture. Strength can be found in numbers, but trust is earned, not given. A single act of defiance can change the course of history. Together, they must face what they alone could not conquer."
     },
     {
         "id": 12,
-        "movieName": "Her",
-        "releaseYear": 2013,
-        "genre": "Romance",
-        "description": "Loneliness breeds connection in a world where technology becomes more than just a tool. As hearts open through digital means, the lines blur between reality and virtual emotion. Spike Jonze weaves a futuristic love story that feels eerily familiar yet deeply alien. Joaquin Phoenix stars in a poignant narrative exploring the nature of intimacy and human connection in the digital age. This is a meditation on relationships, technology, and the quest for meaning in an increasingly isolated world."
+        "gameName": "Jurassic Park",
+        "releaseYear": 1993,
+        "genre": "Sci-Fi/Adventure",
+        "description": "An island of ancient power holds secrets long forgotten. Science reawakens that which was meant to remain buried. Nature is a force that cannot be tamed, and humans are its guests. Chaos arises, and survival becomes more than instinct. What was once extinct is now alive, and it’s hungry."
     },
     {
         "id": 13,
-        "movieName": "Moonlight",
-        "releaseYear": 2016,
-        "genre": "Drama",
-        "description": "In a world of shadows and silence, a boy struggles to define himself. Stripped of his identity by external forces, his journey becomes one of survival and self-discovery. Barry Jenkins crafts a delicate portrayal of the challenges of love, identity, and acceptance. Through stunning performances, particularly from Mahershala Ali, the film examines the intersection of race, sexuality, and masculinity. A tender, Oscar-winning narrative about the complexities of growing up and finding one’s place in the world."
+        "gameName": "Back to the Future",
+        "releaseYear": 1985,
+        "genre": "Sci-Fi/Adventure",
+        "description": "The future isn’t written, but it’s always waiting to be altered. Time moves, but sometimes, it seems to move backward. The past is a puzzle with pieces that refuse to fit. If you change one moment, the whole world might shift. History is just a series of choices, and some are more important than others."
     },
     {
         "id": 14,
-        "movieName": "Trainspotting",
-        "releaseYear": 1996,
-        "genre": "Drama",
-        "description": "A group of young men chase thrills in the underbelly of society. The line between pleasure and destruction is razor-thin, as they spiral deeper into addiction. Danny Boyle’s energetic direction pulses with the raw, chaotic energy of youth and rebellion. Ewan McGregor stars in this dark, visceral look at addiction’s grip on those who dare to live on the edge. The film captures the struggle to escape a destructive lifestyle with brutal honesty and unforgettable imagery."
+        "gameName": "Interstellar",
+        "releaseYear": 2014,
+        "genre": "Sci-Fi/Drama",
+        "description": "The sky calls, but it’s not a voice you recognize. Space is vast, but so is love, and both warp time itself. The edge of human understanding is a fragile place, but it’s where we find the answers. A journey into the unknown doesn’t lead us away from home; it brings us closer. Time bends, but love doesn’t fade."
     },
     {
         "id": 15,
-        "movieName": "Mad Max: Fury Road",
-        "releaseYear": 2015,
-        "genre": "Action",
-        "description": "In a barren wasteland, survival is the only law. The fight for freedom rages amid fire, dust, and death. George Miller’s high-octane, post-apocalyptic action film takes its audience on a non-stop ride of explosive intensity. Charlize Theron and Tom Hardy lead a visually stunning and fiercely feminist tale of defiance and resilience. A relentless journey of survival and redemption in a world where humanity is a fading memory."
+        "gameName": "Fight Club",
+        "releaseYear": 1999,
+        "genre": "Drama",
+        "description": "The world is built on contradictions, and we are its broken pieces. We create rules only to break them. The lines between self and other blur until the distinctions don’t matter. We fight, but we fight for freedom we can’t yet understand. The truth only emerges when the masks fall away."
     },
     {
         "id": 16,
-        "movieName": "The Lobster",
-        "releaseYear": 2015,
-        "genre": "Comedy",
-        "description": "In a society that demands conformity, a man must find love or face a grim fate. A world of peculiar rules and odd rituals breeds strange consequences for those who do not fit in. Yorgos Lanthimos’ dark comedy explores the absurdity of relationships and societal pressure in surreal fashion. Colin Farrell and Rachel Weisz star in this offbeat, dystopian narrative where love is a matter of survival. A razor-sharp satire on modern relationships and the pursuit of belonging."
+        "gameName": "The Social Network",
+        "releaseYear": 2010,
+        "genre": "Drama/Biography",
+        "description": "A revolution starts not with a bang, but with a click. The game is about connection, but at what cost? Power isn’t taken; it’s coded into existence. Relationships are built on trust, but they crumble on ambition. The price of success isn’t always paid in cash."
     },
     {
         "id": 17,
-        "movieName": "The Prestige",
-        "releaseYear": 2006,
-        "genre": "Drama",
-        "description": "Two men compete in a battle of intellect and deception. Their rivalry is fueled by ambition, leading them to challenge the very limits of reality. Christopher Nolan’s twist-laden narrative intertwines magic, obsession, and sacrifice in a labyrinth of secrets. Hugh Jackman and Christian Bale star in this thrilling story of illusion and rivalry. In the end, the true cost of their pursuit of greatness becomes painfully clear."
+        "gameName": "La La Land",
+        "releaseYear": 2016,
+        "genre": "Drama/Musical",
+        "description": "Dreams are fragile things, made of music and light. Sometimes, what you need most is the thing you can’t hold on to. Love is a dance, but it’s never easy to keep the rhythm. The road to success is paved with broken promises. What happens when the music fades and the spotlight goes dark?"
     },
     {
         "id": 18,
-        "movieName": "Hereditary",
-        "releaseYear": 2018,
-        "genre": "Horror",
-        "description": "Grief lingers like a shadow, and the past refuses to stay buried. Family ties unravel in the face of dark, unspoken forces, threatening to consume all. Ari Aster’s horrifying vision explores the terrifying inheritance of trauma, both psychological and supernatural. Toni Collette’s heart-wrenching performance anchors this disturbing exploration of family, loss, and curse. An unrelenting descent into a nightmare that spans generations."
+        "gameName": "The Silence of the Lambs",
+        "releaseYear": 1991,
+        "genre": "Thriller/Crime",
+        "description": "In silence, voices speak loudest. Evil wears many faces, and none more chilling than those that hide in plain sight. Fear takes root in the mind, not the body. A detective seeks answers, but the truth she uncovers might unravel her. What you hear is not always the truth, but it’s always a clue."
     },
     {
         "id": 19,
-        "movieName": "The Big Lebowski",
-        "releaseYear": 1998,
-        "genre": "Comedy",
-        "description": "A laid-back man finds himself caught in a web of absurdity and crime. A mix-up turns his life into a chaotic adventure filled with bizarre characters and strange circumstances. The Coen Brothers blend dark humor with surreal situations in a cult classic that defies easy categorization. Jeff Bridges stars as the iconic 'Dude,' whose simple life spirals into a wild, unpredictable journey. It’s a unique tale of mistaken identity, bowling, and an unforgettable cast of characters."
+        "gameName": "Spider-Man: Into the Spider-Verse",
+        "releaseYear": 2018,
+        "genre": "Animation/Action",
+        "description": "The multiverse spins wildly, but the strands are tighter than they seem. A hero rises not from destiny, but from sheer will. The shadows stretch long across every timeline, but it’s the light that shines brightest. Heroes may wear different faces, but their hearts beat the same. What if your universe is only one of many?"
     },
     {
         "id": 20,
-        "movieName": "The Witch",
-        "releaseYear": 2015,
-        "genre": "Horror",
-        "description": "In the darkness of a 17th-century forest, fear takes root. A family is torn apart by suspicion, superstition, and an overwhelming sense of doom. Robert Eggers' chilling folk horror unfolds slowly, building dread and paranoia with every frame. The film explores religious extremism, the breakdown of family bonds, and the supernatural with haunting precision. A terrifying descent into madness and isolation, set against a backdrop of superstition and early American life."
+        "gameName": "Schindler's List",
+        "releaseYear": 1993,
+        "genre": "Drama/History",
+        "description": "In a world consumed by darkness, a single light fights to survive. The cost of saving a life is often more than one can bear. In the face of suffering, the smallest acts of mercy can shift the course of history. One man’s journey is a reminder of the human cost of indifference. In the end, we are defined by what we choose to save."
     },
     {
         "id": 21,
-        "movieName": "Inglourious Basterds",
-        "releaseYear": 2009,
-        "genre": "War",
-        "description": "War, revenge, and history collide in a tale of radical retribution. Characters, both villainous and heroic, are bound by the thirst for vengeance. Quentin Tarantino’s revisionist World War II epic subverts history with style, wit, and brutal action. Brad Pitt leads a group of soldiers on a mission to take down the Nazi regime with unforgettable flair. This explosive film twists the narrative of history into a violent and darkly comedic reimagining of revenge."
+        "gameName": "The Grand Budapest Hotel",
+        "releaseYear": 2014,
+        "genre": "Comedy/Drama",
+        "description": "A place once bustling with life is now trapped in the past. Secrets are hidden behind gilded doors, and every face tells a story. What seems like a simple tale becomes a mystery unfolding in layers. The world is painted in rich, surreal strokes. The chaos of life is as grand as the hotel itself."
     },
     {
         "id": 22,
-        "movieName": "The Matrix",
-        "releaseYear": 1999,
-        "genre": "Sci-Fi",
-        "description": "Reality is a construct, and the truth lies beyond what is seen. A man’s life is upended when he uncovers a mind-bending secret about existence itself. The Wachowskis blend philosophy, action, and groundbreaking special effects in a cyberpunk tale of revolution. Keanu Reeves stars in this genre-defining film that asks, 'What is real?' A cybernetic rebellion against a world controlled by machines, with reality itself at stake."
+        "gameName": "Mad Max: Fury Road",
+        "releaseYear": 2015,
+        "genre": "Action/Sci-Fi",
+        "description": "The world is burning, and survival is the only truth. The road is long, but the journey never ends. Freedom is a distant dream in a world of endless pursuit. The fight isn’t just for fuel, it’s for a future. The strong must ride the storm or be consumed by it."
     },
     {
         "id": 23,
-        "movieName": "12 Angry Men",
-        "releaseYear": 1957,
-        "genre": "Drama",
-        "description": "A room full of men debates the fate of a young defendant. What starts as a simple case of justice becomes an exploration of prejudice, doubt, and human nature. Sidney Lumet’s powerful drama focuses on the moral complexities of truth, responsibility, and group dynamics. The film’s single-location setting and intense performances—particularly from Henry Fonda—create an emotionally charged atmosphere. A riveting tale of justice, conviction, and the intricacies of human behavior in a courtroom."
+        "gameName": "The Exorcist",
+        "releaseYear": 1973,
+        "genre": "Horror",
+        "description": "Evil is not always seen, but always felt. A mind twisted beyond recognition becomes the battlefield for a soul’s fate. The horror lies not in what is done, but in what’s believed to be possible. Faith is tested, but so is fear. Some battles aren’t fought with fists, but with willpower."
     },
     {
         "id": 24,
-        "movieName": "No Country for Old Men",
-        "releaseYear": 2007,
-        "genre": "Crime",
-        "description": "In the harsh, unforgiving West, violence follows wherever it leads. A pursuit begins that turns the quiet into chaos, leaving destruction in its wake. The Coen Brothers’ tense crime thriller is a stark examination of fate, morality, and the unrelenting nature of evil. Javier Bardem’s chilling portrayal of the hitman Anton Chigurh anchors this gripping, violent tale. A meditation on crime, punishment, and the inevitable passage of time in an unforgiving world."
+        "gameName": "The Departed",
+        "releaseYear": 2006,
+        "genre": "Crime/Thriller",
+        "description": "Lies are woven into every corner of the city. The game of power is played in shadows, but who’s really pulling the strings? Trust is a fleeting illusion, and betrayal is always close behind. Secrets only hold if you’re willing to sacrifice everything to keep them. In the end, the question is: who are you really?"
     },
     {
         "id": 25,
-        "movieName": "Fight Club",
-        "releaseYear": 1999,
-        "genre": "Drama",
-        "description": "A man’s life is turned upside down by his own need for meaning and identity. Consumerism, identity crises, and violence collide in a desperate, anarchistic quest for freedom. David Fincher’s darkly satirical commentary on society’s ills explores masculinity and alienation with brutal honesty. Brad Pitt and Edward Norton star in this provocative, mind-bending exploration of self-destruction and revolution. A film that challenges convention, society, and the very nature of human desire."
+        "gameName": "The Truman Show",
+        "releaseYear": 1998,
+        "genre": "Drama/Sci-Fi",
+        "description": "The world is a stage, but no one knows their role. The truth is hidden in plain sight, but it’s more terrifying than anyone realizes. Every step you take is watched, every breath measured. The illusion is so perfect, you can’t see the bars. How does one escape when there’s nowhere else to go?"
     },
     {
         "id": 26,
-        "movieName": "The Revenant",
-        "releaseYear": 2015,
-        "genre": "Adventure",
-        "description": "Nature’s brutal beauty demands survival. A man fights against the elements, betrayal, and his own physical limits, all to seek revenge. Alejandro González Iñárritu’s stunning, visceral film immerses viewers in a wild, unforgiving world. Leonardo DiCaprio delivers an unforgettable performance in this survival epic set against the 19th-century American frontier. A journey of resilience, vengeance, and human endurance in the face of overwhelming odds."
+        "gameName": "Deadpool",
+        "releaseYear": 2016,
+        "genre": "Action/Comedy",
+        "description": "A man in a mask hides behind a broken past. Humor is his armor, but the cracks run deep. The world bends to his will, but his true fight is against himself. Chaos reigns, but even in madness, there’s something undeniably human. The rules don’t apply, and neither does he."
     },
     {
         "id": 27,
-        "movieName": "The Shape of Water",
-        "releaseYear": 2017,
-        "genre": "Fantasy",
-        "description": "A quiet woman’s bond with an extraordinary creature brings forth a tale of love and transformation. In a world of isolation and oppression, the unspoken can speak volumes. Guillermo del Toro’s fairy tale weaves together themes of acceptance, otherness, and human connection. Sally Hawkins delivers a poignant performance in a narrative of untraditional love and courage. A poetic fable where love transcends barriers of language, species, and society."
+        "gameName": "A Beautiful Mind",
+        "releaseYear": 2001,
+        "genre": "Biography/Drama",
+        "description": "A brilliant mind is a beautiful prison. The line between genius and madness is thin, and the truth is a fragile thing. The world spins in perfect circles, but only if you can see them. Reality is a puzzle, and some pieces only fit together when you stop looking for them. The mind, when left unchecked, can create worlds."
     },
     {
         "id": 28,
-        "movieName": "Schindler’s List",
-        "releaseYear": 1993,
-        "genre": "Drama",
-        "description": "A man’s transformation from businessman to reluctant savior unfolds against the backdrop of one of history’s darkest chapters. In a world of horror, humanity shines through one man’s choices. Steven Spielberg’s unflinching portrayal of the Holocaust explores both the depths of evil and the heights of redemption. Liam Neeson’s powerful performance as Oskar Schindler anchors this gut-wrenching narrative of survival and moral courage. A testament to the impact one individual can have against a tide of atrocity and despair."
+        "gameName": "The Princess Bride",
+        "releaseYear": 1987,
+        "genre": "Adventure/Comedy",
+        "description": "A fairytale is more than just magic; it’s a test of love and honor. Heroes come in all shapes, and sometimes, the most unlikely one is the greatest. Death doesn’t stop love; it only tests it. Truths are hidden behind masks, and adventure lurks in every corner. A story told is never just a story."
     },
     {
         "id": 29,
-        "movieName": "A Clockwork Orange",
-        "releaseYear": 1971,
-        "genre": "Crime",
-        "description": "A young man’s thirst for chaos drives him to dark and dangerous extremes. Violence becomes both a means of power and a twisted form of expression. Stanley Kubrick’s unsettling masterpiece blends dystopia, satire, and psychological horror in a story of free will and control. Malcolm McDowell’s iconic performance as Alex explores the disturbing depths of human nature. A chilling, thought-provoking journey through a world where morality and madness collide."
+        "gameName": "Parasite",
+        "releaseYear": 2019,
+        "genre": "Thriller/Drama",
+        "description": "A family struggles to survive in a world divided by walls. The truth hides behind a veil of opulence, but hunger never stops calling. Lies are told to survive, but some truths cannot be buried. Everyone wants something, but none are prepared for the price. The line between rich and poor is thinner than you think."
     },
     {
         "id": 30,
-        "movieName": "Blade Runner",
-        "releaseYear": 1982,
-        "genre": "Sci-Fi",
-        "description": "The line between man and machine begins to blur in a future defined by technology. A hunt for synthetic life leads to questions about identity, purpose, and humanity. Ridley Scott’s neo-noir sci-fi masterpiece delves into existential themes, set against a dystopian, rain-soaked cityscape. Harrison Ford stars in this atmospheric exploration of what it means to be truly alive. A meditation on artificial intelligence, love, and the impermanence of life in a fractured world."
+        "gameName": "The Big Lebowski",
+        "releaseYear": 1998,
+        "genre": "Comedy/Crime",
+        "description": "The world is a mystery, and you’re just trying to bowl your way through it. Characters drift through life, aimless but oddly defined. The rules don’t matter, and yet, the game is always on. Every situation is a puzzle, but the solution doesn’t always make sense. Sometimes, life’s biggest questions come without answers."
     }
 ]

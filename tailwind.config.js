@@ -35,10 +35,15 @@ export default {
             borderColor: 'rgba(255, 255, 255, 0.2)',
             backgroundColor: 'rgba(239, 68, 68, 0)'
           }
+        },
+        progress: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' }
         }
       },
       animation: {
-        flash: 'flash 0.8s ease-in-out'
+        flash: 'flash 0.8s ease-in-out',
+        progress: 'progress 1.5s ease-in-out infinite',
       }
     },
   },
