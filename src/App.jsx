@@ -13,7 +13,7 @@ const WinModal = lazy(() => import('./components/WinModal'));
 const FailModal = lazy(() => import('./components/FailModal'));
 const GameOverScreen = lazy(() => import('./components/GameOverScreen'));
 
-const TESTING_MODE = true; // Set to true to disable persistence and daily resets
+const TESTING_MODE = false;
 
 const CategoryButtons = memo(({ selectedDescription, onSelect }) => (
   <div className="flex w-full rounded-md shadow-sm mb-4" role="group">
