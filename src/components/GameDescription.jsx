@@ -1,8 +1,9 @@
 // fully working as of now, using a seed to generate the positions to hash works perfectly so don't touch it
 
 import { useState, useEffect } from 'react';
-import { initDB, getGame, populateDB, getAllGames } from '../database';
 import PropTypes from 'prop-types';
+import ErrorBoundary from '../ErrorBoundary';
+import { initDB, getGame, populateDB, getAllGames } from '../database';
 
 const symbols = ['#', '£', '$', '%', '&', '@'];
 
@@ -118,34 +119,36 @@ const Description = ({ onGameDataLoad, level, startDate }) => {
   }, [level, onGameDataLoad, gameDetails.gameName, incorrectGameNames]);
 
   return (
-    <div className="border border-white/20 p-4 
-                    bg-zinc-950/50 rounded-md
-                    backdrop-blur-sm
-                    hover:border-white/30 hover:bg-zinc-950/70">
-      <div className="space-y-2">
-        <h2 className="text-lg tracking-[0.2em] text-white/80 uppercase font-mono
-                      hover:text-white/90
-                      transition-all duration-300">
-          Daily Game Cypher #{gameDetails.id}
-        </h2>
-        <h3 className="text tracking-[0.2em] text-white/60 uppercase font-mono
-                      hover:text-white/90
-                      transition-all duration-300 mt-2">
-          Release Year: {level < 4 ? gameDetails.releaseYear : '????'}
-        </h3>
-        <h3 className="text tracking-[0.2em] text-white/60 uppercase font-mono
-                      hover:text-white/90
-                      transition-all duration-300 mt-2">
-          Genre: {level < 3 ? gameDetails.genre : '????'}
-        </h3>
-        <p className="text leading-relaxed tracking-wide font-mono
-                     backdrop-blur-sm text-white/90
-                     hover:text-white
-                     transition-colors duration-300">
-          {applyOpacity(hashedDescription)}
-        </p>
+    <ErrorBoundary>
+      <div className="border border-white/20 p-4 
+                      bg-zinc-950/50 rounded-md
+                      backdrop-blur-sm
+                      hover:border-white/30 hover:bg-zinc-950/70">
+        <div className="space-y-2">
+          <h2 className="text-lg tracking-[0.2em] text-white/80 uppercase font-mono
+                        hover:text-white/90
+                        transition-all duration-300">
+            Daily Game Cypher #{gameDetails.id}
+          </h2>
+          <h3 className="text tracking-[0.2em] text-white/60 uppercase font-mono
+                        hover:text-white/90
+                        transition-all duration-300 mt-2">
+            Release Year: {level < 4 ? gameDetails.releaseYear : '????'}
+          </h3>
+          <h3 className="text tracking-[0.2em] text-white/60 uppercase font-mono
+                        hover:text-white/90
+                        transition-all duration-300 mt-2">
+            Genre: {level < 3 ? gameDetails.genre : '????'}
+          </h3>
+          <p className="text leading-relaxed tracking-wide font-mono
+                      backdrop-blur-sm text-white/90
+                      hover:text-white
+                      transition-colors duration-300">
+            {applyOpacity(hashedDescription)}
+          </p>
+        </div>
       </div>
-    </div>
+    </ErrorBoundary>
   );
 };
 

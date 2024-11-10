@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback, Suspense, lazy, useMemo, memo } from 'react';
 import PropTypes from 'prop-types';
 import LoadingScreen from './core/LoadingScreen.jsx';
+import ErrorBoundary from './ErrorBoundary.jsx';
 
 // Lazy load all other components
 const InfoPopUp = lazy(() => import('./components/InfoPopUp.jsx'));
@@ -10,7 +11,7 @@ const MovieDescription = lazy(() => import('./components/MovieDescription.jsx'))
 const TVDescription = lazy(() => import('./components/TVDescription.jsx'));
 const CountdownTimer = lazy(() => import('./components/CountdownTimer.jsx'));
 
-const TESTING_MODE = true; // Set to true to disable persistence and daily resets
+const TESTING_MODE = true; 
 
 const CategoryButtons = memo(({ selectedDescription, onSelect }) => (
   <div className="flex w-full rounded-md shadow-sm mb-4" role="group">
@@ -182,47 +183,58 @@ function App() {
     }
   }, []);
 
-  // Update filteredSuggestions to require minimum 3 characters
+  // Update the filteredSuggestions useMemo to properly handle all media types
   const filteredSuggestions = useMemo(() => {
-    if (!gameData || !searchInput || searchInput.length < 3) return [];
-    
-    const suggestions = selectedDescription === 'game'
-      ? gameData.incorrectGames
-      : selectedDescription === 'movie'
-      ? gameData.incorrectMovies
-      : gameData.incorrectTVShows;
-
+    if (!gameData || !searchInput || searchInput.length < 1 || !selectedDescription) return [];
+      
+    let suggestions;
+    switch (selectedDescription) {
+      case 'game':
+        suggestions = gameData.incorrectGames;
+        break;
+      case 'movie':
+        suggestions = gameData.incorrectMovies;
+        break;
+      case 'tv':
+        suggestions = gameData.incorrectTVShows;
+        break;
+      default:
+        return [];
+    }
+  
+    // Guard against undefined suggestions
+    if (!suggestions) return [];
+      
     const searchQuery = searchInput.toLowerCase();
-    const maxResults = 10; // Limit number of results
+    const maxResults = 10;
     let results = [];
-    
-    // Early return for exact matches
-    const exactMatch = suggestions?.find(item => 
-      item.toLowerCase() === searchQuery
+      
+    // Check for exact match first
+    const exactMatch = suggestions.find(item => 
+      item && item.toLowerCase() === searchQuery
     );
     if (exactMatch) return [exactMatch];
-
-    // Fast prefix matching first
-    suggestions?.some(item => {
-      if (item.toLowerCase().startsWith(searchQuery)) {
+  
+    // Check for prefix matches first
+    suggestions.forEach(item => {
+      if (results.length >= maxResults) return;
+      if (item && item.toLowerCase().startsWith(searchQuery)) {
         results.push(item);
-        if (results.length >= maxResults) return true;
       }
-      return false;
     });
-
-    // If we need more results, do contains matching
+  
+    // Then check for contains matches
     if (results.length < maxResults) {
-      suggestions?.some(item => {
-        const itemLower = item.toLowerCase();
-        if (!itemLower.startsWith(searchQuery) && itemLower.includes(searchQuery)) {
+      suggestions.forEach(item => {
+        if (results.length >= maxResults) return;
+        if (item && !item.toLowerCase().startsWith(searchQuery) && 
+            item.toLowerCase().includes(searchQuery) &&
+            !results.includes(item)) {
           results.push(item);
-          if (results.length >= maxResults) return true;
         }
-        return false;
       });
     }
-
+  
     return results;
   }, [gameData, searchInput, selectedDescription]);
 
@@ -393,244 +405,248 @@ function App() {
   }
 
   return (
-    <Suspense fallback={<LoadingScreen />}>
-      <div className="relative min-h-screen bg-zinc-950 bg-gradient-to-b from-zinc-950 to-zinc-900 text-white font-mono scrollbar-gutter-stable">
-        <div className="container relative mx-auto px-2 sm:px-4 py-2 sm:py-8">
-          <div className="max-w-2xl mx-auto p-2 sm:p-4 
-                        backdrop-blur-sm bg-zinc-950/80 border border-white/20 
-                        rounded-lg shadow-xl drop-shadow-glow hover:shadow-2xl
-                        transition-all duration-300
-                        box-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-            <header className="p-4 relative border border-white/20 bg-zinc-950/50 rounded-md
-                          hover:border-white/30 transition-all duration-300 mb-4">
-              <div className="flex items-center justify-between">
-                <h1 className="text-4xl sm:text-6xl font-bold tracking-tighter text-white/90
-                            hover:text-white transition-colors duration-300">
-                  PLOTCYPHER
-                </h1>
-                <div className="flex gap-2">
-                  <button
-                    onClick={() => setShowInfoModal(true)}
-                    className="p-2 text-white/60 hover:text-white/90 transition-colors duration-300"
-                    aria-label="Show game information"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
-                    </svg>
-                  </button>
-                  <button
-                    onClick={() => setShowProjectModal(true)}
-                    className="p-2 text-white/60 hover:text-white/90 transition-colors duration-300"
-                    aria-label="Show project information"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <p className="mt-2 text text-white/60 tracking-[0.2em]
-                        hover:text-white/80 transition-colors duration-300">
-                DAILY CHALLENGES TO TEST YOUR MEDIA KNOWLEDGE
-              </p>
-            </header>
-            
-            {/* Button group with adjusted spacing */}
-            <CategoryButtons 
-              selectedDescription={selectedDescription} 
-              onSelect={handleCategorySelect}
-            />
-
-            {!selectedDescription ? (
-              <div className="space-y-4 text-center">
-                <p className="text-xl text-white/80 tracking-wider">
-                  Select a category above to begin decrypting
-                </p>
-                <p className="text-white/60">
-                  Choose between Game, Movie, or TV Show descriptions to decrypt.
-                </p>
-                <button
-                  onClick={() => setShowInfoModal(true)}
-                  className="px-4 py-2 tracking-[0.2em] border border-white/20 bg-zinc-950/50 text-white rounded-md hover:bg-zinc-950/70 hover:border-white/30 focus:outline-none focus:border-white/40 focus:ring-2 focus:ring-white/20 transition-all duration-300"
-                >
-                  How to Play
-                </button>
-              </div>
-            ) : (
-              <div className="space-y-4 relative">
-                <Suspense fallback={
-                  // Loading wheel
-                  <div className="flex justify-center items-center h-full">
-                    <svg className="animate-spin h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                      <circle
-                        className="opacity-25"
-                        cx="12" cy="12" r="10"
-                        stroke="currentColor"
-                        strokeWidth="4"
-                      ></circle>
-                      <path
-                        className="opacity-75"
-                        fill="currentColor"
-                        d="M4 12a8 8 0 018-8v8H4z"
-                      ></path>
-                    </svg>
-                  </div>
-                }>
-                  {selectedDescription === 'game' && (
-                    <div>
-                      {gameState.gameOverStates.game ? (
-                        <div className="text-center p-8 border border-white/20 rounded-md bg-zinc-950/50">
-                          {gameState.levels.game > -1 ? (
-                            <p className="text-2xl text-green-500 mb-4">
-                              Decrypted in {gameState.attempts.game + 1} attempts!
-                            </p>
-                          ) : (
-                            <p className="text-2xl text-red-500 mb-4">
-                              Decryption failed after 5 attempts
-                            </p>
-                          )}
-                          <p className="text-2xl text-white/90">
-                            Next game in <Suspense fallback="...">{<CountdownTimer />}</Suspense>
-                          </p>
-                        </div>
-                      ) : (
-                        <GameDescription  
-                          onGameDataLoad={handleGameData}
-                          level={gameState.levels.game}
-                          startDate={startDate}
-                        />
-                      )}
-                    </div>
-                  )}
-                  {selectedDescription === 'movie' && (
-                    <div>
-                      {gameState.gameOverStates.movie ? (
-                        <div className="text-center p-8 border border-white/20 rounded-md bg-zinc-950/50">
-                          {gameState.levels.movie > -1 ? (
-                            <p className="text-2xl text-green-500 mb-4">
-                              Decrypted in {gameState.attempts.movie + 1} attempts!
-                            </p>
-                          ) : (
-                            <p className="text-2xl text-red-500 mb-4">
-                              Decryption failed after 5 attempts
-                            </p>
-                          )}
-                          <p className="text-2xl text-white/90">
-                            Next movie in <Suspense fallback="...">{<CountdownTimer />}</Suspense>
-                          </p>
-                        </div>
-                      ) : (
-                        <MovieDescription 
-                          onMovieDataLoad={handleGameData}
-                          level={gameState.levels.movie}
-                          startDate={startDate}
-                        />
-                      )}
-                    </div>
-                  )}
-                  {selectedDescription === 'tv' && (
-                    <div>
-                      {gameState.gameOverStates.tv ? (
-                        <div className="text-center p-8 border border-white/20 rounded-md bg-zinc-950/50">
-                          {gameState.levels.tv > -1 ? (
-                            <p className="text-2xl text-green-500 mb-4">
-                              Decrypted in {gameState.attempts.tv + 1} attempts!
-                            </p>
-                          ) : (
-                            <p className="text-2xl text-red-500 mb-4">
-                              Decryption failed after 5 attempts
-                            </p>
-                          )}
-                          <p className="text-2xl text-white/90">
-                            Next TV show in <Suspense fallback="...">{<CountdownTimer />}</Suspense>
-                          </p>
-                        </div>
-                      ) : (
-                        <TVDescription 
-                          onTVShowDataLoad={handleGameData}
-                          level={gameState.levels.tv}
-                          startDate={startDate}
-                        />
-                      )}
-                    </div>
-                  )}
-                </Suspense>
-
-                {!gameState.gameOverStates[selectedDescription] && (
-                  <>
-                    <p className={`inline-block px-4 py-2 
-                      text text-white/60 tracking-[0.2em]
-                      border border-white/20 rounded-md
-                      bg-zinc-950/50 hover:bg-zinc-950/70
-                      hover:border-white/30
-                      transition-all duration-300
-                      ${isFlashing ? 'animate-flash' : ''}`}>
-                      DECRYPTION ATTEMPTS REMAINING: <span className="text-white/90">{ gameState.levels[selectedDescription] + 1 }</span>
-                    </p>
-                    <div className="relative flex flex-col sm:flex-row gap-2" ref={dropdownRef}>
-                      <input
-                        ref={inputRef}
-                        type="text"
-                        defaultValue={searchInput} // Change from value to defaultValue
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-2
-                          text text-white/90 tracking-[0.2em] placeholder:text-white/50
-                          border border-white/20 rounded-md
-                          bg-zinc-950/50
-                          hover:bg-zinc-950/70 hover:border-white/30
-                          focus:outline-none focus:border-white/40 
-                          focus:ring-2 focus:ring-white/20
-                          transition-all duration-300"
-                        placeholder="ENTER YOUR GUESS..."
-                      />
+    <ErrorBoundary>
+      <Suspense fallback={<LoadingScreen />}>
+        <ErrorBoundary>
+          <div className="relative min-h-screen bg-zinc-950 bg-gradient-to-b from-zinc-950 to-zinc-900 text-white font-mono scrollbar-gutter-stable">
+            <div className="container relative mx-auto px-2 sm:px-4 py-2 sm:py-8">
+              <div className="max-w-2xl mx-auto p-2 sm:p-4 
+                            backdrop-blur-sm bg-zinc-950/80 border border-white/20 
+                            rounded-lg shadow-xl drop-shadow-glow hover:shadow-2xl
+                            transition-all duration-300
+                            box-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                <header className="p-4 relative border border-white/20 bg-zinc-950/50 rounded-md
+                              hover:border-white/30 transition-all duration-300 mb-4">
+                  <div className="flex items-center justify-between">
+                    <h1 className="text-4xl sm:text-6xl font-bold tracking-tighter text-white/90
+                                hover:text-white transition-colors duration-300">
+                      PLOTCYPHER
+                    </h1>
+                    <div className="flex gap-2">
                       <button
-                        onClick={handleGuessSubmit}
-                        className="w-full sm:w-auto px-6 py-2
-                          text-white/90 tracking-[0.2em]
-                          border border-white/20 rounded-md
-                          bg-zinc-950/50
-                          hover:bg-zinc-950/70 hover:border-white/30
-                          focus:outline-none focus:border-white/40
-                          focus:ring-2 focus:ring-white/20
-                          transition-all duration-300"
+                        onClick={() => setShowInfoModal(true)}
+                        className="p-2 text-white/60 hover:text-white/90 transition-colors duration-300"
+                        aria-label="Show game information"
                       >
-                        DECRYPT
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                        </svg>
                       </button>
-                      {showDropdown && searchInput && gameData && gameState.levels[selectedDescription] <= 4 && (
-                        <ul className={`absolute left-0 right-0 ${
-                          dropdownDirection === 'up' 
-                            ? 'bottom-[calc(100%+0.5rem)]' 
-                            : 'top-[calc(100%+0.5rem)]'
-                        }
-                          border border-white/20 rounded-md
-                          bg-zinc-950/90 backdrop-blur-sm
-                          shadow-lg max-h-60 overflow-y-auto z-50
-                          divide-y divide-white/10
-                          [&::-webkit-scrollbar]:w-2
-                          [&::-webkit-scrollbar-track]:bg-transparent
-                          [&::-webkit-scrollbar-thumb]:bg-white/20
-                          [&::-webkit-scrollbar-thumb]:rounded-full
-                          [&::-webkit-scrollbar-thumb]:border-2
-                          [&::-webkit-scrollbar-thumb]:border-transparent
-                          [&::-webkit-scrollbar-thumb]:bg-clip-padding
-                          [&::-webkit-scrollbar-thumb]:hover:bg-white/30`}>
-                          {renderDropdownItems}
-                        </ul>
-                      )}
+                      <button
+                        onClick={() => setShowProjectModal(true)}
+                        className="p-2 text-white/60 hover:text-white/90 transition-colors duration-300"
+                        aria-label="Show project information"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                        </svg>
+                      </button>
                     </div>
-                  </>
+                  </div>
+                  <p className="mt-2 text text-white/60 tracking-[0.2em]
+                            hover:text-white/80 transition-colors duration-300">
+                    DAILY CHALLENGES TO TEST YOUR MEDIA KNOWLEDGE
+                  </p>
+                </header>
+                
+                {/* Button group with adjusted spacing */}
+                <CategoryButtons 
+                  selectedDescription={selectedDescription} 
+                  onSelect={handleCategorySelect}
+                />
+
+                {!selectedDescription ? (
+                  <div className="space-y-4 text-center">
+                    <p className="text-xl text-white/80 tracking-wider">
+                      Select a category above to begin decrypting
+                    </p>
+                    <p className="text-white/60">
+                      Choose between Game, Movie, or TV Show descriptions to decrypt.
+                    </p>
+                    <button
+                      onClick={() => setShowInfoModal(true)}
+                      className="px-4 py-2 tracking-[0.2em] border border-white/20 bg-zinc-950/50 text-white rounded-md hover:bg-zinc-950/70 hover:border-white/30 focus:outline-none focus:border-white/40 focus:ring-2 focus:ring-white/20 transition-all duration-300"
+                    >
+                      How to Play
+                    </button>
+                  </div>
+                ) : (
+                  <div className="space-y-4 relative">
+                    <Suspense fallback={
+                      // Loading wheel
+                      <div className="flex justify-center items-center h-full">
+                        <svg className="animate-spin h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle
+                            className="opacity-25"
+                            cx="12" cy="12" r="10"
+                            stroke="currentColor"
+                            strokeWidth="4"
+                          ></circle>
+                          <path
+                            className="opacity-75"
+                            fill="currentColor"
+                            d="M4 12a8 8 0 018-8v8H4z"
+                          ></path>
+                        </svg>
+                      </div>
+                    }>
+                      {selectedDescription === 'game' && (
+                        <div>
+                          {gameState.gameOverStates.game ? (
+                            <div className="text-center p-8 border border-white/20 rounded-md bg-zinc-950/50">
+                              {gameState.levels.game > -1 ? (
+                                <p className="text-2xl text-green-500 mb-4">
+                                  Decrypted in {gameState.attempts.game + 1} attempts!
+                                </p>
+                              ) : (
+                                <p className="text-2xl text-red-500 mb-4">
+                                  Decryption failed after 5 attempts
+                                </p>
+                              )}
+                              <p className="text-2xl text-white/90">
+                                Next game in <Suspense fallback="...">{<CountdownTimer />}</Suspense>
+                              </p>
+                            </div>
+                          ) : (
+                            <GameDescription  
+                              onGameDataLoad={handleGameData}
+                              level={gameState.levels.game}
+                              startDate={startDate}
+                            />
+                          )}
+                        </div>
+                      )}
+                      {selectedDescription === 'movie' && (
+                        <div>
+                          {gameState.gameOverStates.movie ? (
+                            <div className="text-center p-8 border border-white/20 rounded-md bg-zinc-950/50">
+                              {gameState.levels.movie > -1 ? (
+                                <p className="text-2xl text-green-500 mb-4">
+                                  Decrypted in {gameState.attempts.movie + 1} attempts!
+                                </p>
+                              ) : (
+                                <p className="text-2xl text-red-500 mb-4">
+                                  Decryption failed after 5 attempts
+                                </p>
+                              )}
+                              <p className="text-2xl text-white/90">
+                                Next movie in <Suspense fallback="...">{<CountdownTimer />}</Suspense>
+                              </p>
+                            </div>
+                          ) : (
+                            <MovieDescription 
+                              onMovieDataLoad={handleGameData}
+                              level={gameState.levels.movie}
+                              startDate={startDate}
+                            />
+                          )}
+                        </div>
+                      )}
+                      {selectedDescription === 'tv' && (
+                        <div>
+                          {gameState.gameOverStates.tv ? (
+                            <div className="text-center p-8 border border-white/20 rounded-md bg-zinc-950/50">
+                              {gameState.levels.tv > -1 ? (
+                                <p className="text-2xl text-green-500 mb-4">
+                                  Decrypted in {gameState.attempts.tv + 1} attempts!
+                                </p>
+                              ) : (
+                                <p className="text-2xl text-red-500 mb-4">
+                                  Decryption failed after 5 attempts
+                                </p>
+                              )}
+                              <p className="text-2xl text-white/90">
+                                Next TV show in <Suspense fallback="...">{<CountdownTimer />}</Suspense>
+                              </p>
+                            </div>
+                          ) : (
+                            <TVDescription 
+                              onTVShowDataLoad={handleGameData}
+                              level={gameState.levels.tv}
+                              startDate={startDate}
+                            />
+                          )}
+                        </div>
+                      )}
+                    </Suspense>
+
+                    {!gameState.gameOverStates[selectedDescription] && (
+                      <>
+                        <p className={`inline-block px-4 py-2 
+                          text text-white/60 tracking-[0.2em]
+                          border border-white/20 rounded-md
+                          bg-zinc-950/50 hover:bg-zinc-950/70
+                          hover:border-white/30
+                          transition-all duration-300
+                          ${isFlashing ? 'animate-flash' : ''}`}>
+                          DECRYPTION ATTEMPTS REMAINING: <span className="text-white/90">{ gameState.levels[selectedDescription] + 1 }</span>
+                        </p>
+                        <div className="relative flex flex-col sm:flex-row gap-2" ref={dropdownRef}>
+                          <input
+                            ref={inputRef}
+                            type="text"
+                            defaultValue={searchInput} // Change from value to defaultValue
+                            onChange={handleInputChange}
+                            className="w-full px-4 py-2
+                              text text-white/90 tracking-[0.2em] placeholder:text-white/50
+                              border border-white/20 rounded-md
+                              bg-zinc-950/50
+                              hover:bg-zinc-950/70 hover:border-white/30
+                              focus:outline-none focus:border-white/40 
+                              focus:ring-2 focus:ring-white/20
+                              transition-all duration-300"
+                            placeholder="ENTER YOUR GUESS..."
+                          />
+                          <button
+                            onClick={handleGuessSubmit}
+                            className="w-full sm:w-auto px-6 py-2
+                              text-white/90 tracking-[0.2em]
+                              border border-white/20 rounded-md
+                              bg-zinc-950/50
+                              hover:bg-zinc-950/70 hover:border-white/30
+                              focus:outline-none focus:border-white/40
+                              focus:ring-2 focus:ring-white/20
+                              transition-all duration-300"
+                          >
+                            DECRYPT
+                          </button>
+                          {showDropdown && searchInput && gameData && gameState.levels[selectedDescription] <= 4 && (
+                            <ul className={`absolute left-0 right-0 ${
+                              dropdownDirection === 'up' 
+                                ? 'bottom-[calc(100%+0.5rem)]' 
+                                : 'top-[calc(100%+0.5rem)]'
+                            }
+                              border border-white/20 rounded-md
+                              bg-zinc-950/90 backdrop-blur-sm
+                              shadow-lg max-h-60 overflow-y-auto z-50
+                              divide-y divide-white/10
+                              [&::-webkit-scrollbar]:w-2
+                              [&::-webkit-scrollbar-track]:bg-transparent
+                              [&::-webkit-scrollbar-thumb]:bg-white/20
+                              [&::-webkit-scrollbar-thumb]:rounded-full
+                              [&::-webkit-scrollbar-thumb]:border-2
+                              [&::-webkit-scrollbar-thumb]:border-transparent
+                              [&::-webkit-scrollbar-thumb]:bg-clip-padding
+                              [&::-webkit-scrollbar-thumb]:hover:bg-white/30`}>
+                              {renderDropdownItems}
+                            </ul>
+                          )}
+                        </div>
+                      </>
+                    )}
+                  </div>
                 )}
               </div>
-            )}
+            </div>
+            {WinModal}
+            {FailModal}
+            {/* Add Info Modal - place before closing div */}
+            <InfoPopUp showInfoModal={showInfoModal} onClose={() => setShowInfoModal(false)} />
+            <ProjectInfoPopUp showProjectModal={showProjectModal} onClose={() => setShowProjectModal(false)} />
           </div>
-        </div>
-        {WinModal}
-        {FailModal}
-        {/* Add Info Modal - place before closing div */}
-        <InfoPopUp showInfoModal={showInfoModal} onClose={() => setShowInfoModal(false)} />
-        <ProjectInfoPopUp showProjectModal={showProjectModal} onClose={() => setShowProjectModal(false)} />
-      </div>
-    </Suspense>
+        </ErrorBoundary>
+      </Suspense>
+    </ErrorBoundary>
   );
 }
 
