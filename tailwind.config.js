@@ -50,7 +50,6 @@ export default {
         '30': '30%', // Added for border opacity enhancement
       },
       backgroundColor: {
-        'zinc-950/70': 'rgba(15, 23, 42, 0.7)', // Strengthened background fill
       }
     },
   },

@@ -9,10 +9,10 @@ const CategoryButtons = memo(({ selectedDescription, onSelect }) => (
         onClick={() => onSelect(category)}
         className={`flex-1 px-6 py-2 tracking-[0.2em] border border-white/30 
           ${category === 'game' ? 'rounded-l-md' : category === 'tv' ? 'rounded-r-md' : ''} 
-          bg-zinc-950/70 hover:bg-zinc-950/70 hover:border-white/30 
+          bg-zinc-950 hover:bg-zinc-950 hover:border-white/30 
           focus:outline-none focus:border-white/40 focus:ring-2 focus:ring-white/20 
           transition-all duration-300 
-          ${selectedDescription === category ? 'text-white/90 bg-zinc-950/70 border-white/30' : 'text-white/50'}`}
+          ${selectedDescription === category ? 'text-white/90 bg-zinc-950 border-white/30' : 'text-white/50'}`}
       >
         {category.charAt(0).toUpperCase() + category.slice(1)}
       </button>
