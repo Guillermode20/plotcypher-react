@@ -50,7 +50,7 @@ const hash = (text, level, seed) => {
 const applyOpacity = (text) => {
   return text.split('').map((char, index) => {
     if (symbols.includes(char)) {
-      return <span key={index} className="text-white/40 font-mono">{char}</span>;
+      return <span key={index} className="text-white/70 font-mono">{char}</span>;
     }
     return <span key={index} className="font-mono">{char}</span>;
   });
@@ -112,22 +112,22 @@ const Description = ({ onMovieDataLoad, level, startDate }) => {
 
   return (
     <ErrorBoundary>
-      <div className="border border-white/20 p-4 
-                      bg-zinc-950/50 rounded-md
+      <div className="border border-white/30 p-4 
+                      bg-zinc-950/70 rounded-md
                       backdrop-blur-sm
                       hover:border-white/30 hover:bg-zinc-950/70">
         <div className="space-y-2">
-          <h2 className="text-base sm:text-lg tracking-[0.2em] text-white/80 uppercase font-mono
+          <h2 className="text-base sm:text-lg tracking-[0.2em] text-white/90 uppercase font-mono
                         hover:text-white/90
                         transition-all duration-300">
             Daily Movie Cypher #{movieDetails.id}
           </h2>
-          <h3 className="text-xs sm:text-sm tracking-[0.2em] text-white/60 uppercase font-mono
+          <h3 className="text-xs sm:text-sm tracking-[0.2em] text-white/70 uppercase font-mono
                         hover:text-white/90
                         transition-all duration-300 mt-2">
             Release Year: {level < 4 ? movieDetails.releaseYear : '????'}
           </h3>
-          <h3 className="text-xs sm:text-sm tracking-[0.2em] text-white/60 uppercase font-mono
+          <h3 className="text-xs sm:text-sm tracking-[0.2em] text-white/70 uppercase font-mono
                         hover:text-white/90
                         transition-all duration-300 mt-2">
             Genre: {level < 3 ? movieDetails.genre : '????'}

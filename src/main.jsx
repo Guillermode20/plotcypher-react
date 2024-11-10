@@ -3,7 +3,7 @@ import './index.css';
 import App from './App';
 import ErrorBoundary from './ErrorBoundary';
 
-document.documentElement.classList.add('dark'); // Enable dark mode
+document.documentElement.classList.add('dark'); // Ensure dark mode with enhanced background opacity
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <ErrorBoundary>
