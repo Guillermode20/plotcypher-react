@@ -4,7 +4,12 @@ import Modal from './Modal';
 
 const WinModal = ({ isOpen, onClose, selectedDescription, gameState, gameData }) => (
   <Modal isOpen={isOpen} onClose={onClose} variant="success">
-    <h2 className="text-2xl font-bold text-green-500 mb-4">DECRYPTION SUCCEEDED</h2>
+    <h2 className="text-lg sm:text-2xl font-bold text-white/90">
+      Congratulations!
+    </h2>
+    <p className="text-sm sm:text-base text-white/80">
+      You have successfully decrypted the {selectedDescription}.
+    </p>
     <p className="text-white/80 mb-6">
       Congratulations! You successfully decrypted the{' '}
       {selectedDescription === 'game' && 'game'}

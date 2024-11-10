@@ -322,7 +322,7 @@ function App() {
                 <header className="p-2 sm:p-4 relative border border-white/20 bg-zinc-950/50 rounded-md
                               hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4">
                   <div className="flex items-center justify-between">
-                    <h1 className="text-4xl sm:text-6xl font-bold tracking-tighter text-white/90
+                    <h1 className="text-xl sm:text-4xl font-bold tracking-tighter text-white/90
                                 hover:text-white transition-colors duration-300">
                       PLOTCYPHER
                     </h1>
@@ -347,7 +347,7 @@ function App() {
                       </button>
                     </div>
                   </div>
-                  <p className="mt-2 text text-white/60 tracking-[0.2em]
+                  <p className="mt-1 text-xs sm:text-sm text-white/60 tracking-[0.2em]
                             hover:text-white/80 transition-colors duration-300">
                     DAILY CHALLENGES TO TEST YOUR MEDIA KNOWLEDGE
                   </p>
@@ -361,15 +361,15 @@ function App() {
 
                 {!selectedDescription ? (
                   <div className="space-y-4 text-center">
-                    <p className="text-xl text-white/80 tracking-wider">
+                    <p className="text-base sm:text-xl text-white/80 tracking-wider">
                       Select a category above to begin decrypting
                     </p>
-                    <p className="text-white/60">
+                    <p className="text-xs sm:text-sm text-white/60">
                       Choose between Game, Movie, or TV Show descriptions to decrypt.
                     </p>
                     <button
                       onClick={() => setShowInfoModal(true)}
-                      className="px-4 py-2 tracking-[0.2em] border border-white/20 bg-zinc-950/50 text-white rounded-md hover:bg-zinc-950/70 hover:border-white/30 focus:outline-none focus:border-white/40 focus:ring-2 focus:ring-white/20 transition-all duration-300"
+                      className="px-3 py-2 text-xs sm:text-sm tracking-[0.2em] border border-white/20 bg-zinc-950/50 text-white rounded-md hover:bg-zinc-950/70 hover:border-white/30 focus:outline-none focus:border-white/40 focus:ring-2 focus:ring-white/20 transition-all duration-300"
                     >
                       How to Play
                     </button>
@@ -438,7 +438,7 @@ function App() {
                     {!gameState.gameOverStates[selectedDescription] && (
                       <>
                         <p className={`inline-block px-4 py-2 
-                          text text-white/60 tracking-[0.2em]
+                          text-xs sm:text-sm text-white/60 tracking-[0.2em]
                           border border-white/20 rounded-md
                           bg-zinc-950/50 hover:bg-zinc-950/70
                           hover:border-white/30
@@ -453,7 +453,7 @@ function App() {
                             value={searchInput}
                             onChange={handleInputChange}
                             className="w-full px-4 py-2
-                              text text-white/90 tracking-[0.2em] placeholder:text-white/50
+                              text-xs sm:text-sm text-white/90 tracking-[0.2em] placeholder:text-white/50
                               border border-white/20 rounded-md
                               bg-zinc-950/50
                               hover:bg-zinc-950/70 hover:border-white/30
@@ -465,7 +465,7 @@ function App() {
                           <button
                             onClick={handleGuessSubmit}
                             className="w-full sm:w-auto px-4 sm:px-6 py-2
-                              text-white/90 tracking-[0.2em]
+                              text-xs sm:text-base text-white/90 tracking-[0.2em]
                               border border-white/20 rounded-md
                               bg-zinc-950/50
                               hover:bg-zinc-950/70 hover:border-white/30
