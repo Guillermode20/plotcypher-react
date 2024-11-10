@@ -409,14 +409,14 @@ function App() {
       <Suspense fallback={<LoadingScreen />}>
         <ErrorBoundary>
           <div className="relative min-h-screen bg-zinc-950 bg-gradient-to-b from-zinc-950 to-zinc-900 text-white font-mono scrollbar-gutter-stable">
-            <div className="container relative mx-auto px-2 sm:px-4 py-2 sm:py-8">
-              <div className="max-w-2xl mx-auto p-2 sm:p-4 
-                            backdrop-blur-sm bg-zinc-950/80 border border-white/20 
-                            rounded-lg shadow-xl drop-shadow-glow hover:shadow-2xl
-                            transition-all duration-300
-                            box-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-                <header className="p-4 relative border border-white/20 bg-zinc-950/50 rounded-md
-                              hover:border-white/30 transition-all duration-300 mb-4">
+            <div className="container relative mx-auto px-0 sm:px-4 py-0 sm:py-8">
+              <div className="max-w-2xl mx-auto p-0 sm:p-4 
+                backdrop-blur-sm bg-zinc-950/80 border border-white/20 
+                rounded-none sm:rounded-lg shadow-xl drop-shadow-glow hover:shadow-2xl
+                transition-all duration-300
+                box-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                <header className="p-2 sm:p-4 relative border border-white/20 bg-zinc-950/50 rounded-md
+                              hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4">
                   <div className="flex items-center justify-between">
                     <h1 className="text-4xl sm:text-6xl font-bold tracking-tighter text-white/90
                                 hover:text-white transition-colors duration-300">
@@ -581,7 +581,7 @@ function App() {
                           ${isFlashing ? 'animate-flash' : ''}`}>
                           DECRYPTION ATTEMPTS REMAINING: <span className="text-white/90">{ gameState.levels[selectedDescription] + 1 }</span>
                         </p>
-                        <div className="relative flex flex-col sm:flex-row gap-2" ref={dropdownRef}>
+                        <div className="relative flex flex-col sm:flex-row gap-1 sm:gap-2" ref={dropdownRef}>
                           <input
                             ref={inputRef}
                             type="text"
@@ -599,7 +599,7 @@ function App() {
                           />
                           <button
                             onClick={handleGuessSubmit}
-                            className="w-full sm:w-auto px-6 py-2
+                            className="w-full sm:w-auto px-4 sm:px-6 py-2
                               text-white/90 tracking-[0.2em]
                               border border-white/20 rounded-md
                               bg-zinc-950/50

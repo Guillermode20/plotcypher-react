@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { fetchLatestCommitDate } from '../utils/gitHubUtils';
 
 const ProjectInfoPopUp = ({ showProjectModal, onClose }) => {
-  const [latestCommitDate, setLatestCommitDate] = useState('Loading...');
+  const [, setLatestCommitDate] = useState('Loading...');
   const modalRef = useRef(null);
 
   useEffect(() => {
@@ -26,12 +26,12 @@ const ProjectInfoPopUp = ({ showProjectModal, onClose }) => {
         ref={modalRef}
         tabIndex={-1}
         className="relative bg-zinc-950 border border-white/20 rounded-lg 
-                   max-w-md w-full mx-2 my-4 sm:my-2 shadow-xl 
+                   max-w-md w-full mx-1 sm:mx-2 my-2 sm:my-4 shadow-xl 
                    focus:outline-none focus:ring-0
                    flex flex-col max-h-[90vh] sm:max-h-[85vh]"
       >
         {/* Fixed Header */}
-        <div className="p-4 border-b border-white/10">
+        <div className="p-3 sm:p-4 border-b border-white/10">
           <h2 className="text-2xl font-bold text-white/90 tracking-wider">About PLOTCYPHER</h2>
         </div>
 
