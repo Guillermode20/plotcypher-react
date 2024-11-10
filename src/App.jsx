@@ -2,14 +2,16 @@ import { useState, useEffect, useRef, useCallback, Suspense, lazy, useMemo, memo
 import PropTypes from 'prop-types';
 import LoadingScreen from './core/LoadingScreen.jsx';
 import ErrorBoundary from './ErrorBoundary.jsx';
+import { getAllGames, getAllMovies, getAllTVShows } from './database';
 
-// Lazy load all other components
 const InfoPopUp = lazy(() => import('./components/InfoPopUp.jsx'));
 const ProjectInfoPopUp = lazy(() => import('./components/ProjectInfoPopUp.jsx'));
 const GameDescription = lazy(() => import('./components/GameDescription.jsx'));
 const MovieDescription = lazy(() => import('./components/MovieDescription.jsx'));
 const TVDescription = lazy(() => import('./components/TVDescription.jsx'));
 const CountdownTimer = lazy(() => import('./components/CountdownTimer.jsx'));
+const WinModal = lazy(() => import('./components/WinModal.jsx'));
+const FailModal = lazy(() => import('./components/FailModal.jsx'));
 
 const TESTING_MODE = true; 
 
@@ -39,33 +41,6 @@ CategoryButtons.propTypes = {
 
 CategoryButtons.displayName = 'CategoryButtons';
 
-// 1. Create a new memoized modal wrapper component
-const Modal = memo(({ children, isOpen, onClose, variant = 'default' }) => {
-  if (!isOpen) return null;
-  return (
-    <div className="fixed inset-0 flex items-center justify-center z-50">
-      <div 
-        className="fixed inset-0 bg-black/70 backdrop-blur-sm" 
-        onClick={onClose}
-      ></div>
-      <div className={`relative bg-zinc-950 border ${
-        variant === 'error' ? 'border-red-500' : 'border-white/20'
-      } rounded-lg p-8 max-w-md w-full m-4 shadow-xl`}>
-        {children}
-      </div>
-    </div>
-  );
-});
-Modal.displayName = 'Modal';
-
-Modal.propTypes = {
-  children: PropTypes.node.isRequired,
-  isOpen: PropTypes.bool.isRequired,
-  onClose: PropTypes.func.isRequired,
-  variant: PropTypes.oneOf(['default', 'error'])
-};
-
-// 2. Combine game states into a single object
 const initialGameState = {
   levels: { game: 4, movie: 4, tv: 4 },
   attempts: { game: 0, movie: 0, tv: 0 },
@@ -73,14 +48,13 @@ const initialGameState = {
 };
 
 function App() {
-  const startDate = '2024-11-08'; // Your game's launch date
+  const startDate = '2024-11-08';
   const [isLoading, setIsLoading] = useState(true);
 
-  // Update loading effect to ensure minimum display time
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 0); // Force 1 second minimum loading time
+    }, 0); 
     return () => clearTimeout(timer);
   }, []);
 
@@ -113,9 +87,8 @@ function App() {
 
   const handleGameData = useCallback((data) => {
     setGameData(data);
-  }, []); // Empty dependency array since we don't need any dependencies
+  }, []); 
 
-  // Add click outside handler
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -129,25 +102,22 @@ function App() {
     };
   }, []);
 
-  // Preload lazy-loaded components
   useEffect(() => {
     import('./components/GameDescription.jsx');
     import('./components/MovieDescription.jsx');
     import('./components/TVDescription.jsx');
   }, []);
 
-  // Add this function before the return statement
   const updateDropdownDirection = useCallback(() => {
     if (!inputRef.current) return;
     
     const inputRect = inputRef.current.getBoundingClientRect();
     const spaceBelow = window.innerHeight - inputRect.bottom;
-    const spaceNeeded = 240; // approximate max height of dropdown (60px * 4 items)
+    const spaceNeeded = 240; 
     
     setDropdownDirection(spaceBelow < spaceNeeded ? 'up' : 'down');
   }, []);
 
-  // Add this effect after other useEffects
   useEffect(() => {
     if (showDropdown) {
       updateDropdownDirection();
@@ -156,7 +126,6 @@ function App() {
     }
   }, [showDropdown, updateDropdownDirection]);
 
-  // Add effect to persist state changes
   const updateLocalStorage = useCallback((newState) => {
     if (TESTING_MODE) return;
     
@@ -172,7 +141,6 @@ function App() {
     });
   }, []);
 
-  // Update this effect
   useEffect(() => {
     const hasVisited = localStorage.getItem('hasVisitedBefore');
     if (TESTING_MODE || (!hasVisited && !TESTING_MODE)) {
@@ -183,39 +151,46 @@ function App() {
     }
   }, []);
 
-  // Update the filteredSuggestions useMemo to properly handle all media types
+  const [allTitles, setAllTitles] = useState({ games: [], movies: [], tv: [] });
+
+  useEffect(() => {
+    const loadAllTitles = async () => {
+      try {
+        const [games, movies, tvShows] = await Promise.all([
+          getAllGames(),
+          getAllMovies(),
+          getAllTVShows()
+        ]);
+        setAllTitles({
+          games: games.map(game => game.gameName),
+          movies: movies.map(movie => movie.gameName),
+          tv: tvShows.map(show => show.gameName)
+        });
+      } catch (error) {
+        console.error('Error loading titles:', error);
+      }
+    };
+    loadAllTitles();
+  }, []);
+
   const filteredSuggestions = useMemo(() => {
-    if (!gameData || !searchInput || searchInput.length < 1 || !selectedDescription) return [];
+    if (!searchInput || searchInput.length < 1 || !selectedDescription) return [];
       
-    let suggestions;
-    switch (selectedDescription) {
-      case 'game':
-        suggestions = gameData.incorrectGames;
-        break;
-      case 'movie':
-        suggestions = gameData.incorrectMovies;
-        break;
-      case 'tv':
-        suggestions = gameData.incorrectTVShows;
-        break;
-      default:
-        return [];
-    }
-  
-    // Guard against undefined suggestions
+    const suggestions = allTitles[selectedDescription === 'tv' ? 'tv' : 
+                                selectedDescription === 'movie' ? 'movies' : 
+                                'games'];
+    
     if (!suggestions) return [];
       
     const searchQuery = searchInput.toLowerCase();
     const maxResults = 10;
     let results = [];
       
-    // Check for exact match first
     const exactMatch = suggestions.find(item => 
       item && item.toLowerCase() === searchQuery
     );
     if (exactMatch) return [exactMatch];
   
-    // Check for prefix matches first
     suggestions.forEach(item => {
       if (results.length >= maxResults) return;
       if (item && item.toLowerCase().startsWith(searchQuery)) {
@@ -223,7 +198,6 @@ function App() {
       }
     });
   
-    // Then check for contains matches
     if (results.length < maxResults) {
       suggestions.forEach(item => {
         if (results.length >= maxResults) return;
@@ -236,14 +210,12 @@ function App() {
     }
   
     return results;
-  }, [gameData, searchInput, selectedDescription]);
+  }, [searchInput, selectedDescription, allTitles]);
 
-  // Batch state updates
   const handleGuessSubmit = useCallback(() => {
     if (!gameData) return;
     const userInput = searchInput.toLowerCase();
     
-    // Check for correct answer
     const correctAnswer = {
       game: gameData.correctGame,
       movie: gameData.correctMovie,
@@ -266,7 +238,6 @@ function App() {
       return;
     }
   
-    // Handle incorrect guess
     setGameState(prev => {
       const updatedLevel = Math.max(-1, prev.levels[selectedDescription] - 1);
       const newState = {
@@ -286,7 +257,6 @@ function App() {
       };
       updateLocalStorage(newState);
       
-      // Show fail modal if this was the last attempt
       if (updatedLevel <= -1) {
         setShowFailModal(true);
       }
@@ -299,18 +269,32 @@ function App() {
     setTimeout(() => setIsFlashing(false), 1000);
   }, [gameData, searchInput, selectedDescription, updateLocalStorage]);
 
-  // Memoize handlers
   const handleCategorySelect = useCallback((category) => {
     setSelectedDescription(category);
   }, []);
 
-  // Memoize dropdown items renderer
+  const debouncedSetSearchInput = useMemo(() => {
+    let timeoutId;
+    return (value) => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => setSearchInput(value), 50); 
+    };
+  }, []);
+
+  const handleInputChange = useCallback((e) => {
+    const value = e.target.value;
+    e.target.value = value;
+    debouncedSetSearchInput(value);
+    setShowDropdown(true);
+  }, [debouncedSetSearchInput]);
+
   const renderDropdownItems = useMemo(() => (
     filteredSuggestions.map((item, index) => (
       <li
         key={index}
         className="px-4 py-2 cursor-pointer text-white/70 hover:text-white hover:bg-zinc-800/50 transition-all duration-200 block w-full text-left"
         onClick={() => {
+          debouncedSetSearchInput(item);
           setSearchInput(item);
           setShowDropdown(false);
         }}
@@ -318,87 +302,7 @@ function App() {
         {item}
       </li>
     ))
-  ), [filteredSuggestions]);
-
-  // Memoize modal components
-  const WinModal = (
-    <Modal isOpen={showWinModal} onClose={() => setShowWinModal(false)}>
-      <h2 className="text-2xl font-bold text-white/90 mb-4 tracking-wider">Success!</h2>
-      <p className="text-white/80 mb-6">
-        Congratulations! You successfully decrypted the{' '}
-        {selectedDescription === 'game' && 'game'}
-        {selectedDescription === 'movie' && 'movie'}
-        {selectedDescription === 'tv' && 'TV show'} in{' '}
-        {gameState.attempts[selectedDescription] + 1} attempts.
-        <span className="block mt-2 text-xl text-white font-bold mb-1">
-          {selectedDescription === 'game' && gameData?.correctGame}
-          {selectedDescription === 'movie' && gameData?.correctMovie}
-          {selectedDescription === 'tv' && gameData?.correctTVShow}
-        </span>
-      </p>
-      <button
-        onClick={() => setShowWinModal(false)}
-        className="w-full sm:w-auto px-6 py-2
-                  text-white/90 tracking-[0.2em]
-                  border border-white/20 rounded-md
-                  bg-zinc-950/50
-                  hover:bg-zinc-950/70 hover:border-white/30
-                  focus:outline-none focus:border-white/40
-                  focus:ring-2 focus:ring-white/20
-                  transition-all duration-300"
-      >
-        Close
-      </button>
-    </Modal>
-  );
-
-  const FailModal = (
-    <Modal isOpen={showFailModal} onClose={() => setShowFailModal(false)} variant="error">
-      <h2 className="text-2xl font-bold text-red-500 mb-4">DECRYPTION FAILED!</h2>
-      <p className="text-white/80 mb-3">
-        The correct answer was:
-        <span className="block mt-2 text-xl text-white font-bold mb-1">
-          {selectedDescription === 'game' && gameData?.correctGame}
-          {selectedDescription === 'movie' && gameData?.correctMovie}
-          {selectedDescription === 'tv' && gameData?.correctTVShow}
-        </span>
-      </p>
-      <p className="text-white/80 mb-6">
-        You&apos;ve used all your decryption attempts. Better luck tomorrow!
-      </p>
-      <button
-        onClick={() => setShowFailModal(false)}
-        className="w-full sm:w-auto px-6 py-2
-                  text-white/90 tracking-[0.2em]
-                  border border-red/20 rounded-md
-                  bg-zinc-950/50
-                  hover:bg-zinc-950/70 hover:border-white/30
-                  focus:outline-none focus:border-white/40
-                  focus:ring-2 focus:ring-white/20
-                  transition-all duration-300"
-      >
-        Close
-      </button>
-    </Modal>
-  );
-  
-  // 6. Add debounced search input
-  const debouncedSetSearchInput = useMemo(() => {
-    let timeoutId;
-    return (value) => {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => setSearchInput(value), 50); // Reduced from 150ms to 50ms
-    };
-  }, []);
-
-  // Update input handler to prevent lag
-  const handleInputChange = useCallback((e) => {
-    const value = e.target.value;
-    // Immediately update visible input value
-    e.target.value = value;
-    debouncedSetSearchInput(value);
-    setShowDropdown(true);
-  }, [debouncedSetSearchInput]);
+  ), [filteredSuggestions, debouncedSetSearchInput]);
 
   if (isLoading) {
     return <LoadingScreen />;
@@ -585,7 +489,7 @@ function App() {
                           <input
                             ref={inputRef}
                             type="text"
-                            defaultValue={searchInput} // Change from value to defaultValue
+                            value={searchInput}
                             onChange={handleInputChange}
                             className="w-full px-4 py-2
                               text text-white/90 tracking-[0.2em] placeholder:text-white/50
@@ -638,9 +542,19 @@ function App() {
                 )}
               </div>
             </div>
-            {WinModal}
-            {FailModal}
-            {/* Add Info Modal - place before closing div */}
+            <WinModal 
+              isOpen={showWinModal}
+              onClose={() => setShowWinModal(false)}
+              selectedDescription={selectedDescription}
+              gameState={gameState}
+              gameData={gameData}
+            />
+            <FailModal
+              isOpen={showFailModal}
+              onClose={() => setShowFailModal(false)}
+              selectedDescription={selectedDescription}
+              gameData={gameData}
+            />
             <InfoPopUp showInfoModal={showInfoModal} onClose={() => setShowInfoModal(false)} />
             <ProjectInfoPopUp showProjectModal={showProjectModal} onClose={() => setShowProjectModal(false)} />
           </div>
