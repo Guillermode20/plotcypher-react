@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef, useCallback, Suspense, lazy, useMemo, memo } from 'react';
-import PropTypes from 'prop-types';
 import LoadingScreen from './core/LoadingScreen.jsx';
 import ErrorBoundary from './ErrorBoundary.jsx';
 import { getAllGames, getAllMovies, getAllTVShows } from './database';
+import CategoryButtons from './components/CategoryButtons';
 
 const InfoPopUp = lazy(() => import('./components/InfoPopUp'));
 const ProjectInfoPopUp = lazy(() => import('./components/ProjectInfoPopUp'));
@@ -14,32 +14,6 @@ const FailModal = lazy(() => import('./components/FailModal'));
 const GameOverScreen = lazy(() => import('./components/GameOverScreen'));
 
 const TESTING_MODE = true; 
-
-const CategoryButtons = memo(({ selectedDescription, onSelect }) => (
-  <div className="flex w-full rounded-md shadow-sm mb-4" role="group">
-    {['game', 'movie', 'tv'].map((category) => (
-      <button
-        key={category}
-        onClick={() => onSelect(category)}
-        className={`flex-1 px-6 py-2 tracking-[0.2em] border border-white/30 
-          ${category === 'game' ? 'rounded-l-md' : category === 'tv' ? 'rounded-r-md' : ''} 
-          bg-zinc-950/70 hover:bg-zinc-950/70 hover:border-white/30 
-          focus:outline-none focus:border-white/40 focus:ring-2 focus:ring-white/20 
-          transition-all duration-300 
-          ${selectedDescription === category ? 'text-white/90 bg-zinc-950/70 border-white/30' : 'text-white/50'}`}
-      >
-        {category.charAt(0).toUpperCase() + category.slice(1)}
-      </button>
-    ))}
-  </div>
-));
-
-CategoryButtons.propTypes = {
-  selectedDescription: PropTypes.string,
-  onSelect: PropTypes.func.isRequired,
-};
-
-CategoryButtons.displayName = 'CategoryButtons';
 
 const initialGameState = {
   levels: { game: 4, movie: 4, tv: 4 },
@@ -84,6 +58,8 @@ function App() {
   const [isFlashing, setIsFlashing] = useState(false);
   const [showInfoModal, setShowInfoModal] = useState(false);
   const [showProjectModal, setShowProjectModal] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  const menuRef = useRef(null);
 
   const handleGameData = useCallback((data) => {
     setGameData(data);
@@ -149,6 +125,18 @@ function App() {
         localStorage.setItem('hasVisitedBefore', 'true');
       }
     }
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutsideMenu = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setShowMenu(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutsideMenu);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutsideMenu);
+    };
   }, []);
 
   const [allTitles, setAllTitles] = useState({ games: [], movies: [], tv: [] });
@@ -319,6 +307,7 @@ function App() {
                 rounded-none sm:rounded-lg shadow-xl drop-shadow-glow hover:shadow-2xl
                 transition-all duration-300
                 box-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                
                 <header className="p-2 sm:p-4 relative border border-white/30 bg-zinc-950/70 rounded-md
                               hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4">
                   <div className="flex items-center justify-between">
@@ -326,25 +315,48 @@ function App() {
                                 hover:text-white transition-colors duration-300">
                       PLOTCYPHER
                     </h1>
-                    <div className="flex gap-2">
+                    <div className="relative">
                       <button
-                        onClick={() => setShowInfoModal(true)}
+                        onClick={() => setShowMenu(!showMenu)}
                         className="p-2 text-white/70 hover:text-white/90 transition-colors duration-300"
-                        aria-label="Show game information"
+                        aria-label="Menu"
                       >
+                        {/* Hamburger icon */}
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 7.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
                         </svg>
                       </button>
-                      <button
-                        onClick={() => setShowProjectModal(true)}
-                        className="p-2 text-white/70 hover:text-white/90 transition-colors duration-300"
-                        aria-label="Show project information"
-                      >
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
-                        </svg>
-                      </button>
+                      {showMenu && (
+                        <div
+                          ref={menuRef}
+                          className="absolute right-0 mt-2 w-48 bg-zinc-950/90 border border-white/30 rounded-md shadow-lg z-50"
+                        >
+                          <ul className="py-1">
+                            <li>
+                              <button
+                                onClick={() => {
+                                  setShowInfoModal(true);
+                                  setShowMenu(false);
+                                }}
+                                className="w-full text-left px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-zinc-800/70 transition-colors duration-200"
+                              >
+                                Game Info
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                onClick={() => {
+                                  setShowProjectModal(true);
+                                  setShowMenu(false);
+                                }}
+                                className="w-full text-left px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-zinc-800/70 transition-colors duration-200"
+                              >
+                                Project Info
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      )}
                     </div>
                   </div>
                   <p className="mt-1 text-xs sm:text-sm text-white/70 tracking-[0.2em]
