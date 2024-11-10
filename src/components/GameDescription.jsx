@@ -68,11 +68,12 @@ const Description = ({ onGameDataLoad, level, startDate }) => {
     gameName: '',
     description: '',
     releaseYear: '', 
-    genre: ''
+    genre: '',
+    id: null // Added id to match other components
   });
   const [incorrectGameNames, setIncorrectGameNames] = useState([]);
   const seed = 12345;
-  const hashedDescription = hash(gameDetails.description, level, seed);
+  const hashedDescription = gameDetails.description ? hash(gameDetails.description, level, seed) : '';
   const gameId = getGameIdByDate(startDate);
 
   useEffect(() => {
@@ -86,12 +87,21 @@ const Description = ({ onGameDataLoad, level, startDate }) => {
         } else {
           console.error('Game not found');
         }
-        // Fetch all game names
+        
+        // Fetch all game names with error handling for both array and object responses
         const allGames = await getAllGames();
-        const allGameNames = allGames.map(g => g.gameName);
-        setIncorrectGameNames(allGameNames);
+        if (allGames) {
+          // Convert to array if single object
+          const gamesArray = Array.isArray(allGames) ? allGames : [allGames];
+          const allGameNames = gamesArray.map(g => g.gameName).filter(Boolean);
+          setIncorrectGameNames(allGameNames);
+        } else {
+          console.error('No games data received');
+          setIncorrectGameNames([]);
+        }
       } catch (error) {
         console.error('Error loading game data:', error);
+        setIncorrectGameNames([]);
       }
     };
 

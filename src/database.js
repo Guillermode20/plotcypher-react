@@ -6,6 +6,35 @@ const dbVersion = 1;
 // Add DB connection pooling
 let dbConnection = null;
 
+// Add connection pool manager
+const CONNECTION_POOL = {
+    maxSize: 5,
+    connections: new Set(),
+    async acquire() {
+        if (this.connections.size < this.maxSize) {
+            const conn = await initDB();
+            this.connections.add(conn);
+            return conn;
+        }
+        return new Promise(resolve => {
+            const checkPool = () => {
+                const conn = Array.from(this.connections)[0];
+                if (conn) {
+                    resolve(conn);
+                } else {
+                    setTimeout(checkPool, 100);
+                }
+            };
+            checkPool();
+        });
+    },
+    release(conn) {
+        if (this.connections.has(conn)) {
+            this.connections.delete(conn);
+        }
+    }
+};
+
 // Improved database initialization
 async function initDB() {
     if (dbConnection) return dbConnection;
@@ -46,6 +75,8 @@ async function initDB() {
 const CACHE_CONFIG = {
     maxSize: 1000,  // maximum items per store
     expirationTime: 1000 * 60 * 60, // 1 hour in milliseconds
+    version: '1.0',
+    preloadChunkSize: 50
 };
 
 // Enhanced cache structure
@@ -80,7 +111,8 @@ function setCacheItem(store, id, item) {
     cacheStore.set(id, item);
     metadataStore.set(id, {
         timestamp: Date.now(),
-        accessCount: 0
+        accessCount: 0,
+        version: CACHE_CONFIG.version
     });
 }
 
@@ -117,25 +149,75 @@ async function withRetry(operation, maxRetries = 3) {
     throw lastError;
 }
 
-// Get game by ID
+// Add circuit breaker
+const circuitBreaker = {
+    failures: 0,
+    lastFailure: null,
+    threshold: 5,
+    resetTimeout: 30000,
+    async execute(operation) {
+        if (this.isOpen()) {
+            throw new Error('Circuit breaker is open');
+        }
+        try {
+            const result = await operation();
+            this.reset();
+            return result;
+        } catch (error) {
+            this.recordFailure();
+            throw error;
+        }
+    },
+    isOpen() {
+        if (!this.lastFailure) return false;
+        if (Date.now() - this.lastFailure > this.resetTimeout) {
+            this.reset();
+            return false;
+        }
+        return this.failures >= this.threshold;
+    },
+    recordFailure() {
+        this.failures++;
+        this.lastFailure = Date.now();
+    },
+    reset() {
+        this.failures = 0;
+        this.lastFailure = null;
+    }
+};
+
+// Update the worker initialization
+const dbWorker = new Worker(new URL('./dbWorker.js', import.meta.url));
+
+// Add worker message handler
+const workerRequest = (type, payload) => {
+    return new Promise((resolve, reject) => {
+        const messageHandler = (e) => {
+            if (e.data.type === 'SUCCESS') {
+                resolve(e.data.payload);
+            } else if (e.data.type === 'ERROR') {
+                reject(new Error(e.data.payload));
+            }
+            dbWorker.removeEventListener('message', messageHandler);
+        };
+
+        dbWorker.addEventListener('message', messageHandler);
+        dbWorker.postMessage({ type, payload });
+    });
+};
+
+// Update database operations to use worker
 async function getGame(id) {
     return withRetry(async () => {
         const cachedItem = getCacheItem('games', id);
         if (cachedItem) return cachedItem;
 
-        const db = await initDB();
-        return new Promise((resolve, reject) => {
-            const transaction = db.transaction(["games"], "readonly");
-            const store = transaction.objectStore("games");
-            const request = store.get(id);
-
-            request.onsuccess = () => {
-                const result = request.result;
-                setCacheItem('games', id, result);
-                resolve(result);
-            };
-            request.onerror = () => reject(request.error);
+        const result = await workerRequest('GET_ITEM', {
+            store: 'games',
+            id
         });
+        if (result) setCacheItem('games', id, result);
+        return result;
     });
 }
 
@@ -184,22 +266,8 @@ async function getTVShow(id) {
 }
 
 // Function to get all games
-export const getAllGames = async () => {
-    const db = await initDB();
-    return new Promise((resolve, reject) => {
-        const transaction = db.transaction(['games'], 'readonly');
-        const store = transaction.objectStore('games');
-        const request = store.getAll();
-
-        request.onsuccess = () => {
-            // Batch cache all items
-            request.result.forEach(game => {
-                setCacheItem('games', game.id, game);
-            });
-            resolve(request.result);
-        };
-        request.onerror = () => reject(request.error);
-    });
+export const getAllGames = () => {
+    return workerRequest('GET_ALL', { store: 'games' });
 };
 
 // Function to get all movies
@@ -293,6 +361,15 @@ async function queryByIndex(storeName, indexName, value) {
     });
 }
 
+// Preload frequently accessed data
+async function preloadCache() {
+    const stores = ['games', 'movies', 'tv'];
+    for (const store of stores) {
+        const items = await queryByIndex(store, 'accessCount', IDBKeyRange.lowerBound(5));
+        items.forEach(item => setCacheItem(store, item.id, item));
+    }
+}
+
 // Add cache clearing function for daily resets
 export const clearCache = () => {
     ['games', 'movies', 'tv'].forEach(store => {
@@ -313,4 +390,46 @@ export const getCacheStats = () => {
     };
 };
 
-export { initDB, getGame, getMovie, getTVShow, populateDB, batchAdd, queryByIndex, withRetry };
+// Batch operations for better performance
+async function batchGet(storeName, ids) {
+    const db = await CONNECTION_POOL.acquire();
+    try {
+        return await circuitBreaker.execute(async () => {
+            const cached = ids.map(id => getCacheItem(storeName, id)).filter(Boolean);
+            const missingIds = ids.filter(id => !getCacheItem(storeName, id));
+
+            if (!missingIds.length) return cached;
+
+            const transaction = db.transaction([storeName], "readonly");
+            const store = transaction.objectStore(storeName);
+            const promises = missingIds.map(id => new Promise((resolve, reject) => {
+                const request = store.get(id);
+                request.onsuccess = () => {
+                    if (request.result) setCacheItem(storeName, id, request.result);
+                    resolve(request.result);
+                };
+                request.onerror = () => reject(request.error);
+            }));
+
+            const fetched = await Promise.all(promises);
+            return [...cached, ...fetched];
+        });
+    } finally {
+        CONNECTION_POOL.release(db);
+    }
+}
+
+export {
+    initDB,
+    getGame,
+    getMovie,
+    getTVShow,
+    populateDB,
+    batchAdd,
+    queryByIndex,
+    withRetry,
+    batchGet,
+    preloadCache,
+    circuitBreaker,
+    dbWorker  // only if needed by other modules
+};
