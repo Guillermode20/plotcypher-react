@@ -223,6 +223,7 @@ function App() {
         return newState;
       });
       setShowWinModal(true);
+      setSearchInput(''); // Clear input on win
       return;
     }
   
@@ -254,6 +255,7 @@ function App() {
   
     setShowDropdown(false);
     setIsFlashing(true);
+    setSearchInput(''); // Clear input after incorrect guess
     setTimeout(() => setIsFlashing(false), 1000);
   }, [gameData, searchInput, selectedDescription, updateLocalStorage]);
 
@@ -302,27 +304,36 @@ function App() {
         <ErrorBoundary>
           <div className="relative min-h-screen bg-zinc-950 bg-gradient-to-b from-zinc-950 to-zinc-950 text-white font-mono scrollbar-gutter-stable">
             <div className="container relative mx-auto px-0 sm:px-4 py-0 sm:py-8">
-              <div className="max-w-2xl mx-auto p-0 sm:p-4 
+              <div className="max-w-2xl mx-auto p-2 sm:p-4 
                 backdrop-blur-sm bg-zinc-950/90 border border-white/30 
                 rounded-none sm:rounded-lg shadow-xl drop-shadow-glow hover:shadow-2xl
                 transition-all duration-300
                 box-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
                 
-                <header className="p-2 sm:p-4 relative border border-white/30 bg-zinc-950/70 rounded-md
-                              hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4">
-                  <div className="flex items-center justify-between">
-                    <h1 className="text-xl sm:text-4xl font-bold tracking-tighter text-white/90
+                <div className="flex">
+                  <header className="flex-grow p-2 sm:p-4 relative border border-white/30 bg-zinc-950/70 rounded-md
+                              hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4 rounded-r-none">
+                    <div className="flex items-center">
+                      <h1 className="text-xl sm:text-4xl font-bold tracking-tighter text-white/90
                                 hover:text-white transition-colors duration-300">
-                      PLOTCYPHER
-                    </h1>
-                    <div className="relative">
+                        PLOTCYPHER
+                      </h1>
+                    </div>
+                    <p className="mt-1 text-xs sm:text-sm text-white/70 tracking-[0.2em]
+                            hover:text-white/90 transition-colors duration-300">
+                      DAILY CHALLENGES TO TEST YOUR MEDIA KNOWLEDGE
+                    </p>
+                  </header>
+
+                  <div className="p-2 sm:p-4 border border-white/30 bg-zinc-950/70 rounded-md
+                              hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4 rounded-l-none border-l-0">
+                    <div className="relative h-full flex items-center justify-center">
                       <button
                         onClick={() => setShowMenu(!showMenu)}
                         className="p-2 text-white/70 hover:text-white/90 transition-colors duration-300"
                         aria-label="Menu"
                       >
-                        {/* Hamburger icon */}
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <svg xmlns="http://www. w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 7.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
                         </svg>
                       </button>
@@ -359,11 +370,7 @@ function App() {
                       )}
                     </div>
                   </div>
-                  <p className="mt-1 text-xs sm:text-sm text-white/70 tracking-[0.2em]
-                            hover:text-white/90 transition-colors duration-300">
-                    DAILY CHALLENGES TO TEST YOUR MEDIA KNOWLEDGE
-                  </p>
-                </header>
+                </div>
                 
                 {/* Button group with adjusted spacing */}
                 <CategoryButtons 
