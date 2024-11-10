@@ -4,14 +4,14 @@ import LoadingScreen from './core/LoadingScreen.jsx';
 import ErrorBoundary from './ErrorBoundary.jsx';
 import { getAllGames, getAllMovies, getAllTVShows } from './database';
 
-const InfoPopUp = lazy(() => import('./components/InfoPopUp.jsx'));
-const ProjectInfoPopUp = lazy(() => import('./components/ProjectInfoPopUp.jsx'));
-const GameDescription = lazy(() => import('./components/GameDescription.jsx'));
-const MovieDescription = lazy(() => import('./components/MovieDescription.jsx'));
-const TVDescription = lazy(() => import('./components/TVDescription.jsx'));
-const CountdownTimer = lazy(() => import('./components/CountdownTimer.jsx'));
-const WinModal = lazy(() => import('./components/WinModal.jsx'));
-const FailModal = lazy(() => import('./components/FailModal.jsx'));
+const InfoPopUp = lazy(() => import('./components/InfoPopUp'));
+const ProjectInfoPopUp = lazy(() => import('./components/ProjectInfoPopUp'));
+const GameDescription = lazy(() => import('./components/GameDescription'));
+const MovieDescription = lazy(() => import('./components/MovieDescription'));
+const TVDescription = lazy(() => import('./components/TVDescription'));
+const WinModal = lazy(() => import('./components/WinModal'));
+const FailModal = lazy(() => import('./components/FailModal'));
+const GameOverScreen = lazy(() => import('./components/GameOverScreen'));
 
 const TESTING_MODE = true; 
 
@@ -397,20 +397,7 @@ function App() {
                       {selectedDescription === 'game' && (
                         <div>
                           {gameState.gameOverStates.game ? (
-                            <div className="text-center p-8 border border-white/20 rounded-md bg-zinc-950/50">
-                              {gameState.levels.game > -1 ? (
-                                <p className="text-2xl text-green-500 mb-4">
-                                  Decrypted in {gameState.attempts.game + 1} attempts!
-                                </p>
-                              ) : (
-                                <p className="text-2xl text-red-500 mb-4">
-                                  Decryption failed after 5 attempts
-                                </p>
-                              )}
-                              <p className="text-2xl text-white/90">
-                                Next game in <Suspense fallback="...">{<CountdownTimer />}</Suspense>
-                              </p>
-                            </div>
+                            <GameOverScreen gameState={gameState} category="game" />
                           ) : (
                             <GameDescription  
                               onGameDataLoad={handleGameData}
@@ -423,20 +410,7 @@ function App() {
                       {selectedDescription === 'movie' && (
                         <div>
                           {gameState.gameOverStates.movie ? (
-                            <div className="text-center p-8 border border-white/20 rounded-md bg-zinc-950/50">
-                              {gameState.levels.movie > -1 ? (
-                                <p className="text-2xl text-green-500 mb-4">
-                                  Decrypted in {gameState.attempts.movie + 1} attempts!
-                                </p>
-                              ) : (
-                                <p className="text-2xl text-red-500 mb-4">
-                                  Decryption failed after 5 attempts
-                                </p>
-                              )}
-                              <p className="text-2xl text-white/90">
-                                Next movie in <Suspense fallback="...">{<CountdownTimer />}</Suspense>
-                              </p>
-                            </div>
+                            <GameOverScreen gameState={gameState} category="movie" />
                           ) : (
                             <MovieDescription 
                               onMovieDataLoad={handleGameData}
@@ -449,20 +423,7 @@ function App() {
                       {selectedDescription === 'tv' && (
                         <div>
                           {gameState.gameOverStates.tv ? (
-                            <div className="text-center p-8 border border-white/20 rounded-md bg-zinc-950/50">
-                              {gameState.levels.tv > -1 ? (
-                                <p className="text-2xl text-green-500 mb-4">
-                                  Decrypted in {gameState.attempts.tv + 1} attempts!
-                                </p>
-                              ) : (
-                                <p className="text-2xl text-red-500 mb-4">
-                                  Decryption failed after 5 attempts
-                                </p>
-                              )}
-                              <p className="text-2xl text-white/90">
-                                Next TV show in <Suspense fallback="...">{<CountdownTimer />}</Suspense>
-                              </p>
-                            </div>
+                            <GameOverScreen gameState={gameState} category="tv" />
                           ) : (
                             <TVDescription 
                               onTVShowDataLoad={handleGameData}

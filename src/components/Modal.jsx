@@ -10,7 +10,9 @@ const Modal = ({ children, isOpen, onClose, variant = 'default' }) => {
         onClick={onClose}
       ></div>
       <div className={`relative bg-zinc-950 border ${
-        variant === 'error' ? 'border-red-500' : 'border-white/20'
+        variant === 'error' ? 'border-red-500' : 
+        variant === 'success' ? 'border-green-500' : 
+        'border-white/20'
       } rounded-lg p-8 max-w-md w-full m-4 shadow-xl`}>
         {children}
       </div>
@@ -22,7 +24,7 @@ Modal.propTypes = {
   children: PropTypes.node.isRequired,
   isOpen: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,
-  variant: PropTypes.oneOf(['default', 'error'])
+  variant: PropTypes.oneOf(['default', 'error', 'success'])
 };
 
 export default memo(Modal);
