@@ -7,7 +7,7 @@ const FailModal = ({ isOpen, onClose, selectedDescription, gameData }) => (
     <h2 className="text-lg sm:text-2xl font-bold text-white/90">
       Mission Failed
     </h2>
-    <p className="text-white/80 mb-3">
+    <p className="text-white/90 mb-3">
       The correct answer was:
       <span className="block mt-2 text-xl text-white font-bold mb-1">
         {selectedDescription === 'game' && gameData?.correctGame}
@@ -15,15 +15,15 @@ const FailModal = ({ isOpen, onClose, selectedDescription, gameData }) => (
         {selectedDescription === 'tv' && gameData?.correctTVShow}
       </span>
     </p>
-    <p className="text-sm sm:text-base text-white/80">
+    <p className="text-sm sm:text-base text-white/90">
       You&apos;ve run out of attempts to decrypt the {selectedDescription}.
     </p>
     <button
       onClick={onClose}
       className="w-full sm:w-auto px-6 py-2
                 text-white/90 tracking-[0.2em]
-                border border-red/20 rounded-md
-                bg-zinc-950/50
+                border border-red/30 rounded-md
+                bg-zinc-950/70
                 hover:bg-zinc-950/70 hover:border-white/30
                 focus:outline-none focus:border-white/40
                 focus:ring-2 focus:ring-white/20

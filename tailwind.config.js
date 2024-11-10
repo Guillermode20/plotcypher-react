@@ -44,6 +44,13 @@ export default {
       animation: {
         flash: 'flash 0.8s ease-in-out',
         progress: 'progress 1.5s ease-in-out infinite',
+      },
+      borderWidth: {
+        'DEFAULT': '1px',
+        '30': '30%', // Added for border opacity enhancement
+      },
+      backgroundColor: {
+        'zinc-950/70': 'rgba(15, 23, 42, 0.7)', // Strengthened background fill
       }
     },
   },

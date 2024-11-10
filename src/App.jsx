@@ -21,9 +21,9 @@ const CategoryButtons = memo(({ selectedDescription, onSelect }) => (
       <button
         key={category}
         onClick={() => onSelect(category)}
-        className={`flex-1 px-6 py-2 tracking-[0.2em] border border-white/20 
+        className={`flex-1 px-6 py-2 tracking-[0.2em] border border-white/30 
           ${category === 'game' ? 'rounded-l-md' : category === 'tv' ? 'rounded-r-md' : ''} 
-          bg-zinc-950/50 hover:bg-zinc-950/70 hover:border-white/30 
+          bg-zinc-950/70 hover:bg-zinc-950/70 hover:border-white/30 
           focus:outline-none focus:border-white/40 focus:ring-2 focus:ring-white/20 
           transition-all duration-300 
           ${selectedDescription === category ? 'text-white/90 bg-zinc-950/70 border-white/30' : 'text-white/50'}`}
@@ -292,7 +292,7 @@ function App() {
     filteredSuggestions.map((item, index) => (
       <li
         key={index}
-        className="px-4 py-2 cursor-pointer text-white/70 hover:text-white hover:bg-zinc-800/50 transition-all duration-200 block w-full text-left"
+        className="px-4 py-2 cursor-pointer text-white/70 hover:text-white hover:bg-zinc-800/70 transition-all duration-200 block w-full text-left"
         onClick={() => {
           debouncedSetSearchInput(item);
           setSearchInput(item);
@@ -312,14 +312,14 @@ function App() {
     <ErrorBoundary>
       <Suspense fallback={<LoadingScreen />}>
         <ErrorBoundary>
-          <div className="relative min-h-screen bg-zinc-950 bg-gradient-to-b from-zinc-950 to-zinc-900 text-white font-mono scrollbar-gutter-stable">
+          <div className="relative min-h-screen bg-zinc-950 bg-gradient-to-b from-zinc-950 to-zinc-950 text-white font-mono scrollbar-gutter-stable">
             <div className="container relative mx-auto px-0 sm:px-4 py-0 sm:py-8">
               <div className="max-w-2xl mx-auto p-0 sm:p-4 
-                backdrop-blur-sm bg-zinc-950/80 border border-white/20 
+                backdrop-blur-sm bg-zinc-950/90 border border-white/30 
                 rounded-none sm:rounded-lg shadow-xl drop-shadow-glow hover:shadow-2xl
                 transition-all duration-300
                 box-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-                <header className="p-2 sm:p-4 relative border border-white/20 bg-zinc-950/50 rounded-md
+                <header className="p-2 sm:p-4 relative border border-white/30 bg-zinc-950/70 rounded-md
                               hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4">
                   <div className="flex items-center justify-between">
                     <h1 className="text-xl sm:text-4xl font-bold tracking-tighter text-white/90
@@ -329,7 +329,7 @@ function App() {
                     <div className="flex gap-2">
                       <button
                         onClick={() => setShowInfoModal(true)}
-                        className="p-2 text-white/60 hover:text-white/90 transition-colors duration-300"
+                        className="p-2 text-white/70 hover:text-white/90 transition-colors duration-300"
                         aria-label="Show game information"
                       >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -338,7 +338,7 @@ function App() {
                       </button>
                       <button
                         onClick={() => setShowProjectModal(true)}
-                        className="p-2 text-white/60 hover:text-white/90 transition-colors duration-300"
+                        className="p-2 text-white/70 hover:text-white/90 transition-colors duration-300"
                         aria-label="Show project information"
                       >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -347,8 +347,8 @@ function App() {
                       </button>
                     </div>
                   </div>
-                  <p className="mt-1 text-xs sm:text-sm text-white/60 tracking-[0.2em]
-                            hover:text-white/80 transition-colors duration-300">
+                  <p className="mt-1 text-xs sm:text-sm text-white/70 tracking-[0.2em]
+                            hover:text-white/90 transition-colors duration-300">
                     DAILY CHALLENGES TO TEST YOUR MEDIA KNOWLEDGE
                   </p>
                 </header>
@@ -361,15 +361,15 @@ function App() {
 
                 {!selectedDescription ? (
                   <div className="space-y-4 text-center">
-                    <p className="text-base sm:text-xl text-white/80 tracking-wider">
+                    <p className="text-base sm:text-xl text-white/90 tracking-wider">
                       Select a category above to begin decrypting
                     </p>
-                    <p className="text-xs sm:text-sm text-white/60">
+                    <p className="text-xs sm:text-sm text-white/70">
                       Choose between Game, Movie, or TV Show descriptions to decrypt.
                     </p>
                     <button
                       onClick={() => setShowInfoModal(true)}
-                      className="px-3 py-2 text-xs sm:text-sm tracking-[0.2em] border border-white/20 bg-zinc-950/50 text-white rounded-md hover:bg-zinc-950/70 hover:border-white/30 focus:outline-none focus:border-white/40 focus:ring-2 focus:ring-white/20 transition-all duration-300"
+                      className="px-3 py-2 text-xs sm:text-sm tracking-[0.2em] border border-white/30 bg-zinc-950/70 text-white rounded-md hover:bg-zinc-950/70 hover:border-white/30 focus:outline-none focus:border-white/40 focus:ring-2 focus:ring-white/20 transition-all duration-300"
                     >
                       How to Play
                     </button>
@@ -438,9 +438,9 @@ function App() {
                     {!gameState.gameOverStates[selectedDescription] && (
                       <>
                         <p className={`inline-block px-4 py-2 
-                          text-xs sm:text-sm text-white/60 tracking-[0.2em]
-                          border border-white/20 rounded-md
-                          bg-zinc-950/50 hover:bg-zinc-950/70
+                          text-xs sm:text-sm text-white/70 tracking-[0.2em]
+                          border border-white/30 rounded-md
+                          bg-zinc-950/70 hover:bg-zinc-950/70
                           hover:border-white/30
                           transition-all duration-300
                           ${isFlashing ? 'animate-flash' : ''}`}>
@@ -454,8 +454,8 @@ function App() {
                             onChange={handleInputChange}
                             className="w-full px-4 py-2
                               text-xs sm:text-sm text-white/90 tracking-[0.2em] placeholder:text-white/50
-                              border border-white/20 rounded-md
-                              bg-zinc-950/50
+                              border border-white/30 rounded-md
+                              bg-zinc-950/70
                               hover:bg-zinc-950/70 hover:border-white/30
                               focus:outline-none focus:border-white/40 
                               focus:ring-2 focus:ring-white/20
@@ -466,8 +466,8 @@ function App() {
                             onClick={handleGuessSubmit}
                             className="w-full sm:w-auto px-4 sm:px-6 py-2
                               text-xs sm:text-base text-white/90 tracking-[0.2em]
-                              border border-white/20 rounded-md
-                              bg-zinc-950/50
+                              border border-white/30 rounded-md
+                              bg-zinc-950/70
                               hover:bg-zinc-950/70 hover:border-white/30
                               focus:outline-none focus:border-white/40
                               focus:ring-2 focus:ring-white/20
@@ -481,7 +481,7 @@ function App() {
                                 ? 'bottom-[calc(100%+0.5rem)]' 
                                 : 'top-[calc(100%+0.5rem)]'
                             }
-                              border border-white/20 rounded-md
+                              border border-white/30 rounded-md
                               bg-zinc-950/90 backdrop-blur-sm
                               shadow-lg max-h-60 overflow-y-auto z-50
                               divide-y divide-white/10

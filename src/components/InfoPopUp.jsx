@@ -21,7 +21,7 @@ const InfoPopUp = ({ showInfoModal, onClose }) => {
       <div
         ref={modalRef}
         tabIndex={-1}
-        className="relative bg-zinc-950 border border-white/20 rounded-lg 
+        className="relative bg-zinc-950 border border-white/30 rounded-lg 
                    max-w-md w-full mx-1 sm:mx-2 my-2 sm:my-4 shadow-xl 
                    focus:outline-none focus:ring-0
                    flex flex-col max-h-[90vh] sm:max-h-[85vh]"
@@ -35,20 +35,20 @@ const InfoPopUp = ({ showInfoModal, onClose }) => {
 
         {/* Scrollable Content */}
         <div className="p-4 overflow-y-auto scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent">
-          <div className="text-white/80 space-y-4">
-            <p className="text-sm sm:text-base text-white/80">
+          <div className="text-white/90 space-y-4">
+            <p className="text-sm sm:text-base text-white/90">
               PLOTCYPHER is a daily challenge game where you decrypt descriptions of Games, Movies, and TV Shows.
             </p>
-            <p className="text-sm sm:text-base text-white/80">
+            <p className="text-sm sm:text-base text-white/90">
               Each category gives you 5 attempts to guess correctly. With each failed attempt, 
               the description becomes less cryptic, making it easier to identify the answer.
             </p>
-            <p className="text-sm sm:text-base text-white/80">
+            <p className="text-sm sm:text-base text-white/90">
               ⚡ Type your guess in the input field<br/>
               🎯 Click DECRYPT to submit your answer<br/>
               🔄 Come back daily for new challenges
             </p>
-            <p className="text-sm sm:text-base text-white/80">
+            <p className="text-sm sm:text-base text-white/90">
               Remember, you&apos;ll only get one shot, and each challenge is only available for 24 hours before it&apos;s gone forever!
             </p>
           </div>
@@ -60,8 +60,8 @@ const InfoPopUp = ({ showInfoModal, onClose }) => {
             onClick={onClose}
             className="w-full sm:w-auto px-6 py-2
                        text-white/90 tracking-[0.2em]
-                       border border-white/20 rounded-md
-                       bg-zinc-950/50
+                       border border-white/30 rounded-md
+                       bg-zinc-950/70
                        hover:bg-zinc-950/70 hover:border-white/30
                        focus:outline-none focus:border-white/40
                        focus:ring-2 focus:ring-white/20
