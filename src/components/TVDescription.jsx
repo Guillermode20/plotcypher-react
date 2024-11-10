@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { initDB, getTVShow, populateDB, getAllTVShows } from '../database';
 import PropTypes from 'prop-types';
+import ErrorBoundary from '../ErrorBoundary';
 
 const symbols = ['#', '£', '$', '%', '&', '@'];
 
@@ -63,7 +64,8 @@ const getTVShowIdByDate = (startDate) => {
   return (diffDays % 30) + 1; // Assuming there are 30 TV shows
 };
 
-const Description = ({ onTVShowDataLoad, level, startDate }) => {
+function TVDescription(props) {
+  const { onTVShowDataLoad, level, startDate } = props;
   const [TVShowDetails, setTVShowDetails] = useState({
     TVShowName: '',
     description: '',
@@ -87,63 +89,65 @@ const Description = ({ onTVShowDataLoad, level, startDate }) => {
         } else {
           console.error('TV Show not found');
         }
-        // Fetch all TV show names
         const allTVShows = await getAllTVShows();
-        const allTVShowNames = allTVShows.map(tv => tv.TVShowName);
+        // Fix: Use gameName instead of TVShowName
+        const allTVShowNames = allTVShows.map(tv => tv.gameName);
         setIncorrectTVShowNames(allTVShowNames);
       } catch (error) {
         console.error('Error loading TV show data:', error);
       }
     };
-
     loadTVShowData();
   }, [TVShowId]);
 
   useEffect(() => {
     const TVShowData = {
-      correctTVShow: TVShowDetails.TVShowName,
-      incorrectTVShows: incorrectTVShowNames,
+      // Fix: Use gameName instead of TVShowName
+      correctTVShow: TVShowDetails.gameName,
+      incorrectTVShows: incorrectTVShowNames.filter(name => name !== TVShowDetails.gameName),
       level
     };
     onTVShowDataLoad(TVShowData);
-  }, [level, onTVShowDataLoad, TVShowDetails.TVShowName, incorrectTVShowNames]);
+  }, [level, onTVShowDataLoad, TVShowDetails.gameName, incorrectTVShowNames]);
 
   return (
-    <div className="border border-white/20 p-4 
-                    bg-zinc-950/50 rounded-md
-                    backdrop-blur-sm
-                    hover:border-white/30 hover:bg-zinc-950/70">
-      <div className="space-y-2">
-        <h2 className="text-lg tracking-[0.2em] text-white/80 uppercase font-mono
-                      hover:text-white/90
-                      transition-all duration-300">
-          Daily TV Show Cypher #{TVShowDetails.id}
-        </h2>
-        <h3 className="text tracking-[0.2em] text-white/60 uppercase font-mono
-                      hover:text-white/90
-                      transition-all duration-300 mt-2">
-          Release Year: {level < 4 ? TVShowDetails.releaseYear : '????'}
-        </h3>
-        <h3 className="text tracking-[0.2em] text-white/60 uppercase font-mono
-                      hover:text-white/90
-                      transition-all duration-300 mt-2">
-          Genre: {level < 3 ? TVShowDetails.genre : '????'}
-        </h3>
-        <p className="text leading-relaxed tracking-wide font-mono
-                     backdrop-blur-sm text-white/90
-                     hover:text-white
-                     transition-colors duration-300">
-          {applyOpacity(hashedDescription)}
-        </p>
+    <ErrorBoundary>
+      <div className="border border-white/20 p-4 
+                      bg-zinc-950/50 rounded-md
+                      backdrop-blur-sm
+                      hover:border-white/30 hover:bg-zinc-950/70">
+        <div className="space-y-2">
+          <h2 className="text-lg tracking-[0.2em] text-white/80 uppercase font-mono
+                        hover:text-white/90
+                        transition-all duration-300">
+            Daily TV Show Cypher #{TVShowDetails.id}
+          </h2>
+          <h3 className="text tracking-[0.2em] text-white/60 uppercase font-mono
+                        hover:text-white/90
+                        transition-all duration-300 mt-2">
+            Release Year: {level < 4 ? TVShowDetails.releaseYear : '????'}
+          </h3>
+          <h3 className="text tracking-[0.2em] text-white/60 uppercase font-mono
+                        hover:text-white/90
+                        transition-all duration-300 mt-2">
+            Genre: {level < 3 ? TVShowDetails.genre : '????'}
+          </h3>
+          <p className="text leading-relaxed tracking-wide font-mono
+                      backdrop-blur-sm text-white/90
+                      hover:text-white
+                      transition-colors duration-300">
+            {applyOpacity(hashedDescription)}
+          </p>
+        </div>
       </div>
-    </div>
+    </ErrorBoundary>
   );
-};
+}
 
-Description.propTypes = {
+TVDescription.propTypes = {
   onTVShowDataLoad: PropTypes.func.isRequired,
   level: PropTypes.number.isRequired,
   startDate: PropTypes.string.isRequired, // Add prop type
 };
 
-export default Description;
+export default TVDescription;

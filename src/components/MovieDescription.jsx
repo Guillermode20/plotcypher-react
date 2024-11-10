@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { initDB, getMovie, populateDB, getAllMovies } from '../database'; // Added getAllMovies
 import PropTypes from 'prop-types';
+import ErrorBoundary from '../ErrorBoundary';
 
 const symbols = ['#', '£', '$', '%', '&', '@'];
 
@@ -81,15 +82,15 @@ const Description = ({ onMovieDataLoad, level, startDate }) => {
       try {
         await initDB();
         await populateDB();
-        const movie = await getMovie(movieId); // Gets movie by ID based on date
+        const movie = await getMovie(movieId);
         if (movie) {
           setMovieDetails(movie);
         } else {
           console.error('Movie not found');
         }
-        // Fetch all movie names
         const allMovies = await getAllMovies();
-        const allMovieNames = allMovies.map(m => m.movieName);
+        // Fix: Use gameName instead of movieName
+        const allMovieNames = allMovies.map(m => m.gameName);
         setIncorrectMovieNames(allMovieNames);
       } catch (error) {
         console.error('Error loading movie data:', error);
@@ -101,42 +102,45 @@ const Description = ({ onMovieDataLoad, level, startDate }) => {
 
   useEffect(() => {
     const movieData = {
-      correctMovie: movieDetails.movieName,
-      incorrectMovies: incorrectMovieNames,
+      // Fix: Use gameName instead of movieName
+      correctMovie: movieDetails.gameName,
+      incorrectMovies: incorrectMovieNames.filter(name => name !== movieDetails.gameName),
       level
     };
     onMovieDataLoad(movieData);
-  }, [level, onMovieDataLoad, movieDetails.movieName, incorrectMovieNames]); // Added incorrectMovieNames to dependencies
+  }, [level, onMovieDataLoad, movieDetails.gameName, incorrectMovieNames]);
 
   return (
-    <div className="border border-white/20 p-4 
-                    bg-zinc-950/50 rounded-md
-                    backdrop-blur-sm
-                    hover:border-white/30 hover:bg-zinc-950/70">
-      <div className="space-y-2">
-        <h2 className="text-lg tracking-[0.2em] text-white/80 uppercase font-mono
-                      hover:text-white/90
-                      transition-all duration-300">
-          Daily Movie Cypher #{movieDetails.id}
-        </h2>
-        <h3 className="text tracking-[0.2em] text-white/60 uppercase font-mono
-                      hover:text-white/90
-                      transition-all duration-300 mt-2">
-          Release Year: {level < 4 ? movieDetails.releaseYear : '????'}
-        </h3>
-        <h3 className="text tracking-[0.2em] text-white/60 uppercase font-mono
-                      hover:text-white/90
-                      transition-all duration-300 mt-2">
-          Genre: {level < 3 ? movieDetails.genre : '????'}
-        </h3>
-        <p className="text leading-relaxed tracking-wide font-mono
-                     backdrop-blur-sm text-white/90
-                     hover:text-white
-                     transition-colors duration-300">
-          {applyOpacity(hashedDescription)}
-        </p>
+    <ErrorBoundary>
+      <div className="border border-white/20 p-4 
+                      bg-zinc-950/50 rounded-md
+                      backdrop-blur-sm
+                      hover:border-white/30 hover:bg-zinc-950/70">
+        <div className="space-y-2">
+          <h2 className="text-lg tracking-[0.2em] text-white/80 uppercase font-mono
+                        hover:text-white/90
+                        transition-all duration-300">
+            Daily Movie Cypher #{movieDetails.id}
+          </h2>
+          <h3 className="text tracking-[0.2em] text-white/60 uppercase font-mono
+                        hover:text-white/90
+                        transition-all duration-300 mt-2">
+            Release Year: {level < 4 ? movieDetails.releaseYear : '????'}
+          </h3>
+          <h3 className="text tracking-[0.2em] text-white/60 uppercase font-mono
+                        hover:text-white/90
+                        transition-all duration-300 mt-2">
+            Genre: {level < 3 ? movieDetails.genre : '????'}
+          </h3>
+          <p className="text leading-relaxed tracking-wide font-mono
+                      backdrop-blur-sm text-white/90
+                      hover:text-white
+                      transition-colors duration-300">
+            {applyOpacity(hashedDescription)}
+          </p>
+        </div>
       </div>
-    </div>
+    </ErrorBoundary>
   );
 };
 
