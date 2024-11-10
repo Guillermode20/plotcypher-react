@@ -4,7 +4,9 @@ import Modal from './Modal';
 
 const FailModal = ({ isOpen, onClose, selectedDescription, gameData }) => (
   <Modal isOpen={isOpen} onClose={onClose} variant="error">
-    <h2 className="text-2xl font-bold text-red-500 mb-4">DECRYPTION FAILED!</h2>
+    <h2 className="text-lg sm:text-2xl font-bold text-white/90">
+      Mission Failed
+    </h2>
     <p className="text-white/80 mb-3">
       The correct answer was:
       <span className="block mt-2 text-xl text-white font-bold mb-1">
@@ -13,8 +15,8 @@ const FailModal = ({ isOpen, onClose, selectedDescription, gameData }) => (
         {selectedDescription === 'tv' && gameData?.correctTVShow}
       </span>
     </p>
-    <p className="text-white/80 mb-6">
-      You&apos;ve used all your decryption attempts. Better luck tomorrow!
+    <p className="text-sm sm:text-base text-white/80">
+      You&apos;ve run out of attempts to decrypt the {selectedDescription}.
     </p>
     <button
       onClick={onClose}
