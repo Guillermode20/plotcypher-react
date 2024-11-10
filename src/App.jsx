@@ -311,7 +311,7 @@ function App() {
                 box-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
                 
                 <div className="flex">
-                  <header className="flex-grow p-2 sm:p-4 relative border border-white/30 bg-zinc-950/70 rounded-md
+                  <header className="flex-grow p-2 sm:p-4 relative border border-white/30 bg-zinc-950 rounded-md
                               hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4 rounded-r-none">
                     <div className="flex items-center">
                       <h1 className="text-xl sm:text-4xl font-bold tracking-tighter text-white/90
@@ -325,7 +325,7 @@ function App() {
                     </p>
                   </header>
 
-                  <div className="p-2 sm:p-4 border border-white/30 bg-zinc-950/70 rounded-md
+                  <div className="p-2 sm:p-4 border border-white/30 bg-zinc-950 rounded-md
                               hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4 rounded-l-none border-l-0">
                     <div className="relative h-full flex items-center justify-center">
                       <button
@@ -388,7 +388,7 @@ function App() {
                     </p>
                     <button
                       onClick={() => setShowInfoModal(true)}
-                      className="px-3 py-2 text-xs sm:text-sm tracking-[0.2em] border border-white/30 bg-zinc-950/70 text-white rounded-md hover:bg-zinc-950/70 hover:border-white/30 focus:outline-none focus:border-white/40 focus:ring-2 focus:ring-white/20 transition-all duration-300"
+                      className="px-3 py-2 text-xs sm:text-sm tracking-[0.2em] border border-white/30 bg-zinc-950 text-white rounded-md hover:bg-zinc-950 hover:border-white/30 focus:outline-none focus:border-white/40 focus:ring-2 focus:ring-white/20 transition-all duration-300"
                     >
                       How to Play
                     </button>
@@ -459,7 +459,7 @@ function App() {
                         <p className={`inline-block px-4 py-2 
                           text-xs sm:text-sm text-white/70 tracking-[0.2em]
                           border border-white/30 rounded-md
-                          bg-zinc-950/70 hover:bg-zinc-950/70
+                          bg-zinc-950 hover:bg-zinc-950
                           hover:border-white/30
                           transition-all duration-300
                           ${isFlashing ? 'animate-flash' : ''}`}>
@@ -474,8 +474,8 @@ function App() {
                             className="w-full px-4 py-2
                               text-xs sm:text-sm text-white/90 tracking-[0.2em] placeholder:text-white/50
                               border border-white/30 rounded-md
-                              bg-zinc-950/70
-                              hover:bg-zinc-950/70 hover:border-white/30
+                              bg-zinc-950
+                              hover:bg-zinc-950 hover:border-white/30
                               focus:outline-none focus:border-white/40 
                               focus:ring-2 focus:ring-white/20
                               transition-all duration-300"
@@ -486,8 +486,8 @@ function App() {
                             className="w-full sm:w-auto px-4 sm:px-6 py-2
                               text-xs sm:text-base text-white/90 tracking-[0.2em]
                               border border-white/30 rounded-md
-                              bg-zinc-950/70
-                              hover:bg-zinc-950/70 hover:border-white/30
+                              bg-zinc-950
+                              hover:bg-zinc-950 hover:border-white/30
                               focus:outline-none focus:border-white/40
                               focus:ring-2 focus:ring-white/20
                               transition-all duration-300"

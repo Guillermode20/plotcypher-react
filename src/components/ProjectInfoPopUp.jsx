@@ -88,10 +88,10 @@ const ProjectInfoPopUp = ({ showProjectModal, onClose }) => {
           <button
             onClick={onClose}
             className="w-full sm:w-auto px-6 py-2
-                       text-white/90 tracking-[0.2em]
+                       text-white/90 tracking-[0.2em]  
                        border border-white/30 rounded-md
-                       bg-zinc-950/70
-                       hover:bg-zinc-950/70 hover:border-white/30
+                       bg-zinc-950
+                       hover:bg-zinc-950 hover:border-white/30
                        focus:outline-none focus:border-white/40
                        focus:ring-2 focus:ring-white/20
                        transition-all duration-300"
