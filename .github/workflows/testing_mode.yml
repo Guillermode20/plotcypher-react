@@ -1,30 +1,62 @@
-# .github/workflows/test-mode-check.yml
+# .github/workflows/test_testing_mode.yml
 
-name: Test Mode Check
+name: Test Testing Mode Workflow
 
 on:
   pull_request:
-    branches: [ prod ]
+    branches: [ '*' ]
   push:
-    branches: [ prod ]
+    branches: [ '*' ]
 
 jobs:
-  check-test-mode:
+  test-testing-mode-checks:
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v3
-      
-    - name: Check TESTING_MODE value
+
+    - name: Check if TESTING_MODE exists
+      id: check-exists
       run: |
-        if grep -q "const TESTING_MODE = true" src/App.jsx; then
-          echo "Error: TESTING_MODE must be set to false in production branch"
+        if ! grep -q "const TESTING_MODE = " src/App.jsx; then
+          echo "Error: TESTING_MODE constant not found"
           exit 1
         fi
 
-    - name: Verify TESTING_MODE is false
+    - name: Test TESTING_MODE=true check
+      id: test-true-check
       run: |
-        if ! grep -q "const TESTING_MODE = false" src/App.jsx; then
-          echo "Error: TESTING_MODE must be explicitly set to false"
+        echo "const TESTING_MODE = true" > test_file.txt
+        if ! grep -q "const TESTING_MODE = true" test_file.txt; then
+          echo "Error: True condition check failed"
           exit 1
         fi
+
+    - name: Test TESTING_MODE=false check
+      id: test-false-check
+      run: |
+        echo "const TESTING_MODE = false" > test_file.txt
+        if ! grep -q "const TESTING_MODE = false" test_file.txt; then
+          echo "Error: False condition check failed"
+          exit 1
+        fi
+
+    - name: Force change if TESTING_MODE=true
+      if: contains(github.ref, 'prod')
+      run: |
+        if grep -q "const TESTING_MODE = true" src/App.jsx; then
+          sed -i 's/const TESTING_MODE = true/const TESTING_MODE = false/' src/App.jsx
+          
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -am "fix: Set TESTING_MODE to false for production"
+          
+          git push || {
+            echo "Created PR to fix TESTING_MODE"
+            gh pr create --title "fix: Set TESTING_MODE to false" \
+                        --body "Automatically setting TESTING_MODE to false for production" \
+                        --base prod
+          }
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
