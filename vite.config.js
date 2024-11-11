@@ -11,9 +11,6 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom'],
-          game: ['./src/components/GameDescription.jsx'],
-          movie: ['./src/components/MovieDescription.jsx'],
-          tv: ['./src/components/TVDescription.jsx']
         }
       }
     }
