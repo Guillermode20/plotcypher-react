@@ -13,7 +13,7 @@ const WinModal = lazy(() => import('./components/WinModal'));
 const FailModal = lazy(() => import('./components/FailModal'));
 const GameOverScreen = lazy(() => import('./components/GameOverScreen'));
 
-const TESTING_MODE = false;
+const TESTING_MODE = true;
 
 const initialGameState = {
   levels: { game: 4, movie: 4, tv: 4 },

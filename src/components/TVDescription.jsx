@@ -73,6 +73,8 @@ function TVDescription(props) {
     id: null, // Added id to initial state
   });
   const [incorrectTVShowNames, setIncorrectTVShowNames] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [animate, setAnimate] = useState(false);
   const seed = 12345;
   const hashedDescription = TVShowDetails.description 
     ? hash(TVShowDetails.description, level, seed) 
@@ -81,6 +83,7 @@ function TVDescription(props) {
 
   useEffect(() => {
     const loadTVShowData = async () => {
+      setIsLoading(true);
       try {
         await initDB();
         await populateDB();
@@ -94,8 +97,10 @@ function TVDescription(props) {
         // Fix: Use gameName instead of TVShowName
         const allTVShowNames = allTVShows.map(tv => tv.gameName);
         setIncorrectTVShowNames(allTVShowNames);
+        setIsLoading(false);
       } catch (error) {
         console.error('Error loading TV show data:', error);
+        setIsLoading(false);
       }
     };
     loadTVShowData();
@@ -111,12 +116,39 @@ function TVDescription(props) {
     onTVShowDataLoad(TVShowData);
   }, [level, onTVShowDataLoad, TVShowDetails.gameName, incorrectTVShowNames]);
 
+  useEffect(() => {
+    if (!isLoading) {
+      setAnimate(true);
+    }
+  }, [isLoading]);
+
+  if (isLoading) {
+    return (
+      <div className="border border-white/20 p-4 bg-zinc-950/50 rounded-md">
+        <div className="space-y-4">
+          <div className="h-7 bg-white/10 rounded animate-pulse"></div>
+          <div className="space-y-2">
+            <div className="h-5 bg-white/10 w-1/3 rounded animate-pulse"></div>
+            <div className="h-5 bg-white/10 w-1/4 rounded animate-pulse"></div>
+          </div>
+          <div className="space-y-3">
+            <div className="h-4 bg-white/10 rounded animate-pulse"></div>
+            <div className="h-4 bg-white/10 rounded animate-pulse"></div>
+            <div className="h-4 bg-white/10 rounded animate-pulse"></div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <ErrorBoundary>
-      <div className="border border-white/20 p-4 
+      <div className={`border border-white/20 p-4 
                       bg-zinc-950/50 rounded-md
                       backdrop-blur-sm
-                      hover:border-white/30 hover:bg-zinc-950/70">
+                      hover:border-white/30 hover:bg-zinc-950/70
+                      transition-opacity duration-500
+                      ${animate ? 'opacity-100' : 'opacity-0'}`}>
         <div className="space-y-2">
           <h2 className="text-base sm:text-lg tracking-[0.2em] text-white/80 uppercase font-mono
                         hover:text-white/90

@@ -77,6 +77,8 @@ const Description = ({ onGameDataLoad, level, startDate }) => {
     id: null // Added id to match other components
   });
   const [incorrectGameNames, setIncorrectGameNames] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [animate, setAnimate] = useState(false);
   const seed = 12345;
   const hashedDescription = gameDetails.description 
     ? hash(gameDetails.description, level, seed) 
@@ -85,6 +87,7 @@ const Description = ({ onGameDataLoad, level, startDate }) => {
 
   useEffect(() => {
     const loadGameData = async () => {
+      setIsLoading(true);
       try {
         await initDB();
         await populateDB();
@@ -106,14 +109,21 @@ const Description = ({ onGameDataLoad, level, startDate }) => {
           console.error('No games data received');
           setIncorrectGameNames([]);
         }
+        setIsLoading(false);
       } catch (error) {
         console.error('Error loading game data:', error);
-        setIncorrectGameNames([]);
+        setIsLoading(false);
       }
     };
 
     loadGameData();
   }, [gameId]);
+
+  useEffect(() => {
+    if (!isLoading) {
+      setAnimate(true);
+    }
+  }, [isLoading]);
 
   useEffect(() => {
     const gameData = {
@@ -124,12 +134,33 @@ const Description = ({ onGameDataLoad, level, startDate }) => {
     onGameDataLoad(gameData);
   }, [level, onGameDataLoad, gameDetails.gameName, incorrectGameNames]);
 
+  if (isLoading) {
+    return (
+      <div className="border border-white/30 p-4 bg-zinc-950/70 rounded-md">
+        <div className="space-y-4">
+          <div className="h-7 bg-white/10 rounded animate-pulse"></div>
+          <div className="space-y-2">
+            <div className="h-5 bg-white/10 w-1/3 rounded animate-pulse"></div>
+            <div className="h-5 bg-white/10 w-1/4 rounded animate-pulse"></div>
+          </div>
+          <div className="space-y-3">
+            <div className="h-4 bg-white/10 rounded animate-pulse"></div>
+            <div className="h-4 bg-white/10 rounded animate-pulse"></div>
+            <div className="h-4 bg-white/10 rounded animate-pulse"></div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <ErrorBoundary>
-      <div className="border border-white/30 p-4 
+      <div className={`border border-white/30 p-4 
                       bg-zinc-950/70 rounded-md
                       backdrop-blur-sm
-                      hover:border-white/30 hover:bg-zinc-950/70">
+                      hover:border-white/30 hover:bg-zinc-950/70
+                      transition-opacity duration-500
+                      ${animate ? 'opacity-100' : 'opacity-0'}`}>
         <div className="space-y-2">
           <h2 className="text-base sm:text-lg tracking-[0.2em] text-white/90 uppercase font-mono
                         hover:text-white/90
