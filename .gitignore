@@ -30,3 +30,4 @@ out/
 gptprompts.txt
 output.py
 list.txt
+jsonEditor.py

@@ -12,7 +12,7 @@ const FailModal = lazy(() => import('./components/FailModal'));
 const GameOverScreen = lazy(() => import('./components/GameOverScreen'));
 const Description = lazy(() => import('./components/Description'));
 
-const TESTING_MODE = false;
+const TESTING_MODE = true;
 
 const initialGameState = {
   levels: { game: 4, movie: 4, tv: 4 },
@@ -21,7 +21,7 @@ const initialGameState = {
 };
 
 function App() {
-  const startDate = '2024-11-08';
+  const startDate = '2024-11-11';
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

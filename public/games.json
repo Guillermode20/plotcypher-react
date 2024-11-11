@@ -4,209 +4,209 @@
         "gameName": "The Legend of Zelda: Breath of the Wild",
         "releaseYear": 2017,
         "genre": "Action-Adventure",
-        "description": "Whispers on wind. Echoes of the past. Mountains bow to time. A hero wanders, seeking truth. An open world adventure of freedom and discovery."
+        "description": "Silent fields, winds hum. Blades unsheathed, shadows grow. A hero awakes. Shrines light up. The wild beckons."
     },
     {
         "id": 2,
         "gameName": "Minecraft",
         "releaseYear": 2011,
         "genre": "Sandbox, Survival",
-        "description": "Blocks rise and fall. Endless horizons beckon. Crafted from chaos. Build, explore, survive. A sandbox of infinite possibilities and creation."
+        "description": "Blocks break, worlds form. Quiet tools, crafted dreams. Mines below. Endless shapes. Build, survive, repeat."
     },
     {
         "id": 3,
         "gameName": "Fortnite",
         "releaseYear": 2017,
         "genre": "Battle Royale",
-        "description": "Storms on the horizon. Echoes of battle. Dawn of chaos. A battle royale, ever-changing. A fast-paced multiplayer game of survival and strategy."
+        "description": "Islands shrink, storms close in. Neon skies, battles unfold. Structures rise. Victory in sight. Only one stands."
     },
     {
         "id": 4,
         "gameName": "Grand Theft Auto V",
         "releaseYear": 2013,
         "genre": "Action-Adventure, Open-World",
-        "description": "Neon lights flicker. The city hums with secrets. Chasing dreams through smoke. A gritty world of crime and power. Open-world action filled with crime and mischief."
+        "description": "Lights flash, streets run. Voices yell, cities bend. Heists in play. Cars roar fast. The world\u2019s a playground."
     },
     {
         "id": 5,
         "gameName": "Among Us",
         "releaseYear": 2018,
         "genre": "Social Deduction, Party",
-        "description": "Shadows in silence. Trust shattered in space. Whispers of betrayal. A game of deception and survival. Multiplayer deduction game with hidden traitors."
+        "description": "Spaces tight, tasks tick. Lies spread, trust is lost. Colors clash. An imposter lurks. Survival unknown."
     },
     {
         "id": 6,
         "gameName": "Call of Duty: Warzone",
         "releaseYear": 2020,
         "genre": "Battle Royale, First-Person Shooter",
-        "description": "Echoes of gunfire. The earth trembles below. A battlefield of the last. War, fought from above. A tactical battle royale with combat and strategy."
+        "description": "Muzzle flash, maps tense. Lines of fire, cities burn. Squad\u2019s last stand. Circles close tight. Only one team."
     },
     {
         "id": 7,
         "gameName": "Red Dead Redemption 2",
         "releaseYear": 2018,
         "genre": "Action-Adventure, Open-World",
-        "description": "Horizon painted in blood. The last ride west. Fate in the dust. A tale of outlaws in a fading world. Open-world action set in the Wild West."
+        "description": "Wild skies, hooves pound. Sunset fades, justice calls. The outlaw rides. A final stand. Legends are born."
     },
     {
         "id": 8,
         "gameName": "League of Legends",
         "releaseYear": 2009,
         "genre": "MOBA",
-        "description": "Champions clash in shadows. The storm grows near. Battles of the mind. A strategic battle of teams and skill. Multiplayer online battle arena of strategy and teamwork."
+        "description": "Lanes filled, powers grow. Minions rise, towers fall. Nexus waits. The Rift speaks. Champions clash."
     },
     {
         "id": 9,
         "gameName": "The Witcher 3: Wild Hunt",
         "releaseYear": 2015,
         "genre": "RPG, Action-Adventure",
-        "description": "Storms gather on blood. The wild hunts, unyielding. In darkness, a monster hunts. A sorcerer hunts, in search of truth. An epic RPG of fantasy, monsters, and choices."
+        "description": "Horses ride, swords clash. Hearts fight, destiny waits. Wild hunts call. Curses fall. Witchers roam."
     },
     {
         "id": 10,
         "gameName": "Super Mario Odyssey",
         "releaseYear": 2017,
         "genre": "Platformer, Adventure",
-        "description": "Jump through the sky. Tales spun in clouds. A caped hero’s dream. A colorful adventure through whimsical worlds. A 3D platformer with Mario’s global quest."
+        "description": "Kingdoms spin, stars soar. Flags wave, kingdoms rise. A plumber jumps. Odyssey flies. Worlds connect."
     },
     {
         "id": 11,
         "gameName": "Valorant",
         "releaseYear": 2020,
         "genre": "First-Person Shooter, Tactical",
-        "description": "Gunfire echoes in silence. Flashes of fate. Tactics in shadows. A game of precision and strategy. A first-person tactical shooter with heroes and abilities."
+        "description": "Maps sharp, colors divide. Bombs planted, enemies meet. Guns of fire. Valor rings. One team wins."
     },
     {
         "id": 12,
         "gameName": "EA SPORTS FC 25",
         "releaseYear": 2022,
         "genre": "Sports, Simulation",
-        "description": "The crowd roars. Grass stained with dreams. The ball rolls on. A field of passion and rivalry. The latest entry in football simulation."
+        "description": "Grass wide, goals fly. Turf divides, stadiums roar. Kicks connect. The field speaks. Champions rise."
     },
     {
         "id": 13,
         "gameName": "Apex Legends",
         "releaseYear": 2019,
         "genre": "Battle Royale, First-Person Shooter",
-        "description": "A storm of stars. Legends race through time. Survival in the void. A battle royale of unique heroes. A fast-paced multiplayer shooter with distinct characters."
+        "description": "Legends fight, mountains call. Lands rise, guns sound. Apex crowned. Lines close in. Teams left standing."
     },
     {
         "id": 14,
         "gameName": "Animal Crossing: New Horizons",
         "releaseYear": 2020,
         "genre": "Simulation, Social",
-        "description": "Whispers in the breeze. Nature’s calm embrace. Life grows slowly. A peaceful, open-ended village simulation. Create your dream life on a deserted island."
+        "description": "Sunlit shores, friends unite. Bells toll, towns grow. Homes in bloom. The islands wait. A village built."
     },
     {
         "id": 15,
         "gameName": "Overwatch 2",
         "releaseYear": 2022,
         "genre": "First-Person Shooter, Team-Based",
-        "description": "A new dawn rises. Heroes emerge from shadows. A world on edge. A team-based shooter with iconic characters. A tactical multiplayer shooter with diverse heroes."
+        "description": "Heroes fight, colors flash. Abilities rise, teamwork blends. Lines blur. Ultimates strike. The payload moves."
     },
     {
         "id": 16,
         "gameName": "Dark Souls III",
         "releaseYear": 2016,
         "genre": "Action RPG",
-        "description": "A flame fades. Echoes of lost souls. Darkness claims the land. A brutal journey through a cursed world. An action RPG known for its difficulty and lore."
+        "description": "Fire thickens, swords break. Light fades, dark remains. Curses writhe. Hope is lost. Souls endure."
     },
     {
         "id": 17,
         "gameName": "Rocket League",
         "releaseYear": 2015,
         "genre": "Sports, Action",
-        "description": "Steel meets ball. Flames of competition. Aerial acrobatics collide. A high-octane soccer with rocket-powered cars. A hybrid sports game with cars and soccer."
+        "description": "Engines roar, balls fly. Fields open, cheers ignite. Goals of steel. The car spins. A goal is scored."
     },
     {
         "id": 18,
         "gameName": "Destiny 2",
         "releaseYear": 2017,
         "genre": "FPS, Action RPG",
-        "description": "Light against dark. Stars burn with secrets. The last guardians rise. A sci-fi shooter with a narrative of survival. A multiplayer online FPS with PvE and PvP."
+        "description": "Stars sing, fires burn. Light fades, darkness looms. Guardians rise. Powers return. Destiny\u2019s call."
     },
     {
         "id": 19,
         "gameName": "Cyberpunk 2077",
         "releaseYear": 2020,
         "genre": "RPG, Open-World",
-        "description": "Neon hearts pulse. City of endless nights. Machines hum beneath skin. A futuristic RPG in a neon-lit world. A dystopian open-world RPG with cybernetic enhancements."
+        "description": "Neon lights, streets tense. Future breaks, chrome shines. The city breathes. Wires hum. Cyber runs deep."
     },
     {
         "id": 20,
         "gameName": "Hades",
         "releaseYear": 2020,
         "genre": "Rogue-like, Action RPG",
-        "description": "The underworld calls. Fury’s flames ignite. A son’s restless journey. A roguelike action game in Greek mythology. Escape the underworld in a rogue-like adventure."
+        "description": "Shadows cast, gods fall. Fires burn, paths unfold. Battles rage. Death fights back. A hero rises."
     },
     {
         "id": 21,
         "gameName": "Sekiro: Shadows Die Twice",
         "releaseYear": 2019,
         "genre": "Action-Adventure, Souls-like",
-        "description": "Silent footsteps echo. Steel against the wind. A warrior’s last breath. A brutal action game steeped in samurai lore. A challenging, story-driven game set in feudal Japan."
+        "description": "Stealth sharp, blades clash. Lines cut, honor bound. Shadows fall. Death awaits. A shinobi\u2019s path."
     },
     {
         "id": 22,
         "gameName": "Fall Guys",
         "releaseYear": 2020,
         "genre": "Battle Royale, Party",
-        "description": "Chaos in motion. Fluff and color collide. A race to the finish. A whimsical battle royale filled with fun challenges. A colorful, party-style battle royale game."
+        "description": "Colors bright, crowds cheer. Obstacles spin, jumps fail. Beans stumble. Final round. A crown is won."
     },
     {
         "id": 23,
         "gameName": "Hollow Knight",
         "releaseYear": 2017,
         "genre": "Metroidvania, Action-Adventure",
-        "description": "Shadows whisper below. Insects speak in silence. A kingdom forgotten. A dark metroidvania with platforming and exploration. Explore a vast underground world of mystery."
+        "description": "In tunnels deep, dreams fade. Darkness crawls, silence breaks. Nails clash. Void below. A knight\u2019s path."
     },
     {
         "id": 24,
         "gameName": "Genshin Impact",
         "releaseYear": 2020,
         "genre": "Action RPG, Open-World",
-        "description": "Winds carry secrets. Elemental forces collide. The world is endless. A free-to-play action RPG with an open world. An open-world fantasy RPG with elemental powers."
+        "description": "Mountains high, stars bright. Realms open, heroes rise. Wishes bound. Adventurers meet. The wind calls."
     },
     {
         "id": 25,
         "gameName": "The Elder Scrolls V: Skyrim",
         "releaseYear": 2011,
         "genre": "RPG, Open-World",
-        "description": "Snow falls on stone. Dragons awaken from sleep. Fates carve the land. An epic RPG in a northern kingdom. An open-world RPG filled with dragons and magic."
+        "description": "Dragons roam, swords rise. Dungeons call, lands open. Shouts echo. A world awaits. The legend returns."
     },
     {
         "id": 26,
         "gameName": "Dota 2",
         "releaseYear": 2013,
         "genre": "MOBA",
-        "description": "The war drums echo. Fates entwined in battle. Heroes rise and fall. A strategy game of teamwork and skill. A multiplayer online battle arena (MOBA) with heroes."
+        "description": "Waves crash, lines stand. Minions rise, powers clash. Ancients wait. Heroes strike. Battle never ends."
     },
     {
         "id": 27,
         "gameName": "Ghost of Tsushima",
         "releaseYear": 2020,
         "genre": "Action-Adventure",
-        "description": "Beneath blood-red skies. A warrior's honor tested. The wind whispers secrets. A samurai's journey through feudal Japan. A story-driven action game in ancient Japan."
+        "description": "Grass tall, samurai waits. The wind howls, honor speaks. Swords sing. The island calls. Ghosts linger."
     },
     {
         "id": 28,
         "gameName": "Pokemon Scarlet and Violet",
         "releaseYear": 2022,
         "genre": "RPG",
-        "description": "In the tall grass. Creatures of legend roam. A world of discovery. A new generation of Pokémon awaits. A role-playing game where you catch creatures in an open world."
+        "description": "Colors flash, monsters hide. Creatures call, trainers rise. Regions new. Battles unfold. A legend grows."
     },
     {
         "id": 29,
         "gameName": "Monster Hunter: World",
         "releaseYear": 2018,
         "genre": "Action RPG",
-        "description": "Roars shake the earth. Prey flees in the wild. Hunt or be hunted. A massive world full of dangerous creatures. An action RPG where you hunt giant monsters."
+        "description": "Forests dark, monsters stand. Blades swing, hunters track. Beasts fall. A new hunt. Legends carved."
     },
     {
         "id": 30,
         "gameName": "Sims 4",
         "releaseYear": 2014,
         "genre": "Simulation",
-        "description": "Life unfolds in pixels. Dreams shaped by choice. Fate in your hands. A simulation game where you control life’s little moments. A life simulation where you create and manage characters."
+        "description": "Houses bright, Sims live. Neighbors chat, days pass. Dreams unfold. Life blooms. A world\u2019s a stage."
     }
 ]

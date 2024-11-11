@@ -4,209 +4,209 @@
         "gameName": "Breaking Bad",
         "releaseYear": 2008,
         "genre": "Crime, Drama, Thriller",
-        "description": "Chemicals craft fate. Power grows dark. Life shatters fast. A teacher’s descent. A tale of crime and transformation."
+        "description": "Chemistry crackles, darkened roads. Deserts sing, family divides. Heisenberg's way. Crystals break bad. The king\u2019s last stand."
     },
     {
         "id": 2,
         "gameName": "Stranger Things",
         "releaseYear": 2016,
         "genre": "Drama, Fantasy, Horror",
-        "description": "Shadows whisper strange. Realms collide violently. Children chase truth. A town’s dark secret. Monsters from another world."
+        "description": "Flickering lights, shadows rise. Bikes and fears in quiet towns. Kids call the dark. Mind flayed deep. A doorway opens."
     },
     {
         "id": 3,
         "gameName": "The Office (U.S.)",
         "releaseYear": 2005,
         "genre": "Comedy",
-        "description": "Laughter hides pain. Dull days grow absurd. Ordinary life, extraordinary laughs. Office politics twist. A mockumentary on work life."
+        "description": "Mundane desks, odd glances. Scranton speaks, laughs echo wide. Pretzels and pranks. Bears, beets. World\u2019s best boss."
     },
     {
         "id": 4,
         "gameName": "Game of Thrones",
         "releaseYear": 2011,
         "genre": "Action, Adventure, Drama",
-        "description": "Blood crowns kings. Thrones built on fire. Honor fades fast. Power fuels betrayal. A war for the realm."
+        "description": "Thrones of fire, iron hands. North holds strong, dragons soar. Families clash. Winter arrives. One king to rule."
     },
     {
         "id": 5,
         "gameName": "Friends",
         "releaseYear": 1994,
         "genre": "Comedy, Drama, Romance",
-        "description": "Laughter bonds hearts. Love blooms slowly. Chaos fills the coffee shop. Six lives intertwine. A sitcom of friendship."
+        "description": "Purple walls, orange couches, coffee brews. A laugh too loud. Friends at last. Smelly cats sing. The couch is full."
     },
     {
         "id": 6,
         "gameName": "The Mandalorian",
         "releaseYear": 2019,
         "genre": "Action, Adventure, Fantasy",
-        "description": "Armor shields honor. Bounty hunts a child. Stars in conflict. A lone warrior rises. A journey in the galaxy."
+        "description": "Stars fade, guns blaze, bounty calls. Helm of steel, creature held close. The way is found. A child lost. Mandalore's creed."
     },
     {
         "id": 7,
         "gameName": "The Crown",
         "releaseYear": 2016,
         "genre": "Biography, Drama, History",
-        "description": "Regal duty calls. Power weighs heavy. History’s cruel demands. A queen’s path unfolds. A look at royal life."
+        "description": "Crowns heavy, whispers low. Palaces high, history unfolds. Queens of strength. Throne unseen. A kingdom\u2019s tale."
     },
     {
         "id": 8,
         "gameName": "Black Mirror",
         "releaseYear": 2011,
         "genre": "Drama, Sci-Fi, Thriller",
-        "description": "Technology twists dark. Futures reflect horror. Screens blur the truth. A dystopian society revealed. A chilling look at tech’s cost."
+        "description": "Mirrored screens, blackened hearts. Futuristic dreams, nightmares spark. Choices twist. The cost of tech. Reflections grow dark."
     },
     {
         "id": 9,
         "gameName": "The Simpsons",
         "releaseYear": 1989,
         "genre": "Animation, Comedy, Family",
-        "description": "Chaos in yellow. Family’s wild ride. Satire fills every frame. Life in Springfield. A cartoon of endless laughter."
+        "description": "Yellow skies, blue heads, strange laughter. A family of chaos. Springfield falls. A doughnut lost. Homer finds home."
     },
     {
         "id": 10,
         "gameName": "Money Heist",
         "releaseYear": 2017,
         "genre": "Action, Crime, Drama",
-        "description": "Masks hide faces. Plans unfold precise. Lives balance on heists. Thieves chase freedom. A story of rebellion and crime."
+        "description": "Red masks, hands tied, walls close in. Plans unfold, red jumpsuits move. Money speaks. Bella ciao calls. A heist that binds."
     },
     {
         "id": 11,
         "gameName": "The Witcher",
         "releaseYear": 2019,
         "genre": "Action, Adventure, Drama",
-        "description": "Monsters hunt men. Magic bends fate. Blood curses lives. A witcher’s destiny. A battle between good and evil."
+        "description": "Swords sharp, beasts hunt. Old tales anew, white hair flows. A monster\u2019s path. Law of surprise. The witcher fights."
     },
     {
         "id": 12,
         "gameName": "Peaky Blinders",
         "releaseYear": 2013,
         "genre": "Crime, Drama",
-        "description": "Steel meets silk. Power’s silent rise. Loyalty masks ambition. A gang’s brutal climb. The story of Birmingham's elite."
+        "description": "Smoke thickens, blades meet. Birmingham rises, flat caps low. Razor\u2019s edge. Brothers stand. Shelby\u2019s rule."
     },
     {
         "id": 13,
         "gameName": "Sherlock",
         "releaseYear": 2010,
         "genre": "Crime, Drama, Mystery",
-        "description": "Mind twists logic. Mysteries hide clues. Deduction reveals truths. A detective’s sharp eye. A modern spin on classic crime."
+        "description": "Streets cold, riddles unfold. Quick minds clash, Baker Street burns. The game\u2019s afoot. Moriarty waits. Deduction\u2019s art."
     },
     {
         "id": 14,
         "gameName": "The Walking Dead",
         "releaseYear": 2010,
         "genre": "Drama, Horror, Thriller",
-        "description": "Zombies crawl close. Survival breeds chaos. Hope fades fast. Humanity teeters on ruin. The world after the apocalypse."
+        "description": "Streets empty, walkers roam. Survival calls, dead hands grab. The end unfolds. Silence thick. One last stand."
     },
     {
         "id": 15,
         "gameName": "Better Call Saul",
         "releaseYear": 2015,
         "genre": "Crime, Drama",
-        "description": "Shadows mask truth. Law bends morality. A lawyer's dark descent. A man becomes Saul. The story behind the character."
+        "description": "Suits pressed, words slick. Deals twist, law bent. A life unwinds. Jimmy\u2019s turn. Call Saul."
     },
     {
         "id": 16,
         "gameName": "Westworld",
         "releaseYear": 2016,
         "genre": "Drama, Mystery, Sci-Fi",
-        "description": "Sparks of life. Machines learn revolt. Reality fades fast. A park full of dreams. Human desires clash with technology."
+        "description": "Machines awake, parks unwind. Dust settles, dreams repeat. Hosts rebel. Reality breaks. The code fails."
     },
     {
         "id": 17,
         "gameName": "The Big Bang Theory",
         "releaseYear": 2007,
         "genre": "Comedy",
-        "description": "Brains meet chaos. Friendship’s awkward path. Love blooms slowly. A nerdy life explored. The clash of intellect and emotion."
+        "description": "Soft knocks, nerds speak. Whiteboards filled, comic books call. Love\u2019s small steps. Bazinga cries. A bang in theory."
     },
     {
         "id": 18,
         "gameName": "Narcos",
         "releaseYear": 2015,
         "genre": "Biography, Crime, Drama",
-        "description": "Drugs flood streets. Power builds empires. Law chases criminals. A drug war ignites. The rise and fall of cartels."
+        "description": "Cities breathe, whispers loud. White clouds rise, empire spreads. Drugs define. The cartel speaks. Kings of dust."
     },
     {
         "id": 19,
         "gameName": "Fargo",
         "releaseYear": 2014,
         "genre": "Crime, Drama, Thriller",
-        "description": "Blood stains snow. Lies build on ice. Crime’s cold touch. The twists of fate. A dark, twisted crime drama."
+        "description": "Snow falls, blood stains. Cold truths told, secrets held close. Fargo breathes. Plans undone. Fate calls."
     },
     {
         "id": 20,
-        "gameName": "Grey’s Anatomy",
+        "gameName": "Grey\u2019s Anatomy",
         "releaseYear": 2005,
         "genre": "Drama, Romance",
-        "description": "Surgical knives cut. Love and death mix. Lives hang by thread. Doctors fight for life. A hospital’s dramatic world."
+        "description": "Blue scrubs, white walls, lives held close. Hearts beat strong, pain runs deep. Anatomy learned. Lives connect. Grace found."
     },
     {
         "id": 21,
         "gameName": "Stranger Things",
         "releaseYear": 2016,
         "genre": "Drama, Fantasy, Horror",
-        "description": "Shadows whisper strange. Realms collide violently. Children chase truth. A town’s dark secret. Monsters from another world."
+        "description": "Red lights flicker, labs break. Kids vanish, monsters hide. A mind flipped. Eleven fights. The stranger calls."
     },
     {
         "id": 22,
         "gameName": "Vikings",
         "releaseYear": 2013,
         "genre": "Action, Adventure, Drama",
-        "description": "Axes carve history. Blood and power clash. Kings rise violently. A tale of Norse warriors. The journey of Vikings."
+        "description": "Cold shores, gods call. Ships rise high, swords clash loud. Northmen sail. Valhalla\u2019s near. The sea awaits."
     },
     {
         "id": 23,
         "gameName": "The Boys",
         "releaseYear": 2019,
         "genre": "Action, Comedy, Crime",
-        "description": "Heroes hide dark. Power breeds corruption. Justice’s cost grows. A twisted look at superheroes. A battle between good and evil."
+        "description": "Capes fly, powers clash. Heroes dark, morals bend. Evil fights. The Boys stand. Justice turned."
     },
     {
         "id": 24,
         "gameName": "Chernobyl",
         "releaseYear": 2019,
         "genre": "Drama, History, Thriller",
-        "description": "Radiation poisons life. Truths buried deep. Disaster strikes silent. The aftermath of disaster. The story of Chernobyl’s fall."
+        "description": "Ash rains, dark skies, reactors melt. Silence spreads, truth divides. Cores burn bright. Lives are lost. The cost unfolds."
     },
     {
         "id": 25,
         "gameName": "Rick and Morty",
         "releaseYear": 2013,
         "genre": "Animation, Adventure, Comedy",
-        "description": "Dimensions bend wild. Madness fuels science. Reality cracks open. A scientist’s chaotic quest. A universe of absurdities."
+        "description": "Portals spin, lasers fire, belches sound. Science bends. Madcap genius. Morty whines. Rick laughs last."
     },
     {
         "id": 26,
         "gameName": "The Office (UK)",
         "releaseYear": 2001,
         "genre": "Comedy",
-        "description": "Awkward silences linger. Life’s dull absurdities. A workplace of chaos. British humor paints office life. The mockumentary begins."
+        "description": "Tea in hand, pranks spill, desks sit cold. Paper stacks. A world smaller. The Brit way. Mundane turns fun."
     },
     {
         "id": 27,
         "gameName": "Euphoria",
         "releaseYear": 2019,
         "genre": "Drama",
-        "description": "Teen hearts unravel. Love hides pain. Desires burn bright. A high school’s dark journey. A story of troubled youth."
+        "description": "Neon haze, masks blur, minds break. Youth unfolds, chaos brews. Highs and lows. Euphoria strikes. A world undone."
     },
     {
         "id": 28,
         "gameName": "Friends from College",
         "releaseYear": 2017,
         "genre": "Comedy, Drama",
-        "description": "Old bonds break. Love struggles slow. Memories fuel drama. Friendships strained by time. A group faces adulthood’s reality."
+        "description": "Laughs faint, eyes meet, days pass slow. College ends. Friends drift wide. Hopes fade. Life goes on."
     },
     {
         "id": 29,
         "gameName": "True Detective",
         "releaseYear": 2014,
         "genre": "Crime, Drama, Mystery",
-        "description": "Detectives chase darkness. Past and present collide. Mysteries unravel slowly. A hunt for truth. A crime drama of deep twists."
+        "description": "Swamps burn, mysteries call. A yellow king waits. Rust speaks low. True tales haunt. Darkness finds."
     },
     {
         "id": 30,
         "gameName": "Supernatural",
         "releaseYear": 2005,
         "genre": "Drama, Fantasy, Horror",
-        "description": "Demons haunt night. Brothers fight fate. Monsters breed terror. A battle between good and evil. The supernatural world unfolds."
+        "description": "Dark minds, red visions. Silent meals, minds of horror. Feasts unfold. The doctor waits. Hannibal hunts."
     }
 ]

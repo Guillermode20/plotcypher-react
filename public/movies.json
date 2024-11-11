@@ -4,209 +4,209 @@
         "gameName": "The Shawshank Redemption",
         "releaseYear": 1994,
         "genre": "Drama",
-        "description": "Chains whisper freedom. Silent hope endures. An escape unfolds. Prisoners seek redemption. A story of perseverance."
+        "description": "Endless walls, silent notes, carved by friends. Red and white, the last letter speaks. Fresh, endless skies. The man who digs. Hope is everything."
     },
     {
         "id": 2,
         "gameName": "Inception",
         "releaseYear": 2010,
         "genre": "Sci-Fi",
-        "description": "Dreams within dreams. Minds unearth reality. A heist for minds. Illusions blur truths. A journey through dreams."
+        "description": "Dreams folded tight, slipping through. Paris seen twice, fading halls. Rings of mind, blurred faces. Falls and flights. Architect of worlds."
     },
     {
         "id": 3,
         "gameName": "The Godfather",
         "releaseYear": 1972,
         "genre": "Crime/Drama",
-        "description": "Blood ties bind. Power in shadows. Family is law. A legacy is built. The world of crime."
+        "description": "Black suits, red roses, whispers in Italian. Cold glances and warm wine. The father watches. Family\u2019s rise, family\u2019s fall. A son, a legacy."
     },
     {
         "id": 4,
         "gameName": "Forrest Gump",
         "releaseYear": 1994,
         "genre": "Drama/Romance",
-        "description": "Simple soul flies. Life as fate. Innocence meets history. A journey of growth. The tale of an unlikely hero."
+        "description": "Feathers fall, life\u2019s box is sweet. Shrimp and war, a never-ending tale. Legs that run. Across the lines. A voice says go."
     },
     {
         "id": 5,
         "gameName": "Pulp Fiction",
         "releaseYear": 1994,
         "genre": "Crime/Thriller",
-        "description": "Time dances strange. Threads of chaos. Lives collide violently. Stories intertwine recklessly. A web of dark comedy."
+        "description": "A diner waits, words linger. Gold box, strange clockwork. Lines cross and twist. Marsellus and mischief. Bullets meet fate."
     },
     {
         "id": 6,
         "gameName": "The Dark Knight",
         "releaseYear": 2008,
         "genre": "Action/Crime",
-        "description": "Chaos confronts order. Masks obscure truths. Night reveals justice. A city in turmoil. Gotham faces its dark vigilante."
+        "description": "Gray skies fall, a masked man soars. Twin cities and twin shadows. A broken knight rises. Shadows and fire. The hero Gotham needs."
     },
     {
         "id": 7,
         "gameName": "Titanic",
         "releaseYear": 1997,
         "genre": "Romance/Drama",
-        "description": "Frozen fate calls. Waves swallow dreams. Love defies death. Tragedy beneath ice. The sinking of the grand ship."
+        "description": "A distant star, a hand held close. Icy heart meets fire. Lost across waves. A ship named love. Forever sinks below."
     },
     {
         "id": 8,
         "gameName": "The Matrix",
         "releaseYear": 1999,
         "genre": "Sci-Fi/Action",
-        "description": "Red pill beckons. Reality distorts violently. A world enslaved. Awakening within the machine. The battle for truth."
+        "description": "Red pills, white rabbits, walls melt away. Chosen path, unseen ways. Cracks in code. Awakening, bending. The man reborn."
     },
     {
         "id": 9,
         "gameName": "The Lion King",
         "releaseYear": 1994,
         "genre": "Animation/Drama",
-        "description": "Circle of life. Shadows claim kings. Pride must rise. A young prince’s journey. The heart of Africa's kingdom."
+        "description": "Dust rises, suns set, wild lands. A scar and a king lost. Roars and betrayals. A father\u2019s voice. Circle begins anew."
     },
     {
         "id": 10,
         "gameName": "Gladiator",
         "releaseYear": 2000,
         "genre": "Action/Drama",
-        "description": "Steel clashes loud. Revenge fuels strength. Honor fades fast. A fallen hero’s revenge. The rise of a gladiator."
+        "description": "The roar of the crowd, echoes clash. A gladiator lost in Rome. Emperor\u2019s throne, broken. Battle\u2019s end. Strength and honor."
     },
     {
         "id": 11,
         "gameName": "The Avengers",
         "releaseYear": 2012,
         "genre": "Action/Sci-Fi",
-        "description": "Heroes unite strong. A threat grows colossal. Power meets resistance. Teams form alliances. Earth's last hope."
+        "description": "Lost in time, the clash unfolds. Wings spread wide, together they stand. Heroes assemble, earth\u2019s fate held. A shield raised high. Avengers stand tall."
     },
     {
         "id": 12,
         "gameName": "Jurassic Park",
         "releaseYear": 1993,
         "genre": "Sci-Fi/Adventure",
-        "description": "Ancient beasts awaken. Chaos runs wild. Nature’s fury unleashed. Man treads history’s edge. A park of prehistoric terror."
+        "description": "Roar of thunder, claws snap shut. Ripples in water, a chill spreads wide. Land meets the beast. Teeth of time. Life finds a way."
     },
     {
         "id": 13,
         "gameName": "Back to the Future",
         "releaseYear": 1985,
         "genre": "Sci-Fi/Adventure",
-        "description": "Time bends backward. A flash of lightning. History’s course shifts. A boy meets destiny. A time-traveling adventure."
+        "description": "Sparks and wires, wheels twist back. A road lit bright, future\u2019s face calls. Past meets present. A mad scientist\u2019s dream. The clock strikes time."
     },
     {
         "id": 14,
         "gameName": "Interstellar",
         "releaseYear": 2014,
         "genre": "Sci-Fi/Drama",
-        "description": "Stars whisper secrets. Worlds fracture apart. Time and love entwined. Space bends the soul. A quest for survival."
+        "description": "Stars turn, a distant wave. Love\u2019s hand reaches far. Space unfolds, unbroken lines. Father calls out. Time to return."
     },
     {
         "id": 15,
         "gameName": "Fight Club",
         "releaseYear": 1999,
         "genre": "Drama",
-        "description": "Chaos breeds strength. Fight for freedom. Minds break apart. Rebels against order. A violent search for identity."
+        "description": "Ash and soap, voices whisper low. Men who vanish, fight for truth. Mind unravels. Paper or fist. Rules to break."
     },
     {
         "id": 16,
         "gameName": "The Social Network",
         "releaseYear": 2010,
         "genre": "Drama/Biography",
-        "description": "Code builds empires. Ambition fuels betrayal. Friendship’s bitter fall. A web of connections. The rise of Facebook."
+        "description": "White halls, blurred text, lines divide. The birth of a network. Friend or foe. The click of code. A friendship fades."
     },
     {
         "id": 17,
         "gameName": "La La Land",
         "releaseYear": 2016,
         "genre": "Drama/Musical",
-        "description": "Dreams meet stardust. Love dances bright. Stardom's cruel cost. Hearts in rhythm. A musical journey of love and ambition."
+        "description": "Golden lights, soft jazz. Dreams build up, love falls down. Faded stars gleam. The city calls. A song ends."
     },
     {
         "id": 18,
         "gameName": "The Silence of the Lambs",
         "releaseYear": 1991,
         "genre": "Thriller/Crime",
-        "description": "Whispers chill flesh. Minds trapped in darkness. Faces hide monsters. A chase of fear. The hunt for a killer."
+        "description": "Silence breaks, lambs cry out. Dark minds, steel bars. Fava beans and fates. The doctor speaks. Eyes meet fear."
     },
     {
         "id": 19,
         "gameName": "Spider-Man: Into the Spider-Verse",
         "releaseYear": 2018,
         "genre": "Animation/Action",
-        "description": "Webs cross universes. Heroes multiply unseen. Dimensions collide wildly. A boy’s destiny shifts. The multiverse of Spider-Men."
+        "description": "A leap of faith, spider\u2019s thread. Infinite paths, worlds unfold. A city swings. A glitch of color. A hero\u2019s spark."
     },
     {
         "id": 20,
         "gameName": "Schindler's List",
         "releaseYear": 1993,
         "genre": "Drama/History",
-        "description": "Darkness swallows life. A man’s change stirs. Humanity’s loss echoes. One man’s path to saving. The Holocaust’s painful truth."
+        "description": "Shadows spread, the cold bites deep. Faint songs of horror. Ash in the streets. Whispers from alleys. A list to remember."
     },
     {
         "id": 21,
         "gameName": "The Grand Budapest Hotel",
         "releaseYear": 2014,
         "genre": "Comedy/Drama",
-        "description": "Past fades bright. Doors hide secrets. Wealth shrouded in chaos. A hotel’s strange history. The tale of a stolen painting."
+        "description": "Rooftops red, strange keys turn. A mountain stands high. Faces of a thousand colors. The bell rings. A grand tale."
     },
     {
         "id": 22,
         "gameName": "Mad Max: Fury Road",
         "releaseYear": 2015,
         "genre": "Action/Sci-Fi",
-        "description": "Desert winds howl. Fuel runs scarce. Madness reigns supreme. A war for survival. Fury drives the last warriors."
+        "description": "Dust storms, thunder rolls, endless roads. Speed and steel, the last hope. A fortress lost. Fires ablaze. The world chases on."
     },
     {
         "id": 23,
         "gameName": "The Exorcist",
         "releaseYear": 1973,
         "genre": "Horror",
-        "description": "Evil lurks close. Fear fills the air. A battle for souls. Darkness within flesh. A possessed fight for salvation."
+        "description": "Ancient house, chill spreads thick. Prayers fail, voices crack. The cross held tight. Darkness stirs. Shadows scream."
     },
     {
         "id": 24,
         "gameName": "The Departed",
         "releaseYear": 2006,
         "genre": "Crime/Thriller",
-        "description": "Trust is fractured. Deception brews deep. Secrets tear apart. Double lives collide violently. A thriller of betrayal."
+        "description": "Eyes on walls, a city split. Two men in gray. Old debts call. Whispered lies. A final check."
     },
     {
         "id": 25,
         "gameName": "The Truman Show",
         "releaseYear": 1998,
         "genre": "Drama/Sci-Fi",
-        "description": "Reality bends close. Life under observation. Truths veiled in illusion. A man’s world controlled. The story of a manipulated life."
+        "description": "Walls close in, lives unfold. Man on the screen, lines blur. Freedom calls, the door opens. The world watches."
     },
     {
         "id": 26,
         "gameName": "Deadpool",
         "releaseYear": 2016,
         "genre": "Action/Comedy",
-        "description": "Chaos breaks rules. Humor masks pain. Violence with wit. A hero’s twisted tale. A mercenary on a revenge spree."
+        "description": "Tongue sharp, grin wide. No capes, no rules. Guns blaze, jokes fly. A merc and a mouth. Red never dies."
     },
     {
         "id": 27,
         "gameName": "A Beautiful Mind",
         "releaseYear": 2001,
         "genre": "Biography/Drama",
-        "description": "Genius hides madness. Reality unravels slowly. A mind battles itself. The rise of brilliance. A mathematician’s troubled journey."
+        "description": "Deep halls, walls echo. Minds twist, numbers sing. A tale unfolds. One voice fights. Truth found in math."
     },
     {
         "id": 28,
         "gameName": "The Princess Bride",
         "releaseYear": 1987,
         "genre": "Adventure/Comedy",
-        "description": "Swords clash bright. Love defies death. Fairy tales twist. An epic quest unfolds. A story of love and adventure."
+        "description": "Blades clash, sharp wit and smiles. Giants fall, tales twist. True love\u2019s call. A princess saved. Fencing, fighting, fun."
     },
     {
         "id": 29,
         "gameName": "Parasite",
         "releaseYear": 2019,
         "genre": "Thriller/Drama",
-        "description": "Walls conceal truths. Hunger drives dark. Lives intertwine cruelly. Class divides sharply. A twisted social commentary."
+        "description": "Walls high, secrets low. Lines blur, old tales in new halls. Steps below ground. Lives intertwine. A family\u2019s two worlds."
     },
     {
         "id": 30,
         "gameName": "The Big Lebowski",
         "releaseYear": 1998,
         "genre": "Comedy/Crime",
-        "description": "Bowls and chaos. Slacker seeks clarity. Life’s absurdities collide. A rug’s deep meaning. A tale of the Dude."
+        "description": "Sunglasses on, bowling shoes set. The rug that binds. White Russians clink. A dude, his way. Life rolls on."
     }
 ]
