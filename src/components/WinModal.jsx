@@ -51,14 +51,7 @@ const WinModal = ({ isOpen, onClose, selectedDescription, gameState, gameData })
         <div className="p-4 border-t border-white/10">
           <button
             onClick={onClose}
-            className="w-full sm:w-auto px-6 py-2
-                       text-white/90 tracking-[0.2em]
-                       border border-green-500/30 rounded-md
-                       bg-zinc-950/70
-                       hover:bg-zinc-950/70 hover:border-white/30
-                       focus:outline-none focus:border-white/40
-                       focus:ring-2 focus:ring-white/20
-                       transition-all duration-300"
+            className="plotcypher-white-btn"
           >
             CLOSE
           </button>

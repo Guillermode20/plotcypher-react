@@ -1,4 +1,5 @@
 // tailwind.config.js
+
 export default {
   mode: 'jit',
   darkMode: 'class', // or 'media' or 'class'
@@ -61,5 +62,32 @@ export default {
       backdropBlur: ['hover'],
     },
   },
-  plugins: [],
+  plugins: [
+  ],
+  // Add component classes
+  layer: {
+    components: {
+      '.plotcypher-white-btn': {
+        '@apply w-full sm:w-auto px-6 py-2': {},
+        '@apply text-white/90 tracking-[0.2em]': {},
+        '@apply border border-white/30 rounded-md': {},
+        '@apply bg-zinc-950': {},
+        '@apply hover:bg-zinc-950 hover:border-white/30': {},
+        '@apply focus:outline-none focus:border-white/40': {},
+        '@apply focus:ring-2 focus:ring-white/20': {},
+        '@apply transition-all duration-300': {},
+      },
+      '.plotcypher-red-btn': {
+        '@apply w-full sm:w-auto px-6 py-2': {},
+        '@apply text-red-500/90 tracking-[0.2em]': {},
+        '@apply border border-red-500/30 rounded-md': {},
+        '@apply bg-zinc-950': {},
+        '@apply hover:bg-zinc-950 hover:border-white/30': {},
+        '@apply focus:outline-none focus:border-white/40': {},
+        '@apply focus:ring-2 focus:ring-white/20': {},
+        '@apply transition-all duration-300': {},
+        '@apply disabled:opacity-50': {},
+      },
+    },
+  },
 }

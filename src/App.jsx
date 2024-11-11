@@ -4,6 +4,8 @@ import ErrorBoundary from './ErrorBoundary.jsx';
 import { getAllGames, getAllMovies, getAllTVShows } from './database';
 import CategoryButtons from './components/CategoryButtons';
 import StatsModal from './components/StatsModal';
+import { updateStats } from './utils/statsManager';
+import SuggestionsDropdown from './components/SuggestionsDropdown';
 
 const InfoPopUp = lazy(() => import('./components/InfoPopUp'));
 const ProjectInfoPopUp = lazy(() => import('./components/ProjectInfoPopUp'));
@@ -113,11 +115,9 @@ function App() {
 
   useEffect(() => {
     const hasVisited = localStorage.getItem('hasVisitedBefore');
-    if (TESTING_MODE || (!hasVisited && !TESTING_MODE)) {
+    if (!hasVisited && !TESTING_MODE) {
       setShowInfoModal(true);
-      if (!TESTING_MODE) {
-        localStorage.setItem('hasVisitedBefore', 'true');
-      }
+      localStorage.setItem('hasVisitedBefore', 'true');
     }
   }, []);
 
@@ -155,45 +155,6 @@ function App() {
     loadAllTitles();
   }, []);
 
-  const filteredSuggestions = useMemo(() => {
-    if (!searchInput || searchInput.length < 1 || !selectedDescription) return [];
-      
-    const suggestions = allTitles[selectedDescription === 'tv' ? 'tv' : 
-                                selectedDescription === 'movie' ? 'movies' : 
-                                'games'];
-    
-    if (!suggestions) return [];
-      
-    const searchQuery = searchInput.toLowerCase();
-    const maxResults = 10;
-    let results = [];
-      
-    const exactMatch = suggestions.find(item => 
-      item && item.toLowerCase() === searchQuery
-    );
-    if (exactMatch) return [exactMatch];
-  
-    suggestions.forEach(item => {
-      if (results.length >= maxResults) return;
-      if (item && item.toLowerCase().startsWith(searchQuery)) {
-        results.push(item);
-      }
-    });
-  
-    if (results.length < maxResults) {
-      suggestions.forEach(item => {
-        if (results.length >= maxResults) return;
-        if (item && !item.toLowerCase().startsWith(searchQuery) && 
-            item.toLowerCase().includes(searchQuery) &&
-            !results.includes(item)) {
-          results.push(item);
-        }
-      });
-    }
-  
-    return results;
-  }, [searchInput, selectedDescription, allTitles]);
-
   const handleGuessSubmit = useCallback(() => {
     if (!gameData) return;
     const userInput = searchInput.toLowerCase();
@@ -210,6 +171,7 @@ function App() {
           }
         };
         updateLocalStorage(newState);
+        updateStats(selectedDescription, true, gameState.attempts[selectedDescription] + 1);
         return newState;
       });
       setShowWinModal(true);
@@ -238,6 +200,7 @@ function App() {
       
       if (updatedLevel <= -1) {
         setShowFailModal(true);
+        updateStats(selectedDescription, false, 0);
       }
       
       return newState;
@@ -250,7 +213,7 @@ function App() {
   }, [gameData, searchInput, selectedDescription, updateLocalStorage]);
 
   const handleCategorySelect = useCallback((category) => {
-    setSelectedDescription(category);
+    setSelectedDescription(category); 
   }, []);
 
   const debouncedSetSearchInput = useMemo(() => {
@@ -269,20 +232,18 @@ function App() {
   }, [debouncedSetSearchInput]);
 
   const renderDropdownItems = useMemo(() => (
-    filteredSuggestions.map((item, index) => (
-      <li
-        key={index}
-        className="px-4 py-2 cursor-pointer text-white/70 hover:text-white hover:bg-zinc-800/70 transition-all duration-200 block w-full text-left"
-        onClick={() => {
-          debouncedSetSearchInput(item);
-          setSearchInput(item);
-          setShowDropdown(false);
-        }}
-      >
-        {item}
-      </li>
-    ))
-  ), [filteredSuggestions, debouncedSetSearchInput]);
+    <SuggestionsDropdown 
+      suggestions={allTitles} 
+      searchInput={searchInput} 
+      selectedDescription={selectedDescription} 
+      onSelect={(item) => {
+        debouncedSetSearchInput(item);
+        setSearchInput(item);
+        setShowDropdown(false);
+      }} 
+      dropdownDirection={dropdownDirection} 
+    />
+  ), [allTitles, searchInput, selectedDescription, debouncedSetSearchInput, dropdownDirection]);
 
   if (isLoading) {
     return <LoadingScreen />;
@@ -294,29 +255,21 @@ function App() {
           <ErrorBoundary>
             <div className="relative min-h-screen bg-zinc-950 bg-gradient-to-b from-zinc-950 to-zinc-950 text-white font-mono scrollbar-gutter-stable">
               <div className="container relative mx-auto px-0 sm:px-4 py-0 sm:py-8">
-                <div className="max-w-2xl mx-auto p-2 sm:p-4 
-                  backdrop-blur-sm bg-zinc-950/90 border border-white/30 
-                  rounded-none sm:rounded-lg shadow-xl drop-shadow-glow hover:shadow-2xl
-                  transition-all duration-300
-                  box-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                <div className="max-w-2xl mx-auto p-2 sm:p-4 backdrop-blur-sm bg-zinc-950/90 border border-white/30 rounded-none sm:rounded-lg shadow-xl drop-shadow-glow hover:shadow-2xl transition-all duration-300 box-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
                   
                   <div className="flex">
-                    <header className="flex-grow p-2 sm:p-4 relative border border-white/30 bg-zinc-950 rounded-md
-                                hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4 rounded-r-none">
+                    <header className="flex-grow p-2 sm:p-4 relative border border-white/30 bg-zinc-950 rounded-md hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4 rounded-r-none">
                       <div className="flex items-center">
-                        <h1 className="text-xl sm:text-4xl font-bold tracking-tighter text-white/90
-                                  hover:text-white transition-colors duration-300">
+                        <h1 className="text-xl sm:text-4xl font-bold tracking-tighter text-white/90 hover:text-white transition-colors duration-300">
                           PLOTCYPHER
                         </h1>
                       </div>
-                      <p className="mt-1 text-xs sm:text-sm text-white/70 tracking-[0.2em]
-                              hover:text-white/90 transition-colors duration-300">
+                      <p className="mt-1 text-xs sm:text-sm text-white/70 tracking-[0.2em] hover:text-white/90 transition-colors duration-300">
                         DAILY CHALLENGES TO TEST YOUR MEDIA KNOWLEDGE
                       </p>
                     </header>
 
-                    <div className="p-2 sm:p-4 border border-white/30 bg-zinc-950 rounded-md
-                                hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4 rounded-l-none border-l-0">
+                    <div className="p-2 sm:p-4 border border-white/30 bg-zinc-950 rounded-md hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4 rounded-l-none border-l-0">
                       <div className="relative h-full flex items-center justify-center">
                         <button // hamburger button
                           onClick={() => setShowMenu(!showMenu)}
@@ -389,8 +342,7 @@ function App() {
                       </p>
                       <button
                         onClick={() => setShowInfoModal(true)}
-                        className="px-3 py-2 text-xs sm:text-sm tracking-[0.2em] border border-white/30 bg-zinc-950 text-white rounded-md hover:bg-zinc-950 hover:border-white/30 focus:outline-none focus:border-white/40 focus:ring-2 focus:ring-white/20 transition-all duration-300"
-                      >
+                        className="plotcypher-white-btn">
                         How to Play
                       </button>
                     </div>
@@ -400,17 +352,8 @@ function App() {
                         // Loading wheel
                         <div className="flex justify-center items-center h-full">
                           <svg className="animate-spin h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle
-                              className="opacity-25"
-                              cx="12" cy="12" r="10"
-                              stroke="currentColor"
-                              strokeWidth="4"
-                            ></circle>
-                            <path
-                              className="opacity-75"
-                              fill="currentColor"
-                              d="M4 12a8 8 0 018-8v8H4z"
-                            ></path>
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
                           </svg>
                         </div>
                       }>
@@ -428,13 +371,7 @@ function App() {
 
                       {!gameState.gameOverStates[selectedDescription] && (
                         <>
-                          <p className={`inline-block px-4 py-2 
-                            text-xs sm:text-sm text-white/70 tracking-[0.2em]
-                            border border-white/30 rounded-md
-                            bg-zinc-950 hover:bg-zinc-950
-                            hover:border-white/30
-                            transition-all duration-300
-                            ${isFlashing ? 'animate-flash' : ''}`}>
+                          <p className={`inline-block px-4 py-2 text-xs sm:text-sm text-white/70 tracking-[0.2em] border border-white/30 rounded-md bg-zinc-950 hover:bg-zinc-950 hover:border-white/30 transition-all duration-300 ${isFlashing ? 'animate-flash' : ''}`}>
                             DECRYPTION ATTEMPTS REMAINING: <span className="text-white/90">{ gameState.levels[selectedDescription] + 1 }</span>
                           </p>
                           <div className="relative flex flex-col sm:flex-row gap-1 sm:gap-2" ref={dropdownRef}>
@@ -443,50 +380,16 @@ function App() {
                               type="text"
                               value={searchInput}
                               onChange={handleInputChange}
-                              className="w-full px-4 py-2
-                                text-xs sm:text-sm text-white/90 tracking-[0.2em] placeholder:text-white/50
-                                border border-white/30 rounded-md
-                                bg-zinc-950
-                                hover:bg-zinc-950 hover:border-white/30
-                                focus:outline-none focus:border-white/40 
-                                focus:ring-2 focus:ring-white/20
-                                transition-all duration-300"
+                              className="w-full px-4 py-2 text-xs sm:text-sm text-white/90 tracking-[0.2em] placeholder:text-white/50 border border-white/30 rounded-md bg-zinc-950 hover:bg-zinc-950 hover:border-white/30 focus:outline-none focus:border-white/40 focus:ring-2 focus:ring-white/20 transition-all duration-300"
                               placeholder="ENTER YOUR GUESS..."
                             />
                             <button
                               onClick={handleGuessSubmit}
-                              className="w-full sm:w-auto px-4 sm:px-6 py-2
-                                text-xs sm:text-base text-white/90 tracking-[0.2em]
-                                border border-white/30 rounded-md
-                                bg-zinc-950
-                                hover:bg-zinc-950 hover:border-white/30
-                                focus:outline-none focus:border-white/40
-                                focus:ring-2 focus:ring-white/20
-                                transition-all duration-300"
+                              className="plotcypher-white-btn"
                             >
                               DECRYPT
                             </button>
-                            {showDropdown && searchInput && gameData && gameState.levels[selectedDescription] <= 4 && (
-                              <ul className={`absolute left-0 right-0 ${
-                                dropdownDirection === 'up' 
-                                  ? 'bottom-[calc(100%+0.5rem)]' 
-                                  : 'top-[calc(100%+0.5rem)]'
-                              }
-                                border border-white/30 rounded-md
-                                bg-zinc-950/90 backdrop-blur-sm
-                                shadow-lg max-h-60 overflow-y-auto z-50
-                                divide-y divide-white/10
-                                [&::-webkit-scrollbar]:w-2
-                                [&::-webkit-scrollbar-track]:bg-transparent
-                                [&::-webkit-scrollbar-thumb]:bg-white/20
-                                [&::-webkit-scrollbar-thumb]:rounded-full
-                                [&::-webkit-scrollbar-thumb]:border-2
-                                [&::-webkit-scrollbar-thumb]:border-transparent
-                                [&::-webkit-scrollbar-thumb]:bg-clip-padding
-                                [&::-webkit-scrollbar-thumb]:hover:bg-white/30`}>
-                                {renderDropdownItems}
-                              </ul>
-                            )}
+                            {showDropdown && searchInput && gameData && gameState.levels[selectedDescription] <= 4 && renderDropdownItems}
                           </div>
                         </>
                       )}
