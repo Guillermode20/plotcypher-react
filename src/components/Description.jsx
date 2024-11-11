@@ -131,7 +131,7 @@ function Description(props) {
                       backdrop-blur-sm
                       hover:border-white/30 hover:bg-zinc-950/70
                       transition-opacity duration-500
-                      ${animate ? 'opacity-100' : 'opacity-0'}`}>
+                      `}>
         <div className="space-y-2">
           <h2 className="text-base sm:text-lg tracking-[0.2em] text-white/90 uppercase font-mono
                         hover:text-white/90
