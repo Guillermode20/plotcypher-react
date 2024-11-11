@@ -3,6 +3,7 @@ import LoadingScreen from './core/LoadingScreen.jsx';
 import ErrorBoundary from './ErrorBoundary.jsx';
 import { getAllGames, getAllMovies, getAllTVShows } from './database';
 import CategoryButtons from './components/CategoryButtons';
+import StatsModal from './components/StatsModal';
 
 const InfoPopUp = lazy(() => import('./components/InfoPopUp'));
 const ProjectInfoPopUp = lazy(() => import('./components/ProjectInfoPopUp'));
@@ -11,7 +12,7 @@ const FailModal = lazy(() => import('./components/FailModal'));
 const GameOverScreen = lazy(() => import('./components/GameOverScreen'));
 const Description = lazy(() => import('./components/Description'));
 
-const TESTING_MODE = false;
+const TESTING_MODE = true;
 
 const initialGameState = {
   levels: { game: 4, movie: 4, tv: 4 },
@@ -58,6 +59,7 @@ function App() {
   const [showProjectModal, setShowProjectModal] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef(null);
+  const [showStatsModal, setShowStatsModal] = useState(false);
 
   const handleData = useCallback((data) => {
     setGameData(data);
@@ -287,219 +289,235 @@ function App() {
   }
 
   return (
-    <ErrorBoundary>
-      <Suspense fallback={<LoadingScreen />}>
-        <ErrorBoundary>
-          <div className="relative min-h-screen bg-zinc-950 bg-gradient-to-b from-zinc-950 to-zinc-950 text-white font-mono scrollbar-gutter-stable">
-            <div className="container relative mx-auto px-0 sm:px-4 py-0 sm:py-8">
-              <div className="max-w-2xl mx-auto p-2 sm:p-4 
-                backdrop-blur-sm bg-zinc-950/90 border border-white/30 
-                rounded-none sm:rounded-lg shadow-xl drop-shadow-glow hover:shadow-2xl
-                transition-all duration-300
-                box-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-                
-                <div className="flex">
-                  <header className="flex-grow p-2 sm:p-4 relative border border-white/30 bg-zinc-950 rounded-md
-                              hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4 rounded-r-none">
-                    <div className="flex items-center">
-                      <h1 className="text-xl sm:text-4xl font-bold tracking-tighter text-white/90
-                                hover:text-white transition-colors duration-300">
-                        PLOTCYPHER
-                      </h1>
-                    </div>
-                    <p className="mt-1 text-xs sm:text-sm text-white/70 tracking-[0.2em]
-                            hover:text-white/90 transition-colors duration-300">
-                      DAILY CHALLENGES TO TEST YOUR MEDIA KNOWLEDGE
-                    </p>
-                  </header>
-
-                  <div className="p-2 sm:p-4 border border-white/30 bg-zinc-950 rounded-md
-                              hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4 rounded-l-none border-l-0">
-                    <div className="relative h-full flex items-center justify-center">
-                      <button
-                        onClick={() => setShowMenu(!showMenu)}
-                        className="p-2 text-white/70 hover:text-white/90 transition-colors duration-300"
-                        aria-label="Menu"
-                      >
-                        <svg xmlns="http://www. w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 7.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-                        </svg>
-                      </button>
-                      {showMenu && (
-                        <div
-                          ref={menuRef}
-                          className="absolute right-0 mt-2 w-48 bg-zinc-950/90 border border-white/30 rounded-md shadow-lg z-50"
-                        >
-                          <ul className="py-1">
-                            <li>
-                              <button
-                                onClick={() => {
-                                  setShowInfoModal(true);
-                                  setShowMenu(false);
-                                }}
-                                className="w-full text-left px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-zinc-800/70 transition-colors duration-200"
-                              >
-                                Game Info
-                              </button>
-                            </li>
-                            <li>
-                              <button
-                                onClick={() => {
-                                  setShowProjectModal(true);
-                                  setShowMenu(false);
-                                }}
-                                className="w-full text-left px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-zinc-800/70 transition-colors duration-200"
-                              >
-                                Project Info
-                              </button>
-                            </li>
-                          </ul>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Button group with adjusted spacing */}
-                <CategoryButtons 
-                  selectedDescription={selectedDescription} 
-                  onSelect={handleCategorySelect}
-                />
-
-                {!selectedDescription ? (
-                  <div className="space-y-4 text-center">
-                    <p className="text-base sm:text-xl text-white/90 tracking-wider">
-                      Select a category above to begin decrypting
-                    </p>
-                    <p className="text-xs sm:text-sm text-white/70">
-                      Choose between Game, Movie, or TV Show descriptions to decrypt.
-                    </p>
-                    <button
-                      onClick={() => setShowInfoModal(true)}
-                      className="px-3 py-2 text-xs sm:text-sm tracking-[0.2em] border border-white/30 bg-zinc-950 text-white rounded-md hover:bg-zinc-950 hover:border-white/30 focus:outline-none focus:border-white/40 focus:ring-2 focus:ring-white/20 transition-all duration-300"
-                    >
-                      How to Play
-                    </button>
-                  </div>
-                ) : (
-                  <div className="space-y-4 relative">
-                    <Suspense fallback={
-                      // Loading wheel
-                      <div className="flex justify-center items-center h-full">
-                        <svg className="animate-spin h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                          <circle
-                            className="opacity-25"
-                            cx="12" cy="12" r="10"
-                            stroke="currentColor"
-                            strokeWidth="4"
-                          ></circle>
-                          <path
-                            className="opacity-75"
-                            fill="currentColor"
-                            d="M4 12a8 8 0 018-8v8H4z"
-                          ></path>
-                        </svg>
+      <ErrorBoundary>
+        <Suspense fallback={<LoadingScreen />}>
+          <ErrorBoundary>
+            <div className="relative min-h-screen bg-zinc-950 bg-gradient-to-b from-zinc-950 to-zinc-950 text-white font-mono scrollbar-gutter-stable">
+              <div className="container relative mx-auto px-0 sm:px-4 py-0 sm:py-8">
+                <div className="max-w-2xl mx-auto p-2 sm:p-4 
+                  backdrop-blur-sm bg-zinc-950/90 border border-white/30 
+                  rounded-none sm:rounded-lg shadow-xl drop-shadow-glow hover:shadow-2xl
+                  transition-all duration-300
+                  box-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                  
+                  <div className="flex">
+                    <header className="flex-grow p-2 sm:p-4 relative border border-white/30 bg-zinc-950 rounded-md
+                                hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4 rounded-r-none">
+                      <div className="flex items-center">
+                        <h1 className="text-xl sm:text-4xl font-bold tracking-tighter text-white/90
+                                  hover:text-white transition-colors duration-300">
+                          PLOTCYPHER
+                        </h1>
                       </div>
-                    }>
-                      {gameState.gameOverStates[selectedDescription] ? (
-                        <GameOverScreen gameState={gameState} category={selectedDescription} />
-                      ) : (
-                        <Description
-                          onDataLoad={handleData}
-                          level={gameState.levels[selectedDescription]}
-                          startDate={startDate}
-                          category={selectedDescription}
-                        />
-                      )}
-                    </Suspense>
+                      <p className="mt-1 text-xs sm:text-sm text-white/70 tracking-[0.2em]
+                              hover:text-white/90 transition-colors duration-300">
+                        DAILY CHALLENGES TO TEST YOUR MEDIA KNOWLEDGE
+                      </p>
+                    </header>
 
-                    {!gameState.gameOverStates[selectedDescription] && (
-                      <>
-                        <p className={`inline-block px-4 py-2 
-                          text-xs sm:text-sm text-white/70 tracking-[0.2em]
-                          border border-white/30 rounded-md
-                          bg-zinc-950 hover:bg-zinc-950
-                          hover:border-white/30
-                          transition-all duration-300
-                          ${isFlashing ? 'animate-flash' : ''}`}>
-                          DECRYPTION ATTEMPTS REMAINING: <span className="text-white/90">{ gameState.levels[selectedDescription] + 1 }</span>
-                        </p>
-                        <div className="relative flex flex-col sm:flex-row gap-1 sm:gap-2" ref={dropdownRef}>
-                          <input
-                            ref={inputRef}
-                            type="text"
-                            value={searchInput}
-                            onChange={handleInputChange}
-                            className="w-full px-4 py-2
-                              text-xs sm:text-sm text-white/90 tracking-[0.2em] placeholder:text-white/50
-                              border border-white/30 rounded-md
-                              bg-zinc-950
-                              hover:bg-zinc-950 hover:border-white/30
-                              focus:outline-none focus:border-white/40 
-                              focus:ring-2 focus:ring-white/20
-                              transition-all duration-300"
-                            placeholder="ENTER YOUR GUESS..."
-                          />
-                          <button
-                            onClick={handleGuessSubmit}
-                            className="w-full sm:w-auto px-4 sm:px-6 py-2
-                              text-xs sm:text-base text-white/90 tracking-[0.2em]
-                              border border-white/30 rounded-md
-                              bg-zinc-950
-                              hover:bg-zinc-950 hover:border-white/30
-                              focus:outline-none focus:border-white/40
-                              focus:ring-2 focus:ring-white/20
-                              transition-all duration-300"
+                    <div className="p-2 sm:p-4 border border-white/30 bg-zinc-950 rounded-md
+                                hover:border-white/30 transition-all duration-300 mb-2 sm:mb-4 rounded-l-none border-l-0">
+                      <div className="relative h-full flex items-center justify-center">
+                        <button // hamburger button
+                          onClick={() => setShowMenu(!showMenu)}
+                          className="p-2 text-white/70 hover:text-white/90 transition-colors duration-300"
+                          aria-label="Menu"
+                        >
+                          <svg xmlns="http://www. w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 7.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                          </svg>
+                        </button>
+                        {showMenu && (
+                          <div
+                            ref={menuRef}
+                            className="absolute right-0 top-12 w-48 bg-zinc-950/90 border border-white/30 rounded-md shadow-lg z-50"
                           >
-                            DECRYPT
-                          </button>
-                          {showDropdown && searchInput && gameData && gameState.levels[selectedDescription] <= 4 && (
-                            <ul className={`absolute left-0 right-0 ${
-                              dropdownDirection === 'up' 
-                                ? 'bottom-[calc(100%+0.5rem)]' 
-                                : 'top-[calc(100%+0.5rem)]'
-                            }
-                              border border-white/30 rounded-md
-                              bg-zinc-950/90 backdrop-blur-sm
-                              shadow-lg max-h-60 overflow-y-auto z-50
-                              divide-y divide-white/10
-                              [&::-webkit-scrollbar]:w-2
-                              [&::-webkit-scrollbar-track]:bg-transparent
-                              [&::-webkit-scrollbar-thumb]:bg-white/20
-                              [&::-webkit-scrollbar-thumb]:rounded-full
-                              [&::-webkit-scrollbar-thumb]:border-2
-                              [&::-webkit-scrollbar-thumb]:border-transparent
-                              [&::-webkit-scrollbar-thumb]:bg-clip-padding
-                              [&::-webkit-scrollbar-thumb]:hover:bg-white/30`}>
-                              {renderDropdownItems}
+                            <ul className="py-1">
+                              <li>
+                                <button
+                                  onClick={() => {
+                                    setShowStatsModal(true);
+                                    setShowMenu(false);
+                                  }}
+                                  className="w-full text-left px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-zinc-800/70 transition-colors duration-200"
+                                >
+                                  Your stats
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  onClick={() => {
+                                    setShowInfoModal(true);
+                                    setShowMenu(false);
+                                  }}
+                                  className="w-full text-left px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-zinc-800/70 transition-colors duration-200"
+                                >
+                                  Game Info
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  onClick={() => {
+                                    setShowProjectModal(true);
+                                    setShowMenu(false);
+                                  }}
+                                  className="w-full text-left px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-zinc-800/70 transition-colors duration-200"
+                                >
+                                  Project Info
+                                </button>
+                              </li>                      
                             </ul>
-                          )}
-                        </div>
-                      </>
-                    )}
+                          </div>
+                        )}
+                      </div>
+                    </div>
                   </div>
-                )}
+                  
+                  {/* Button group with adjusted spacing */}
+                  <CategoryButtons 
+                    selectedDescription={selectedDescription} 
+                    onSelect={handleCategorySelect}
+                  />
+
+                  {!selectedDescription ? (
+                    <div className="space-y-4 text-center">
+                      <p className="text-base sm:text-xl text-white/90 tracking-wider">
+                        Select a category above to begin decrypting
+                      </p>
+                      <p className="text-xs sm:text-sm text-white/70">
+                        Choose between Game, Movie, or TV Show descriptions to decrypt.
+                      </p>
+                      <button
+                        onClick={() => setShowInfoModal(true)}
+                        className="px-3 py-2 text-xs sm:text-sm tracking-[0.2em] border border-white/30 bg-zinc-950 text-white rounded-md hover:bg-zinc-950 hover:border-white/30 focus:outline-none focus:border-white/40 focus:ring-2 focus:ring-white/20 transition-all duration-300"
+                      >
+                        How to Play
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="space-y-4 relative">
+                      <Suspense fallback={
+                        // Loading wheel
+                        <div className="flex justify-center items-center h-full">
+                          <svg className="animate-spin h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle
+                              className="opacity-25"
+                              cx="12" cy="12" r="10"
+                              stroke="currentColor"
+                              strokeWidth="4"
+                            ></circle>
+                            <path
+                              className="opacity-75"
+                              fill="currentColor"
+                              d="M4 12a8 8 0 018-8v8H4z"
+                            ></path>
+                          </svg>
+                        </div>
+                      }>
+                        {gameState.gameOverStates[selectedDescription] ? (
+                          <GameOverScreen gameState={gameState} category={selectedDescription} />
+                        ) : (
+                          <Description
+                            onDataLoad={handleData}
+                            level={gameState.levels[selectedDescription]}
+                            startDate={startDate}
+                            category={selectedDescription}
+                          />
+                        )}
+                      </Suspense>
+
+                      {!gameState.gameOverStates[selectedDescription] && (
+                        <>
+                          <p className={`inline-block px-4 py-2 
+                            text-xs sm:text-sm text-white/70 tracking-[0.2em]
+                            border border-white/30 rounded-md
+                            bg-zinc-950 hover:bg-zinc-950
+                            hover:border-white/30
+                            transition-all duration-300
+                            ${isFlashing ? 'animate-flash' : ''}`}>
+                            DECRYPTION ATTEMPTS REMAINING: <span className="text-white/90">{ gameState.levels[selectedDescription] + 1 }</span>
+                          </p>
+                          <div className="relative flex flex-col sm:flex-row gap-1 sm:gap-2" ref={dropdownRef}>
+                            <input
+                              ref={inputRef}
+                              type="text"
+                              value={searchInput}
+                              onChange={handleInputChange}
+                              className="w-full px-4 py-2
+                                text-xs sm:text-sm text-white/90 tracking-[0.2em] placeholder:text-white/50
+                                border border-white/30 rounded-md
+                                bg-zinc-950
+                                hover:bg-zinc-950 hover:border-white/30
+                                focus:outline-none focus:border-white/40 
+                                focus:ring-2 focus:ring-white/20
+                                transition-all duration-300"
+                              placeholder="ENTER YOUR GUESS..."
+                            />
+                            <button
+                              onClick={handleGuessSubmit}
+                              className="w-full sm:w-auto px-4 sm:px-6 py-2
+                                text-xs sm:text-base text-white/90 tracking-[0.2em]
+                                border border-white/30 rounded-md
+                                bg-zinc-950
+                                hover:bg-zinc-950 hover:border-white/30
+                                focus:outline-none focus:border-white/40
+                                focus:ring-2 focus:ring-white/20
+                                transition-all duration-300"
+                            >
+                              DECRYPT
+                            </button>
+                            {showDropdown && searchInput && gameData && gameState.levels[selectedDescription] <= 4 && (
+                              <ul className={`absolute left-0 right-0 ${
+                                dropdownDirection === 'up' 
+                                  ? 'bottom-[calc(100%+0.5rem)]' 
+                                  : 'top-[calc(100%+0.5rem)]'
+                              }
+                                border border-white/30 rounded-md
+                                bg-zinc-950/90 backdrop-blur-sm
+                                shadow-lg max-h-60 overflow-y-auto z-50
+                                divide-y divide-white/10
+                                [&::-webkit-scrollbar]:w-2
+                                [&::-webkit-scrollbar-track]:bg-transparent
+                                [&::-webkit-scrollbar-thumb]:bg-white/20
+                                [&::-webkit-scrollbar-thumb]:rounded-full
+                                [&::-webkit-scrollbar-thumb]:border-2
+                                [&::-webkit-scrollbar-thumb]:border-transparent
+                                [&::-webkit-scrollbar-thumb]:bg-clip-padding
+                                [&::-webkit-scrollbar-thumb]:hover:bg-white/30`}>
+                                {renderDropdownItems}
+                              </ul>
+                            )}
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  )}
+                </div>
               </div>
+              <WinModal 
+                isOpen={showWinModal}
+                onClose={() => setShowWinModal(false)}
+                selectedDescription={selectedDescription}
+                gameState={gameState}
+                gameData={gameData}
+              />
+              <FailModal
+                isOpen={showFailModal}
+                onClose={() => setShowFailModal(false)}
+                selectedDescription={selectedDescription}
+                gameData={gameData}
+              />
+              <InfoPopUp showInfoModal={showInfoModal} onClose={() => setShowInfoModal(false)} />
+              <ProjectInfoPopUp showProjectModal={showProjectModal} onClose={() => setShowProjectModal(false)} />
+              <StatsModal
+                isOpen={showStatsModal}
+                onClose={() => setShowStatsModal(false)}
+                gameState={gameState}
+              />
             </div>
-            <WinModal 
-              isOpen={showWinModal}
-              onClose={() => setShowWinModal(false)}
-              selectedDescription={selectedDescription}
-              gameState={gameState}
-              gameData={gameData}
-            />
-            <FailModal
-              isOpen={showFailModal}
-              onClose={() => setShowFailModal(false)}
-              selectedDescription={selectedDescription}
-              gameData={gameData}
-            />
-            <InfoPopUp showInfoModal={showInfoModal} onClose={() => setShowInfoModal(false)} />
-            <ProjectInfoPopUp showProjectModal={showProjectModal} onClose={() => setShowProjectModal(false)} />
-          </div>
-        </ErrorBoundary>
-      </Suspense>
-    </ErrorBoundary>
+          </ErrorBoundary>
+        </Suspense>
+      </ErrorBoundary>
   );
 }
 
