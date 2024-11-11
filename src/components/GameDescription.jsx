@@ -18,42 +18,46 @@ function pseudoRandom(seed) {
 
 const hash = (text, level, seed) => {
   // Split text into sentences
-  const sentences = text.split('.').filter(s => s.trim()).map(s => s.trim() + '.');
+  const sentences = text.split('.')
+    .filter(s => s.trim())
+    .map(s => s.trim() + '.');
   
   // Initialize PRNG with seed
   const prng = pseudoRandom(seed);
   
   // Calculate how many sentences should be visible based on level
-  const visibleSentences = 5 - level; // More sentences visible at lower levels
+  const visibleSentences = 5 - level;
   
   // Process each sentence
-  const processedText = sentences.map((sentence, index) => {
+  return sentences.map((sentence, index) => {
     if (index < visibleSentences) {
-      // Keep sentence visible
       return sentence;
     } else {
-      // Hash the sentence
       return sentence.split('').map(char => {
         if ([' ', '.', ',', ';', ':', '"', "'", '-', '(', ')', '[', ']', '?', '!'].includes(char)) {
           return char;
         }
-        // Use PRNG to select a symbol
         const hashedIndex = Math.floor(prng() * symbols.length);
         return symbols[hashedIndex];
       }).join('');
     }
-  }).join(' ');
-
-  return processedText;
+  });  // Return array instead of joining
 };
 
-const applyOpacity = (text) => {
-  return text.split('').map((char, index) => {
-    if (symbols.includes(char)) {
-      return <span key={index} className="text-white/70 font-mono">{char}</span>;
-    }
-    return <span key={index} className="font-mono">{char}</span>;
-  });
+const applyOpacity = (textArray) => {
+  return textArray.map((sentence, sentenceIndex) => (
+    <div key={sentenceIndex} className="flex items-start space-x-2 mb-2">
+      <span className="text-white/70">•</span>
+      <span>
+        {sentence.split('').map((char, index) => {
+          if (symbols.includes(char)) {
+            return <span key={index} className="text-white/70 font-mono">{char}</span>;
+          }
+          return <span key={index} className="font-mono">{char}</span>;
+        })}
+      </span>
+    </div>
+  ));
 };
 
 const getGameIdByDate = (startDate) => {
@@ -74,7 +78,9 @@ const Description = ({ onGameDataLoad, level, startDate }) => {
   });
   const [incorrectGameNames, setIncorrectGameNames] = useState([]);
   const seed = 12345;
-  const hashedDescription = gameDetails.description ? hash(gameDetails.description, level, seed) : '';
+  const hashedDescription = gameDetails.description 
+    ? hash(gameDetails.description, level, seed) 
+    : [];  // Initialize as empty array if no description
   const gameId = getGameIdByDate(startDate);
 
   useEffect(() => {
@@ -140,12 +146,13 @@ const Description = ({ onGameDataLoad, level, startDate }) => {
                         transition-all duration-300 mt-2">
             Genre: {level < 3 ? gameDetails.genre : '????'}
           </h3>
-          <p className="text-sm sm:text-base leading-relaxed tracking-wide font-mono
+          <div className="text-sm sm:text-base leading-relaxed tracking-wide font-mono
                       backdrop-blur-sm text-white/90
                       hover:text-white
                       transition-colors duration-300">
-            {applyOpacity(hashedDescription)}
-          </p>
+            {Array.isArray(hashedDescription) ? applyOpacity(hashedDescription) : null}
+          </div>
+          <p className='text-lg text-green-500'>Trying out a new format.</p>
         </div>
       </div>
     </ErrorBoundary>
