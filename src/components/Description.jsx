@@ -44,7 +44,7 @@ const applyOpacity = (textArray) => {
       <span>
         {sentence.split('').map((char, index) => {
           if (symbols.includes(char)) {
-            return <span key={index} className="text-white/70 font-mono">{char}</span>;
+            return <span key={index} className="text-white/50 font-mono">{char}</span>;
           }
           return <span key={index} className="font-mono">{char}</span>;
         })}
