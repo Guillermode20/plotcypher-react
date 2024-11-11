@@ -4,209 +4,209 @@
         "gameName": "The Shawshank Redemption",
         "releaseYear": 1994,
         "genre": "Drama",
-        "description": "A fortress of stone holds more than just the innocent. Time moves slowly, but hearts can beat faster in the stillness. Choices are made in the dark, and trust becomes a fragile bridge. Redemption is a fire you build with your own hands. Freedom doesn’t come from a gate; it comes from the heart."
+        "description": "Chains whisper freedom. Silent hope endures. An escape unfolds. Prisoners seek redemption. A story of perseverance."
     },
     {
         "id": 2,
         "gameName": "Inception",
         "releaseYear": 2010,
         "genre": "Sci-Fi",
-        "description": "You’re never sure if your feet are on solid ground. A maze with no clear path, each turn more twisted than the last. The deeper you dig, the further from the surface you fall. But is it real, or just another dream within a dream? When the dream ends, does it ever truly end?"
+        "description": "Dreams within dreams. Minds unearth reality. A heist for minds. Illusions blur truths. A journey through dreams."
     },
     {
         "id": 3,
         "gameName": "The Godfather",
         "releaseYear": 1972,
         "genre": "Crime/Drama",
-        "description": "In the shadows, power whispers. Loyalty is a bond thicker than blood, but betrayal is always close. One word can send empires crumbling. A man of power never acts without purpose, nor without consequence. In the end, even the strongest must face their family's legacy."
+        "description": "Blood ties bind. Power in shadows. Family is law. A legacy is built. The world of crime."
     },
     {
         "id": 4,
         "gameName": "Forrest Gump",
         "releaseYear": 1994,
         "genre": "Drama/Romance",
-        "description": "The world spins on paths both strange and simple. Uncertainty clouds every step, but some things remain clear. The journey isn't about destination; it's about the unexpected moments. Each day offers a new puzzle, but some pieces fit better than others. Life is a box, and its contents can surprise you."
+        "description": "Simple soul flies. Life as fate. Innocence meets history. A journey of growth. The tale of an unlikely hero."
     },
     {
         "id": 5,
         "gameName": "Pulp Fiction",
         "releaseYear": 1994,
         "genre": "Crime/Thriller",
-        "description": "Every story hides beneath layers of chaos. People make decisions they don’t fully understand, driven by forces unseen. The clock ticks, but moments fold into one another without rhyme or reason. Choices cross paths in unexpected ways. Time, it seems, doesn’t obey anyone."
+        "description": "Time dances strange. Threads of chaos. Lives collide violently. Stories intertwine recklessly. A web of dark comedy."
     },
     {
         "id": 6,
         "gameName": "The Dark Knight",
         "releaseYear": 2008,
         "genre": "Action/Crime",
-        "description": "A city on the brink teeters between order and madness. Justice is not absolute, but it never loses its power. Faces can hide behind masks, but truth has a way of exposing them. One man rises, not to save, but to show the world's brokenness. The line between hero and villain is razor-thin."
+        "description": "Chaos confronts order. Masks obscure truths. Night reveals justice. A city in turmoil. Gotham faces its dark vigilante."
     },
     {
         "id": 7,
         "gameName": "Titanic",
         "releaseYear": 1997,
         "genre": "Romance/Drama",
-        "description": "The sea calls, but so does fate. Beneath the weight of history, two lives unfold in a fleeting moment. Time doesn’t heal all wounds, but it can drown them. Love found in the most desperate of circumstances might be the truest of all. The iceberg looms, but not in the way you expect."
+        "description": "Frozen fate calls. Waves swallow dreams. Love defies death. Tragedy beneath ice. The sinking of the grand ship."
     },
     {
         "id": 8,
         "gameName": "The Matrix",
         "releaseYear": 1999,
         "genre": "Sci-Fi/Action",
-        "description": "A world of endless green flickers in a seemingly tranquil reality. Every question is met with a silence louder than the truth itself. Time bends, but only if you’re paying attention. The truth doesn’t set you free; it binds you in its waking chaos. The choice is simple: live in ignorance or awaken."
+        "description": "Red pill beckons. Reality distorts violently. A world enslaved. Awakening within the machine. The battle for truth."
     },
     {
         "id": 9,
         "gameName": "The Lion King",
         "releaseYear": 1994,
         "genre": "Animation/Drama",
-        "description": "A circle of life draws everyone to its center. The earth turns, but not everyone is ready for the weight of its crown. The past never lets go, and the future is shaped by the mistakes of those before us. Sometimes, the heart leads the way, even when the mind can’t understand. A king rises when the pride calls."
+        "description": "Circle of life. Shadows claim kings. Pride must rise. A young prince’s journey. The heart of Africa's kingdom."
     },
     {
         "id": 10,
         "gameName": "Gladiator",
         "releaseYear": 2000,
         "genre": "Action/Drama",
-        "description": "A warrior’s rage burns brighter than the sun itself. Betrayal festers within the blood of the empire. The strength of the body cannot match the force of the will. Victory can only be found in a deathless battle for justice. The arena of life is unforgiving, but its consequences eternal."
+        "description": "Steel clashes loud. Revenge fuels strength. Honor fades fast. A fallen hero’s revenge. The rise of a gladiator."
     },
     {
         "id": 11,
         "gameName": "The Avengers",
         "releaseYear": 2012,
         "genre": "Action/Sci-Fi",
-        "description": "A gathering of warriors torn from distant worlds. Foes unite, and alliances fracture. Strength can be found in numbers, but trust is earned, not given. A single act of defiance can change the course of history. Together, they must face what they alone could not conquer."
+        "description": "Heroes unite strong. A threat grows colossal. Power meets resistance. Teams form alliances. Earth's last hope."
     },
     {
         "id": 12,
         "gameName": "Jurassic Park",
         "releaseYear": 1993,
         "genre": "Sci-Fi/Adventure",
-        "description": "An island of ancient power holds secrets long forgotten. Science reawakens that which was meant to remain buried. Nature is a force that cannot be tamed, and humans are its guests. Chaos arises, and survival becomes more than instinct. What was once extinct is now alive, and it’s hungry."
+        "description": "Ancient beasts awaken. Chaos runs wild. Nature’s fury unleashed. Man treads history’s edge. A park of prehistoric terror."
     },
     {
         "id": 13,
         "gameName": "Back to the Future",
         "releaseYear": 1985,
         "genre": "Sci-Fi/Adventure",
-        "description": "The future isn’t written, but it’s always waiting to be altered. Time moves, but sometimes, it seems to move backward. The past is a puzzle with pieces that refuse to fit. If you change one moment, the whole world might shift. History is just a series of choices, and some are more important than others."
+        "description": "Time bends backward. A flash of lightning. History’s course shifts. A boy meets destiny. A time-traveling adventure."
     },
     {
         "id": 14,
         "gameName": "Interstellar",
         "releaseYear": 2014,
         "genre": "Sci-Fi/Drama",
-        "description": "The sky calls, but it’s not a voice you recognize. Space is vast, but so is love, and both warp time itself. The edge of human understanding is a fragile place, but it’s where we find the answers. A journey into the unknown doesn’t lead us away from home; it brings us closer. Time bends, but love doesn’t fade."
+        "description": "Stars whisper secrets. Worlds fracture apart. Time and love entwined. Space bends the soul. A quest for survival."
     },
     {
         "id": 15,
         "gameName": "Fight Club",
         "releaseYear": 1999,
         "genre": "Drama",
-        "description": "The world is built on contradictions, and we are its broken pieces. We create rules only to break them. The lines between self and other blur until the distinctions don’t matter. We fight, but we fight for freedom we can’t yet understand. The truth only emerges when the masks fall away."
+        "description": "Chaos breeds strength. Fight for freedom. Minds break apart. Rebels against order. A violent search for identity."
     },
     {
         "id": 16,
         "gameName": "The Social Network",
         "releaseYear": 2010,
         "genre": "Drama/Biography",
-        "description": "A revolution starts not with a bang, but with a click. The game is about connection, but at what cost? Power isn’t taken; it’s coded into existence. Relationships are built on trust, but they crumble on ambition. The price of success isn’t always paid in cash."
+        "description": "Code builds empires. Ambition fuels betrayal. Friendship’s bitter fall. A web of connections. The rise of Facebook."
     },
     {
         "id": 17,
         "gameName": "La La Land",
         "releaseYear": 2016,
         "genre": "Drama/Musical",
-        "description": "Dreams are fragile things, made of music and light. Sometimes, what you need most is the thing you can’t hold on to. Love is a dance, but it’s never easy to keep the rhythm. The road to success is paved with broken promises. What happens when the music fades and the spotlight goes dark?"
+        "description": "Dreams meet stardust. Love dances bright. Stardom's cruel cost. Hearts in rhythm. A musical journey of love and ambition."
     },
     {
         "id": 18,
         "gameName": "The Silence of the Lambs",
         "releaseYear": 1991,
         "genre": "Thriller/Crime",
-        "description": "In silence, voices speak loudest. Evil wears many faces, and none more chilling than those that hide in plain sight. Fear takes root in the mind, not the body. A detective seeks answers, but the truth she uncovers might unravel her. What you hear is not always the truth, but it’s always a clue."
+        "description": "Whispers chill flesh. Minds trapped in darkness. Faces hide monsters. A chase of fear. The hunt for a killer."
     },
     {
         "id": 19,
         "gameName": "Spider-Man: Into the Spider-Verse",
         "releaseYear": 2018,
         "genre": "Animation/Action",
-        "description": "The multiverse spins wildly, but the strands are tighter than they seem. A hero rises not from destiny, but from sheer will. The shadows stretch long across every timeline, but it’s the light that shines brightest. Heroes may wear different faces, but their hearts beat the same. What if your universe is only one of many?"
+        "description": "Webs cross universes. Heroes multiply unseen. Dimensions collide wildly. A boy’s destiny shifts. The multiverse of Spider-Men."
     },
     {
         "id": 20,
         "gameName": "Schindler's List",
         "releaseYear": 1993,
         "genre": "Drama/History",
-        "description": "In a world consumed by darkness, a single light fights to survive. The cost of saving a life is often more than one can bear. In the face of suffering, the smallest acts of mercy can shift the course of history. One man’s journey is a reminder of the human cost of indifference. In the end, we are defined by what we choose to save."
+        "description": "Darkness swallows life. A man’s change stirs. Humanity’s loss echoes. One man’s path to saving. The Holocaust’s painful truth."
     },
     {
         "id": 21,
         "gameName": "The Grand Budapest Hotel",
         "releaseYear": 2014,
         "genre": "Comedy/Drama",
-        "description": "A place once bustling with life is now trapped in the past. Secrets are hidden behind gilded doors, and every face tells a story. What seems like a simple tale becomes a mystery unfolding in layers. The world is painted in rich, surreal strokes. The chaos of life is as grand as the hotel itself."
+        "description": "Past fades bright. Doors hide secrets. Wealth shrouded in chaos. A hotel’s strange history. The tale of a stolen painting."
     },
     {
         "id": 22,
         "gameName": "Mad Max: Fury Road",
         "releaseYear": 2015,
         "genre": "Action/Sci-Fi",
-        "description": "The world is burning, and survival is the only truth. The road is long, but the journey never ends. Freedom is a distant dream in a world of endless pursuit. The fight isn’t just for fuel, it’s for a future. The strong must ride the storm or be consumed by it."
+        "description": "Desert winds howl. Fuel runs scarce. Madness reigns supreme. A war for survival. Fury drives the last warriors."
     },
     {
         "id": 23,
         "gameName": "The Exorcist",
         "releaseYear": 1973,
         "genre": "Horror",
-        "description": "Evil is not always seen, but always felt. A mind twisted beyond recognition becomes the battlefield for a soul’s fate. The horror lies not in what is done, but in what’s believed to be possible. Faith is tested, but so is fear. Some battles aren’t fought with fists, but with willpower."
+        "description": "Evil lurks close. Fear fills the air. A battle for souls. Darkness within flesh. A possessed fight for salvation."
     },
     {
         "id": 24,
         "gameName": "The Departed",
         "releaseYear": 2006,
         "genre": "Crime/Thriller",
-        "description": "Lies are woven into every corner of the city. The game of power is played in shadows, but who’s really pulling the strings? Trust is a fleeting illusion, and betrayal is always close behind. Secrets only hold if you’re willing to sacrifice everything to keep them. In the end, the question is: who are you really?"
+        "description": "Trust is fractured. Deception brews deep. Secrets tear apart. Double lives collide violently. A thriller of betrayal."
     },
     {
         "id": 25,
         "gameName": "The Truman Show",
         "releaseYear": 1998,
         "genre": "Drama/Sci-Fi",
-        "description": "The world is a stage, but no one knows their role. The truth is hidden in plain sight, but it’s more terrifying than anyone realizes. Every step you take is watched, every breath measured. The illusion is so perfect, you can’t see the bars. How does one escape when there’s nowhere else to go?"
+        "description": "Reality bends close. Life under observation. Truths veiled in illusion. A man’s world controlled. The story of a manipulated life."
     },
     {
         "id": 26,
         "gameName": "Deadpool",
         "releaseYear": 2016,
         "genre": "Action/Comedy",
-        "description": "A man in a mask hides behind a broken past. Humor is his armor, but the cracks run deep. The world bends to his will, but his true fight is against himself. Chaos reigns, but even in madness, there’s something undeniably human. The rules don’t apply, and neither does he."
+        "description": "Chaos breaks rules. Humor masks pain. Violence with wit. A hero’s twisted tale. A mercenary on a revenge spree."
     },
     {
         "id": 27,
         "gameName": "A Beautiful Mind",
         "releaseYear": 2001,
         "genre": "Biography/Drama",
-        "description": "A brilliant mind is a beautiful prison. The line between genius and madness is thin, and the truth is a fragile thing. The world spins in perfect circles, but only if you can see them. Reality is a puzzle, and some pieces only fit together when you stop looking for them. The mind, when left unchecked, can create worlds."
+        "description": "Genius hides madness. Reality unravels slowly. A mind battles itself. The rise of brilliance. A mathematician’s troubled journey."
     },
     {
         "id": 28,
         "gameName": "The Princess Bride",
         "releaseYear": 1987,
         "genre": "Adventure/Comedy",
-        "description": "A fairytale is more than just magic; it’s a test of love and honor. Heroes come in all shapes, and sometimes, the most unlikely one is the greatest. Death doesn’t stop love; it only tests it. Truths are hidden behind masks, and adventure lurks in every corner. A story told is never just a story."
+        "description": "Swords clash bright. Love defies death. Fairy tales twist. An epic quest unfolds. A story of love and adventure."
     },
     {
         "id": 29,
         "gameName": "Parasite",
         "releaseYear": 2019,
         "genre": "Thriller/Drama",
-        "description": "A family struggles to survive in a world divided by walls. The truth hides behind a veil of opulence, but hunger never stops calling. Lies are told to survive, but some truths cannot be buried. Everyone wants something, but none are prepared for the price. The line between rich and poor is thinner than you think."
+        "description": "Walls conceal truths. Hunger drives dark. Lives intertwine cruelly. Class divides sharply. A twisted social commentary."
     },
     {
         "id": 30,
         "gameName": "The Big Lebowski",
         "releaseYear": 1998,
         "genre": "Comedy/Crime",
-        "description": "The world is a mystery, and you’re just trying to bowl your way through it. Characters drift through life, aimless but oddly defined. The rules don’t matter, and yet, the game is always on. Every situation is a puzzle, but the solution doesn’t always make sense. Sometimes, life’s biggest questions come without answers."
+        "description": "Bowls and chaos. Slacker seeks clarity. Life’s absurdities collide. A rug’s deep meaning. A tale of the Dude."
     }
 ]

@@ -9,7 +9,7 @@ const GameOverScreen = ({ gameState, category }) => (
     </h2>
     {gameState.levels[category] > -1 ? (
       <p className="text-2xl text-green-500 mb-4">
-        Decrypted in {gameState.attempts[category] + 1} attempts!
+        Decrypted in {gameState.attempts[category] + 1} {gameState.attempts[category] + 1 === 1 ? 'attempt' : 'attempts'}!
       </p>
     ) : (
       <p className="text-2xl text-red-500 mb-4">
@@ -18,9 +18,6 @@ const GameOverScreen = ({ gameState, category }) => (
     )}
     <p className="text-2xl text-white/90">
       Next {category} in <Suspense fallback="...">{<CountdownTimer />}</Suspense>
-    </p>
-    <p className="text-sm sm:text-base text-white/80">
-      Come back tomorrow for a new challenge!
     </p>
   </div>
 );

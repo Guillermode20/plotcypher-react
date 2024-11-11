@@ -34,7 +34,7 @@ const WinModal = ({ isOpen, onClose, selectedDescription, gameState, gameData })
         <div className="p-4 overflow-y-auto scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent">
           <div className="text-white/90 space-y-4">
             <div className="text-lg font-medium">
-              Solved in {gameState.attempts[selectedDescription] + 1} attempts
+              Solved in {gameState.attempts[selectedDescription] + 1} {gameState.attempts[selectedDescription] + 1 === 1 ? 'attempt' : 'attempts'}
             </div>
             <div className="text-2xl font-bold">
               {selectedDescription === 'game' && gameData?.correctGame}

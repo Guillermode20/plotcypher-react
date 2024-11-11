@@ -4,209 +4,209 @@
         "gameName": "The Legend of Zelda: Breath of the Wild",
         "releaseYear": 2017,
         "genre": "Action-Adventure",
-        "description": "In a forgotten land, echoes of an ancient evil stir. The horizon beckons with secrets hidden deep within a crumbled kingdom. Only one who wields a shattered legacy can hope to restore balance. Yet, even as the past resurfaces, the future is in peril. A hero rises with only the whisper of a sword and a shield."
+        "description": "Whispers on wind. Echoes of the past. Mountains bow to time. A hero wanders, seeking truth. An open world adventure of freedom and discovery."
     },
     {
         "id": 2,
         "gameName": "Minecraft",
         "releaseYear": 2011,
         "genre": "Sandbox, Survival",
-        "description": "Beneath the surface, the world breathes and shifts. Blocks are but fragments of something greater, scattered across endless skies. A builder’s heart beats with the pulse of creation, yet the unseen forces lurk, unpredictable and fierce. The earth crumbles beneath the weight of those who dare disturb its peace. What will you build, and what will you destroy?"
+        "description": "Blocks rise and fall. Endless horizons beckon. Crafted from chaos. Build, explore, survive. A sandbox of infinite possibilities and creation."
     },
     {
         "id": 3,
         "gameName": "Fortnite",
         "releaseYear": 2017,
         "genre": "Battle Royale",
-        "description": "The storm approaches, and the world begins to collapse into chaos. Survivors are drawn into a cosmic game of survival, each with their own fleeting hopes. Weapons become both tools and curses in a fight for dominance. The world shrinks as alliances form and break like waves on the shore. Only one will claim victory before the last battle ends."
+        "description": "Storms on the horizon. Echoes of battle. Dawn of chaos. A battle royale, ever-changing. A fast-paced multiplayer game of survival and strategy."
     },
     {
         "id": 4,
         "gameName": "Grand Theft Auto V",
         "releaseYear": 2013,
         "genre": "Action-Adventure, Open-World",
-        "description": "Neon lights flicker. Power, betrayal, speed. Criminals on wheels. Urban chaos beckons. Silicon coast secrets"
+        "description": "Neon lights flicker. The city hums with secrets. Chasing dreams through smoke. A gritty world of crime and power. Open-world action filled with crime and mischief."
     },
     {
         "id": 5,
         "gameName": "Among Us",
         "releaseYear": 2018,
         "genre": "Social Deduction, Party",
-        "description": "In the vastness of space, trust is a luxury. Some are not who they claim to be, hiding their true intentions behind masks of camaraderie. Tension builds in the corridors, and the crew knows—someone must fall. Yet, only a few know the truth, and their silence grows louder. The ship drifts toward its destination, but one among them won't survive."
+        "description": "Shadows in silence. Trust shattered in space. Whispers of betrayal. A game of deception and survival. Multiplayer deduction game with hidden traitors."
     },
     {
         "id": 6,
         "gameName": "Call of Duty: Warzone",
         "releaseYear": 2020,
         "genre": "Battle Royale, First-Person Shooter",
-        "description": "The skies tremble with the roar of unseen enemies. Soldiers drop into the fray, each hoping to outlast the chaos. The ground is unforgiving, and even allies may turn. Trust and betrayal become indistinguishable in the fog of war. As the battle intensifies, only those who survive the last clash will claim the victory."
+        "description": "Echoes of gunfire. The earth trembles below. A battlefield of the last. War, fought from above. A tactical battle royale with combat and strategy."
     },
     {
         "id": 7,
         "gameName": "Red Dead Redemption 2",
         "releaseYear": 2018,
         "genre": "Action-Adventure, Open-World",
-        "description": "A land on the brink of change, where men find themselves caught between tradition and progress. The wild calls, but it is a place where even the law is a matter of perspective. Outlaws roam freely, but the cost of freedom is more than what the world can bear. A man is defined not by his choices, but the lives they affect. The end of an era approaches, but the story is far from finished."
+        "description": "Horizon painted in blood. The last ride west. Fate in the dust. A tale of outlaws in a fading world. Open-world action set in the Wild West."
     },
     {
         "id": 8,
         "gameName": "League of Legends",
         "releaseYear": 2009,
         "genre": "MOBA",
-        "description": "In a realm where gods and mortals collide, champions rise to answer a call. The battlefields are paved with the souls of those who have fallen. Every move, every choice can tilt the scales, but one side must fall. Alliances are fragile, and the victor’s triumph is often shaped by the smallest of decisions. Glory waits, but only for those who fight to the bitter end."
+        "description": "Champions clash in shadows. The storm grows near. Battles of the mind. A strategic battle of teams and skill. Multiplayer online battle arena of strategy and teamwork."
     },
     {
         "id": 9,
         "gameName": "The Witcher 3: Wild Hunt",
         "releaseYear": 2015,
         "genre": "RPG, Action-Adventure",
-        "description": "Darkness looms, and a lone hunter walks the line between worlds. Monsters roam the lands, each more dangerous than the last. The price of salvation is often steep, and every path is paved with betrayal. Friends and foes alike blur, as the future depends on the choices of one. But fate’s hand is not as kind as it seems."
+        "description": "Storms gather on blood. The wild hunts, unyielding. In darkness, a monster hunts. A sorcerer hunts, in search of truth. An epic RPG of fantasy, monsters, and choices."
     },
     {
         "id": 10,
         "gameName": "Super Mario Odyssey",
         "releaseYear": 2017,
         "genre": "Platformer, Adventure",
-        "description": "The world spins, filled with colors and challenges both familiar and strange. A plumber's journey becomes one of not just rescue, but discovery. The horizon beckons, but each new place brings its own strange puzzles. As a simple mission grows, so too does the scope of what is at stake. Only one can end the chase, and it all comes down to the final leap."
+        "description": "Jump through the sky. Tales spun in clouds. A caped hero’s dream. A colorful adventure through whimsical worlds. A 3D platformer with Mario’s global quest."
     },
     {
         "id": 11,
         "gameName": "Valorant",
         "releaseYear": 2020,
         "genre": "First-Person Shooter, Tactical",
-        "description": "In a fractured world, agents gather under a single banner. Their abilities are their weapons, and the stakes are nothing less than the balance of power. The enemy is everywhere, but so are the whispers of betrayal. Each round builds tension, as walls are breached, and trust is shattered. Who will stand as the last sentinel, when the smoke clears?"
+        "description": "Gunfire echoes in silence. Flashes of fate. Tactics in shadows. A game of precision and strategy. A first-person tactical shooter with heroes and abilities."
     },
     {
         "id": 12,
-        "gameName": "FIFA 23",
+        "gameName": "EA SPORTS FC 25",
         "releaseYear": 2022,
         "genre": "Sports, Simulation",
-        "description": "The game is played with both feet and hearts, but victory lies in the smallest moments. A ball is a universe, and every pass has purpose. The pitch is alive with energy, yet every match carries the weight of history. Rivals clash, but it’s the unseen plays that often make the difference. The game ends when the final whistle blows, but the spirit endures."
+        "description": "The crowd roars. Grass stained with dreams. The ball rolls on. A field of passion and rivalry. The latest entry in football simulation."
     },
     {
         "id": 13,
         "gameName": "Apex Legends",
         "releaseYear": 2019,
         "genre": "Battle Royale, First-Person Shooter",
-        "description": "In a broken world, the fight for survival has become a spectacle. Players enter the arena, but only the strongest walk away. The ground trembles underfoot, and danger lurks at every corner. But victory is not won alone, and sometimes the smallest alliance can change everything. The hunt has begun, but who will be the last legend standing?"
+        "description": "A storm of stars. Legends race through time. Survival in the void. A battle royale of unique heroes. A fast-paced multiplayer shooter with distinct characters."
     },
     {
         "id": 14,
         "gameName": "Animal Crossing: New Horizons",
         "releaseYear": 2020,
         "genre": "Simulation, Social",
-        "description": "Time moves differently here, where the land is yours to shape. New friends arrive, each carrying their own hopes and secrets. There are no enemies, yet the world is always evolving. In this place, your choices echo into the future, and every day brings a new beginning. But even in paradise, nothing stays the same for long."
+        "description": "Whispers in the breeze. Nature’s calm embrace. Life grows slowly. A peaceful, open-ended village simulation. Create your dream life on a deserted island."
     },
     {
         "id": 15,
         "gameName": "Overwatch 2",
         "releaseYear": 2022,
         "genre": "First-Person Shooter, Team-Based",
-        "description": "A world on the edge, where heroes rise to prevent its fall. Their powers are vast, yet the battles are fought not just with strength, but with strategy. The future hangs in the balance, as the line between good and evil blurs. The world needs saving, but even the saviors have their own battles to fight. Who will be the ones to lead us into a new dawn?"
+        "description": "A new dawn rises. Heroes emerge from shadows. A world on edge. A team-based shooter with iconic characters. A tactical multiplayer shooter with diverse heroes."
     },
     {
         "id": 16,
         "gameName": "Dark Souls III",
         "releaseYear": 2016,
         "genre": "Action RPG",
-        "description": "The flames of an age-old war flicker in the distance. Darkness is creeping, and only those who endure will see what lies ahead. Heroes rise and fall, their struggles shaping the world in quiet ways. Every death is a lesson, yet even victory offers no real peace. In the end, the journey itself may be the only truth left standing."
+        "description": "A flame fades. Echoes of lost souls. Darkness claims the land. A brutal journey through a cursed world. An action RPG known for its difficulty and lore."
     },
     {
         "id": 17,
         "gameName": "Rocket League",
         "releaseYear": 2015,
         "genre": "Sports, Action",
-        "description": "The field is set, but this is no ordinary match. Cars zoom, collide, and soar, all to control a giant ball. A goal is a victory, but the thrill is in the chase. Each match feels like its own universe, where the outcome depends on more than just speed. Who will dominate the field, and who will be left in the dust?"
+        "description": "Steel meets ball. Flames of competition. Aerial acrobatics collide. A high-octane soccer with rocket-powered cars. A hybrid sports game with cars and soccer."
     },
     {
         "id": 18,
         "gameName": "Destiny 2",
         "releaseYear": 2017,
         "genre": "FPS, Action RPG",
-        "description": "In the wake of a fading light, Guardians rise to protect what remains. The stars are no longer silent, and the enemies who hunt them are closing in. Every battle is a step toward an uncertain future. Power comes with a price, but what’s left when the cost is too high? In this war, even victory might leave the universe broken."
+        "description": "Light against dark. Stars burn with secrets. The last guardians rise. A sci-fi shooter with a narrative of survival. A multiplayer online FPS with PvE and PvP."
     },
     {
         "id": 19,
         "gameName": "Cyberpunk 2077",
         "releaseYear": 2020,
         "genre": "RPG, Open-World",
-        "description": "Neon lights illuminate a city on the verge of collapse. The future is shaped by those who control the tech, but it’s a future forged in the shadows. The lines between man and machine blur, and so do the motives of those who dwell in the city's underbelly. Every choice reverberates through the streets, and every decision has a cost. Who will survive in a world that has lost its soul?"
+        "description": "Neon hearts pulse. City of endless nights. Machines hum beneath skin. A futuristic RPG in a neon-lit world. A dystopian open-world RPG with cybernetic enhancements."
     },
     {
         "id": 20,
         "gameName": "Hades",
         "releaseYear": 2020,
         "genre": "Rogue-like, Action RPG",
-        "description": "The underworld is a labyrinth, and escape is but a fleeting hope. With each death, the path becomes clearer, but the price is never the same. Monsters, gods, and destiny itself stand between the protagonist and freedom. Every choice offers new challenges, but the truth lies beyond the walls. In the end, even the gods cannot escape their fate."
+        "description": "The underworld calls. Fury’s flames ignite. A son’s restless journey. A roguelike action game in Greek mythology. Escape the underworld in a rogue-like adventure."
     },
     {
         "id": 21,
         "gameName": "Sekiro: Shadows Die Twice",
         "releaseYear": 2019,
         "genre": "Action-Adventure, Souls-like",
-        "description": "A lone warrior faces the end of an era, and the weight of a broken past. His sword is an extension of his soul, his purpose tangled in a web of honor and vengeance. The path to redemption is filled with brutal trials, but the cost of failure is more than just death. In a world steeped in blood, every victory is hard-earned. Will he break the chains of fate, or become another forgotten shadow?"
+        "description": "Silent footsteps echo. Steel against the wind. A warrior’s last breath. A brutal action game steeped in samurai lore. A challenging, story-driven game set in feudal Japan."
     },
     {
         "id": 22,
         "gameName": "Fall Guys",
         "releaseYear": 2020,
         "genre": "Battle Royale, Party",
-        "description": "The game is simple: survive the chaos. Players race through absurd and unpredictable obstacles, all with one goal in mind. The path to victory is a strange one, filled with humor and havoc. Yet beneath the whimsy lies a subtle strategy, where even the smallest mistake could mean defeat. Only the most agile, the most clever, can hope to make it to the end."
+        "description": "Chaos in motion. Fluff and color collide. A race to the finish. A whimsical battle royale filled with fun challenges. A colorful, party-style battle royale game."
     },
     {
         "id": 23,
         "gameName": "Hollow Knight",
         "releaseYear": 2017,
         "genre": "Metroidvania, Action-Adventure",
-        "description": "In a forgotten kingdom, silence reigns. The walls whisper, and every corner holds an ancient mystery. The knight’s quest is not just to fight, but to understand the deep truths buried within. The world is dying, yet hope can be found in the smallest of gestures. What is the price of salvation in a place where light is scarce?"
+        "description": "Shadows whisper below. Insects speak in silence. A kingdom forgotten. A dark metroidvania with platforming and exploration. Explore a vast underground world of mystery."
     },
     {
         "id": 24,
         "gameName": "Genshin Impact",
         "releaseYear": 2020,
         "genre": "Action RPG, Open-World",
-        "description": "A world torn between celestial forces, where the winds speak in forgotten tongues. Travelers search for answers, yet the world shifts beneath their feet. Ancient ruins hide secrets, and the elements themselves can be wielded as weapons. Every hero carries their own story, yet they are all bound by fate. The journey is far from over, and the truth may change everything."
+        "description": "Winds carry secrets. Elemental forces collide. The world is endless. A free-to-play action RPG with an open world. An open-world fantasy RPG with elemental powers."
     },
     {
         "id": 25,
         "gameName": "The Elder Scrolls V: Skyrim",
         "releaseYear": 2011,
         "genre": "RPG, Open-World",
-        "description": "The winds carry ancient whispers as the world prepares for an inevitable clash. Dragons return to a land on the brink of destruction, and one man may be the key to salvation. Yet the choices before him are not as clear as they seem. Legends live on, but in a world where fate is often rewritten, what truly defines a hero? The end may come from within, not from the dragon's roar."
+        "description": "Snow falls on stone. Dragons awaken from sleep. Fates carve the land. An epic RPG in a northern kingdom. An open-world RPG filled with dragons and magic."
     },
     {
         "id": 26,
         "gameName": "Dota 2",
         "releaseYear": 2013,
         "genre": "MOBA",
-        "description": "The battlefield is set, and heroes converge in a fight for dominance. Every move is crucial, as the lines between victory and defeat are razor-thin. Yet, even the greatest warriors can fall, their strengths turned against them in an instant. Allies may not always be what they seem, and the enemy is never as distant as it appears. In the end, only one side can claim ultimate power."
+        "description": "The war drums echo. Fates entwined in battle. Heroes rise and fall. A strategy game of teamwork and skill. A multiplayer online battle arena (MOBA) with heroes."
     },
     {
         "id": 27,
         "gameName": "Ghost of Tsushima",
         "releaseYear": 2020,
         "genre": "Action-Adventure",
-        "description": "A once peaceful land is now a battleground, where honor and survival clash. The samurai stands at the crossroads, torn between tradition and necessity. Every fight is a test, not just of skill, but of soul. The winds speak of a new kind of warrior, one not bound by the old ways. In the end, the path to freedom lies through the heart of a divided world."
+        "description": "Beneath blood-red skies. A warrior's honor tested. The wind whispers secrets. A samurai's journey through feudal Japan. A story-driven action game in ancient Japan."
     },
     {
         "id": 28,
         "gameName": "Pokemon Scarlet and Violet",
         "releaseYear": 2022,
         "genre": "RPG",
-        "description": "A world of wonder and danger awaits the curious and the brave. Monsters roam free, and bonds are forged through both challenge and companionship. The journey is one of discovery, yet it’s more than just about collecting. Each choice shapes the future, but even the smallest decision can change the outcome. The quest for the ultimate power is more than it seems."
+        "description": "In the tall grass. Creatures of legend roam. A world of discovery. A new generation of Pokémon awaits. A role-playing game where you catch creatures in an open world."
     },
     {
         "id": 29,
         "gameName": "Monster Hunter: World",
         "releaseYear": 2018,
         "genre": "Action RPG",
-        "description": "The hunt begins, but the prey is not what it seems. Towering beasts stalk the earth, each more dangerous than the last. The hunter’s tools are their lifeline, but even the strongest weapons have their limits. The world is wild, but it is also fragile. Will the hunters preserve it, or will they become part of the cycle?"
+        "description": "Roars shake the earth. Prey flees in the wild. Hunt or be hunted. A massive world full of dangerous creatures. An action RPG where you hunt giant monsters."
     },
     {
         "id": 30,
         "gameName": "Sims 4",
         "releaseYear": 2014,
         "genre": "Simulation",
-        "description": "In a world where the possibilities are endless, you hold the reins. Life is what you make of it, but every choice ripples outward, affecting those around you. From the mundane to the extraordinary, each day holds something new. Yet, beneath the surface, the desires of each Sim pull them in different directions. Who will thrive, and who will falter in this strange version of life?"
+        "description": "Life unfolds in pixels. Dreams shaped by choice. Fate in your hands. A simulation game where you control life’s little moments. A life simulation where you create and manage characters."
     }
 ]

@@ -28,3 +28,5 @@ out/
 
 # dev files
 gptprompts.txt
+output.py
+list.txt

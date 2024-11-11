@@ -1,13 +1,11 @@
-// fully working as of now, using a seed to generate the positions to hash works perfectly so don't touch it
 
 import { useState, useEffect } from 'react';
-import { initDB, getTVShow, populateDB, getAllTVShows } from '../database';
+import { initDB, populateDB, getGame, getMovie, getTVShow, getAllGames, getAllMovies, getAllTVShows } from '../database';
 import PropTypes from 'prop-types';
 import ErrorBoundary from '../ErrorBoundary';
 
 const symbols = ['#', '£', '$', '%', '&', '@'];
 
-// Pseudorandom number generator function
 function pseudoRandom(seed) {
   let value = seed;
   return function() {
@@ -36,7 +34,7 @@ const hash = (text, level, seed) => {
         return symbols[hashedIndex];
       }).join('');
     }
-  });  // Return array instead of joining
+  });
 };
 
 const applyOpacity = (textArray) => {
@@ -46,7 +44,7 @@ const applyOpacity = (textArray) => {
       <span>
         {sentence.split('').map((char, index) => {
           if (symbols.includes(char)) {
-            return <span key={index} className="text-white/40 font-mono">{char}</span>;
+            return <span key={index} className="text-white/70 font-mono">{char}</span>;
           }
           return <span key={index} className="font-mono">{char}</span>;
         })}
@@ -55,83 +53,98 @@ const applyOpacity = (textArray) => {
   ));
 };
 
-const getTVShowIdByDate = (startDate) => {
+const getItemIdByDate = (startDate) => {
   const start = new Date(startDate);
   const today = new Date();
   const diffTime = Math.abs(today - start);
   const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-  return (diffDays % 30) + 1; // Assuming there are 30 TV shows
+  return (diffDays % 30) + 1;
 };
 
-function TVDescription(props) {
-  const { onTVShowDataLoad, level, startDate } = props;
-  const [TVShowDetails, setTVShowDetails] = useState({
-    TVShowName: '',
+function Description(props) {
+  const { onDataLoad, level, startDate, category } = props;
+  const [details, setDetails] = useState({
+    name: '',
     description: '',
     releaseYear: '', 
     genre: '',
-    id: null, // Added id to initial state
+    id: null, 
   });
-  const [incorrectTVShowNames, setIncorrectTVShowNames] = useState([]);
+  const [incorrectNames, setIncorrectNames] = useState([]);
   const seed = 12345;
-  const hashedDescription = TVShowDetails.description 
-    ? hash(TVShowDetails.description, level, seed) 
-    : [];  // Initialize as empty array if no description
-  const TVShowId = getTVShowIdByDate(startDate);
+  const hashedDescription = details.description 
+    ? hash(details.description, level, seed) 
+    : [];  
+  const itemId = getItemIdByDate(startDate);
 
   useEffect(() => {
-    const loadTVShowData = async () => {
+    const loadData = async () => {
       try {
         await initDB();
         await populateDB();
-        const TVShow = await getTVShow(TVShowId); // Gets TV show by ID based on date
-        if (TVShow) {
-          setTVShowDetails(TVShow);
-        } else {
-          console.error('TV Show not found');
+
+        let item;
+        let allItems;
+        if (category === 'game') {
+          item = await getGame(itemId);
+          allItems = await getAllGames();
+        } else if (category === 'movie') {
+          item = await getMovie(itemId);
+          allItems = await getAllMovies();
+        } else if (category === 'tv') {
+          item = await getTVShow(itemId);
+          allItems = await getAllTVShows();
         }
-        const allTVShows = await getAllTVShows();
-        // Fix: Use gameName instead of TVShowName
-        const allTVShowNames = allTVShows.map(tv => tv.gameName);
-        setIncorrectTVShowNames(allTVShowNames);
+        if (item) {
+          setDetails({
+            name: item.gameName,
+            description: item.description,
+            releaseYear: item.releaseYear,
+            genre: item.genre,
+            id: item.id,
+          });
+        } else {
+          console.error(`${category} not found`);
+        }
+        const allNames = allItems.map(i => i.gameName);
+        setIncorrectNames(allNames.filter(name => name !== item.gameName));
       } catch (error) {
-        console.error('Error loading TV show data:', error);
+        console.error(`Error loading ${category} data:`, error);
       }
     };
-    loadTVShowData();
-  }, [TVShowId]);
+    loadData();
+  }, [itemId, category]);
 
   useEffect(() => {
-    const TVShowData = {
-      // Fix: Use gameName instead of TVShowName
-      correctTVShow: TVShowDetails.gameName,
-      incorrectTVShows: incorrectTVShowNames.filter(name => name !== TVShowDetails.gameName),
+    const data = {
+      correctName: details.name,
+      incorrectNames: incorrectNames,
       level
     };
-    onTVShowDataLoad(TVShowData);
-  }, [level, onTVShowDataLoad, TVShowDetails.gameName, incorrectTVShowNames]);
+    onDataLoad(data);
+  }, [level, onDataLoad, details.name, incorrectNames]);
 
   return (
     <ErrorBoundary>
-      <div className="border border-white/20 p-4 
-                      bg-zinc-950/50 rounded-md
+      <div className="border border-white/30 p-4 
+                      bg-zinc-950/70 rounded-md
                       backdrop-blur-sm
                       hover:border-white/30 hover:bg-zinc-950/70">
         <div className="space-y-2">
-          <h2 className="text-base sm:text-lg tracking-[0.2em] text-white/80 uppercase font-mono
+          <h2 className="text-base sm:text-lg tracking-[0.2em] text-white/90 uppercase font-mono
                         hover:text-white/90
                         transition-all duration-300">
-            Daily TV Show Cypher #{TVShowDetails.id}
+            Daily {category.charAt(0).toUpperCase() + category.slice(1)} Cypher #{details.id}
           </h2>
-          <h3 className="text-xs sm:text-sm tracking-[0.2em] text-white/60 uppercase font-mono
+          <h3 className="text-xs sm:text-sm tracking-[0.2em] text-white/70 uppercase font-mono
                         hover:text-white/90
                         transition-all duration-300 mt-2">
-            Release Year: {level < 4 ? TVShowDetails.releaseYear : '????'}
+            Release Year: {level < 4 ? details.releaseYear : '????'}
           </h3>
-          <h3 className="text-xs sm:text-sm tracking-[0.2em] text-white/60 uppercase font-mono
+          <h3 className="text-xs sm:text-sm tracking-[0.2em] text-white/70 uppercase font-mono
                         hover:text-white/90
                         transition-all duration-300 mt-2">
-            Genre: {level < 3 ? TVShowDetails.genre : '????'}
+            Genre: {level < 3 ? details.genre : '????'}
           </h3>
           <div className="text-sm sm:text-base leading-relaxed tracking-wide font-mono
                       backdrop-blur-sm text-white/90
@@ -145,10 +158,11 @@ function TVDescription(props) {
   );
 }
 
-TVDescription.propTypes = {
-  onTVShowDataLoad: PropTypes.func.isRequired,
+Description.propTypes = {
+  onDataLoad: PropTypes.func.isRequired,
   level: PropTypes.number.isRequired,
-  startDate: PropTypes.string.isRequired, // Add prop type
+  startDate: PropTypes.string.isRequired,
+  category: PropTypes.oneOf(['game', 'movie', 'tv']).isRequired,
 };
 
-export default TVDescription;
+export default Description;

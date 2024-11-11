@@ -6,14 +6,12 @@ import CategoryButtons from './components/CategoryButtons';
 
 const InfoPopUp = lazy(() => import('./components/InfoPopUp'));
 const ProjectInfoPopUp = lazy(() => import('./components/ProjectInfoPopUp'));
-const GameDescription = lazy(() => import('./components/GameDescription'));
-const MovieDescription = lazy(() => import('./components/MovieDescription'));
-const TVDescription = lazy(() => import('./components/TVDescription'));
 const WinModal = lazy(() => import('./components/WinModal'));
 const FailModal = lazy(() => import('./components/FailModal'));
 const GameOverScreen = lazy(() => import('./components/GameOverScreen'));
+const Description = lazy(() => import('./components/Description'));
 
-const TESTING_MODE = false;
+const TESTING_MODE = true;
 
 const initialGameState = {
   levels: { game: 4, movie: 4, tv: 4 },
@@ -61,7 +59,7 @@ function App() {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef(null);
 
-  const handleGameData = useCallback((data) => {
+  const handleData = useCallback((data) => {
     setGameData(data);
   }, []); 
 
@@ -76,12 +74,6 @@ function App() {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, []);
-
-  useEffect(() => {
-    import('./components/GameDescription.jsx');
-    import('./components/MovieDescription.jsx');
-    import('./components/TVDescription.jsx');
   }, []);
 
   const updateDropdownDirection = useCallback(() => {
@@ -203,13 +195,9 @@ function App() {
   const handleGuessSubmit = useCallback(() => {
     if (!gameData) return;
     const userInput = searchInput.toLowerCase();
-    
-    const correctAnswer = {
-      game: gameData.correctGame,
-      movie: gameData.correctMovie,
-      tv: gameData.correctTVShow
-    }[selectedDescription]?.toLowerCase();
-  
+
+    const correctAnswer = gameData.correctName.toLowerCase();
+
     if (userInput === correctAnswer) {
       setGameState(prev => {
         const newState = {
@@ -223,10 +211,10 @@ function App() {
         return newState;
       });
       setShowWinModal(true);
-      setSearchInput(''); // Clear input on win
+      setSearchInput('');
       return;
     }
-  
+
     setGameState(prev => {
       const updatedLevel = Math.max(-1, prev.levels[selectedDescription] - 1);
       const newState = {
@@ -267,7 +255,7 @@ function App() {
     let timeoutId;
     return (value) => {
       clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => setSearchInput(value), 50); 
+      timeoutId = setTimeout(() => setSearchInput(value), 5); 
     };
   }, []);
 
@@ -413,44 +401,15 @@ function App() {
                         </svg>
                       </div>
                     }>
-                      {selectedDescription === 'game' && (
-                        <div>
-                          {gameState.gameOverStates.game ? (
-                            <GameOverScreen gameState={gameState} category="game" />
-                          ) : (
-                            <GameDescription  
-                              onGameDataLoad={handleGameData}
-                              level={gameState.levels.game}
-                              startDate={startDate}
-                            />
-                          )}
-                        </div>
-                      )}
-                      {selectedDescription === 'movie' && (
-                        <div>
-                          {gameState.gameOverStates.movie ? (
-                            <GameOverScreen gameState={gameState} category="movie" />
-                          ) : (
-                            <MovieDescription 
-                              onMovieDataLoad={handleGameData}
-                              level={gameState.levels.movie}
-                              startDate={startDate}
-                            />
-                          )}
-                        </div>
-                      )}
-                      {selectedDescription === 'tv' && (
-                        <div>
-                          {gameState.gameOverStates.tv ? (
-                            <GameOverScreen gameState={gameState} category="tv" />
-                          ) : (
-                            <TVDescription 
-                              onTVShowDataLoad={handleGameData}
-                              level={gameState.levels.tv}
-                              startDate={startDate}
-                            />
-                          )}
-                        </div>
+                      {gameState.gameOverStates[selectedDescription] ? (
+                        <GameOverScreen gameState={gameState} category={selectedDescription} />
+                      ) : (
+                        <Description
+                          onDataLoad={handleData}
+                          level={gameState.levels[selectedDescription]}
+                          startDate={startDate}
+                          category={selectedDescription}
+                        />
                       )}
                     </Suspense>
 

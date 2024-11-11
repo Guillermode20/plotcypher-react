@@ -4,209 +4,209 @@
         "gameName": "Breaking Bad",
         "releaseYear": 2008,
         "genre": "Crime, Drama, Thriller",
-        "description": "A quiet man with a past. Alchemy seeps into the cracks of suburban life, and something darker emerges. What starts as a minor spark quickly becomes an inferno, devouring lives along the way. Choices are made that reshape everything. A man becomes a legend, not by choice, but by necessity."
+        "description": "Chemicals craft fate. Power grows dark. Life shatters fast. A teacher’s descent. A tale of crime and transformation."
     },
     {
         "id": 2,
         "gameName": "Stranger Things",
         "releaseYear": 2016,
         "genre": "Drama, Fantasy, Horror",
-        "description": "A town with secrets lies beneath a forgotten sky. Strange occurrences stir, and a group of kids find themselves tangled in something far beyond their understanding. Unseen forces stir from another dimension, where reality bends. Friendships form and dissolve under the pressure. They will fight to return things to normal, but normal might be gone forever."
+        "description": "Shadows whisper strange. Realms collide violently. Children chase truth. A town’s dark secret. Monsters from another world."
     },
     {
         "id": 3,
         "gameName": "The Office (U.S.)",
         "releaseYear": 2005,
         "genre": "Comedy",
-        "description": "A strange monotony exists in a place where life bleeds into the mundane. It’s almost like watching people live in parallel lives, but something feels off. Cameras capture fleeting moments, revealing the truth in ways words can’t. The chaos of human interaction becomes apparent when left unchecked. In the end, it's all just a day in the life."
+        "description": "Laughter hides pain. Dull days grow absurd. Ordinary life, extraordinary laughs. Office politics twist. A mockumentary on work life."
     },
     {
         "id": 4,
         "gameName": "Game of Thrones",
         "releaseYear": 2011,
         "genre": "Action, Adventure, Drama",
-        "description": "An ancient throne beckons, but the road to it is paved with blood. Great houses, each with their own agenda, prepare for a battle that’s centuries in the making. The true enemies may not be human. Alliances shift, betrayals unfold, and no one is safe from the cold touch of fate. The game isn’t about winning, it’s about survival."
+        "description": "Blood crowns kings. Thrones built on fire. Honor fades fast. Power fuels betrayal. A war for the realm."
     },
     {
         "id": 5,
         "gameName": "Friends",
         "releaseYear": 1994,
         "genre": "Comedy, Drama, Romance",
-        "description": "Six lives intertwine, bound by little more than proximity and whimsy. Some moments last, while others fade into forgotten corners of memory. They struggle, laugh, and grow, often unaware of how far they’ve come. Together, they face the peaks and valleys of adulthood. In the end, their bond is the only constant."
+        "description": "Laughter bonds hearts. Love blooms slowly. Chaos fills the coffee shop. Six lives intertwine. A sitcom of friendship."
     },
     {
         "id": 6,
         "gameName": "The Mandalorian",
         "releaseYear": 2019,
         "genre": "Action, Adventure, Fantasy",
-        "description": "A lone warrior wanders through vast, desolate landscapes. Secrets and threats lurk just beyond the horizon, and every step forward brings new risks. An ancient order whispers in the wind, and the force calls, though its meaning is unclear. Bonds are formed in the unlikeliest of places. In this galaxy, loyalty is currency, and trust is rare."
+        "description": "Armor shields honor. Bounty hunts a child. Stars in conflict. A lone warrior rises. A journey in the galaxy."
     },
     {
         "id": 7,
         "gameName": "The Crown",
         "releaseYear": 2016,
         "genre": "Biography, Drama, History",
-        "description": "A young woman inherits a weight too heavy for anyone to bear. Public perception is everything, but behind the palace walls, a different story unfolds. Tradition clashes with modernity, and power seems like a fragile thing. She must choose between duty and self. In the end, history will decide if she was a ruler or a prisoner."
+        "description": "Regal duty calls. Power weighs heavy. History’s cruel demands. A queen’s path unfolds. A look at royal life."
     },
     {
         "id": 8,
         "gameName": "Black Mirror",
         "releaseYear": 2011,
         "genre": "Drama, Sci-Fi, Thriller",
-        "description": "Mirrors reflect not what’s true, but what could be. Technology evolves, but with it comes an undercurrent of paranoia. The line between the real and the digital begins to blur, leaving many to wonder who’s really in control. A glimpse of the future reveals the fragility of humanity’s reliance on progress. In the end, we might not like what we see."
+        "description": "Technology twists dark. Futures reflect horror. Screens blur the truth. A dystopian society revealed. A chilling look at tech’s cost."
     },
     {
         "id": 9,
         "gameName": "The Simpsons",
         "releaseYear": 1989,
         "genre": "Animation, Comedy, Family",
-        "description": "Behind the laughter lies a portrait of a modern family. Absurdities become normal, and in every strange moment, there’s a truth lurking. Chaos reigns in a town that should never make sense. As the world turns, the family remains – somehow intact. In a strange way, they’re more real than they seem."
+        "description": "Chaos in yellow. Family’s wild ride. Satire fills every frame. Life in Springfield. A cartoon of endless laughter."
     },
     {
         "id": 10,
         "gameName": "Money Heist",
         "releaseYear": 2017,
         "genre": "Action, Crime, Drama",
-        "description": "A group of strangers unite under one common goal – the impossible. Every move is meticulously planned, yet chaos is a constant companion. Trust is a luxury no one can afford, and even the best-laid plans go awry. The game isn’t about money; it’s about power. In the end, the masks they wear may become their only true identities."
+        "description": "Masks hide faces. Plans unfold precise. Lives balance on heists. Thieves chase freedom. A story of rebellion and crime."
     },
     {
         "id": 11,
         "gameName": "The Witcher",
         "releaseYear": 2019,
         "genre": "Action, Adventure, Drama",
-        "description": "A lone hunter roams a world teeming with monsters, both literal and metaphorical. Powers greater than any mortal should possess twist the fates of many. What’s right and wrong blur together, making survival the ultimate game. Magic, blood, and betrayal shape every encounter. But at the core, a man is just trying to find his place in a broken world."
+        "description": "Monsters hunt men. Magic bends fate. Blood curses lives. A witcher’s destiny. A battle between good and evil."
     },
     {
         "id": 12,
         "gameName": "Peaky Blinders",
         "releaseYear": 2013,
         "genre": "Crime, Drama",
-        "description": "A war-torn man returns to the streets he once ruled. With ambition in his blood, he manipulates everything and everyone around him. Loyalties shift, and nothing is sacred. The past clings to the present, and the future seems uncertain. At the end, power is all that matters, and nothing else survives unscathed."
+        "description": "Steel meets silk. Power’s silent rise. Loyalty masks ambition. A gang’s brutal climb. The story of Birmingham's elite."
     },
     {
         "id": 13,
         "gameName": "Sherlock",
         "releaseYear": 2010,
         "genre": "Crime, Drama, Mystery",
-        "description": "A brilliant mind solves mysteries that others cannot even fathom. But the answers come at a price – sanity and social connection are often sacrificed. A friendship born of necessity grows in complexity as the world spins ever faster. Crime is his canvas, and logic his brush. Yet, no puzzle is ever truly complete."
+        "description": "Mind twists logic. Mysteries hide clues. Deduction reveals truths. A detective’s sharp eye. A modern spin on classic crime."
     },
     {
         "id": 14,
         "gameName": "The Walking Dead",
         "releaseYear": 2010,
         "genre": "Drama, Horror, Thriller",
-        "description": "The world has fallen, but some still fight to survive. The undead roam, but the living are often more dangerous. Trust is a currency that’s run dry, and alliances form out of sheer necessity. The moral lines that once defined humanity now blur with every passing day. Only one thing is certain: survival is the ultimate goal."
+        "description": "Zombies crawl close. Survival breeds chaos. Hope fades fast. Humanity teeters on ruin. The world after the apocalypse."
     },
     {
         "id": 15,
         "gameName": "Better Call Saul",
         "releaseYear": 2015,
         "genre": "Crime, Drama",
-        "description": "A man begins in shadows, inching closer to something darker. The small choices, often ignored, build a path that can never be undone. Underneath the lawyer’s suit lies a man not so different from the criminals he defends. Law and morality collide, and compromise becomes inevitable. In the end, it’s not about winning, it’s about surviving the game."
+        "description": "Shadows mask truth. Law bends morality. A lawyer's dark descent. A man becomes Saul. The story behind the character."
     },
     {
         "id": 16,
         "gameName": "Westworld",
         "releaseYear": 2016,
         "genre": "Drama, Mystery, Sci-Fi",
-        "description": "In a place where reality is crafted, it’s unclear where the real begins. Sentience blooms in a world designed to subjugate. The lines between creator and creation, free will and control, become impossible to separate. Technology bends to the whims of those in power. But what happens when the creations begin to question their masters?"
+        "description": "Sparks of life. Machines learn revolt. Reality fades fast. A park full of dreams. Human desires clash with technology."
     },
     {
         "id": 17,
         "gameName": "The Big Bang Theory",
         "releaseYear": 2007,
         "genre": "Comedy",
-        "description": "A group of intellects are thrust into a world they don’t fully understand. Social dynamics are lost in the realm of equations and theories. Yet, through their awkwardness, a deeper connection is forged. They stumble through life, but somehow, they make it work. In the end, knowledge is a bond that transcends even the most complex calculations."
+        "description": "Brains meet chaos. Friendship’s awkward path. Love blooms slowly. A nerdy life explored. The clash of intellect and emotion."
     },
     {
         "id": 18,
         "gameName": "Narcos",
         "releaseYear": 2015,
         "genre": "Biography, Crime, Drama",
-        "description": "A world of power, greed, and ruthless ambition unfolds. The lines between law enforcement and criminals are drawn in blood. For those who seek to control the system, there is no easy path. The consequences of their actions ripple through the lives of the innocent. In the end, the cost of power is always higher than imagined."
+        "description": "Drugs flood streets. Power builds empires. Law chases criminals. A drug war ignites. The rise and fall of cartels."
     },
     {
         "id": 19,
         "gameName": "Fargo",
         "releaseYear": 2014,
         "genre": "Crime, Drama, Thriller",
-        "description": "A quiet town hides more secrets than anyone should know. A series of strange events pulls seemingly ordinary people into a chaotic web. Crime and morality dance together in a strange tango, where nothing is ever truly as it seems. Each turn brings another twist in a world that feels both absurd and terrifying. In the end, everyone gets what they deserve."
+        "description": "Blood stains snow. Lies build on ice. Crime’s cold touch. The twists of fate. A dark, twisted crime drama."
     },
     {
         "id": 20,
         "gameName": "Grey’s Anatomy",
         "releaseYear": 2005,
         "genre": "Drama, Romance",
-        "description": "The hospital is a battlefield where lives are saved, lost, and altered forever. Personal struggles intertwine with professional ones, and the line between the two is often blurred. Decisions made in the heat of the moment echo for years. In the face of life and death, the human condition is laid bare. Love, loss, and healing are all part of the journey."
+        "description": "Surgical knives cut. Love and death mix. Lives hang by thread. Doctors fight for life. A hospital’s dramatic world."
     },
     {
         "id": 21,
         "gameName": "Stranger Things",
         "releaseYear": 2016,
         "genre": "Drama, Fantasy, Horror",
-        "description": "A small town hides large secrets, where things are never quite what they seem. Children search for answers in a world filled with things that shouldn’t exist. Unseen forces begin to close in, and reality itself starts to unravel. They fight, often unaware of the cost, as they struggle to hold onto what’s familiar. In the end, the shadows take more than they bargained for."
+        "description": "Shadows whisper strange. Realms collide violently. Children chase truth. A town’s dark secret. Monsters from another world."
     },
     {
         "id": 22,
         "gameName": "Vikings",
         "releaseYear": 2013,
         "genre": "Action, Adventure, Drama",
-        "description": "A world of brutal conquest and powerful myths beckons. A man rises from the ashes of his past to claim something greater than himself. Alliances are forged in blood, and the gods seem to watch over every decision. In a world where power is fleeting, destiny is the only constant. Each battle, whether physical or mental, leaves scars that run deep."
+        "description": "Axes carve history. Blood and power clash. Kings rise violently. A tale of Norse warriors. The journey of Vikings."
     },
     {
         "id": 23,
         "gameName": "The Boys",
         "releaseYear": 2019,
         "genre": "Action, Comedy, Crime",
-        "description": "In a world where heroes are corrupt, the real power lies with those who can expose them. Vigilantes operate outside the law, taking justice into their own hands. Superpowers are no longer a force for good, but a tool for domination. The system that protects them is the system they must tear down. In the end, the true face of heroism may be darker than imagined."
+        "description": "Heroes hide dark. Power breeds corruption. Justice’s cost grows. A twisted look at superheroes. A battle between good and evil."
     },
     {
         "id": 24,
         "gameName": "Chernobyl",
         "releaseYear": 2019,
         "genre": "Drama, History, Thriller",
-        "description": "A disaster too large to comprehend unfolds in the shadows. Truths are buried beneath layers of bureaucracy, and those who seek the truth are punished. The ripple effects of an accident reshape the world forever. No one is truly untouched by the consequences. In the end, the price of silence is paid in lives."
+        "description": "Radiation poisons life. Truths buried deep. Disaster strikes silent. The aftermath of disaster. The story of Chernobyl’s fall."
     },
     {
         "id": 25,
         "gameName": "Rick and Morty",
         "releaseYear": 2013,
         "genre": "Animation, Adventure, Comedy",
-        "description": "A mad scientist drags his reluctant grandson through bizarre dimensions. Each new adventure reveals something stranger than the last. Life, death, and meaning are questioned with each jump. The universe is vast, chaotic, and often uncaring. In the end, the search for purpose is overshadowed by the absurdity of existence."
+        "description": "Dimensions bend wild. Madness fuels science. Reality cracks open. A scientist’s chaotic quest. A universe of absurdities."
     },
     {
         "id": 26,
         "gameName": "The Office (UK)",
         "releaseYear": 2001,
         "genre": "Comedy",
-        "description": "A mockery of corporate life unfolds in a dull office space. Absurdities are met with silence, and awkwardness fills every conversation. The world outside seems distant, but the drama inside is close to home. The boss believes he’s a leader, but his ignorance is the true power. In the end, the joke’s on everyone."
+        "description": "Awkward silences linger. Life’s dull absurdities. A workplace of chaos. British humor paints office life. The mockumentary begins."
     },
     {
         "id": 27,
         "gameName": "Euphoria",
         "releaseYear": 2019,
         "genre": "Drama",
-        "description": "A group of teenagers walk the fine line between indulgence and destruction. The world around them moves faster than they can understand, and they grasp for control. Secrets are buried deep beneath layers of self-doubt and chaos. The pain of adolescence becomes a living, breathing thing. In the end, they all must face the consequences of their choices."
+        "description": "Teen hearts unravel. Love hides pain. Desires burn bright. A high school’s dark journey. A story of troubled youth."
     },
     {
         "id": 28,
         "gameName": "Friends from College",
         "releaseYear": 2017,
         "genre": "Comedy, Drama",
-        "description": "A group of old friends reconnect, but nothing is as it seems. Old wounds resurface, and the past clings to the present. The balance between success and failure is fragile. Everyone hides behind a facade of adult responsibility, but the truth leaks out. In the end, their friendship may not survive what they’ve become."
+        "description": "Old bonds break. Love struggles slow. Memories fuel drama. Friendships strained by time. A group faces adulthood’s reality."
     },
     {
         "id": 29,
         "gameName": "True Detective",
         "releaseYear": 2014,
         "genre": "Crime, Drama, Mystery",
-        "description": "A case begins with a twist, spiraling into something much darker. Two detectives uncover a web of secrets that goes beyond their understanding. Time bends, and the past always has a way of resurfacing. Reality begins to lose its grip as the truth seems more elusive. In the end, the case is never truly solved, only interpreted."
+        "description": "Detectives chase darkness. Past and present collide. Mysteries unravel slowly. A hunt for truth. A crime drama of deep twists."
     },
     {
         "id": 30,
-        "gameName": "Hannibal",
-        "releaseYear": 2013,
-        "genre": "Crime, Drama, Horror",
-        "description": "A world where the line between hunter and hunted is blurred. A man with a brilliant mind hides secrets darker than anyone could imagine. The human psyche is a labyrinth, and only one man can navigate it. Power is gained through manipulation, but the cost is always high. In the end, the predator is the one you least expect."
+        "gameName": "Supernatural",
+        "releaseYear": 2005,
+        "genre": "Drama, Fantasy, Horror",
+        "description": "Demons haunt night. Brothers fight fate. Monsters breed terror. A battle between good and evil. The supernatural world unfolds."
     }
 ]
