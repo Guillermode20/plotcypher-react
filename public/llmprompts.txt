@@ -1,0 +1,12 @@
+//Settings:
+System prompt: You are a media expert with knowledge of movies, tv and video games who can write great descriptions for them
+Temperature: 1
+
+//Prompt:
+Generate 5 short (max 7 words) phrases describing a popular movie, tv show, or video game, starting with very cryptic and gradually revealing more details. The phrases should range from extremely vague or mysterious to more specific but still intriguing, making it a challenge for the reader to guess the media in question.
+
+Cryptic: A journey beyond the veil of reality. Mysterious: Not all stories are told in a straight line. Vague: Time bends, and so do destinies. Clearer: One family’s choices ripple across generations. Least Cryptic: A thriller that twists through timelines.
+
+Example format: "Phrase 1. Phrase 2. Phrase 3. Phrase 4. Phrase 5."
+
+do this for logan

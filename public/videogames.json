@@ -1,0 +1,2557 @@
+[
+    {
+        "ID": 1,
+        "Name": "Torchlight II",
+        "ReleaseYear": "2012",
+        "Genres": "Action, RPG",
+        "Description": "In a world where shadows consume the light's splendor. Ancient forces clash as heroes rise from the embers. Choose your champion to navigate perilous dungeons and foes. Evoke elemental powers and forge a path through darkness. This action RPG features vibrant art and co-op gameplay."
+    },
+    {
+        "ID": 2,
+        "Name": "Resident Evil Revelations 2",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Adventure",
+        "Description": "A struggle against the unseen in a shadowy world. Fear and trust intertwine in desperate alliances formed. A mysterious island harbors forgotten horrors and lost memories. Two protagonists face a relentless foe while uncovering secrets. Survival horror beckons players into stylish, cooperative gameplay mechanics."
+    },
+    {
+        "ID": 3,
+        "Name": "Mafia III",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Adventure",
+        "Description": "A city teeming with shadows and criminal ambitions awaits. A man seeks revenge, driven by loyalty and betrayal. Racial tensions simmer as power struggles unfold in the streets. Explore a richly detailed open world reminiscent of the 1970s. Unravel a tale of crime, family, and the American Dream."
+    },
+    {
+        "ID": 4,
+        "Name": "Remember Me",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Platformer",
+        "Description": "Memories shape the world in unexpected ways around us. A city thrives on the manipulation of past perceptions. A young woman fights against forgotten echoes of self. Colorful dystopia hides secrets beneath its sleek fa\u00e7ade. Unraveling identity is the key to saving the future."
+    },
+    {
+        "ID": 5,
+        "Name": "Little Nightmares",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Adventure",
+        "Description": "A shadowy realm whispers of fears long concealed. Grown in size, but forever small is this wanderer. The oppressive feast hides secrets beneath monstrous eyes. Navigate the grotesque in hand-drawn artistry and dim light. Escape from lurking giants while unraveling a child's nightmare."
+    },
+    {
+        "ID": 6,
+        "Name": "Uncharted 4: A Thief\u2019s End",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Shooter",
+        "Description": "Adventurers tread paths of fortune and legacy intertwined. Secrets buried deep call to experience and betrayal unfold. A skilled rogue navigates between love, loyalty, and greed. Stunning landscapes and cinematic flair enhance every daring escapade. A treasure hunt leads to confrontations with a long-lost brother."
+    },
+    {
+        "ID": 7,
+        "Name": "What Remains of Edith Finch",
+        "ReleaseYear": "2017",
+        "Genres": "Adventure, Indie",
+        "Description": "A family tree holds secrets of countless lost voices. Explore moments trapped in time, heavy with fate\u2019s burden. Each room whispers stories of lives interrupted and dreams unfulfilled. A striking visual style enhances the exploration of mortality. One resident's journey reflects the inevitability of life's end."
+    },
+    {
+        "ID": 8,
+        "Name": "Bastion",
+        "ReleaseYear": "2011",
+        "Genres": "Action, Adventure",
+        "Description": "A world shattered, pieces whispering tales of the past. A lone survivor seeks to restore what was lost. An enigmatic narrator guides through vibrant, painted landscapes. Power resides in the choices made along the journey. A bouncing sword and a shield wield unique abilities."
+    },
+    {
+        "ID": 9,
+        "Name": "Yakuza 0",
+        "ReleaseYear": "2015",
+        "Genres": "Action, RPG",
+        "Description": "In a bustling city, shadows whisper of honor. Two men, bound by fate, seek their own paths. A battle for territory reveals the cost of loyalty. Vintage aesthetics complement a tale of rise and fall. A prequel unveils the origins of a criminal empire."
+    },
+    {
+        "ID": 10,
+        "Name": "Metro: Last Light Redux",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Shooter",
+        "Description": "Beneath the earth, survival becomes a haunting endeavor. Shadows and flickering lights dance through desolation's grip. A journey unfolds in a world drenched in conflict. A lone warrior fights against both monsters and guilt. Explore the remnants of civilization where hope flickers dimly."
+    },
+    {
+        "ID": 11,
+        "Name": "Battlefield V",
+        "ReleaseYear": "2018",
+        "Genres": "Action, Shooter",
+        "Description": "In tumultuous times, conflicts echo across the globe. Shadows of valor and sacrifice shape the battlefield's legacy. A brotherhood forged through fire and chaos emerges. Dive into various narratives from history's uncertain pages. Experience visually stunning landscapes that redefine the war genre."
+    },
+    {
+        "ID": 12,
+        "Name": "Lara Croft and the Temple of Osiris",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Adventure",
+        "Description": "A skilled explorer seeks ancient treasures and secrets. Mystical artifacts awaken the power of gods and pharaohs. Teamwork is essential against treacherous landscapes and foes. Dynamic combat showcases a blend of puzzle-solving and action. Navigate through Egyptian mythology with a heroine at its core."
+    },
+    {
+        "ID": 13,
+        "Name": "Braid",
+        "ReleaseYear": "2008",
+        "Genres": "Action, Arcade",
+        "Description": "Time bends and twists within a colorful landscape. Puzzles unravel like memories seeking resolution and understanding. A hero journeys to reclaim a lost love's truth. Watch your steps as the past reshapes your present fate. Art and mechanics intertwine, creating a unique narrative experience."
+    },
+    {
+        "ID": 14,
+        "Name": "Crash Bandicoot N. Sane Trilogy",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Platformer",
+        "Description": "A vibrant world filled with colorful platforming challenges awaits. Furry creatures battle against the forces of a villainous genius. A memorable marsupial faces perilous trials and tricky jumps. Collecting fruits is essential to unlocking your potential. Relive classic adventures in a remastered visual experience."
+    },
+    {
+        "ID": 15,
+        "Name": "Slay the Spire",
+        "ReleaseYear": "2019",
+        "Genres": "RPG, Strategy",
+        "Description": "A tower filled with challenges awaits brave adventurers. Choices create unique paths in battles and storylines. Assemble a diverse team to overcome daunting foes. Card-based strategy enhances each encounter and decision made. Climb higher while defeating enemies in a rogue-like journey."
+    },
+    {
+        "ID": 16,
+        "Name": "Lara Croft and the Guardian of Light",
+        "ReleaseYear": "2010",
+        "Genres": "Action, Adventure",
+        "Description": "Ancient relics beckon amidst shadowy labyrinths and traps. A fierce woman navigates through perilous terrains and puzzles. Light and darkness intertwine as fate unfolds heroically. A loyal companion aids in battles against mythic adversaries. The action-adventure co-op gameplay redefines explorative dungeon crawling experiences."
+    },
+    {
+        "ID": 17,
+        "Name": "PAYDAY The Heist",
+        "ReleaseYear": "2011",
+        "Genres": "Action, Shooter",
+        "Description": "A masked ensemble executes a daring plan under pressure. Bright colors and stylized graphics create a vibrant heist world. Tension rises as they engage in coordinated criminal actions. Strategic teamwork is essential for overcoming law enforcement challenges. Prepare for intense shootouts and stealthy escapes in missions."
+    },
+    {
+        "ID": 18,
+        "Name": "Resident Evil 7: Biohazard",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Shooter",
+        "Description": "In a haunting abode, darkness holds sway over all. A family faces a sinister legacy of twisted bonds. An outsider journeys through fear to unveil the truth. A first-person perspective immerses you in terror and dread. Struggling against infection, survival becomes a gruesome necessity."
+    },
+    {
+        "ID": 19,
+        "Name": "Hotline Miami 2: Wrong Number",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Shooter",
+        "Description": "A retro thrill pulses through neon-lit shadows. Unrelenting violence follows a masked vigilante's path. Choices echo through time and fractured narratives intertwine. The soundtrack thumps as chaos colors the streets. Revenge and regret collide in a brutal, pixelated world."
+    },
+    {
+        "ID": 20,
+        "Name": "Deus Ex: Human Revolution",
+        "ReleaseYear": "2011",
+        "Genres": "Action, RPG",
+        "Description": "In a world divided by shadows and light, technology reigns supreme. The struggle for identity unfolds within the mind and body. A corporation\u2019s influence reshapes humanity\u2019s future amidst rising tensions. A reluctant hero seeks answers through cybernetic enhancements and choices. Neon-lit streets hold secrets that challenge ethical boundaries of existence."
+    },
+    {
+        "ID": 21,
+        "Name": "Fallout 4",
+        "ReleaseYear": "2015",
+        "Genres": "Action, RPG",
+        "Description": "A world broken by an unseen catastrophe awaits players. Choices made shape destinies, blurring lines of morality. A vault opens, revealing a desolate landscape of nostalgia. Explore the remnants of civilization while battling mutated threats. One hero seeks family in a chaotic, post-apocalyptic Boston."
+    },
+    {
+        "ID": 22,
+        "Name": "Gris",
+        "ReleaseYear": "2018",
+        "Genres": "Adventure, Indie",
+        "Description": "A journey unfolds in a colorful, surreal landscape. Shadows of emotion dance across vibrant, shifting terrains. A silent protagonist navigates through the stages of grief. Artistry meets gameplay in a captivating platforming experience. The world reflects the inner turmoil of the heart."
+    },
+    {
+        "ID": 23,
+        "Name": "Alan Wake",
+        "ReleaseYear": "2010",
+        "Genres": "Action, Shooter",
+        "Description": "In the shadows, a writer battles his own creation. Nightmares intertwine with reality, leaving him disoriented and trapped. A dark presence thrives in a quaint, eerie town. Armed with light, he confronts both foes and fears. A mystery unfolds, blending horror and psychological thriller elements."
+    },
+    {
+        "ID": 24,
+        "Name": "The Witness",
+        "ReleaseYear": "2016",
+        "Genres": "Adventure, Indie",
+        "Description": "A silent realm invites introspection and puzzling exploration. Colorful designs mask a deeper philosophical inquiry within. Lines intertwine, crafting a visual language of challenges ahead. Numerous panels await your touch to reveal their secrets. Navigate an island that questions perception and knowledge itself."
+    },
+    {
+        "ID": 25,
+        "Name": "Surviving Mars",
+        "ReleaseYear": "2018",
+        "Genres": "Strategy, Simulation",
+        "Description": "In a dusty realm, challenges loom over life. A colony's heartbeat relies on human ingenuity and survival. Observe the delicate dance between resources and expansions. Environments shift, beckoning players to adapt their strategies. Terraforming a distant red planet awaits your tactical decisions."
+    },
+    {
+        "ID": 26,
+        "Name": "Neverwinter",
+        "ReleaseYear": "2013",
+        "Genres": "Action, RPG",
+        "Description": "In a realm where shadows dance with light. Players forge their destinies through conflict and choice. Ancient evils stir beneath a mystical city\u2019s surface. Heroes emerge, clad in armor and wielding magic. Join a diverse party to conquer dungeons and foes."
+    },
+    {
+        "ID": 27,
+        "Name": "Assassin's Creed Origins",
+        "ReleaseYear": "2017",
+        "Genres": "Action, RPG",
+        "Description": "In a land of sun and sands, shadows linger. A brotherhood exists among the silent warriors of night. Ancients clash with modernity in a search for truth. A pivotal figure with a falcon guides his destiny. Explore the birth of a legendary order in history."
+    },
+    {
+        "ID": 28,
+        "Name": "Serious Sam Fusion 2017 (beta)",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Indie",
+        "Description": "A lone warrior faces overwhelming odds in chaotic battles. Time-traveling antics blend humor with relentless monster-slaying action. A quirky hero wields unconventional weaponry against bizarre foes. Expect vibrant visuals and retro-style shooting mechanics in this game. This fusion brings together familiar faces from a beloved franchise."
+    },
+    {
+        "ID": 29,
+        "Name": "Resident Evil",
+        "ReleaseYear": "1996",
+        "Genres": "Action, Shooter",
+        "Description": "In a maze of shadows, fear lurks in silence. A team of brave souls faces biological nightmares unleashed. Doors creak open to reveal secrets of corporate greed. Scientific experiments gone awry transform humans into monstrous forms. A distinct blend of horror and action ignites the chaos."
+    },
+    {
+        "ID": 30,
+        "Name": "Alien: Isolation",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Adventure",
+        "Description": "In the shadows, fear becomes a constant companion. Survival is a delicate dance with the unknown. A fractured space station holds chilling secrets and dangers. One determined woman faces a relentless extraterrestrial predator alone. An atmospheric horror experience, inspired by a classic film franchise."
+    },
+    {
+        "ID": 31,
+        "Name": "STAR WARS Battlefront",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Shooter",
+        "Description": "In a galaxy where conflict reigns and hope lingers. Warriors from two factions clash in iconic battlegrounds. Familiar faces wield both the light and dark side. Galactic skirmishes unfold in stunning, immersive visuals. Join online battles that bring epic space lore to life."
+    },
+    {
+        "ID": 32,
+        "Name": "FTL: Faster Than Light",
+        "ReleaseYear": "2012",
+        "Genres": "Strategy, Simulation",
+        "Description": "Traveling across a vast expanse, choices shape your fate. A crew of diverse personalities faces relentless cosmic dangers. Resources are scarce, and decisions weigh heavily on survival. Engage in tactical battles while navigating hostile star systems. Manage your ship's upgrades to outwit your adversaries."
+    },
+    {
+        "ID": 33,
+        "Name": "Goat Simulator",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Simulation",
+        "Description": "In the realm of chaos, mischief reigns supreme and playful. A peculiar beast wanders among broken landscapes and glitches. Explore the absurdity of life through unorthodox antics daily. Embrace a world where farmyard creatures become unlikely havoc-wreakers. Experience simulated adventures that humorously defy nature's laws!"
+    },
+    {
+        "ID": 34,
+        "Name": "Ori and the Blind Forest",
+        "ReleaseYear": "2015",
+        "Genres": "Adventure, Platformer",
+        "Description": "In a world shrouded by darkness, hope flickers faintly. A small guardian seeks to restore balance to nature. Two unlikely companions traverse vibrant landscapes and ancient trees. Heartfelt bonds evolve amidst trials and a soulful journey. Explore a visually stunning platformer where light battles despair."
+    },
+    {
+        "ID": 35,
+        "Name": "Watch Dogs 2",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Adventure",
+        "Description": "A digital playground hides secrets within its circuits. Urban rebellion simmers beneath a facade of technology. A vibrant crew challenges the status quo through hacking. One hacker seeks revenge for personal loss and injustice. San Francisco's streets become the canvas for their escapades."
+    },
+    {
+        "ID": 36,
+        "Name": "Dragon Age: Inquisition",
+        "ReleaseYear": "2014",
+        "Genres": "Action, RPG",
+        "Description": "In a realm where choices shape destiny, darkness stirs. A diverse ensemble unites to challenge a looming threat. A fracture in the sky heralds chaos and conflict. A leader, marked by a unique sign, emerges bravely. Explore a richly detailed world filled with politics and magic."
+    },
+    {
+        "ID": 37,
+        "Name": "Amnesia: A Machine for Pigs",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Adventure",
+        "Description": "In a world where memories fade and haunt, an industrial landscape oozes dread and despair. Driven by father's guilt, sound echoes with chilling intent, invoking fears unspoken. The eerie glow of machinery masks a twisted familial legacy intertwined with madness. A journey delves into family ties, psychological horror, and societal critique. Face the darkness as you navigate through a sinister, steampunk-inspired environment."
+    },
+    {
+        "ID": 38,
+        "Name": "Age of Wonders III",
+        "ReleaseYear": "2014",
+        "Genres": "RPG, Strategy",
+        "Description": "In a realm where cosmos meets creativity and conflict. Mystic beings and mortals vie for dominion and magic. Diverse paths emerge through exploration and tactical decisions made. Each race offers unique strengths and stories to uncover. Turn-based battles unfold as you forge your own empire."
+    },
+    {
+        "ID": 39,
+        "Name": "Monaco: What's Yours Is Mine",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Strategy",
+        "Description": "In shadows of luxury, secrets lie waiting to be taken. The thrill of the chase hides beneath a calm surface. A crew of specialists blends deceit with precision and skill. Heists orchestrated with stealth demand strategy and coordination. Navigate a hedonistic playground where the stakes are life and wealth."
+    },
+    {
+        "ID": 40,
+        "Name": "Chivalry: Medieval Warfare",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Indie",
+        "Description": "A clash of steel in a time of valor. Medieval knights navigate a world of chaos and betrayal. Skillful combat defines one's honor on the battlefield. Choose your class, wield weapons, and crush your foes. An indie game where strategy and artistry meet in warfare."
+    },
+    {
+        "ID": 41,
+        "Name": "The Last Of Us",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Adventure",
+        "Description": "A world nearly consumed by an unseen predator lurks. Survival demands choices that weigh heavily on the heart. A bond forms between protector and fragile companion in chaos. Nature reclaims, and humanity fights against its own darkness. Journey through a post-apocalyptic landscape with echoing emotional depth."
+    },
+    {
+        "ID": 42,
+        "Name": "Batman: Arkham Asylum Game of the Year Edition",
+        "ReleaseYear": "2010",
+        "Genres": "Action, Adventure",
+        "Description": "A city cloaked in shadows reveals hidden truths. A foe lurks in the chaos of mental turmoil. Unlikely alliances form amidst a gallery of madness. One vigilante battles twisted figures in dark corridors. Unlocking secrets deep within Arkham\u2019s crumbling walls awaits."
+    },
+    {
+        "ID": 43,
+        "Name": "Dying Light",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Adventure",
+        "Description": "In a world where shadows stretch and hunger rises. Ambiguity reigns in a city caught between night and day. Survival hinges on agility, strength, and fleeting alliances formed. A protagonist crosses paths with deceit amid a darkened community. Zombies lurk everywhere, but the real horror lurks in humans."
+    },
+    {
+        "ID": 44,
+        "Name": "Saints Row IV",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Adventure",
+        "Description": "In a world where good and evil clash indefinitely. A higher power manipulates existence beyond the ordinary realm. Reality bends, and chaos reigns in vibrant districts. The protagonist wields extraordinary abilities in digital landscapes. Join the fight against an alien empire in stylish pandemonium."
+    },
+    {
+        "ID": 45,
+        "Name": "Hellblade: Senua's Sacrifice",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Adventure",
+        "Description": "In shadows, a journey through mind's labyrinth unfolds. A fallen warrior grapples with whispers of the past. The landscape blurs between myth and haunting reality. Haunted by her loss, a woman's strength ignites her quest. Norse mythology interweaves as she faces trials of the psyche."
+    },
+    {
+        "ID": 46,
+        "Name": "Metal Gear Solid V: Ground Zeroes",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Shooter",
+        "Description": "In the shadows, a soldier's choices ripple through time. Secrets lie within a clandestine installation in the dark. A world torn by conflict tests the limits of loyalty. Iconic characters navigate a landscape of deception and betrayal. The journey begins with a mission that shapes destiny."
+    },
+    {
+        "ID": 47,
+        "Name": "The Sims 4",
+        "ReleaseYear": "2014",
+        "Genres": "Strategy, Simulation",
+        "Description": "Life's intricate dance unfolds in pixelated frames. Control the fate of beings with whims and dreams. Build homes, forge connections, and shape destinies anew. From mundane chores to colorful drama, existence is simulated. Unleash creativity in a world where every choice matters."
+    },
+    {
+        "ID": 48,
+        "Name": "Syberia 2",
+        "ReleaseYear": "2004",
+        "Genres": "Adventure, Puzzle",
+        "Description": "In a land where frost breathes life into dreams. A journey unfolds through whispered secrets and ancient echoes. An unlikely heroine seeks a lost mechanical companion. Puzzle-solving is interwoven with surreal landscapes and haunting art. Follow the path to uncover a legacy of automatons."
+    },
+    {
+        "ID": 49,
+        "Name": "Child of Light",
+        "ReleaseYear": "2014",
+        "Genres": "RPG, Indie",
+        "Description": "A luminous journey through a shadowed realm awaits you. A whimsical transformation leads to an ethereal quest for light. A brave girl seeks to reclaim her stolen innocence. Unique visuals embrace a watercolor style within this indie RPG. Team up with an enigmatic firefly to conquer darkness."
+    },
+    {
+        "ID": 50,
+        "Name": "Left 4 Dead",
+        "ReleaseYear": "2008",
+        "Genres": "Action, Shooter",
+        "Description": "Survival in a world overrun by mindless predators awaits. Teams unite under pressure, battling relentless waves of chaos. A virus transforms humanity; friends become foes in an instant. Unique characters bring strength, each with their own story. Cooperation is key to escape the undead-infested landscape."
+    },
+    {
+        "ID": 51,
+        "Name": "S.T.A.L.K.E.R.: Shadow of Chernobyl",
+        "ReleaseYear": "2007",
+        "Genres": "Action, Shooter",
+        "Description": "A wasteland beckons where shadows whisper forgotten secrets. Surviving against odds requires cunning and tenacity. Beware the anomalies lurking, distorting reality in unexpected ways. A lone wanderer seeks purpose amidst chaos and despair. Explore the abandoned ruins of a haunting nuclear legacy."
+    },
+    {
+        "ID": 52,
+        "Name": "No Man's Sky",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Adventure",
+        "Description": "A vast universe awaits beyond the starry veil. Exploration is the only constant in endless realms. Interactions with diverse life forms shape your journey. Crafting, surviving, and building are key survival elements. A mysterious, procedurally generated space adventure invites infinite possibilities."
+    },
+    {
+        "ID": 53,
+        "Name": "Cuphead",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Indie",
+        "Description": "A duo dances between victory and defeat in chaos. Vintage aesthetics cloak their perilous journey through danger. Their agreement shifts when fate bets on their souls. Colorful bosses loom, each embodying a unique challenge. Payment is due, and the stakes are otherworldly debts."
+    },
+    {
+        "ID": 54,
+        "Name": "Dishonored",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Adventure",
+        "Description": "In a city where shadows and light collide, a vengeful spirit lurks. Choices shape destiny amid a plague and deceitful politics. A masked figure wields supernatural abilities to reclaim honor. Environments reflect a distinct steampunk aesthetic and visual storytelling. Betrayal ignites a quest for redemption and justice in Empress\u2019s absence."
+    },
+    {
+        "ID": 55,
+        "Name": "Lords of the Fallen (2014)",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Adventure",
+        "Description": "A dark realm awaits those who seek power. Journey between the light and shadow of existence. A warrior battles fate in a cursed kingdom. The struggle against inner demons tests one's resolve. Engage in a challenging adventure filled with horror and lore."
+    },
+    {
+        "ID": 56,
+        "Name": "Call of Duty: Black Ops II",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Shooter",
+        "Description": "In a world of fragmented shadows, loyalty bends and breaks. The echoes of warfare resound through time\u2019s labyrinthine corridors. A protagonist\u2019s bond is tested against a backdrop of betrayal. Advanced weaponry and historical strife collide in a digital battlefield. Covert operations lead players into a politically charged Cold War narrative."
+    },
+    {
+        "ID": 57,
+        "Name": "Guns of Icarus Online",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Simulation",
+        "Description": "Wings of ambition collide in a world of chaos. Crew teamwork is essential amidst a shifting sky. Engines roar and cannons fire in teamwork-driven combat. Choose your role wisely to navigate aerial skirmishes effectively. Steam-powered ships engage in strategic battles above the clouds."
+    },
+    {
+        "ID": 58,
+        "Name": "Prison Architect",
+        "ReleaseYear": "2015",
+        "Genres": "Strategy, Simulation",
+        "Description": "Behind bars, every choice shapes a destiny unknown. Architect dreams build confinement with a guiding hand. Warden struggles with inmates and escape attempts abound. Mastering design, manage funds, and maintain security carefully. Create a fortress where rehabilitation meets strategic oversight daily."
+    },
+    {
+        "ID": 59,
+        "Name": "Watch Dogs",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Adventure",
+        "Description": "In a city where shadows whisper secrets untold, Hidden messages and digital trails guide your path, A lone figure seeks vengeance against a corrupt system, Manipulating technology to expose the truth within chaos, Hack the world around you to reclaim your power."
+    },
+    {
+        "ID": 60,
+        "Name": "Dead Space (2008)",
+        "ReleaseYear": "2008",
+        "Genres": "Action, Shooter",
+        "Description": "In the void of space, madness embraces the lost. Survivors navigate shadows where nightmares take form, destructively beautiful. A haunting melody echoes as fear drips from walls. Engineering prowess meets terror as limbs twist unnaturally. An isolated dread unfolds aboard an infamous derelict ship."
+    },
+    {
+        "ID": 61,
+        "Name": "Overcooked",
+        "ReleaseYear": "2016",
+        "Genres": "Simulation, Arcade",
+        "Description": "Chaos reigns in a culinary race against time. Flavorful dishes require teamwork and skillful coordination. Comedic disasters unfold as panic sets in kitchens. Quirky chefs clash in absurd kitchen environments and challenges. Master the art of cooking under pressure with friends."
+    },
+    {
+        "ID": 62,
+        "Name": "The Last Of Us Remastered",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Adventure",
+        "Description": "In a world unraveled by relentless decay and death. One man\u2019s journey intertwines with a girl\u2019s survival instinct. Nature reclaims what was once human, amidst despair. Together, they navigate hostile terrain filled with infected threats. A gripping tale of love and sacrifice amidst shattered humanity."
+    },
+    {
+        "ID": 63,
+        "Name": "Red Faction: Guerrilla",
+        "ReleaseYear": "2009",
+        "Genres": "Action, Shooter",
+        "Description": "A battle for freedom unfolds on a desolate planet. Ruins of an oppressive regime serve as the backdrop. Tactics blend chaos and structure in creative destruction. The protagonist wields a hammer against both foes and fate. A third-person shooter where demolition is the ultimate strategy."
+    },
+    {
+        "ID": 64,
+        "Name": "The Binding of Isaac",
+        "ReleaseYear": "2011",
+        "Genres": "Action, RPG",
+        "Description": "A descent into darkness with trials and tribulations awaits. A mother\u2019s choices lead to a child\u2019s despairing fate. Monsters and treasures lie hidden in procedural labyrinths below. A link to sacrifice, redemption, and devastating loss emerges. Navigate grotesque foes as Isaac in a pixelated roguelike adventure."
+    },
+    {
+        "ID": 65,
+        "Name": "Half-Life 2",
+        "ReleaseYear": "2004",
+        "Genres": "Action, Shooter",
+        "Description": "A dystopian world where the past looms large. Shadows of control lurk behind a dimly lit city. A silent protagonist wields gravity and ingenuity to survive. Rebel forces clash against an alien regime's oppressive grip. An iconic journey begins with a crowbar and companions."
+    },
+    {
+        "ID": 66,
+        "Name": "Beyond: Two Souls",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Adventure",
+        "Description": "A journey unfolds between realms of existence and spirit. Choices shape destinies while shadows linger as companions. A girl bonds with an unseen force throughout life's trials. Emotional storytelling is enhanced by mesmerizing visual artistry. Explore the intertwined lives of Jodie Holmes and Aiden."
+    },
+    {
+        "ID": 67,
+        "Name": "The Evil Within",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Shooter",
+        "Description": "A realm crafted from dark, twisted psyches awaits discovery. Shadows blur the line between reality and imagination\u2019s grip. A detective\u2019s struggle against haunting monstrosities fuels the terror. Survival depends on cunning, as resources are brutally limited. Exploration reveals fractured memories within an unsettling world."
+    },
+    {
+        "ID": 68,
+        "Name": "This War of Mine",
+        "ReleaseYear": "2014",
+        "Genres": "Adventure, Simulation",
+        "Description": "Innocent lives caught in the shadows of conflict. Choices made under pressure often weigh heavily on souls. Survival depends on scarce resources and moral dilemmas. Characters are civilians, struggling with war's harsh realities daily. Experience a unique art style that emphasizes survival's darkness."
+    },
+    {
+        "ID": 69,
+        "Name": "Bloodborne",
+        "ReleaseYear": "2015",
+        "Genres": "Action, RPG",
+        "Description": "In a city shrouded in darkness and disease, ancient whispers echo. The hunt blurs the line between predator and prey. A cursed lineage holds the key to forbidden knowledge. Nightmares take form in the grotesque and the tragic. Embrace the challenge of a gothic, atmospheric RPG experience."
+    },
+    {
+        "ID": 70,
+        "Name": "The Long Dark",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Adventure",
+        "Description": "In an endless expanse, shadows dance with cold clutches. Survival bends under the weight of twilight's embrace. The breath of frost whispers resilience against nature's wiles. A world post-catastrophe where choices carve destiny anew. A haunting landscape melds survival mechanics with artful solitude."
+    },
+    {
+        "ID": 71,
+        "Name": "Battlefield 3",
+        "ReleaseYear": "2011",
+        "Genres": "Action, Shooter",
+        "Description": "A sprawling conflict unfolds in modern war settings. Shadows of teamwork and betrayal echo through urban landscapes. A soldier grapples with the weight of loyalty and duty. Intense firefights and tactics decide the fate of nations. Experience expansive battles with vehicles and multiplayer chaos galore."
+    },
+    {
+        "ID": 72,
+        "Name": "Divinity: Original Sin - Enhanced Edition",
+        "ReleaseYear": "2015",
+        "Genres": "RPG, Indie",
+        "Description": "In a land where choices forge destinies and fates. A blend of magic and steel shapes complex alliances and foes. Two heroes unite, each with a unique story to tell. Divine powers clash in a turn-based tactical battle for survival. Explore, strategize, and uncover secrets in vividly crafted realms."
+    },
+    {
+        "ID": 73,
+        "Name": "Vampire Survivors",
+        "ReleaseYear": "2022",
+        "Genres": "Action, RPG",
+        "Description": "In a world where shadows dance, life flickers briefly. Survive the night against the relentless, undead tide. Simple visuals mask a complex, gripping survival challenge. Evolving powers grant triumph over hordes with style and flair. Embrace the chaos as you battle monstrous foes endlessly."
+    },
+    {
+        "ID": 74,
+        "Name": "GRID 2",
+        "ReleaseYear": "2013",
+        "Genres": "Racing, Arcade",
+        "Description": "A world where speed reigns supreme and chaos follows. Many tracks twist and turn through urban landscapes and fields. Rivalries ignite a fierce competition among skilled drivers. Precision steering meets spectacular visuals in vibrant presentations. Race your way to the top of an intricate leaderboard."
+    },
+    {
+        "ID": 75,
+        "Name": "Spec Ops: The Line",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Shooter",
+        "Description": "A desolate city whispers secrets of distant warfare. Morality blurs like sand in a harsh storm. A soldier\u2019s journey pits will against the weight of command. Choices weave a tapestry of survival and sacrifice. A psychological descent unfolds amid the ruins of Dubai."
+    },
+    {
+        "ID": 76,
+        "Name": "Sid Meier's Civilization III Complete",
+        "ReleaseYear": "2001",
+        "Genres": "Strategy, Simulation",
+        "Description": "Empires rise and fall in a digital realm. Resource management is key to your civilization\u2019s success. Legendary leaders guide your journey through the ages. Turn-based strategy will challenge your tactical thinking and planning. Build, expand, and conquer across a beautifully rendered world map."
+    },
+    {
+        "ID": 77,
+        "Name": "Frostpunk",
+        "ReleaseYear": "2018",
+        "Genres": "Strategy, Simulation",
+        "Description": "In a world shrouded by an eternal chill, survival beckons. A city built upon choices weighs heavily on leaders. Humanity's resolve is tested against frigid winds and despair. Decisions affect morality, economy, and the very people's spirit. Manage resources and build hope amidst looming frost and uncertainty."
+    },
+    {
+        "ID": 78,
+        "Name": "Subnautica",
+        "ReleaseYear": "2018",
+        "Genres": "Adventure, Indie",
+        "Description": "Beneath waves, secrets of survival await intrepid explorers. Colorful landscapes mask lurking dangers in unknown depths. Your vessel is a lifeline in an oceanic realm. Creatures and technology intertwine in an endless hunt for resources. A quest for rescue drives a narrative steeped in wonder."
+    },
+    {
+        "ID": 79,
+        "Name": "Resident Evil 4 (2005)",
+        "ReleaseYear": "2005",
+        "Genres": "Action, Shooter",
+        "Description": "In a world where fear lurks in shadows. A lone warrior ventures into a cursed town. Unfolding mystery intertwines with infection and survival instincts. A charismatic president's daughter hangs in perilous balance. Action meets horror through intense encounters and clever tactics."
+    },
+    {
+        "ID": 80,
+        "Name": "Far Cry 2",
+        "ReleaseYear": "2008",
+        "Genres": "Action, Shooter",
+        "Description": "In a desolate land, survival becomes a brutal art. Strife unfolds amidst mercenaries and a civil conflict's grip. Dangers lurk in shadows while loyalties are ever-shifting. Your journey intertwines with a haunting disease and choices. Navigate a sprawling open world teeming with chaos and despair."
+    },
+    {
+        "ID": 81,
+        "Name": "Stellaris",
+        "ReleaseYear": "2016",
+        "Genres": "Strategy, Simulation",
+        "Description": "Navigating the cosmos in search of your destiny. Conflict arises through diplomacy or destruction among the stars. Ancient relics and powerful artifacts hold the key to survival. Control your empire's fate with technology and strategy combined. Build fleets and explore unique worlds in this grand simulation."
+    },
+    {
+        "ID": 82,
+        "Name": "Spelunky",
+        "ReleaseYear": "2012",
+        "Genres": "Indie, Platformer",
+        "Description": "An underground expedition reveals treasures and hidden dangers. Life is fleeting in a realm of pixel art. Adaptive strategies emerge from repeat attempts and failures. A lovable, daring explorer faces traps and monsters galore. Climbing, jumping, and collecting in procedurally generated caves await."
+    },
+    {
+        "ID": 83,
+        "Name": "Heavy Rain",
+        "ReleaseYear": "2010",
+        "Genres": "Action, Adventure",
+        "Description": "A somber atmosphere envelops choices that change fate. Secrets emerge amidst the drumming of relentless elements. A search for a phantom in the city\u2019s depths. Five intertwined lives reveal the weight of consequences. A narrative-driven experience where every decision shapes outcomes profoundly."
+    },
+    {
+        "ID": 84,
+        "Name": "Don't Starve Together",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Simulation",
+        "Description": "In a world where shadows whisper and hunger looms. Collect resources or face the abyss's relentless grip. Odd allies and foes work together through chaos. The art style is hand-drawn, with a quirky charm. Survive with friends against the wilderness's menacing threats."
+    },
+    {
+        "ID": 85,
+        "Name": "Hitman: Blood Money",
+        "ReleaseYear": "2006",
+        "Genres": "Action, Shooter",
+        "Description": "A cold pursuit through a web of deception unfolds. Money becomes the ultimate motivator in lethal undertakings. A silent enigma dressed in a sharp suit persists. Targets scatter as chaos dances following well-calculated plans. Master the art of assassination in this stealthy shooter."
+    },
+    {
+        "ID": 86,
+        "Name": "BioShock",
+        "ReleaseYear": "2007",
+        "Genres": "Action, Shooter",
+        "Description": "Deteriorating beauty bears witness to mankind's ambition gone awry. A submerged world cradles secrets washed in dystopian despair. Conflicts unfold with questionable morality and choices echoing in shadows. A splicer and a Big Daddy challenge your survival instincts. A unique art style enhances the haunting experience of exploration."
+    },
+    {
+        "ID": 87,
+        "Name": "Dear Esther: Landmark Edition",
+        "ReleaseYear": "2017",
+        "Genres": "Adventure, Casual",
+        "Description": "A voice whispers through the misty landscape of memory. Solitude entwines with the echoes of a distant past. An island holds secrets waiting to be uncovered slowly. Journey through narrative fragments that challenge linear storytelling norms. A haunting exploration of loss, love, and the human experience."
+    },
+    {
+        "ID": 88,
+        "Name": "Tropico 4",
+        "ReleaseYear": "2011",
+        "Genres": "Strategy, Simulation",
+        "Description": "A sun-drenched isle awaits the master of fate. Politics blend with playful design in this vibrant world. Your people crave stability while others seek chaos. A dictator's whims shape a nation's destiny with strategy. Cultivate resources and balance power in this simulation."
+    },
+    {
+        "ID": 89,
+        "Name": "Divinity: Original Sin",
+        "ReleaseYear": "2014",
+        "Genres": "RPG, Strategy",
+        "Description": "A world where choices echo in the ether. Ancient powers clash amidst unyielding ambition and strife. Two champions of fate wield elemental forces against darkness. Turn-based combat demands strategy and thought in every move. Explore a richly detailed fantasy realm filled with divine intrigue."
+    },
+    {
+        "ID": 90,
+        "Name": "Black Desert Online",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Adventure",
+        "Description": "Vast landscapes hold secrets waiting for brave souls. Formidable foes rise amidst the deserts of conflict. Choices shape destinies in a world of rich culture. Master various professions while forging alliances with others. Unleash powerful combat skills in this visually stunning MMORPG."
+    },
+    {
+        "ID": 91,
+        "Name": "Kingdom: Classic",
+        "ReleaseYear": "2015",
+        "Genres": "Strategy, Simulation",
+        "Description": "In a realm where silence speaks volumes, choices matter. Structures rise and fall, governed by whimsy and strategy. A monarch roams, seeking allies in shadowy depths. Form your kingdom under the moonlit watch of creatures. Pixel art captures the delicate dance of survival and expansion."
+    },
+    {
+        "ID": 92,
+        "Name": "Starbound",
+        "ReleaseYear": "2016",
+        "Genres": "Action, RPG",
+        "Description": "A vast expanse awaits beyond the blue and black. Creativity fuels the adventures of countless explorers and civilizations. Discover new worlds teeming with life and mystery. Your choices shape the fate of diverse alien species. Craft, build, and survive in a pixelated universe."
+    },
+    {
+        "ID": 93,
+        "Name": "Control",
+        "ReleaseYear": "2019",
+        "Genres": "Action, Shooter",
+        "Description": "A shifting space conceals untold stories and secrets. Power dynamics blur between authority and rebellion at play. An office environment hosts supernatural anomalies waiting to be explored. A red object holds the key to telekinetic abilities. The protagonist seeks her brother while uncovering dark truths."
+    },
+    {
+        "ID": 94,
+        "Name": "SEGA Mega Drive and Genesis Classics",
+        "ReleaseYear": "2010",
+        "Genres": "Action, Adventure",
+        "Description": "A blast from the past awaits the adventurous. Retro sprites dance in worlds filled with challenge. Navigate side-scrolling landscapes with iconic blue rodent speed. Collect rings while facing foes from neon-lit realms. Relive timeless tales of heroism and nostalgia on classic consoles."
+    },
+    {
+        "ID": 95,
+        "Name": "Star Wars: Knights of the Old Republic",
+        "ReleaseYear": "2003",
+        "Genres": "Action, RPG",
+        "Description": "In a galaxy far from familiar realms and lore. Choices forge destinies as light clashes with dark forces. A hero awakens with memories shrouded in mystery. Companions from diverse worlds join in a grand quest. Ancient Jedi and Sith legacies shape the fate ahead."
+    },
+    {
+        "ID": 96,
+        "Name": "Max Payne 2: The Fall of Max Payne",
+        "ReleaseYear": "2003",
+        "Genres": "Action, Shooter",
+        "Description": "In shadows, vengeance whispers between the raindrops. A ballet of bullets amidst a fractured psyche unfolds. Grief and love intertwine under Gotham\u2019s dim glow. A haunting past chases a tormented detective's every step. Noir aesthetics and slow-motion drama define this gritty shooter."
+    },
+    {
+        "ID": 97,
+        "Name": "Destiny 2",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Shooter",
+        "Description": "In a realm where light and darkness collide, guardians rise. Celestial bodies guide the brave through massive battles and quests. A rich mythology pulls players into an expansive universe. Clans unite as they face a relentless foe at dawn. Experience a visually stunning blend of exploration and shooting."
+    },
+    {
+        "ID": 98,
+        "Name": "A Plague Tale: Innocence",
+        "ReleaseYear": "2019",
+        "Genres": "Action, Adventure",
+        "Description": "In a world tainted by shadows and despair. A bond forged in the face of adversity blooms. Innocence contrasts with a backdrop of unforgiving darkness. Two siblings navigate perils both human and supernatural. A tale of survival amidst plague and premium visuals awaits."
+    },
+    {
+        "ID": 99,
+        "Name": "The Flame in the Flood",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Simulation",
+        "Description": "A journey unfolds on a liquid expanse of peril. Struggles against nature\u2019s wrath evoke survival instincts deep within. A girl and her canine companion traverse treacherous waters. Artistic visuals blend with melancholic soundscapes, enhancing the urgency. Crafting a precarious raft, players navigate through flooded ruins."
+    },
+    {
+        "ID": 100,
+        "Name": "Oddworld: Abe's Oddysee",
+        "ReleaseYear": "1997",
+        "Genres": "Action, Platformer",
+        "Description": "In a realm where the strange thrives and persists. Unlikely heroes navigate through perils with cleverness and grit. Alien creatures face dire fates within factory walls. A soulmate's freedom is key to survival and escape. Journey through puzzles and platforms in a vivid world."
+    },
+    {
+        "ID": 101,
+        "Name": "Tom Clancy's Rainbow Six Siege",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Shooter",
+        "Description": "Tactical operations require stealth and strategic maneuvering. Elite teams face off in high-stakes urban environments. Hostage situations and objective-based challenges are core elements. Operators possess unique gadgets and skills enhancing gameplay dynamics. Engage in adrenaline-fueled multiplayer matches featuring destructible environments."
+    },
+    {
+        "ID": 102,
+        "Name": "F.E.A.R.",
+        "ReleaseYear": "2005",
+        "Genres": "Action, Shooter",
+        "Description": "Shadows twist as the mind plays tricks on perception. A fractured psyche dances between dread and mystique. Combat unfolds in a world where fear takes shape. A young girl\u2019s presence distorts reality in unsettling ways. Engage in tactile warfare against a nightmare born from memories."
+    },
+    {
+        "ID": 103,
+        "Name": "The Binding of Isaac: Rebirth",
+        "ReleaseYear": "2014",
+        "Genres": "Action, RPG",
+        "Description": "A child faces fears in dark, twisted realms. Choices define fate as monsters lurk in shadows. Tears are transformed into weapons of survival and hope. An ancient tale of faith, sacrifice, and maternal bonds. Pixelated graphics create a haunting atmosphere of desperation."
+    },
+    {
+        "ID": 104,
+        "Name": "Borderlands 2",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Shooter",
+        "Description": "A desolate land teeming with chaos and humor. Strange beings offer quests amid eccentric dialogues and antics. An endless hunt for loot drives conflict and cooperation. Four unique heroes battle foes in cel-shaded mayhem. Explore Pandora, confront Handsome Jack, and embrace the mayhem."
+    },
+    {
+        "ID": 105,
+        "Name": "Hacknet",
+        "ReleaseYear": "2015",
+        "Genres": "Simulation, Indie",
+        "Description": "A digital world masks shadows of uncertainty and trust. Unseen hands manipulate the flow of information and code. Navigate through simulated networks while unraveling a dark plot. An indie experience where your decisions alter the outcome. Master the terminal to reveal secrets from the past."
+    },
+    {
+        "ID": 106,
+        "Name": "Unturned",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Shooter",
+        "Description": "In a world where survival is paramount, creatures lurk. Gather resources and craft tools to endure harsh challenges. Blocky aesthetics hide a struggle for humanity's remaining hope. Players collaborate or confront one another in relentless combat. Navigate a vast land of zombies and scarce supplies."
+    },
+    {
+        "ID": 107,
+        "Name": "The Forest",
+        "ReleaseYear": "2018",
+        "Genres": "Action, Adventure",
+        "Description": "A place where shadows stretch and whispers linger late. Survival in nature's grip, where fear is a constant. A quest stirred by family ties and lost connections. Among the trees, dangers lurk and secrets unfold swiftly. Navigate peril and puzzles in a haunted woodland realm."
+    },
+    {
+        "ID": 108,
+        "Name": "Brothers: A Tale of Two Sons",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Adventure",
+        "Description": "In a world where kinship shapes the journey ahead, two figures traverse landscapes filled with trials and dreams. Shadows of a shared fate whisper they are bound by blood, yet their paths diverge through trials both physical and emotional. Nature's beauty contrasts with the dark themes of loss and sacrifice, painting a tale of unity. Each sibling's strength reveals distinct abilities, forging a bond deeper than mere survival. Together, they embark on a quest to save their ailing father from impending doom."
+    },
+    {
+        "ID": 109,
+        "Name": "Sekiro: Shadows Die Twice",
+        "ReleaseYear": "2019",
+        "Genres": "Action, RPG",
+        "Description": "A warrior's path intertwines with spectral shadows and fate. The dance of death awaits in feudal Japan\u2019s turmoil. Honor and betrayal shape the bond of master and disciple. Clashing swords echo amidst haunting, painterly landscapes and demons. Resilience defines a journey where every life leads to rebirth."
+    },
+    {
+        "ID": 110,
+        "Name": "Heroes & Generals",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Shooter",
+        "Description": "Conflict unfolds on a vast digital battleground of strategies. History's echoes resonate amid teams aspiring for glory and dominance. Tactical maneuvers define gameplay choices, affecting every soldier's fate. Immersive realism meets stylized visuals in World War II settings. Players embody roles from foot soldiers to commanding officers in combat."
+    },
+    {
+        "ID": 111,
+        "Name": "Dark Souls: Remastered",
+        "ReleaseYear": "2018",
+        "Genres": "Action, RPG",
+        "Description": "In a realm where light battles eternal darkness, players awaken. The cycle of death and rebirth shapes their journey onward. Ancient beings guard the flame, wielding enigmatic power and lore. Choose your path as warrior, sorcerer, or thief within ash. Challenge echoing corridors filled with foes and haunting memories."
+    },
+    {
+        "ID": 112,
+        "Name": "Grim Fandango Remastered",
+        "ReleaseYear": "2015",
+        "Genres": "Adventure, Puzzle",
+        "Description": "A journey through a land of the departed souls. A peculiar job in the business of the afterlife. A charismatic guide wears a suit and a smile. Picture a blend of film noir and vibrant artistry. Navigate puzzles while uncovering a sinister conspiracy in limbo."
+    },
+    {
+        "ID": 113,
+        "Name": "Undertale",
+        "ReleaseYear": "2015",
+        "Genres": "RPG, Indie",
+        "Description": "In a realm below, choices shape what lies ahead. A guardian's burden rests heavy on a soul's path. Repeated encounters reveal truths behind masks and motives. Pixels dance in a unique art style, heartfelt yet quirky. Friendship or vengeance? Navigate the Underground's monsters, your actions define fate."
+    },
+    {
+        "ID": 114,
+        "Name": "Amnesia: The Dark Descent",
+        "ReleaseYear": "2010",
+        "Genres": "Action, Adventure",
+        "Description": "In shadows deep, memories fade like whispers lost. A fragile mind navigates through fear and uncertainty. Dark corridors hide secrets and terrors unforgotten. A pursuit of identity unfolds within haunting despair. Encounter creatures born from nightmares, shaping a twisted fate."
+    },
+    {
+        "ID": 115,
+        "Name": "The Witcher: Enhanced Edition Director's Cut",
+        "ReleaseYear": "2008",
+        "Genres": "Action, RPG",
+        "Description": "In a realm where monsters lurk in shadows, complex choices abound. A lone figure hunts beasts, wielding steel and magic. Encounter a cursed princess and intertwined destinies await. Dark folklore intertwines with a vibrant, gritty art style. Explore vast lands, battling foes and forging vital alliances."
+    },
+    {
+        "ID": 116,
+        "Name": "Mass Effect 2",
+        "ReleaseYear": "2010",
+        "Genres": "Action, RPG",
+        "Description": "In a galaxy where choices shape destinies, alliances matter. A diverse crew must unite against a looming threat. A specter of death haunts the stars, reclaiming souls. A skilled former soldier navigates complex relationships and loyalty. Prepare for a gripping quest filled with moral dilemmas."
+    },
+    {
+        "ID": 117,
+        "Name": "Insurgency",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Shooter",
+        "Description": "A battle brews in a land of tension and strife. Operatives navigate a world torn by conflict and chaos. Urban landscapes serve as battlegrounds for opposing factions. Tactical teamwork and objective-driven missions drive the player's experience. First-person firearms and strategic gameplay deliver intense realism and excitement."
+    },
+    {
+        "ID": 118,
+        "Name": "Metro Exodus",
+        "ReleaseYear": "2019",
+        "Genres": "Action, Shooter",
+        "Description": "In a world wrapped in perpetual darkness, survival is key. Humanity's remnants embark on a dangerous journey across frozen landscapes. A band of explorers faces both foes and inner demons. Hope flickers through desolate cities and haunting tunnels. Choices shape destinies in this immersive first-person shooter adventure."
+    },
+    {
+        "ID": 119,
+        "Name": "DiRT Showdown",
+        "ReleaseYear": "2012",
+        "Genres": "Racing, Arcade",
+        "Description": "Engines roar amidst the chaos of dust and destruction. Colorful battles unfold in arenas filled with roaring crowds. Skillful handling meets exhilarating arcade-style racing challenges throughout. Choose your vehicle wisely for ultimate chaotic confrontations ahead. Dominate the track and claim victory through fierce vehicular mayhem."
+    },
+    {
+        "ID": 120,
+        "Name": "Garry's Mod",
+        "ReleaseYear": "2004",
+        "Genres": "Action, Adventure",
+        "Description": "A playground of imagination where rules blur and bend. Create or destroy; the choice lies within your hands. Pixels collide in a sandbox with endless possibilities. Quirky figures and odd physics define this unique experience. Collaborate or compete in a world crafted by players."
+    },
+    {
+        "ID": 121,
+        "Name": "The Elder Scrolls V: Skyrim Special Edition",
+        "ReleaseYear": "2016",
+        "Genres": "Action, RPG",
+        "Description": "A frostbitten land whispers ancient legends and dragons. Bound by fate, a hero bears the sacred sign. Factions clash in a struggle for power and prophecy. Explore vast terrains filled with mythical creatures and quests. Customize your skills while unraveling the fate of Tamriel."
+    },
+    {
+        "ID": 122,
+        "Name": "Crusader Kings II",
+        "ReleaseYear": "2012",
+        "Genres": "Strategy, Simulation",
+        "Description": "In a realm where realms are pieced together. Intrigues unfold as bloodlines intertwine across generations. Players wield power, strategically moving pawns on a grand stage. A tapestry of dynasties, kingdoms rise and fall magnificently. Forge your dynasty with knights, schemes, and loyal vassals."
+    },
+    {
+        "ID": 123,
+        "Name": "The Walking Dead: Season 2",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Adventure",
+        "Description": "Survival in a world where the dead walk freely. Trust is fragile among those left in the shadows. A former lawman navigates through human and undead threats. Choices weigh heavy, affecting bonds and life itself. A group fights to find safety in a harsh reality."
+    },
+    {
+        "ID": 124,
+        "Name": "Mad Max",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Adventure",
+        "Description": "In a sun-scorched world, survival reigns supreme. A lone wanderer seeks redemption among the chaos. Factions clash in a frantic race against time. Women rise as warriors in a desolate landscape. Fluid action sequences and striking visuals redefine the genre."
+    },
+    {
+        "ID": 125,
+        "Name": "LEGO The Lord of the Rings",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Adventure",
+        "Description": "A realm crafted from colorful interlocking pieces awaits. A fellowship emerges to combat darkness in Middle-earth. A quest involves a powerful jewel with tempting allure. Journey through iconic landscapes with beloved companions and foes. Assemble mini-figures to overcome trials in cooperative gameplay."
+    },
+    {
+        "ID": 126,
+        "Name": "Papers, Please",
+        "ReleaseYear": "2013",
+        "Genres": "Simulation, Educational",
+        "Description": "A world of documents and difficult decisions unfolds. Time is ticking as you manage incoming situations meticulously. Ethical dilemmas arise as you scrutinize identities with care. Your choices impact the fate of desperate individuals daily. Engage in a gritty simulation where a border guard prevails."
+    },
+    {
+        "ID": 127,
+        "Name": "Dead Island",
+        "ReleaseYear": "2011",
+        "Genres": "Action, Shooter",
+        "Description": "A tropical paradise conceals a lurking menace beneath waves. Survivors navigate chaos while battling relentless, undead foes. Corruption of nature intertwines with a fight for survival. Four unique individuals share destinies marked by personal loss. First-person action meets vibrant visuals in a zombie-infested world."
+    },
+    {
+        "ID": 128,
+        "Name": "Dead Cells",
+        "ReleaseYear": "2018",
+        "Genres": "Action, RPG",
+        "Description": "A journey through a realm of endless despair unfolds. Survival demands skillful navigation of shifting, perilous landscapes. Adaptive challenges await, with each death teaching new lessons. Customizable abilities enhance combat against grotesque, recurring foes. A pixelated roguelike experience rewards perseverance in atmospheric chaos."
+    },
+    {
+        "ID": 129,
+        "Name": "F.E.A.R. 3",
+        "ReleaseYear": "2011",
+        "Genres": "Action, Shooter",
+        "Description": "Shadows blur the boundary between fear and reality. A chilling tale of sibling rivalry unfolds in darkness. One brother bears a legacy of haunting powers and tragedy. Explore a world where psychic forces clash with gunfire. Terror unfolds in an action-packed journey through haunted environments."
+    },
+    {
+        "ID": 130,
+        "Name": "Max Payne",
+        "ReleaseYear": "2001",
+        "Genres": "Action, Shooter",
+        "Description": "A solitary figure battles shadows of the past. Deception and darkness intertwine in a grim landscape. He seeks vengeance in a world filled with chaos. Doll-like eyes reflect pain; time bends and grieves. This neo-noir shooter immerses players in tragic tales."
+    },
+    {
+        "ID": 131,
+        "Name": "FEZ",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Adventure",
+        "Description": "A world of cubes hides secrets within its depths. A mysterious hat grants a new perspective on reality. Shift dimensions to uncover truths beyond the ordinary. An adventure unfolds with a silent protagonist's quest. Navigate vibrant landscapes and solve puzzles to collect items."
+    },
+    {
+        "ID": 132,
+        "Name": "Fallout Shelter",
+        "ReleaseYear": "2015",
+        "Genres": "RPG, Simulation",
+        "Description": "In a world transformed by chaos and ruin, survive. Shelter becomes your haven amidst desolation and danger. Management of dwellers is crucial for thriving communities. Vaults teem with peculiar personalities and unexpected adventures. Craft, expand, and protect your subterranean refuge from threats."
+    },
+    {
+        "ID": 133,
+        "Name": "INSIDE",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Adventure",
+        "Description": "A journey unfolds within confines of a strange land. Shadows whisper secrets as danger lurks at every turn. The struggle for survival blurs the line between hope and despair. A unique art style immerses players in a haunting atmosphere. The protagonist navigates a dark, twisted world filled with existential threats."
+    },
+    {
+        "ID": 134,
+        "Name": "NieR:Automata",
+        "ReleaseYear": "2017",
+        "Genres": "Action, RPG",
+        "Description": "In a world where machines inherit human struggles, Rebellion brews amid synthetic life and legacy. An enigmatic duo uncovers lost truths beneath mechanical facades, driven by fate. Questions of existence arise in a war-torn landscape tinged with despair. A poignant blend of action and philosophy captivates players' minds. Androids seek purpose while battling foes in beautifully crafted environments."
+    },
+    {
+        "ID": 135,
+        "Name": "Deponia",
+        "ReleaseYear": "2012",
+        "Genres": "Adventure, RPG",
+        "Description": "A world of trash hides untold adventures and secrets. Unlikely friendships form amidst quirky puzzles and contraptions. A dream of escaping to the sky drives the protagonist. Irony and humor contrast the bleakness of life's debris. Follow a young scavenger's journey in a vibrant comic style."
+    },
+    {
+        "ID": 136,
+        "Name": "Max Payne 3",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Shooter",
+        "Description": "A dance of shadows in a troubled mind's maze. An avenger grappling with loss and haunted past. A city steeped in chaos where danger lurks everywhere. Gunfire sings while the rain softly weeps on sorrow. A gritty saga unfolds through cinematic slow-motion gunplay."
+    },
+    {
+        "ID": 137,
+        "Name": "L.A. Noire",
+        "ReleaseYear": "2011",
+        "Genres": "Action, Adventure",
+        "Description": "A city shrouded in shadows reveals its secrets slowly. Investigation demands truth amidst lies and deception's dance. A detective's moral compass sways with each interrogation choice. Classic film noir aesthetics frame a post-war American setting. Solve crimes in 1940s Los Angeles, seeking justice as Cole."
+    },
+    {
+        "ID": 138,
+        "Name": "A Way Out",
+        "ReleaseYear": "2018",
+        "Genres": "Action, Adventure",
+        "Description": "Two prisoners seek freedom from confinement and betrayal. Cooperation is crucial in this split-screen experience of escape. Each choice can alter the path to liberation's light. A gripping story unfolds through both shared struggles and teamwork. Navigate challenges while unraveling the bond between two convicts."
+    },
+    {
+        "ID": 139,
+        "Name": "Sleeping Dogs",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Adventure",
+        "Description": "In the shadows, loyalty is tested in urban chaos. A vibrant cityscape hides secrets beneath its surface. A deep infiltration blurs the lines of right and wrong. Martial arts elevate the action in this gritty narrative. A cop undercover battles gangsters in a bustling Hong Kong."
+    },
+    {
+        "ID": 140,
+        "Name": "Syberia",
+        "ReleaseYear": "2002",
+        "Genres": "Adventure, Puzzle",
+        "Description": "A frozen realm holds secrets beneath the surface. Time ticks differently for those who seek understanding. Mechanical wonders weave through the narrative\u2019s intricate tapestry. Follow a determined woman on a quest for purpose. Solve puzzles to unveil a forgotten legacy in Europe."
+    },
+    {
+        "ID": 141,
+        "Name": "Darksiders II Deathinitive Edition",
+        "ReleaseYear": "2015",
+        "Genres": "Action, RPG",
+        "Description": "A realm of shadows harbors secrets untold and unseen. A singular horseman navigates the cycle of life and death. Intricate markings illuminate the path of a fractured destiny. Celestial battles unfold in a vivid, stylized art design. Sequel to a dark action RPG, wield the scythe of vengeance."
+    },
+    {
+        "ID": 142,
+        "Name": "War Thunder",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Shooter",
+        "Description": "In a world of conflict, the skies are alive. Ground forces clash in a display of strategic might. Historical battles reimagined through vibrant military machinery graphics. Players pilot vehicles, each embodying power and precision. Unleash devastating firepower in intense multiplayer dogfights and skirmishes."
+    },
+    {
+        "ID": 143,
+        "Name": "Drawful 2",
+        "ReleaseYear": "2016",
+        "Genres": "Strategy, Casual",
+        "Description": "A canvas awaits, where creativity is your weapon. Shadows of humor entwine with artistic expression and imagination. Misinterpretations lead to laughter and unexpected revelations, often humorous. Draw to deceive, guess, and embrace chaos in your friends. A party game where doodles spark wild and wacky responses."
+    },
+    {
+        "ID": 144,
+        "Name": "Mafia: Definitive Edition",
+        "ReleaseYear": "2020",
+        "Genres": "Action, Shooter",
+        "Description": "In a city where shadows whisper secrets untold, A life of crime leads to unexpected consequences for loyalty, A cab driver\u2019s fate entwined with the underworld\u2019s fate, Authentic 1930s aesthetics immerse players in a gritty journey, Immerse yourself in a remade tale of honor and betrayal."
+    },
+    {
+        "ID": 145,
+        "Name": "Brawlhalla",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Casual",
+        "Description": "A clash of legendary figures ensues in vibrant arenas. Sounds of combat echo as you fight for victory. Customizable heroes battle with unique weapons and abilities. Engage in fast-paced fun with friends or solo play. Cartoonish graphics hide intense platforming and multi-character skirmishes."
+    },
+    {
+        "ID": 146,
+        "Name": "PlanetSide 2",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Shooter",
+        "Description": "In a distant sphere, conflict rages without end. Factions collide for dominance, each with unique powers. The battlefield is vast, encompassing ground, air, and space. Advanced technology defines the warfare, with vehicles and infantry. Join a relentless fight as a soldier on Auraxis."
+    },
+    {
+        "ID": 147,
+        "Name": "Orwell: Keeping an Eye On You",
+        "ReleaseYear": "2016",
+        "Genres": "Adventure, Simulation",
+        "Description": "In a world where systems closely monitor citizens' lives. A character grapples with knowledge versus ignorance in society. Surveillance and rebellion drive the narrative's tension and conflict. The art style reflects a bleak, dystopian atmosphere throughout gameplay. Choices impact freedom and control in this simulation adventure."
+    },
+    {
+        "ID": 148,
+        "Name": "Resident Evil 2",
+        "ReleaseYear": "2019",
+        "Genres": "Action, Shooter",
+        "Description": "In a city overrun by darkness, survival looms. Two unlikely heroes navigate horror\u2019s gripping embrace together. Mysterious origins plague the flesh-hungry creatures they confront. Retro visuals meet modern gameplay in a chilling reboot. A quest for escape entwines with lost memories and danger."
+    },
+    {
+        "ID": 149,
+        "Name": "Half-Life 2: Episode One",
+        "ReleaseYear": "2006",
+        "Genres": "Action, Shooter",
+        "Description": "A dystopian world struggles beneath oppressive alien control. A silent protagonist bears the weight of survival. Allies emerge in unforeseen ways amidst the chaos. Gravity guns and physics reshape combat against formidable foes. Unity with a firebrand requires navigating darkened urban landscapes."
+    },
+    {
+        "ID": 150,
+        "Name": "Just Cause 2",
+        "ReleaseYear": "2010",
+        "Genres": "Action, Shooter",
+        "Description": "A world as vast as a playground awaits exploration. Chaos reigns where the sun casts shadows on tyranny. A mercenary\u2019s morals are bent by personal vengeance and betrayal. Insurrection and massive explosions fuel a fight for freedom. Grappling hooks and wingsuit gliding embody sheer adrenaline rush."
+    },
+    {
+        "ID": 151,
+        "Name": "Mortal Kombat X",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Fighting",
+        "Description": "Eternal conflict reigns in a realm beyond death. Power struggles shape destinies in this brutal contest. Legendary warriors from various worlds seek ultimate supremacy. Signature moves and fatal tactics define each encounter's outcome. Blood-soaked arenas host ferocious combat and iconic characters collide."
+    },
+    {
+        "ID": 152,
+        "Name": "Borderlands 3",
+        "ReleaseYear": "2019",
+        "Genres": "Action, Shooter",
+        "Description": "Colorful chaos awaits in a world beyond the walls. Treasure hunters seek fame in a lawless wasteland environment. Familiar faces return, wielding unique abilities and quirky personalities. Gear, guns, and loot are paramount for survival and glory. Fight against tyrannical forces while exploring Pandora's vast and vibrant landscapes."
+    },
+    {
+        "ID": 153,
+        "Name": "Metro 2033 Redux",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Shooter",
+        "Description": "In shadows, survival means navigating a forgotten city. Ancient echoes whisper of battles beneath the surface world. Mutated threats lurk, hungry for the warm-blooded. Brotherhood and betrayal define the fractured remnants of humanity. A gripping first-person journey through tunnels and desolation awaits."
+    },
+    {
+        "ID": 154,
+        "Name": "The Witcher 3: Wild Hunt",
+        "ReleaseYear": "2015",
+        "Genres": "Action, RPG",
+        "Description": "In a land where ancient magic whispers through shadows. A lone hunter quests amidst a chaotic struggle for power. Fates intertwine as monstrous beings roam the darkened paths. Choices shape destinies in a richly detailed fantasy realm. Follow the silver-haired warrior on a journey of redemption."
+    },
+    {
+        "ID": 155,
+        "Name": "Outer Wilds",
+        "ReleaseYear": "2019",
+        "Genres": "Adventure, Indie",
+        "Description": "A vast cosmic playground filled with mysterious celestial bodies. Time repeats itself in a loop of inevitable fate. An ancient civilization whispers secrets hidden beneath the stars. A young astronaut explores wonders with a unique art style. Discover the truth of a dying solar system's past."
+    },
+    {
+        "ID": 156,
+        "Name": "Warframe",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Shooter",
+        "Description": "In a realm where ancient warriors awaken from slumber. Conflict brews amidst an ever-unfolding cosmic tapestry of strife. Modular combat suits transform soldiers, bridging technology and art. Engage in collaborative missions across vast planetary landscapes and factions. Uncover secrets of the Origin System with various iconic factions."
+    },
+    {
+        "ID": 157,
+        "Name": "Halo: The Master Chief Collection",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Adventure",
+        "Description": "A conflict arises between ancient foes in space. A lone warrior dons emerald armor to fight foes. Forgotten worlds hold secrets of past humanity\u2019s struggle. Epic battles rage across rings and distant planets. Experience the saga of one iconic soldier\u2019s legacy."
+    },
+    {
+        "ID": 158,
+        "Name": "Assassin's Creed Odyssey",
+        "ReleaseYear": "2018",
+        "Genres": "Action, RPG",
+        "Description": "Ancient worlds collide in a quest for power and knowledge. A lineage of warriors grapples with fate across time. Two siblings face the shadows of their family legacy. Choices shape the course of history in a vibrant realm. Engage in epic battles while exploring majestic landscapes of Greece."
+    },
+    {
+        "ID": 159,
+        "Name": "Firewatch",
+        "ReleaseYear": "2016",
+        "Genres": "Adventure, Indie",
+        "Description": "A hidden world waits behind nature's silent embrace.  \nIn solitude, whispers of companionship fill the void.  \nA watchful guardian navigates through wilderness and treachery.  \nThermal imaging and radios connect two distant lives.  \nAn unfolding mystery challenges perceptions while painting vivid skies."
+    },
+    {
+        "ID": 160,
+        "Name": "Super Meat Boy",
+        "ReleaseYear": "2010",
+        "Genres": "Indie, Platformer",
+        "Description": "A hero made of culinary delight faces perilous challenges. Dark humor and quirky visuals enhance the tough journey. A relentless chase against time and gruesome obstacles awaits. Timed jumps and precise movements showcase arcade-style platforming skills. Rescue the love interest from a hostile, greasy environment."
+    },
+    {
+        "ID": 161,
+        "Name": "Jet Set Radio",
+        "ReleaseYear": "2000",
+        "Genres": "Action, Sports",
+        "Description": "A city thrives where colors paint the sound. Graffiti artists dance while dodging urban foes. Youthful rebellion collides with a fierce corporate grip. Skating through vibrant streets embodies freedom and expression. Join a gang of misfits, embracing rhythm and style."
+    },
+    {
+        "ID": 162,
+        "Name": "The Elder Scrolls Online: Tamriel Unlimited",
+        "ReleaseYear": "2015",
+        "Genres": "Action, RPG",
+        "Description": "A vast realm of fantasy awaits intrepid explorers' steps. Ancient tapestries weave tales of conflict and ambition. Dark forces loom, threatening the balance of power. Guilds and alliances form, shaping the fate of nations. Choose your path in an online universe of endless stories."
+    },
+    {
+        "ID": 163,
+        "Name": "Dark Souls II: Scholar of the First Sin",
+        "ReleaseYear": "2015",
+        "Genres": "Action, RPG",
+        "Description": "In shadows deep, despair patiently beckons the lost. A cyclical journey reveals the nature of existence. Choose thy path wisely, each decision shapes fate's weave. Amidst the cursed, an ancient scholar whispers forgotten truths. A haunting RPG where death is not the end, but lesson."
+    },
+    {
+        "ID": 164,
+        "Name": "Deus Ex: Human Revolution - Director's Cut",
+        "ReleaseYear": "2013",
+        "Genres": "Action, RPG",
+        "Description": "In a world divided by technology and humanity\u2019s choices. Shadows of corporations loom over a dystopian future landscape. A protagonist grapples with augmentations and moral dilemmas. A tale unfolds through a blend of stealth and action. Explore choices and consequences in a richly stylized environment."
+    },
+    {
+        "ID": 165,
+        "Name": "Black Mesa",
+        "ReleaseYear": "2020",
+        "Genres": "Action, Shooter",
+        "Description": "In a facility where science meets chaos, shadows loom. Experimentation gone awry unleashes a realm of danger. A solitary survivor faces creatures from another dimension, desperate. Stealthy tactics and weaponry intertwine in a thrilling showdown. Enhanced graphics reimagine a beloved classic in this homage."
+    },
+    {
+        "ID": 166,
+        "Name": "SOMA",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Adventure",
+        "Description": "A journey through the remnants of a lost world. Life forms question their existence within artificial limits. Explore consciousness while navigating mysteries beneath the sea. The protagonist grapples with identity amid haunting memories. Visually striking, it blends horror elements with philosophical quests."
+    },
+    {
+        "ID": 167,
+        "Name": "ARK: Survival Evolved",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Adventure",
+        "Description": "In a world where giants roam and skies soar. Players battle for dominance in a prehistoric landscape. Survival hinges on resource gathering and crafting tools. Taming ancient beasts becomes key to your existence. Team up, build bases, and face primal challenges together."
+    },
+    {
+        "ID": 168,
+        "Name": "Horizon Zero Dawn",
+        "ReleaseYear": "2017",
+        "Genres": "Action, RPG",
+        "Description": "In a vast world where nature meets technology, ancient secrets lie. A young warrior with a mysterious past seeks truth and understanding. Mechanical beasts roam freely, blending nature with metallic forms. Engage in combat and exploration in a richly detailed open world. Discover a story of survival against formidable foes and their origins."
+    },
+    {
+        "ID": 169,
+        "Name": "Dust: An Elysian Tail",
+        "ReleaseYear": "2012",
+        "Genres": "Action, RPG",
+        "Description": "In a realm where dust dances with fate's whispers. A solitary wanderer bears the weight of lost memories. Familiar friendships bloom amidst battles and ancient secrets unravel. Journey through hand-painted landscapes teeming with vibrant life. A tale of redemption and courage unfolds in anthropomorphic forms."
+    },
+    {
+        "ID": 170,
+        "Name": "Quantum Break",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Shooter",
+        "Description": "Time is a fragile thread, easily unraveled by choice. A conflict emerges between two factions with clashing ideals. One man\u2019s power distorts reality and reshapes fate itself. Intertwined live-action sequences enhance the storytelling experience profoundly. A hero grapples with time manipulation to save the world."
+    },
+    {
+        "ID": 171,
+        "Name": "Borderlands",
+        "ReleaseYear": "2009",
+        "Genres": "Action, Shooter",
+        "Description": "A chaotic landscape holds treasures beneath a vast expanse. Four adventurers seek fortune amidst colorful mayhem and chaos. Unpredictable mutants and bandits test their courage and wits. Technological wonders and bounty hunting reveal hidden powers within. Vaults and sirens intertwine in a struggle for survival."
+    },
+    {
+        "ID": 172,
+        "Name": "Among Us",
+        "ReleaseYear": "2018",
+        "Genres": "Action, Simulation",
+        "Description": "A hidden identity game thrives in colorful voids. Trust is a fragile thread among crewmates in space. Unseen sabotage stirs tension in pixelated unity assignments. A deceiver lurks, blending amidst tasks and teamwork. Discover the impostor before chaos claims the crew."
+    },
+    {
+        "ID": 173,
+        "Name": "Yakuza Kiwami",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Adventure",
+        "Description": "In a world where honor clashes with greed, Shadows of the past guide every choice made, A city alive, filled with neon and danger, A tale of brotherhood, betrayal, and a dragon's path, Behind every fight lies a dance of fists and fate."
+    },
+    {
+        "ID": 174,
+        "Name": "Machinarium",
+        "ReleaseYear": "2009",
+        "Genres": "Adventure, Family",
+        "Description": "In a world of rust, a journey begins anew. An unlikely hero seeks to restore lost harmony. Mechanical creatures hide secrets within a whimsical landscape. Solve puzzles that unlock the heart of this tale. Navigate a dystopian city to aid a friend in distress."
+    },
+    {
+        "ID": 175,
+        "Name": "BioShock 2 Remastered",
+        "ReleaseYear": "2016",
+        "Genres": "Action, RPG",
+        "Description": "A forgotten realm beneath the waves holds secrets tight. A guardian of innocence now lost in a sea. Choices ripple through time, shaping lives within decay. The player wields both plasmids and guns in dark settings. Navigate Rapture's depths, confronting splicers and family ties."
+    },
+    {
+        "ID": 176,
+        "Name": "Doki Doki Literature Club!",
+        "ReleaseYear": "2017",
+        "Genres": "Adventure, Indie",
+        "Description": "Beneath a cheerful exterior lies a hidden turmoil. Characters yearn for connection through written emotions and words. A seemingly ordinary club holds secrets that spiral quickly. Choices impact not just the story but your reality too. Expect vibrant art that transforms with unsettling narrative shifts."
+    },
+    {
+        "ID": 177,
+        "Name": "Mass Effect",
+        "ReleaseYear": "2007",
+        "Genres": "Action, RPG",
+        "Description": "A galaxy's fate rests on choices and alliances made. A hero with a complex past confronts ancient threats. Unique species and lore enhance an interstellar odyssey's depth. Command diverse team members while navigating moral dilemmas. Engage in strategic combat with exhilarating role-playing elements throughout."
+    },
+    {
+        "ID": 178,
+        "Name": "Prey",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Shooter",
+        "Description": "In a cosmos where echoes of the past linger. Beings of different origins clash amid shifting realities. Survival requires bending time and rethinking one's place. A mysterious figure weaves through a sprawling, atmospheric setting. Traditional heroism is questioned in a first-person escapade."
+    },
+    {
+        "ID": 179,
+        "Name": "DOOM Eternal",
+        "ReleaseYear": "2020",
+        "Genres": "Action, Shooter",
+        "Description": "In a world overrun by chaos and darkness. A relentless force battles reflections of destruction and despair. Celestial might meets hellish nightmares in an epic conflict. Armored warriors wield extensive arsenals against demonic adversaries. Fast-paced combat and stunning visuals redefine the shooter genre."
+    },
+    {
+        "ID": 180,
+        "Name": "Portal 2",
+        "ReleaseYear": "2011",
+        "Genres": "Shooter, Puzzle",
+        "Description": "Dimensions bend while humor intertwines with physics-based logic puzzles. A sentient AI employs sarcasm in a sterile facility. A silent protagonist wields a device for spatial manipulation. Unlikely alliances form with a quirky personality core companion. Solve tests in a vast underground world of puzzles."
+    },
+    {
+        "ID": 181,
+        "Name": "Star Wars: Knights of the Old Republic II \u2013 The Sith Lords",
+        "ReleaseYear": "2004",
+        "Genres": "Adventure, RPG",
+        "Description": "In a galaxy far beyond the known realms. Choices shape destinies amid shadows of the past. A fallen order grapples with betrayal and redemption. Discover inner conflicts of powerful beings and Jedi. Navigate a complex narrative filled with moral ambiguity."
+    },
+    {
+        "ID": 182,
+        "Name": "Ghost of Tsushima",
+        "ReleaseYear": "2020",
+        "Genres": "Action, Adventure",
+        "Description": "A restless spirit traverses a troubled land\u2019s shadows. Honor clashes with survival in a feudal setting. A warrior dons a tattered cloak of rebellion anew. Nature\u2019s elegance sweeps across vast landscapes of Japan. The journey explores family legacy and the price of freedom."
+    },
+    {
+        "ID": 183,
+        "Name": "Enter the Gungeon",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Shooter",
+        "Description": "A world filled with wielded words and chaos unfolds. Bullet patterns weave through chaos and pixelated art styles. Dungeon dwellers seek redemption with ironic twists of fate. Each character embodies flawed intentions and quirky gunplay uniqueness. Face relentless foes in a rogue-like journey for treasure."
+    },
+    {
+        "ID": 184,
+        "Name": "POSTAL 2",
+        "ReleaseYear": "2003",
+        "Genres": "Action, Shooter",
+        "Description": "A chaotic urban landscape brims with unexpected opportunities. Mundane tasks morph into an absurd journey of survival. Expectations of linearity dissolve into customizable chaos and humor. A first-person perspective brings engaging mayhem and dark satire. Complete errands from the deranged mindset of an iconic character."
+    },
+    {
+        "ID": 185,
+        "Name": "Psychonauts",
+        "ReleaseYear": "2005",
+        "Genres": "Action, Platformer",
+        "Description": "Inhabiting minds, dreams are realms of untold stories. A young traveler explores mental landscapes in vibrant colors. Secrets hidden within brainscapes hold power and mystery. A camp setting cultivates guardians of thoughts and fears. Navigate inner conflicts as a psychic child with abilities."
+    },
+    {
+        "ID": 186,
+        "Name": "Fallout: New Vegas",
+        "ReleaseYear": "2010",
+        "Genres": "Action, Shooter",
+        "Description": "In a desolate landscape, choices shape destiny's path. A war torn future where factions vie for control. The shimmer of neon lights amidst barren wasteland rules. Engage with a complex cast, including a resourceful courier. Explore a world of moral ambiguity and survival challenges."
+    },
+    {
+        "ID": 187,
+        "Name": "SUPERHOT",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Shooter",
+        "Description": "Reality bends as time pauses for a mindless dance. Distorted visuals reflect choices leading to existential questions. Each enemy's movement unfolds a strategy in slow motion. The thrill of action shifts to philosophical reflection and chaos. Navigate environments where every decision has life or death stakes."
+    },
+    {
+        "ID": 188,
+        "Name": "Wolfenstein: The New Order",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Shooter",
+        "Description": "A world reshaped by tyranny's iron grip endures. Through shadows of the past, hope flickers dimly still. Resistance rises as heroes clash against overlords' machines. A soldier's struggle intertwines with a quest for freedom. An alternate history brimming with brutal combat and Nazi foes."
+    },
+    {
+        "ID": 189,
+        "Name": "Sonic Mania",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Adventure",
+        "Description": "A fast blue creature traverses nostalgic pixelated realms. Elements from past adventures are remixed with charm. A rivalry awakens between speedsters and a scheming doctor. Collect rings while racing through vibrant, classic-inspired levels. Uncover hidden secrets and embrace retro platforming gameplay mechanics."
+    },
+    {
+        "ID": 190,
+        "Name": "Quake Champions",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Shooter",
+        "Description": "A tremor echoes in a battle-scarred realm. Warriors clash in a fast-paced, chaotic contest. Unleash unique abilities as champions of old. An arena shooter where skill defines the victor. Dynamic characters engage in relentless, strategic combat scenarios."
+    },
+    {
+        "ID": 191,
+        "Name": "Warhammer 40,000: Space Marine",
+        "ReleaseYear": "2011",
+        "Genres": "Action, Shooter",
+        "Description": "A distant future filled with relentless cosmic battles awaits. Ancient warriors clad in power armor stand against darkness. Engines roar as projectiles tear through alien foes rapidly. Uncover secrets of betrayal within a galaxy's grim struggle. Play as a superhuman soldier wielding mighty weapons fiercely."
+    },
+    {
+        "ID": 192,
+        "Name": "Crysis",
+        "ReleaseYear": "2007",
+        "Genres": "Action, Shooter",
+        "Description": "A conflict brews beneath lush, digitally rendered jungles. Advanced suits augment human capabilities amidst chaotic engagements and warfare. Alien adversaries rise, challenging both nature and humanity's might. A mercenary's journey intertwines with high-stakes military operations. Unleashing firepower, players navigate an open-world environment strategically."
+    },
+    {
+        "ID": 193,
+        "Name": "Persona 5",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Adventure",
+        "Description": "A world where shadows linger behind everyday reality. A group of misfits finds strength in unity and rebellion. A phantom thief seeks to steal hearts and change fate. Vibrant art and stylish visuals enhance the unfolding story. Navigating school life while battling societal corruption defines their journey."
+    },
+    {
+        "ID": 194,
+        "Name": "Viscera Cleanup Detail: Shadow Warrior",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Simulation",
+        "Description": "Amidst destruction, the cleanup crew thrives and survives. Warrior spirits linger in a world of pixelated mayhem. Bloodstains tell stories within this task-driven realm. Players wield mops and buckets instead of weapons here. Confronting chaos becomes an art form, one level at a time."
+    },
+    {
+        "ID": 195,
+        "Name": "Hollow Knight",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Indie",
+        "Description": "In a realm where light struggles against darkness, a vessel waits. Small beings dance in a world littered with memories. An ancient civilization's secrets lie buried beneath the ground. A silent knight battles creatures in vivid hand-drawn landscapes. Journey through interconnected areas, unraveling a haunting tale of fate."
+    },
+    {
+        "ID": 196,
+        "Name": "Jotun: Valhalla Edition",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Indie",
+        "Description": "In a world shaped by ancient myths and giants. A heroine must confront her fate in stunning landscapes. Norse legends intertwine with vibrant hand-drawn visuals here. Unveil powerful adversaries as you wield elemental forces wisely. Traverse realms, grow stronger, and embrace your true purpose."
+    },
+    {
+        "ID": 197,
+        "Name": "Vampyr",
+        "ReleaseYear": "2018",
+        "Genres": "Action, Adventure",
+        "Description": "In a shadowy realm, thirst drives choices and conflict. A doctor with a haunting past battles inner demons daily. Major decisions impact lives and reshape the night\u2019s fate. Gothic visuals complement the struggle between humanity and hunger. Engage in a tale of vampirism, morality, and survival."
+    },
+    {
+        "ID": 198,
+        "Name": "Game of Thrones - A Telltale Games Series",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Adventure",
+        "Description": "In a land where ice and fire collide, choices matter. Betrayals and alliances shape destinies in noble houses. A journey unfolds through episodic storytelling and interactive narrative. Characters face moral dilemmas amid a backdrop of political intrigue. Control the fate of a house with iconic foreboding moments."
+    },
+    {
+        "ID": 199,
+        "Name": "Star Wars: Battlefront II (2005)",
+        "ReleaseYear": "2005",
+        "Genres": "Action, Shooter",
+        "Description": "A galaxy far away on countless distant worlds awaits. Two factions clash in a struggle for dominance and glory. Legendary heroes wield lightsabers amid blaster fire and chaos. The divide between the light and dark fuels the conflict. Combined forces engage in epic battles across multiple iconic locations."
+    },
+    {
+        "ID": 200,
+        "Name": "Borderlands Game of the Year Enhanced",
+        "ReleaseYear": "2019",
+        "Genres": "Action, Shooter",
+        "Description": "A wild frontier awaits beyond the endless horizons. Colorful and chaotic, mayhem reigns in this saga. Vault hunting involves legendary treasures and treacherous foes. A band of misfits uniting against a power-hungry entity. Striking cel-shaded art complements the frantic shooting experience."
+    },
+    {
+        "ID": 201,
+        "Name": "XCOM 2",
+        "ReleaseYear": "2016",
+        "Genres": "RPG, Strategy",
+        "Description": "In the shadows, humanity's resistance rises against the unknown. A game of tactics, where every decision shapes fate. The icons of the past clash with the future's bizarre. Reclaim Earth from an invasion that alters perception and resolve. Command diverse soldiers, each with unique skills and evolving stories."
+    },
+    {
+        "ID": 202,
+        "Name": "Journey",
+        "ReleaseYear": "2012",
+        "Genres": "Adventure, Family",
+        "Description": "A digital landscape awaits exploration beyond the horizon. Two unlikely friends traverse vast mountains and shimmering seas. The experience unfolds through mesmerizing visual artistry and sound. Connection and discovery unite disparate spirits in a shared quest. Guided by a glowing orb, the journey leads toward unity."
+    },
+    {
+        "ID": 203,
+        "Name": "Saints Row 2",
+        "ReleaseYear": "2008",
+        "Genres": "Action, Shooter",
+        "Description": "In a city where chaos reigns supreme and factions clash. The vibrant art style contrasts with gritty urban undertones. Loyalty and revenge fuel the rise of a gang. Choices shape your character's destiny in an open world. Master your skills to reclaim lost territory and power."
+    },
+    {
+        "ID": 204,
+        "Name": "Far Cry 5",
+        "ReleaseYear": "2018",
+        "Genres": "Action, Shooter",
+        "Description": "A diverse wilderness conceals hidden unrest and discord. A charismatic figure rallies followers with dark intentions. Choices echo through a land ripe with conflict. Resistance builds against a cult in rural America. First-person shooter immersion fuels the fight for freedom."
+    },
+    {
+        "ID": 205,
+        "Name": "Titan Souls",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Indie",
+        "Description": "A journey defined by singular, overwhelming adversaries awaits. Survival hinges on mastering the art of dodging attacks. Small, pixelated heroes wield a potent weapon of resolve. A world of desolation hides gigantic beings awaiting confrontation. Defeating guardians unlocks deeper mysteries of the human spirit."
+    },
+    {
+        "ID": 206,
+        "Name": "Minion Masters",
+        "ReleaseYear": "2019",
+        "Genres": "Action, Strategy",
+        "Description": "Minions of chaos clash in vibrant digital arenas. Strategy reigns supreme when summoning your loyal minions. Masters of their craft wield cards with cunning precision. Collectible characters and unique abilities shape every battle's outcome. Engage in thrilling battles, outsmarting opponents in real-time strategy."
+    },
+    {
+        "ID": 207,
+        "Name": "Rocket League",
+        "ReleaseYear": "2015",
+        "Genres": "Sports, Racing",
+        "Description": "Vehicles soar and collide in a celestial arena. Players engage in a competitive dance of strategy and skill. Goals are the ultimate prize in this chaotic spectacle. The vibrant, stylized visuals match the intensity of gameplay. Flip and boost your way to victory in soccer chaos."
+    },
+    {
+        "ID": 208,
+        "Name": "DOOM (2016)",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Shooter",
+        "Description": "A battle between realms unfolds in fiery chaos. Power and precision are needed to survive relentless onslaughts. An ancient evil is unleashed from the depths of hell. Armed with an arsenal, a lone warrior hunts demons. Fast-paced FPS embraces classic aesthetics with modern mechanics."
+    },
+    {
+        "ID": 209,
+        "Name": "Ori and the Will of the Wisps",
+        "ReleaseYear": "2020",
+        "Genres": "Action, Adventure",
+        "Description": "A luminous journey unfolds in a shadowy realm. Hope flickers amidst the trials of loss and love. A small guardian seeks to mend a broken bond. Experience fluid movement through enchanting hand-drawn landscapes. Discover the power of friendship against overwhelming odds."
+    },
+    {
+        "ID": 210,
+        "Name": "Cities: Skylines",
+        "ReleaseYear": "2015",
+        "Genres": "Strategy, Simulation",
+        "Description": "In a sprawling canvas, dreams of order collide. Urban chaos transforms under your guiding hand and will. Each block tells a story of growth and decline. Balance nature\u2019s gifts while managing the populace's desires. Blueprint your metropolis in vibrant, intricate, and strategic fashion."
+    },
+    {
+        "ID": 211,
+        "Name": "Trine 2: Complete Story",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Indie",
+        "Description": "In a world of whimsical hues, shadows dance. Three unlikely companions embark on a quest together. A sorceress, a knight, and a thief unite forces. Solving puzzles leads to enchanting realms filled with danger. A beautifully crafted adventure that celebrates teamwork and magic awaits."
+    },
+    {
+        "ID": 212,
+        "Name": "Kingdom Come: Deliverance",
+        "ReleaseYear": "2018",
+        "Genres": "Action, Adventure",
+        "Description": "In a world where chaos reigns supreme, truths unravel. An era of chivalry and strife shapes fractured loyalties. A commoner\u2019s rise intertwines with noble conflict and bloodshed. A quest for honor amidst war-torn lands and betrayal. Realistic details enrich this open-world journey of survival and revenge."
+    },
+    {
+        "ID": 213,
+        "Name": "Uncharted: Legacy of Thieves Collection",
+        "ReleaseYear": "2022",
+        "Genres": "Action, Adventure",
+        "Description": "A treasure hunt weaves through ancient echoes of history. The art style captures vibrant landscapes and intricate detail. A skilled rogue discovers fabled artifacts in hidden realms. Companions clash with mercenaries while unearthing long-lost secrets. Dual protagonists embark on perilous quests filled with danger."
+    },
+    {
+        "ID": 214,
+        "Name": "Rogue Legacy",
+        "ReleaseYear": "2013",
+        "Genres": "Action, RPG",
+        "Description": "A lineage of warriors faces fate's cruel twist. Generations rise and fall, but legacy remains unbroken. A castle filled with peril beckons for explorers' return. Descendants bear the weight of their ancestors' choices. Action-packed pixel art shapes a journey through endless dungeons."
+    },
+    {
+        "ID": 215,
+        "Name": "The Outer Worlds",
+        "ReleaseYear": "2019",
+        "Genres": "Action, Shooter",
+        "Description": "A cosmos under corporate rule shapes every decision you make. Individuality clashes with the demands of powerful megacorporations. Unravel the past while exploring stunning retro-futuristic landscapes. Quirky companions accompany you on this intergalactic journey. Choose your fate in a universe full of possibilities."
+    },
+    {
+        "ID": 216,
+        "Name": "Hitman: Absolution",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Shooter",
+        "Description": "Beneath the facade, shadows whisper of hidden choices. A solitary figure navigates a world of betrayal and deceit. Contracts are king in this gritty, stylish tapestry. A bond is forged with a young runaway seeking safety. Clad in a sleek suit, he wields a deadly silence."
+    },
+    {
+        "ID": 217,
+        "Name": "For Honor",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Massively Multiplayer",
+        "Description": "Warriors clash under the weight of ancient codes. Codes that resonate with honor and valor in battle. Three factions vie for supremacy across treacherous landscapes. Engage in tactical combat, wielding swords, axes, and shields. Team up in strategic multiplayer arenas to claim victory."
+    },
+    {
+        "ID": 218,
+        "Name": "South Park: The Stick of Truth",
+        "ReleaseYear": "2014",
+        "Genres": "Adventure, RPG",
+        "Description": "In a snowy town, chaos reigns among children. Brave warriors don capes to wage fantastical battles. Friendship and betrayal weave through a realm of magic. Parody and satire blend seamlessly with turn-based combat. A quest for a powerful artifact unites half-witted heroes."
+    },
+    {
+        "ID": 219,
+        "Name": "LEGO The Hobbit",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Adventure",
+        "Description": "In a world built from colorful imagination, small heroes rise. A quest for treasure ignites beneath the Lonely Mountain's shadow. A burglar joins an unexpected band of diverse companions. Epic battles and humorous puzzles populate this whimsical adventure. Journey through Middle-earth with dwarves, dragons, and rich lore."
+    },
+    {
+        "ID": 220,
+        "Name": "Apex Legends",
+        "ReleaseYear": "2019",
+        "Genres": "Action, Shooter",
+        "Description": "In a realm where champions clash for glory. Unseen powers grant an advantage in battles fought. A vibrant art style enhances the lifelike combat experience. Legends emerge from diverse backgrounds, each with unique talents. Survival hinges on teamwork and strategic eliminations in contests."
+    },
+    {
+        "ID": 221,
+        "Name": "The Legend of Zelda: Breath of the Wild",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Adventure",
+        "Description": "A vast kingdom holds secrets under a fading sky. Ancient ruins whisper of past battles and lost legends. A silent hero awakens to reclaim a shattered realm. Colorful landscapes intertwine with puzzles and enemy encounters. Choose your path as you explore with courage and wit."
+    },
+    {
+        "ID": 222,
+        "Name": "Middle-earth: Shadow of Mordor",
+        "ReleaseYear": "2014",
+        "Genres": "Action, RPG",
+        "Description": "In a bleak land, shadows hold ancient secrets. Agile movements echo the dance of an unseen predator. Rulers clash as revenge fuels a fiery mission. A bond forged in spectral whispers leads to power. Face familiar foes amidst breathtaking visuals and gripping combat."
+    },
+    {
+        "ID": 223,
+        "Name": "Wolfenstein: The Old Blood",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Shooter",
+        "Description": "In shadows of a war, a twisted reality lingers. A monochromatic palette reflects grim history in depth. Resistance leads the charge against an iron grip. A familiar protagonist confronts supernatural foes within the dark. Unfolding secrets reveal a prelude to a fierce conflict."
+    },
+    {
+        "ID": 224,
+        "Name": "Layers of Fear",
+        "ReleaseYear": "2016",
+        "Genres": "Adventure, Indie",
+        "Description": "An atmosphere thick with disquiet and uncertainty looms large. Shadows whisper secrets of a troubled past and madness. An artistic journey traps you within a restless mind. A painter confronts his creations and fading memories oft lost. Navigate a haunting estate where reality twists and warps unpredictably."
+    },
+    {
+        "ID": 225,
+        "Name": "Far Cry 3",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Shooter",
+        "Description": "A tropical paradise hides dangers beyond comprehension and beauty. The untamed island breathes life and madness in every corner. A rich tapestry of survival tests the limits of sanity. Fear and power dance in the shadows of brotherhood. A quest for rescue reveals the darkness within oneself."
+    },
+    {
+        "ID": 226,
+        "Name": "A Story About My Uncle",
+        "ReleaseYear": "2014",
+        "Genres": "Adventure, Arcade",
+        "Description": "A young dreamer explores a world of whimsy. Mysterious connections between family and adventure unfold gradually. Gravity defying leaps reveal secrets hidden in the sky. An eccentric uncle\u2019s legacy shapes a fantastic journey forward. Vibrant visuals and heartfelt themes create a unique arcade experience."
+    },
+    {
+        "ID": 227,
+        "Name": "Counter-Strike",
+        "ReleaseYear": "2000",
+        "Genres": "Action, Shooter",
+        "Description": "A battle of wits unfolds in digital realms. Tension rises as two factions clash for supremacy. Tactical precision and teamwork define every strategic move. Guns blaze in urban landscapes, echoing relentless conflict. Choose your side: terrorists or counter-terrorists in a timeless struggle."
+    },
+    {
+        "ID": 228,
+        "Name": "Fall Guys: Ultimate Knockout",
+        "ReleaseYear": "2020",
+        "Genres": "Action, Sports",
+        "Description": "Colorful chaos ensues as competitors race to the finish. Whimsical creatures bounce and tumble through whimsical obstacles. Only the clever and agile survive each whimsical stage. Friendship often leads to sabotage when victory is at stake. A vibrant battle royale where fun meets playful competitions unfolds."
+    },
+    {
+        "ID": 229,
+        "Name": "Sid Meier\u2019s Civilization VI",
+        "ReleaseYear": "2016",
+        "Genres": "Strategy, Simulation",
+        "Description": "Construct empires while navigating the arc of time. Great leaders from history influence your every decision. Expand territories and engage in diplomacy with rivals. Technology and culture shape progress in this turn-based realm. Build a civilization to outlast all others through strategy."
+    },
+    {
+        "ID": 230,
+        "Name": "Thief",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Adventure",
+        "Description": "In shadows, a silent presence evades the eye. A city thrives, yet not all is as it seems. The art of stealth intertwines with a heavy heart. Choices made in darkness can echo in the light. Mastering tools of deception, an unlikely hero emerges."
+    },
+    {
+        "ID": 231,
+        "Name": "Divinity: Original Sin 2",
+        "ReleaseYear": "2017",
+        "Genres": "RPG, Strategy",
+        "Description": "In a realm where choices shape destinies and fates. Ancient beings walk among mortals, vying for power. A powerful force challenges your actions and morals constantly. Assemble a party of heroes with unique abilities and backgrounds. Engage in strategic turn-based combat across a beautifully crafted world."
+    },
+    {
+        "ID": 232,
+        "Name": "Dark Souls: Prepare To Die Edition",
+        "ReleaseYear": "2012",
+        "Genres": "Action, RPG",
+        "Description": "Shadows loom where courage often falters and wanes. Ancient legends whisper tales of untold despair and valor. A bleak realm hosts foes clad in ill-fated armor. Death is merely a teacher, relentless in its lessons. Rise again, escape the cycle, forge your destiny anew."
+    },
+    {
+        "ID": 233,
+        "Name": "The Stanley Parable",
+        "ReleaseYear": "2013",
+        "Genres": "Adventure, Indie",
+        "Description": "In a world where choices feel both vast and limited. A disembodied voice guides actions through surreal environments. Will you follow the path or diverge into chaos? Explore the multiplicity of decisions in this interactive narrative. A game's commentary on free will and player agency awaits you."
+    },
+    {
+        "ID": 234,
+        "Name": "BattleBlock Theater",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Adventure",
+        "Description": "A stage is set for whimsical chaos and laughter. Colorful characters engage in treacherous yet comedic adventures. A crafty narrator guides the players through their quests. Rescue friends while facing strange adversaries in arenas. Unlock your creativity with blocky puzzles and platforming challenges."
+    },
+    {
+        "ID": 235,
+        "Name": "Fallout 3: Game of the Year Edition",
+        "ReleaseYear": "2009",
+        "Genres": "Action, RPG",
+        "Description": "A world echoes with the whispers of the past. Choices ripple through the ashes of civilization's fall. A lone wanderer seeks answers in a radioactive expanse. Friendship and betrayal shape paths in the desolate wilderness. A sprawling, open landscape teems with mutants and moral dilemmas."
+    },
+    {
+        "ID": 236,
+        "Name": "Rust",
+        "ReleaseYear": "2018",
+        "Genres": "Action, Shooter",
+        "Description": "A world in decay hides forgotten embers of conflict. Shadows linger around faces marked by treachery and loss. Unraveling friendships collide with the specter of survival. Steel is forged amidst betrayal, sparked by a father's promise. A grim quest unfolds, leading to the ultimate showdown."
+    },
+    {
+        "ID": 237,
+        "Name": "DmC: Devil May Cry",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Adventure",
+        "Description": "A clash of forces between chaos and order unfolds. The protagonist's lineage connects him to dark undertones. An artistic reimagining challenges traditional perceptions of heroism. Demonic foes test the boundaries of power and morality. In this stylized brawler, a young half-demon fights destiny."
+    },
+    {
+        "ID": 238,
+        "Name": "Darkest Dungeon",
+        "ReleaseYear": "2016",
+        "Genres": "RPG, Strategy",
+        "Description": "In shadows deep, valiant souls take their stand. Fear and madness dwell within the forgotten halls. Choices weigh heavy as life hangs by a thread. Unwavering art style breathes dread into each encounter. Assemble your party, brave the horrors, conquer the darkness."
+    },
+    {
+        "ID": 239,
+        "Name": "Valheim",
+        "ReleaseYear": "2021",
+        "Genres": "Action, Adventure",
+        "Description": "In the realm where ancient spirits roam freely. Explore untouched lands filled with mysterious lore and danger. Craft your own path among towering giants and creatures. Survive, build, and conquer in an open-world experience. Channel your inner Viking in a Norse-inspired adventure."
+    },
+    {
+        "ID": 240,
+        "Name": "Resident Evil 6",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Shooter",
+        "Description": "A world on the brink of bio-organic catastrophe unfolds. A group of survivors faces horrors that defy comprehension. Rich storytelling interweaves multiple characters across intersecting narratives. Familiar faces return but grapple with their twisted fates. Third-person gunplay collides with a relentless and evolved infection."
+    },
+    {
+        "ID": 241,
+        "Name": "Battlefield 1",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Shooter",
+        "Description": "A grand conflict echoes through the years of strife. City streets and fields witness humanity's darkest moments unfold. Perspectives shift, revealing tales of valor and loss. Experience warfare with authentic weaponry and historical battles recreated. Engage in immersive combat during the Great War\u2019s chaos."
+    },
+    {
+        "ID": 242,
+        "Name": "Gwent: The Witcher Card Game",
+        "ReleaseYear": "2018",
+        "Genres": "RPG, Strategy",
+        "Description": "A battle of wits across a mythical landscape unfolds. Strategy reigns where factions clash for dominance and honor. Familiar faces from folklore guide your tactical decisions ahead. Cards reveal stories of magic, monsters, and ancient grudges. Build your deck to outsmart opponents in this enchanting competition."
+    },
+    {
+        "ID": 243,
+        "Name": "Terraria",
+        "ReleaseYear": "2011",
+        "Genres": "Action, Indie",
+        "Description": "A world of blocks full of endless possibilities awaits you. Create and conquer in a pixelated realm of adventure. Uncover hidden treasures beneath the surface of vibrant landscapes. Gather resources, build structures, and face various creatures nightly. Your journey includes crafting, exploration, and boss battles galore."
+    },
+    {
+        "ID": 244,
+        "Name": "Until Dawn",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Adventure",
+        "Description": "A night shrouded in mystery and chilling whispers unfolds. Choices matter as fate intertwines with your decisions. A group of friends confronts their deepest fears and secrets. Isolation amplifies suspense in a snowy, haunting landscape. Dark shadows lurk as survival hinges on trust and betrayal."
+    },
+    {
+        "ID": 245,
+        "Name": "Tabletop Simulator",
+        "ReleaseYear": "2015",
+        "Genres": "RPG, Strategy",
+        "Description": "A realm where imagination reshapes reality and rules. Gather friends to challenge fate on a virtual board. Dice roll, cards flip, strategies unfold in vivid hues. Assemble heroes or conquer foes in various adventures. Experience endless possibilities through community-crafted experiences and creations."
+    },
+    {
+        "ID": 246,
+        "Name": "Team Fortress 2",
+        "ReleaseYear": "2007",
+        "Genres": "Action, Shooter",
+        "Description": "A battle of teams in cartoonish realms unfolds. Different classes embody quirky traits and abilities. Red and blue collide in chaotic, objective-based skirmishes. Mercenaries wield unique weapons with humorous charm and flair. Victory hinges on teamwork and strategy amidst endless conflict."
+    },
+    {
+        "ID": 247,
+        "Name": "Ratchet & Clank",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Shooter",
+        "Description": "A duo navigates a vibrant universe filled with chaos. Gadgetry and weaponry are key to survival and victory. One is a clever mechanic, the other a nimble hero. Together, they battle an eccentric villain with dubious motives. Explore planets while upgrading gear in this animated adventure."
+    },
+    {
+        "ID": 248,
+        "Name": "The Elder Scrolls V: Skyrim",
+        "ReleaseYear": "2011",
+        "Genres": "Action, RPG",
+        "Description": "Ancient tales whisper of dragons in a frozen land. A hero must rise to fulfill a fateful prophecy. Choices shape destiny amid factions and moral dilemmas. Dragons and Thu'um collide in a vast open world. Explore dungeons, craft weapons, and embrace your inner Nord."
+    },
+    {
+        "ID": 249,
+        "Name": "Call of Duty: WWII",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Shooter",
+        "Description": "A struggle echoes through the shadows of history\u2019s battles. Old conflicts rise anew where valor meets despair. Soldiers unite against a common foe in global chaos. The art style captures gritty realism in wartime settings. Experience the storm of combat in a defining era."
+    },
+    {
+        "ID": 250,
+        "Name": "Brutal Legend",
+        "ReleaseYear": "2009",
+        "Genres": "Action, Strategy",
+        "Description": "In a land where music reigns, chaos echoes loudly. A hero journeys through realms crafted by rock\u2019s essence. Legendary warriors and powerful riffs form a quirky alliance. Battle alongside eclectic characters in a vibrant, painted universe. Unleash the metal with strategy in this action-packed adventure."
+    },
+    {
+        "ID": 251,
+        "Name": "Elden Ring",
+        "ReleaseYear": "2022",
+        "Genres": "Action, RPG",
+        "Description": "A realm of shattered dreams awaits the brave seeker. Mythical tapestries weave stories of loss and ambition. Immense landscapes hide secrets and challenges in every corner. A tarnished warrior seeks redemption amidst betrayal and power. The cycle of life and death converges in epic quests."
+    },
+    {
+        "ID": 252,
+        "Name": "Dark Souls III",
+        "ReleaseYear": "2016",
+        "Genres": "Action, RPG",
+        "Description": "A world steeped in shadows and fading memories awaits. Eternal struggle defines existence for those who dare challenge. A cycle of life, death, and rebirth prevails endlessly. Knights and sorcerers traverse realms filled with haunting beauty. Defy the Lords and uncover the fire's dying embers."
+    },
+    {
+        "ID": 253,
+        "Name": "Tom Clancy\u2019s The Division",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Shooter",
+        "Description": "In a fragile city, shadows dance among ruins. Society crumbles while a silent illness spreads unchecked. Agents gather, donning the weight of a cause. Covert operations unfold in winter's icy embrace. Tackle enemies and restore order in a dystopian landscape."
+    },
+    {
+        "ID": 254,
+        "Name": "Warhammer: Vermintide 2",
+        "ReleaseYear": "2018",
+        "Genres": "Action, Indie",
+        "Description": "In a realm where shadows and chaos intertwine. A horde of faceless foes swarms with relentless hunger. Brave heroes unite against the tide of verminous threats. Medieval landscapes and cooperative strategy fuel the intense battles. Forge your path with unique characters and evolving skills."
+    },
+    {
+        "ID": 255,
+        "Name": "Beholder",
+        "ReleaseYear": "2016",
+        "Genres": "Adventure, RPG",
+        "Description": "In a realm where vision shapes fate and choices matter. A keeper of eyes navigates a world of shadows. Patronage and ambition collide in a gothic microcosm. Characters driven by greed dance in a twisted tapestry. Exploring dungeons, one confronts monsters both literal and inner."
+    },
+    {
+        "ID": 256,
+        "Name": "Deus Ex: Game of the Year Edition",
+        "ReleaseYear": "2000",
+        "Genres": "Action, Shooter",
+        "Description": "A world shrouded in shadows and conspiracy awaits you. Technology and humanity intertwine in a struggle for survival. A protagonist grapples with augmentations and philosophy of choice. Secret societies pull strings behind the scenes of power. Unravel the truth while navigating a dystopian cyberpunk landscape."
+    },
+    {
+        "ID": 257,
+        "Name": "Overlord",
+        "ReleaseYear": "2007",
+        "Genres": "Action, RPG",
+        "Description": "A rule-breaking journey of dark fantasy unfolds ahead. A puppeteer whispers commands to minions in shadowed realms. The destiny of kingdoms sways on a single throne. Wielding power and deception, leading a mischievous horde. An isometric adventure merges humor with menacing overlord vibes."
+    },
+    {
+        "ID": 258,
+        "Name": "Sins of a Solar Empire: Rebellion",
+        "ReleaseYear": "2012",
+        "Genres": "Strategy, Indie",
+        "Description": "In the vast cosmos, factions vie for supremacy. Ancient secrets and new rebels shape the celestial conflict. Economies thrive or falter amidst interstellar intrigue and warfare. Command ships and harness resources in real-time strategy battles. A digital realm where empires rise or fall in rebellion."
+    },
+    {
+        "ID": 259,
+        "Name": "Dishonored 2",
+        "ReleaseYear": "2016",
+        "Genres": "Action, RPG",
+        "Description": "A world of shadows entwined with royal ambition beckons. A mysterious crown brings both power and peril to light. Rebellion brews as a distant city seeks its savior. Supernatural abilities grant choices that shape one's destiny. A masked assassin and a rightful heir challenge fate together."
+    },
+    {
+        "ID": 260,
+        "Name": "Minecraft",
+        "ReleaseYear": "2009",
+        "Genres": "Action, Simulation",
+        "Description": "In a blocky realm, creativity knows no bounds. Explore, craft, and survive amidst pixelated wonders and threats. Nightfall brings dangers, yet dreams of crafting persist. A scaly foe lurks in shadows with explosive intent. Build your kingdom, defy gravity, and gain resources always."
+    },
+    {
+        "ID": 261,
+        "Name": "Half-Life 2: Episode Two",
+        "ReleaseYear": "2007",
+        "Genres": "Action, Shooter",
+        "Description": "A world divided by a dimensional rift unfolds menace. Unseen forces manipulate the delicate balance of power. A lone figure battles with courage and technology intertwined. Allies are crucial in a fight against overwhelming odds. A quest for survival leads through a haunting, immersive landscape."
+    },
+    {
+        "ID": 262,
+        "Name": "Castle Crashers",
+        "ReleaseYear": "2008",
+        "Genres": "Action, Indie",
+        "Description": "A whimsical world brimming with laughter and chaos. Knights embark on a quest to save stolen royalty. Four heroes with unique abilities clash against colorful foes. Side-scrolling battles filled with frantic action and cooperative play. Cartoonish art style enhances the joy of chaotic multiplayer mayhem."
+    },
+    {
+        "ID": 263,
+        "Name": "Monster Hunter: World",
+        "ReleaseYear": "2018",
+        "Genres": "Action, Adventure",
+        "Description": "In a realm where colossal creatures roam freely. You master the art of tracking and hunting beasts. Cooperation enhances strength against predators of massive scale. Diverse ecosystems provide unique challenges and environmental puzzles. A vibrant world awaits, blending action and intricate gameplay."
+    },
+    {
+        "ID": 264,
+        "Name": "Murdered: Soul Suspect",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Adventure",
+        "Description": "A restless spirit seeks justice in a shadowy world. Secrets unfold where the living intersect with the departed. Clues lie hidden in spectral whispers of the past. One detective unravels personal ties amid supernatural peril. Solve mysteries while navigating a hauntingly beautiful, old town."
+    },
+    {
+        "ID": 265,
+        "Name": "Call of Duty: Black Ops",
+        "ReleaseYear": "2010",
+        "Genres": "Action, Shooter",
+        "Description": "In shadows, whispers of conflict echo through time. The dance of bullets reveals hidden motives and betrayal. A fractured narrative unfolds within classified missions of espionage. Historical figures and puppeteers shape the journey through war. Multiplayer chaos awaits, as players don iconic masks and gadgets."
+    },
+    {
+        "ID": 266,
+        "Name": "BioShock 2",
+        "ReleaseYear": "2010",
+        "Genres": "Action, Shooter",
+        "Description": "In a submerged city, water holds many secrets. The past lingers, defining choices and consequences throughout. A protector and a child seek connection and safety. Explore twisted hallways filled with memories and foes alike. Unravel the mysteries of Rapture as you wield plasmids."
+    },
+    {
+        "ID": 267,
+        "Name": "Celeste",
+        "ReleaseYear": "2018",
+        "Genres": "Indie, Platformer",
+        "Description": "A journey through elevations and emotional valleys awaits you. A protagonist seeks a personal summit amidst inner turmoil. The vibrant pixel art mirrors the struggles faced within. Platforming challenges echo life\u2019s obstacles and perseverance needed. Encounter a duality of self in a mountain's embrace."
+    },
+    {
+        "ID": 268,
+        "Name": "Sea of Thieves",
+        "ReleaseYear": "2018",
+        "Genres": "Action, Adventure",
+        "Description": "A world of oceanic exploration beckons the brave. Treasure maps lead to danger and discovery at sea. Crew camaraderie fuels adventures with unpredictable rivalries and alliances. Multicolored skies reflect the artful, immersive pirate aesthetic. Navigate ships, uncover loot, and face spectral threats together."
+    },
+    {
+        "ID": 269,
+        "Name": "It Takes Two",
+        "ReleaseYear": "2021",
+        "Genres": "Action, Adventure",
+        "Description": "Two entities embark on a journey of collaboration and growth. A whimsical world reflects their fractured relationship and teamwork. Emotions twist and turn, shaping their path to reconciliation. Crafting solutions together requires both skill and creativity. Play as two unique characters solving puzzles through cooperation."
+    },
+    {
+        "ID": 270,
+        "Name": "Valiant Hearts: The Great War",
+        "ReleaseYear": "2014",
+        "Genres": "Adventure, Puzzle",
+        "Description": "A conflict unfolds amidst the ruins of time. A loyal companion guides a search for hope. Choices test the bonds of love and camaraderie. The narrative intertwines human stories with historical backdrop. Evocative visuals and puzzles shape a poignant experience."
+    },
+    {
+        "ID": 271,
+        "Name": "Sanctum 2",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Shooter",
+        "Description": "In a world fresh of ancient technology, danger looms. Layers of protection against relentless foes are crucial. Battle alongside unique allies with distinct abilities and skills. Time and strategy intertwine in this vibrant arena of conflict. Defend your structure while preparing the ultimate offensive strike."
+    },
+    {
+        "ID": 272,
+        "Name": "Ryse: Son of Rome",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Adventure",
+        "Description": "A time of grandeur when empires rose and fell. A quest entwined with duty, honor, and vengeance. A fallen leader seeks justice in a brutal world. Become a warrior clad in the strength of Rome. Experience vibrant visuals and fierce combat in every encounter."
+    },
+    {
+        "ID": 273,
+        "Name": "Dying Light: The Following - Enhanced Edition",
+        "ReleaseYear": "2015",
+        "Genres": "Action, RPG",
+        "Description": "In a world overrun by nightmarish creatures, survival is key. Shadows stretch and dance, hiding the horrors of dusk. A cult worships the light, seeking to control undead fate. Upgrade your skills and weapons, for power is vital. The vast open landscape beckons exploration in this enhanced journey."
+    },
+    {
+        "ID": 274,
+        "Name": "Guacamelee! Super Turbo Championship Edition",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Indie",
+        "Description": "A vibrant world filled with lucha libre art style awaits. Explore themes of love, sacrifice, and heroism throughout the journey. A dual-realm adventure where the living meets the dead. A masked hero fights to rescue his beloved. Master combat and abilities as you traverse magical landscapes."
+    },
+    {
+        "ID": 275,
+        "Name": "Shadow of the Tomb Raider",
+        "ReleaseYear": "2018",
+        "Genres": "Action, Adventure",
+        "Description": "A quest traverses the divide between light and dark. An ancient civilization\u2019s secrets lie buried beneath mountains. A strong-willed heroine embraces her destiny amidst chaos. The art melds realism with lush, immersive environments. Artifacts and puzzles abound in a ravaged world adventure."
+    },
+    {
+        "ID": 276,
+        "Name": "Resident Evil 5",
+        "ReleaseYear": "2009",
+        "Genres": "Action, Shooter",
+        "Description": "Mysterious outbreaks lead to chaos and survival struggles. A duo fights against a growing, infected menace. Sunbaked landscapes become the backdrop of a fierce battle. Iconic figures face moral dilemmas amidst the horror. The transition to action-oriented gameplay marks a genre shift."
+    },
+    {
+        "ID": 277,
+        "Name": "Final Fantasy VII",
+        "ReleaseYear": "2020",
+        "Genres": "Action, Adventure",
+        "Description": "In a world torn by conflict and memories haunt. A shadowed corporation pulls strings in the background. A group of misfits fights for a brighter future. A mercenary and a flower girl challenge fate and destiny. Classic characters and revamped visuals collide in this adventure."
+    },
+    {
+        "ID": 278,
+        "Name": "Deus Ex: Mankind Divided",
+        "ReleaseYear": "2016",
+        "Genres": "Action, RPG",
+        "Description": "In a world where humanity's essence is altered forever. Masks hide identities, revealing hidden divides among the populace. Choices shape the narrative, impacting trust and allegiance heavily. A former security expert navigates a city rife with tension. Cybernetic enhancements and corporate wars define the struggle for freedom."
+    },
+    {
+        "ID": 279,
+        "Name": "Limbo",
+        "ReleaseYear": "2010",
+        "Genres": "Action, Adventure",
+        "Description": "A shadowy realm where silence speaks louder than words. A child's journey through uncertainty and shifting realities unfolds. Stay light on your feet to avoid lurking dangers. Distinctive monochrome visuals create an eerie, atmospheric backdrop. Navigate puzzles and fate while searching for a lost sister."
+    },
+    {
+        "ID": 280,
+        "Name": "Serious Sam 3: BFE",
+        "ReleaseYear": "2011",
+        "Genres": "Action, Shooter",
+        "Description": "A relentless struggle against overwhelming odds unfolds. An unconventional hero faces peculiar, monstrous beings across vast landscapes. Explosive chaos and unyielding humor collide in frantic gameplay. Fighting through hordes, one man stands against an encroaching doom. Set in a war-torn world, prepare for mayhem and sarcasm."
+    },
+    {
+        "ID": 281,
+        "Name": "Call of Duty: Modern Warfare 3",
+        "ReleaseYear": "2011",
+        "Genres": "Action, Shooter",
+        "Description": "In a world where conflict reigns, silence is golden. Stealth and strategy intertwine with explosive consequences. Heroes and villains blur amidst a global battleground landscape. Familiar faces return, navigating alliances and betrayals in warfare. Engage in fast-paced, first-person combat with modern military arsenals."
+    },
+    {
+        "ID": 282,
+        "Name": "Mafia II: Definitive Edition",
+        "ReleaseYear": "2020",
+        "Genres": "Action, Adventure",
+        "Description": "In a city rich with shadows and secrets, loyalty matters. A struggling protagonist dreams of climbing criminal ranks swiftly. Choices define alliances amid the roar of vintage engines. A nostalgic visual overhaul enhances the gritty underworld experience. Explore family ties and betrayal in post-war structured chaos."
+    },
+    {
+        "ID": 283,
+        "Name": "Forza Horizon 4",
+        "ReleaseYear": "2018",
+        "Genres": "Racing, Arcade",
+        "Description": "A vibrant world racing against the changing seasons. Many paths lead to victory in open landscapes. Choose your ride from a vast garage of options. Compete with friends in a festival of speed. Stunning graphics showcase a reimagined Great Britain Adventure."
+    },
+    {
+        "ID": 284,
+        "Name": "The Last of Us Part II",
+        "ReleaseYear": "2020",
+        "Genres": "Action, Shooter",
+        "Description": "Amidst decay, humanity wrestles with hope and despair. A haunting melody underscores the weight of choices made. Two protagonists find their paths entangled through survival. Revenge fuels a journey in a post-apocalyptic landscape. The artistry shines in character-driven storytelling and complex emotion."
+    },
+    {
+        "ID": 285,
+        "Name": "Deep Rock Galactic",
+        "ReleaseYear": "2020",
+        "Genres": "Action, Indie",
+        "Description": "Cave dwellers seek treasures beneath a starlit sky. Visually vibrant landscapes entwine with procedural generation and danger. Cohesive teamwork is essential for survival and success. Four unique classes combine strengths to tackle underground threats. Face relentless creatures while mining precious resources with friends."
+    },
+    {
+        "ID": 286,
+        "Name": "DiRT Rally",
+        "ReleaseYear": "2015",
+        "Genres": "Simulation, Sports",
+        "Description": "A journey through mud and chaos awaits the brave. Rallying against nature\u2019s fury demands skill and precision. Choose your vehicle wisely to conquer diverse terrains ahead. Tight corners and time trials define this immersive racing experience. Experience the thrill of realistic dirt track competition."
+    },
+    {
+        "ID": 287,
+        "Name": "Burnout Paradise: The Ultimate Box",
+        "ReleaseYear": "2009",
+        "Genres": "Racing, Arcade",
+        "Description": "An open realm where speed reigns supreme and wild is key. Chaos ensues as asphalt lovers collide in colorful fury. Vehicles transform into canvas, showcasing personalization and vibrant art. Experience freedom in urban playgrounds filled with adrenaline-fueled escapades. Finish your racing adventures under the sun-drenched horizon of Paradise."
+    },
+    {
+        "ID": 288,
+        "Name": "Hotline Miami",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Shooter",
+        "Description": "In a neon underworld, chaos reigns supreme. Mysterious calls guide violent decisions and brutal actions. Masks disguise identities, concealing grim truths within. A fragmented narrative intertwines with relentless, fast-paced combat mechanics. 1980s aesthetics accompany a haunting soundtrack that defines the experience."
+    },
+    {
+        "ID": 289,
+        "Name": "Sniper Elite 4",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Shooter",
+        "Description": "A distant mark requires steady hands and keen eyes. Shadows cloak the battlefield where deception reigns supreme. A lone figure hunts foes from hidden vantage points. Tension rises with each heartbeat before the decisive shot. Set in World War II, strategy and stealth define survival."
+    },
+    {
+        "ID": 290,
+        "Name": "Fortnite Battle Royale",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Shooter",
+        "Description": "In a world where survival means eliminating all others, Bright colors mask an intense struggle for dominance, Building structures becomes as crucial as firing weapons, A battle involves a storm that narrows your options, Iconic characters wield diverse weapons in a virtual arena."
+    },
+    {
+        "ID": 291,
+        "Name": "Human: Fall Flat",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Indie",
+        "Description": "A wobbly existence challenges the nature of reality. Collective problem-solving occurs in a whimsical, physics-based world. Explore surreal environments with customizable, floppy beings at play. Cooperation might become essential to navigate each quirky landscape. Unleash creativity and absurdity in this indie, multiplayer adventure."
+    },
+    {
+        "ID": 292,
+        "Name": "Broforce",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Indie",
+        "Description": "Pixelated liberation unfolds across destructible landscapes and frenetic missions. Explosions and camaraderie define the spirit of diverse warriors. Each hero channels iconic action archetypes in exaggerated tribute form. Rescue operations propel gameplay as friends join the chaotic fun. Retro aesthetics enliven a cooperative brawler with relentless, explosive action."
+    },
+    {
+        "ID": 293,
+        "Name": "Binary Domain",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Shooter",
+        "Description": "In a world ruled by wires and steel, choices matter. Humanity's essence blurs as mechanical beings evolve and adapt. A squad of soldiers faces an uprising from their creations. Trust, betrayal, and sacrifice intertwine in a dystopian setting. Engage in fast-paced combat against rogue robots and uncover secrets."
+    },
+    {
+        "ID": 294,
+        "Name": "Grand Theft Auto III",
+        "ReleaseYear": "2001",
+        "Genres": "Action, Shooter",
+        "Description": "A sprawling urban landscape thrives with unspoken chaos. Shadows dance between choices of right and wrong, often blurred. A silent protagonist navigates a life of vice and ambition. Vibrant cell-shaded character designs enhance the criminal escapade experience. Missions involve heists, rival factions, and the pursuit of power."
+    },
+    {
+        "ID": 295,
+        "Name": "Sniper Elite V2",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Shooter",
+        "Description": "In shadowy realms where silence reigns supreme, a mark awaits. A world torn asunder, echoes of conflict linger heavily. Precision and strategy blend in a merciless dance. A lone operative pursues a critical mission amidst destruction. Expect bullet time and historical settings in this tactical shooter."
+    },
+    {
+        "ID": 296,
+        "Name": "Wolfenstein II: The New Colossus",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Shooter",
+        "Description": "In an alternate reality, tyranny reigns over freedom's call. A relentless hero rises, battling oppressive regimes with tenacity. Betrayal lurks among allies, testing loyalties in dark times. Retro-inspired graphics enhance this visceral first-person shooter experience. Destroy robotic foes while navigating a world of rebellion."
+    },
+    {
+        "ID": 297,
+        "Name": "STAR WARS Battlefront II",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Shooter",
+        "Description": "In a galaxy far away, battles ignite the stars. Choose your faction among heroes and villains alike. Space battles and ground skirmishes blur the lines of war. Iconic characters wield lightsabers in stunning visual splendor. Join the fray and rewrite the fate of the Empire."
+    },
+    {
+        "ID": 298,
+        "Name": "The Walking Dead: Season 1",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Adventure",
+        "Description": "In a world overrun by a relentless horde. Survival hinges on the strength of human bonds. A fractured group navigates the broken landscapes of society. Leadership and moral dilemmas circle around a father figure. The fight against the undead begins with a desperate search."
+    },
+    {
+        "ID": 299,
+        "Name": "Cyberpunk 2077",
+        "ReleaseYear": "2020",
+        "Genres": "Action, Shooter",
+        "Description": "A neon-lit future teems with dystopian shadows and dreams. Choices weave destinies in a sprawling urban labyrinth. A mercenary seeks freedom, grappling with augmentations and power. Relationships blur reality as bonds twist in a chrome world. Explore Night City\u2019s chaos while battling corporate overlords and crime."
+    },
+    {
+        "ID": 300,
+        "Name": "Left 4 Dead 2",
+        "ReleaseYear": "2009",
+        "Genres": "Action, Shooter",
+        "Description": "In a world overtaken by the relentless horde. Survival hinges on teamwork amidst chaos and danger. Diverse characters wield unique skills with gripping intensity. A grim journey unfolds across ravaged landscapes and urban decay. Confront the undead with a mix of strategy and firepower."
+    },
+    {
+        "ID": 301,
+        "Name": "The Bureau: XCOM Declassified",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Shooter",
+        "Description": "A hidden conflict brews beneath the surface of normalcy. Secrets lurk in the shadows of a governmental facade. Unraveling alien lore, agents wield unconventional tactics and weaponry. Set in the 1960s, the art style echoes retro aesthetics. A squad-based strategy against extraterrestrial threats drives the narrative forward."
+    },
+    {
+        "ID": 302,
+        "Name": "Dota 2",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Massively Multiplayer",
+        "Description": "Battles unfold on a canvas of vibrant fantasy realms. Heroes clash as ancient powers vie for dominance. Strategic choices shape outcomes in this competitive arena. Teams of five wield unique abilities in epic showdowns. A sequel to a beloved warcraft, this game thrives online."
+    },
+    {
+        "ID": 303,
+        "Name": "PAYDAY 2",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Shooter",
+        "Description": "Masked figures converge under the cover of chaos. Coordinated chaos unfolds in urban landscapes and beyond. High stakes bring four robbers together for heists. Group strategies and customization define their criminal endeavors. Success hinges on planning, teamwork, and intense shootouts."
+    },
+    {
+        "ID": 304,
+        "Name": "Darksiders Warmastered Edition",
+        "ReleaseYear": "2016",
+        "Genres": "Action, RPG",
+        "Description": "A world teeters on the edge of oblivion. Four embodiments of conflict traverse realms with purpose. A harbinger in leather seeks to reclaim his honor. This journey blends fast-paced combat with RPG elements intricately. Visually striking, it revives a dark narrative with polished graphics."
+    },
+    {
+        "ID": 305,
+        "Name": "Metro 2033",
+        "ReleaseYear": "2010",
+        "Genres": "Action, Shooter",
+        "Description": "In shadows, humanity clings to survival underground. A journey unfolds through tunnels and forsaken remnants. Mutated threats lurk where light rarely shines bright. Hope and despair intertwine as fate unravels in darkness. A post-apocalyptic world, where choice shapes survival's path ahead."
+    },
+    {
+        "ID": 306,
+        "Name": "Bayonetta",
+        "ReleaseYear": "2009",
+        "Genres": "Action, Adventure",
+        "Description": "A dance with divinity and chaos shapes destiny. Shadows and light intertwine in a stylish ballet. Witchcraft and myth collide in a surreal world. A gun-toting heroine defies fate with fierce elegance. Angels face off against a powerful sorceress on a quest."
+    },
+    {
+        "ID": 307,
+        "Name": "Half-Life",
+        "ReleaseYear": "1998",
+        "Genres": "Action, Shooter",
+        "Description": "A world where science bends the fabric of reality. Shadows of unseen beings lurk in alien environments. A silent protagonist grapples with ethical dilemmas of experimentation. Iconic weapons clash against interdimensional foes in chaos. Journey through Black Mesa to uncover hazardous government secrets."
+    },
+    {
+        "ID": 308,
+        "Name": "The Talos Principle",
+        "ReleaseYear": "2014",
+        "Genres": "Adventure, Indie",
+        "Description": "In a realm where thoughts wander like shadows, you seek. Constructs of puzzles challenge both mind and morality keenly. A silent guide teases the boundary between creator and creation. Surreal designs echo ancient philosophy in an interactive tapestry. Escape your programmed confines as you question existence itself."
+    },
+    {
+        "ID": 309,
+        "Name": "Just Cause 3",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Shooter",
+        "Description": "A sprawling canvas of chaos and rebellion awaits players. Dynamic landscapes are ripe for destruction and creativity. A charismatic liberator challenges tyranny with explosive flair. Grappling mechanics redefine movement in a visually stunning world. Unleash chaos in a Mediterranean paradise against an oppressive regime."
+    },
+    {
+        "ID": 310,
+        "Name": "Mark of the Ninja",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Indie",
+        "Description": "Shadows dance under the moonlit veil of night. A silent warrior confronts a legacy of betrayal. Stealth and precision dictate the rhythm of survival. Inked artistry envelops the gameplay in fluid motion. A tale of honor unfolds within a pixelated realm."
+    },
+    {
+        "ID": 311,
+        "Name": "Mafia II",
+        "ReleaseYear": "2010",
+        "Genres": "Action, Shooter",
+        "Description": "In a world of shadows and loyalty, choices matter. A tale of ambition unfolds in a 1950s city. Brothers in crime navigate morality and betrayal's depths. One man's rise intertwines with a life of violence. Explore a gritty narrative filled with cars and gunfire."
+    },
+    {
+        "ID": 312,
+        "Name": "Star Wars Jedi: Fallen Order",
+        "ReleaseYear": "2019",
+        "Genres": "Action, Adventure",
+        "Description": "In a galaxy far, ancient powers fracture anew. A lost wayfarer grapples with a haunting legacy. Secrets of the Force linger in the shadows ahead. Resilience sparks hope against a relentless Imperial pursuit. Lightsabers clash as bonds of friendship guide the journey."
+    },
+    {
+        "ID": 313,
+        "Name": "BioShock Infinite",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Shooter",
+        "Description": "An ethereal city floats above the clouds in conflict. Choices resonate throughout a spacetime tapestry of fate's threads. Two intertwined destinies challenge the concept of freedom itself. A mysterious girl with powers alters the course of history. First-person shooter mechanics clash with a narrative steeped in symbolism."
+    },
+    {
+        "ID": 314,
+        "Name": "Hitman",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Shooter",
+        "Description": "A shadowed figure moves through varied global locales. Targets lie in plain sight, yet danger is often unseen. Precision is key, as each mission intertwines with fate. Contracts are signed in blood within a stylized world. An enigmatic assassin pursues elusive truths amid deadly encounters."
+    },
+    {
+        "ID": 315,
+        "Name": "VRChat",
+        "ReleaseYear": "2017",
+        "Genres": "Adventure, Simulation",
+        "Description": "In a realm where masks shape identities and dreams. Characters navigate vast landscapes, each one uniquely crafted. Interaction blurs the lines between player and avatar experience. Social connections flourish through shared laughter and playful antics. Explore a digital playground where creativity knows no bounds."
+    },
+    {
+        "ID": 316,
+        "Name": "Dead Space 2",
+        "ReleaseYear": "2011",
+        "Genres": "Action, Shooter",
+        "Description": "In the abyss, horror lurks beneath the surface. A protagonist battles inner demons and external threats. Ingenious weaponry becomes essential for survival in chaos. Isolation transforms the mind in a futuristic space nightmare. A fearsome alien presence reawakens as you seek redemption."
+    },
+    {
+        "ID": 317,
+        "Name": "Halo Infinite",
+        "ReleaseYear": "2021",
+        "Genres": "Action, Shooter",
+        "Description": "An ancient conflict unfolds amid stars and rings. A solitary hero dons green armor against overwhelming odds. The fracturing of an empire reveals deeper existential threats. Explore vast environments filled with lore and technologic wonders. A familiar protagonist grapples with AI and new adversaries."
+    },
+    {
+        "ID": 318,
+        "Name": "To the Moon",
+        "ReleaseYear": "2011",
+        "Genres": "Adventure, RPG",
+        "Description": "A journey unfolds through dreams and memories intertwined. An exploration of love beyond time and space beckons. Two souls seek a final wish beneath starry skies. Play unfolds in a pixelated world with emotional depth. The stories of life and death are delicately interwoven."
+    },
+    {
+        "ID": 319,
+        "Name": "Red Dead Redemption",
+        "ReleaseYear": "2010",
+        "Genres": "Action, Shooter",
+        "Description": "A vast, unforgiving landscape beckons the weary traveler. Shadows of a fading era whisper tales of loss. Honor and betrayal intertwine in a restless pursuit. A gunslinger seeks redemption amidst lawless chaos and rivalry. Westward exploration reveals complex relationships with a shifting morality."
+    },
+    {
+        "ID": 320,
+        "Name": "Call of Juarez: Gunslinger",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Shooter",
+        "Description": "In a land of dust, legends come to life. A solitary figure spins tales of past encounters. Between gunfire and glory, justice isn't always clear. The wild west harbors notorious faces in vivid hues. A relentless quest for vengeance through quick-draw duels awaits."
+    },
+    {
+        "ID": 321,
+        "Name": "Titanfall 2",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Shooter",
+        "Description": "In a clash of giants, steel meets valor. The dance of man and machine unveils shared destinies. A soldier\u2019s bond transcends the confines of war. Stunning visuals enhance the thrill of fast-paced combat. Discover the tale of a pilot and his Titan."
+    },
+    {
+        "ID": 322,
+        "Name": "Magicka",
+        "ReleaseYear": "2011",
+        "Genres": "Action, RPG",
+        "Description": "A world shrouded in magical chaos and humor awaits. Wield elemental powers to overcome countless whimsical challenges ahead. Intrepid mages band together in a cooperative quest for glory. Beware of friendly fire, as spells can harm allies too. Customize your wizard with various spells and abilities for adventure."
+    },
+    {
+        "ID": 323,
+        "Name": "F.E.A.R. 2: Project Origin",
+        "ReleaseYear": "2009",
+        "Genres": "Action, Shooter",
+        "Description": "An unseen force brews in shadowy corners of existence. A link between two worlds may lead to chaos. A soldier grapples with haunting memories of past horrors. Monstrous manifestations blur the line between reality and nightmare. A desperate fight unfolds within a crumbling urban landscape."
+    },
+    {
+        "ID": 324,
+        "Name": "Death Stranding",
+        "ReleaseYear": "2019",
+        "Genres": "Action, Adventure",
+        "Description": "In a world of connections, isolation reigns supreme. Bridges stretch across barren landscapes, fraught with invisible dangers. A courier traverses terrains to unite fragmented souls scattered. A baby in a pod offers hope amidst despair. Artful design captures the haunting beauty of desolation."
+    },
+    {
+        "ID": 325,
+        "Name": "Resident Evil: Village",
+        "ReleaseYear": "2021",
+        "Genres": "Action, Adventure",
+        "Description": "A legacy of terror continues in a new setting. Shadows hide secrets in a picturesque European locale. Familiars and monsters blur the line of reality. A father's love drives the quest against dark forces. Unravel the mysteries surrounding a girl with unique power."
+    },
+    {
+        "ID": 326,
+        "Name": "Middle-earth: Shadow of War",
+        "ReleaseYear": "2017",
+        "Genres": "Action, RPG",
+        "Description": "In a realm woven from tales of old. A battle for the fate of various kingdoms ensues. Wielding powers beyond the grave fuels the conflict. A ranger and a spirit seek vengeance against foes. Epic sieges and a nemesis system shape your journey."
+    },
+    {
+        "ID": 327,
+        "Name": "Stray",
+        "ReleaseYear": "2022",
+        "Genres": "Action, Adventure",
+        "Description": "A lonely wanderer navigates a world transformed by time. Whisked away from familiarity, the journey seeks lost connections. Feline grace accompanies a quest through neon-lit ruins. Companions emerge, revealing secrets of a forgotten civilization. Players experience unique perspective while uncovering truths beneath city shadows."
+    },
+    {
+        "ID": 328,
+        "Name": "Transistor",
+        "ReleaseYear": "2014",
+        "Genres": "Action, RPG",
+        "Description": "In a city veiled in neon shadows, conflict brews. A voice echoes within a mysterious weapon, guiding fate. Choices matter, shaping paths through cryptic adversaries and allies. The protagonist wields a unique tool against a relentless pursuit. Artistic design melds cybernetic realism with vibrant, stylized aesthetics."
+    },
+    {
+        "ID": 329,
+        "Name": "Euro Truck Simulator 2",
+        "ReleaseYear": "2012",
+        "Genres": "Simulation, Indie",
+        "Description": "A journey across vast landscapes fueled by ambition awaits. Roadways stretch as far as the eye can see. Cargo transport serves as the core of the experience. This pixelated world thrives on the art of simulation. Travel through diverse European countries, one truck at a time."
+    },
+    {
+        "ID": 330,
+        "Name": "Destiny",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Shooter",
+        "Description": "A universe awaits with shadows and light conflicts. Guardians rise to face the darkening threats ahead. Ancient powers watch over from distant celestial spheres. Multiplayer battles unfold, blending shooter mechanics and RPG elements. Choose your class, wield unique abilities, and explore vast worlds."
+    },
+    {
+        "ID": 331,
+        "Name": "Resident Evil 3",
+        "ReleaseYear": "2020",
+        "Genres": "Action, Shooter",
+        "Description": "In a city left to ruin and despair, survival prevails. A relentless predator stalks the streets, searching for prey. A brave woman fights through nightmare and chaos ahead. Enhanced visuals and tension define this modern retelling's art. A deep connection blossoms amid the terror and desperation."
+    },
+    {
+        "ID": 332,
+        "Name": "Tomb Raider: Underworld",
+        "ReleaseYear": "2008",
+        "Genres": "Action, Adventure",
+        "Description": "Ancient secrets hidden beneath layers of time unfold. A brave explorer seeks treasures lost to myth and memory. Challenging environments test both wit and physical prowess. The journey intertwines personal stakes with an archaeological legacy. Unlock the past while navigating treacherous tombs and foes."
+    },
+    {
+        "ID": 333,
+        "Name": "Saints Row: The Third",
+        "ReleaseYear": "2011",
+        "Genres": "Action, Adventure",
+        "Description": "A city thrives where chaos and humor collide profoundly. Colorful characters navigate through mayhem and outrageous missions endlessly. A gang rises to prominence amidst a surreal crime spree. Outlandish weaponry and customization empower players' wildest fantasies fully. A vibrant open world invites exploration and chaotic adventures together."
+    },
+    {
+        "ID": 334,
+        "Name": "Alan Wake's American Nightmare",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Shooter",
+        "Description": "A struggle against shadows reveals deeper truths within. Darkness manifests in unexpected locations and forms. A writer's mind becomes a battleground for survival. Look for nightmares that twist reality and perception. A character named Alan confronts his own haunting creations."
+    },
+    {
+        "ID": 335,
+        "Name": "Trine Enchanted Edition",
+        "ReleaseYear": "2009",
+        "Genres": "Action, Arcade",
+        "Description": "A trio embarks on a quest through mystery realms. Sorcery melds with artistry in a vivid landscape. One can wield physics to solve intricate puzzles together. Trust exists between a thief, knight, and wizard in harmony. Traverse enchanted levels filled with chests and dangers."
+    },
+    {
+        "ID": 336,
+        "Name": "Oxenfree",
+        "ReleaseYear": "2016",
+        "Genres": "Adventure, RPG",
+        "Description": "A supernatural twist awaits during a coastal retreat. Dimly lit secrets linger beneath the surface of friendship. Choices shape destinies as whispers echo through time. A group of teenagers faces both the known and unknown. Navigating an enigmatic island leads to revealing personal connections."
+    },
+    {
+        "ID": 337,
+        "Name": "Batman: Arkham City - Game of the Year Edition",
+        "ReleaseYear": "2012",
+        "Genres": "Action, Adventure",
+        "Description": "A dark knight rises in a grim urban expanse. Shadows and secrets intertwine within these wrought-iron walls. A rogue's gallery assembles, each with a sinister plan. Stealth and combat blend under a masterful art style. A sprawling prison holds the city\u2019s darkest villains and truths."
+    },
+    {
+        "ID": 338,
+        "Name": "Metal Gear Solid V: The Phantom Pain",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Shooter",
+        "Description": "A figment haunts the shadows of a storied past. Loyalty and betrayal intertwine like threads in a web. A silent warrior must build a fractured home back. An open world teems with conflict and lost memories. The tale unfolds through tactical stealth and intricate deception."
+    },
+    {
+        "ID": 339,
+        "Name": "Borderlands: The Pre-Sequel",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Shooter",
+        "Description": "In a galaxy rock-strewn with chaos and loot. A quest for power unfolds under a pale moon. Cultures clash in the name of rebellion and greed. Featuring unlikely heroes with quirky personalities and abilities. Set between sequels, it's a whimsical shooter adventure."
+    },
+    {
+        "ID": 340,
+        "Name": "The Swapper",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Adventure",
+        "Description": "A journey unfolds in a place of silence and echoes. Layers of identity twist as control slides between hands. Choices bear weight, reflected in shifting silhouettes and forms. Discovering hidden truths within a desolate, alien environment awaits. Solve puzzles using the ability to clone yourself and explore."
+    },
+    {
+        "ID": 341,
+        "Name": "Call of Duty: Black Ops III",
+        "ReleaseYear": "2015",
+        "Genres": "Action, Shooter",
+        "Description": "In a world where shadows haunt the past, players navigate chaos. Technology intertwines with humanity in a battle for survival. A covert unit confronts enemies lurking in a dystopian future. Choose your path through fractured timelines and moral dilemmas. Mastering advanced warfare and teamwork leads to victory in conflict."
+    },
+    {
+        "ID": 342,
+        "Name": "Disco Elysium",
+        "ReleaseYear": "2019",
+        "Genres": "Adventure, RPG",
+        "Description": "A city shrouded in fog and existential dread beckons. Whispers of lost memories echo through vibrant, painted landscapes. Choices intertwine character fates, shaping a dialogue-rich journey. A detective combats inner demons while solving a murder mystery. Engaging with philosophy, politics, and human nature unfolds systematically."
+    },
+    {
+        "ID": 343,
+        "Name": "Outlast",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Indie",
+        "Description": "A chilling descent into shadows reveals lurking dread. Survival hinges on knowledge of unseen hunters' motives. With camera in hand, darkness becomes your only ally. Asylum's secrets unfold, blurring lines between sanity and terror. Escape awaits, but danger lurks behind every corner."
+    },
+    {
+        "ID": 344,
+        "Name": "Detroit: Become Human",
+        "ReleaseYear": "2018",
+        "Genres": "Action, Adventure",
+        "Description": "A world divided between flesh and circuitry awaits exploration. Choices unfold in a sprawling, narrative-driven universe. A trio of distinct protagonists navigates moral dilemmas boldly. Look for androids questioning humanity amid a dystopian backdrop. Stunning visuals enhance emotional weight in this interactive story."
+    },
+    {
+        "ID": 345,
+        "Name": "ARK: Survival Of The Fittest",
+        "ReleaseYear": "2016",
+        "Genres": "Action, RPG",
+        "Description": "Survival is paramount in a world lost to time. Dangerous creatures roam, waiting for the unprepared to falter. Teams rise and fall in a battle for dominance. Build, craft, and adapt to face primal challenges ahead. A blend of strategy and combat in a vivid landscape."
+    },
+    {
+        "ID": 346,
+        "Name": "PlayerUnknown\u2019s Battlegrounds",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Shooter",
+        "Description": "A battleground emerges where survival is the goal. Players drop from above, seeking to claim their fate. Allies and foes converge in tactical, chaotic encounters. Vehicles and tools aid in the quest for dominance. Only one can stand tall when the dust settles."
+    },
+    {
+        "ID": 347,
+        "Name": "The LEGO NINJAGO Movie Video Game",
+        "ReleaseYear": "2017",
+        "Genres": "Action, Adventure",
+        "Description": "Colorful bricks form a vibrant world of imagination. Fearless warriors engage in battles against shadowy foes. A journey unfolds among wise mentors and young heroes. Mastering elemental skills and teamwork is key to victory. Experience a game where humor mingles with epic quests."
+    },
+    {
+        "ID": 348,
+        "Name": "Broken Age",
+        "ReleaseYear": "2014",
+        "Genres": "Adventure, Casual",
+        "Description": "In a world of dreams and divided realities, youth grapples. Two protagonists seek freedom from their respective constraints. A space-mother and a monster are central to growth. Artistic style echoes hand-painted visuals with whimsy and charm. Puzzles unravel as choices shape outcomes in a coming-of-age tale."
+    },
+    {
+        "ID": 349,
+        "Name": "Path of Exile",
+        "ReleaseYear": "2013",
+        "Genres": "Action, RPG",
+        "Description": "A journey through darkness and despair awaits you. Explore a vast world filled with corrupting influences. Choose your destiny from classes marked by unique skills. Conquer challenges in an ever-evolving landscape of danger. Engage in battles against ancient foes in Wraeclast."
+    },
+    {
+        "ID": 350,
+        "Name": "Ori and the Blind Forest: Definitive Edition",
+        "ReleaseYear": "2016",
+        "Genres": "Adventure, Platformer",
+        "Description": "In a world where light and dark collide, a quest unfolds. A fragile guardian fights against the shadows of despair. Nature's delicate balance teeters on the brink of chaos. Beautifully hand-painted landscapes enhance the emotional storytelling experience. A small spirit and a great protector traverse through perilous terrain."
+    },
+    {
+        "ID": 351,
+        "Name": "Hitman 2",
+        "ReleaseYear": "2018",
+        "Genres": "Action, Shooter",
+        "Description": "A masked figure navigates shadows under pristine artistry. Silent encounters unfold in exotic, diverse locales worldwide. Contracts dictate fate, with each decision holding weight. Precision and patience are keys to eliminating targets efficiently. A tale of retribution entwines personal struggles with lethal profession."
+    },
+    {
+        "ID": 352,
+        "Name": "Stardew Valley",
+        "ReleaseYear": "2016",
+        "Genres": "RPG, Simulation",
+        "Description": "A quaint life awaits in pixelated tranquility and toil. Whispers of nature blend with the pulse of community. Sowing seeds and forging bonds shape your unfolding quest. Meet unique townsfolk each with stories and secrets untold. Revive a forgotten farm while facing nature's gentle challenges."
+    },
+    {
+        "ID": 353,
+        "Name": "Mortal Kombat 11",
+        "ReleaseYear": "2019",
+        "Genres": "Action, Adventure",
+        "Description": "Fighters clash in a realm beyond life and death. Ancient rivalries ignite across a fractured timeline's canvas. Iconic heroes and villains return with a vengeance anew. Blood, brutality, and battles reign in this digital arena. Choose your destiny in a saga of relentless combat."
+    },
+    {
+        "ID": 354,
+        "Name": "Hades",
+        "ReleaseYear": "2020",
+        "Genres": "Action, Adventure",
+        "Description": "Vivid landscapes hide dangers in the underworld's depths. A restless hero must face fate and personal demons. Agile movement and strategic combat define each encounter's rhythm. This quest involves battling mythic beings for a hopeful escape. It combines roguelike elements with striking, unique art styles."
+    },
+    {
+        "ID": 355,
+        "Name": "Sleeping Dogs: Definitive Edition",
+        "ReleaseYear": "2014",
+        "Genres": "Action, Adventure",
+        "Description": "A city\u2019s heartbeat echoes through dark alleys and neon lights. Betrayal lurks between loyalty and the underworld\u2019s embrace. A cop walks the thin line of dual identities. Martial arts meet open-world chaos in an urban landscape. Unravel a crime syndicate while maintaining a hidden life."
+    },
+    {
+        "ID": 356,
+        "Name": "Dragon's Dogma: Dark Arisen",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Adventure",
+        "Description": "A world reborn under the shadow of mythical beasts looms. A pawn's journey through fate intertwines with many legends. Dragons rage, while the balance of power teeters precariously. A darkened realm demands choices that resonate with consequences. Master the art of combat and alliances to succeed."
+    },
+    {
+        "ID": 357,
+        "Name": "Paladins",
+        "ReleaseYear": "2016",
+        "Genres": "Action, Shooter",
+        "Description": "A fierce battle among chosen champions unfolds regularly. Colorful avatars clash in fantastical, vibrant realms of power. Unite with allies to achieve objectives and victory. Class-based characters wield unique abilities in fierce firefights. Employ strategy and teamwork in this free-to-play shooter."
+    },
+    {
+        "ID": 358,
+        "Name": "Titan Quest Anniversary Edition",
+        "ReleaseYear": "2016",
+        "Genres": "Action, RPG",
+        "Description": "Ancient heroes clash in a realm of mythic chaos. Legendary beings loom large, awaiting daring mortals' challenges. A world of gods and monsters unfurls before players. Adventure unfolds in lush landscapes with vibrant artistic flair. Relive an epic journey inspired by Greco-Roman mythology anew."
+    },
+    {
+        "ID": 359,
+        "Name": "ABZU",
+        "ReleaseYear": "2016",
+        "Genres": "Adventure, Simulation",
+        "Description": "Beneath waves, secrets whisper in silent currents. An ancient connection binds life beneath the surface. Explore vibrant depths, encountering strange beings along the way. Guided by a spirit, players unveil hidden aquatic mysteries. Experience a breathtaking world through stunning, minimalist visuals."
+    },
+    {
+        "ID": 360,
+        "Name": "Portal",
+        "ReleaseYear": "2007",
+        "Genres": "Action, Puzzle",
+        "Description": "A journey through interdimensional gateways awaits your cunning. Solo traverse a sterile facility filled with peculiar puzzles. A witty AI companion offers sardonic guidance and banter. Use a strange device to manipulate space and time. Escape fate while navigating a testing ground for survival."
+    },
+    {
+        "ID": 361,
+        "Name": "Fallout 3",
+        "ReleaseYear": "2008",
+        "Genres": "Shooter, RPG",
+        "Description": "In a world where decay reigns, survival is paramount. Shadows of the past haunt the desolate remnants of civilization. A solitary traveler seeks their father amidst the chaos. Your choices shape fate in this post-apocalyptic wasteland. Experience rich storytelling through exploration and engaging RPG mechanics."
+    },
+    {
+        "ID": 362,
+        "Name": "Darksiders II",
+        "ReleaseYear": "2012",
+        "Genres": "Action, RPG",
+        "Description": "A battle between realms ignites with grim intent. A lone horseman seeks redemption for a sibling lost. Explore the afterlife's twisted landscapes and vengeful spirits. Art style evokes a dark, graphic novel aesthetic throughout. Unravel the mysteries of existence and choices in combat."
+    },
+    {
+        "ID": 363,
+        "Name": "Injustice: Gods Among Us Ultimate Edition",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Arcade",
+        "Description": "Superheroes clash in a realm of moral ambiguity. A fractured alliance reveals darker truths of power. Characters grapple with choices that alter destinies profoundly. Iconic figures from comics engage in chaotic confrontations. This fast-paced fighting game features a rich comic art style."
+    },
+    {
+        "ID": 364,
+        "Name": "Shadowrun Returns",
+        "ReleaseYear": "2013",
+        "Genres": "RPG, Strategy",
+        "Description": "A world where darkness conceals technology and magic. Cybernetic enhancements blur the line between human and machine. Shadows whisper secrets and quests in neon-lit streets. Assemble a diverse team in turn-based tactical encounters. Revisit a classic RPG reborn with immersive storytelling elements."
+    },
+    {
+        "ID": 365,
+        "Name": "Tomb Raider (2013)",
+        "ReleaseYear": "2013",
+        "Genres": "Action, Fighting",
+        "Description": "A journey unfolds within ancient crumbling structures. Survival instincts clash with nature\u2019s unforgiving challenges. An unlikely heroine discovers her strength through adversity. Shadows and light enhance a gritty, immersive world. A quest for relics leads to deep personal transformation."
+    }
+]

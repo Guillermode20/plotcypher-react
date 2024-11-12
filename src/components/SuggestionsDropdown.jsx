@@ -1,18 +1,34 @@
 import PropTypes from 'prop-types';
 import { useMemo, useState, useEffect, useRef } from 'react';
 
-const SuggestionsDropdown = ({ suggestions, searchInput, selectedDescription, onSelect, dropdownDirection, onKeyDown }) => {
+const SuggestionsDropdown = ({ suggestions, searchInput, selectedDescription, onSelect, dropdownDirection }) => {
   const [highlightedIndex, setHighlightedIndex] = useState(-1);
   const dropdownRef = useRef(null);
 
+  // Add debug logging
+  useEffect(() => {
+    if (selectedDescription && (!suggestions || !suggestions[selectedDescription])) {
+      console.warn('Missing suggestions for category:', selectedDescription, suggestions);
+    }
+  }, [suggestions, selectedDescription]);
+
   const filteredSuggestions = useMemo(() => {
-    if (!searchInput || searchInput.length < 1 || !selectedDescription) return [];
+    if (!searchInput || searchInput.length < 1 || !selectedDescription) {
+      console.log('No search input or selected description');
+      return [];
+    }
       
-    const categorySuggestions = suggestions[selectedDescription === 'tv' ? 'tv' : 
-                                selectedDescription === 'movie' ? 'movies' : 
-                                'games'];
-    
-    if (!categorySuggestions) return [];
+    const categorySuggestions = suggestions[selectedDescription] || [];
+    console.log('Category suggestions:', {
+      category: selectedDescription,
+      count: categorySuggestions.length,
+      suggestions: categorySuggestions
+    });
+
+    if (!Array.isArray(categorySuggestions)) {
+      console.error('Invalid suggestions format:', categorySuggestions);
+      return [];
+    }
       
     const searchQuery = searchInput.toLowerCase();
     const maxResults = 10;
@@ -107,7 +123,7 @@ const SuggestionsDropdown = ({ suggestions, searchInput, selectedDescription, on
 SuggestionsDropdown.propTypes = {
   suggestions: PropTypes.object.isRequired,
   searchInput: PropTypes.string.isRequired,
-  selectedDescription: PropTypes.string.isRequired,
+  selectedDescription: PropTypes.string, // Changed from isRequired
   onSelect: PropTypes.func.isRequired,
   dropdownDirection: PropTypes.string.isRequired,
   onKeyDown: PropTypes.func,

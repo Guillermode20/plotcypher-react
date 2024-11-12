@@ -37,9 +37,9 @@ const FailModal = ({ isOpen, onClose, selectedDescription, gameData }) => {
               Maximum attempts reached
             </div>
             <div className="text-2xl font-bold">
-              {selectedDescription === 'game' && gameData?.correctGame}
-              {selectedDescription === 'movie' && gameData?.correctMovie}
-              {selectedDescription === 'tv' && gameData?.correctTVShow}
+              {selectedDescription === 'game' && gameData?.correctName}
+              {selectedDescription === 'movie' && gameData?.correctName}
+              {selectedDescription === 'tv' && gameData?.correctName}
             </div>
             <div className="text-white/70 text-sm">
               Return tomorrow for a new challenge

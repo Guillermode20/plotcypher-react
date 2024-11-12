@@ -1,6 +1,5 @@
-
 import { useState, useEffect } from 'react';
-import { initDB, populateDB, getGame, getMovie, getTVShow, getAllGames, getAllMovies, getAllTVShows } from '../database';
+import { initDB, populateDB, getItemById, getAllGames, getAllMovies, getAllTVShows } from '../database';
 import PropTypes from 'prop-types';
 import ErrorBoundary from '../ErrorBoundary';
 
@@ -82,47 +81,75 @@ function Description(props) {
       try {
         await initDB();
         await populateDB();
+        const item = await getItemById(category, itemId);
+        
+        if (!item) {
+            console.error(`No item found for ${category} with ID ${itemId}`);
+            return;
+        }
 
-        let item;
-        let allItems;
-        if (category === 'game') {
-          item = await getGame(itemId);
-          allItems = await getAllGames();
-        } else if (category === 'movie') {
-          item = await getMovie(itemId);
-          allItems = await getAllMovies();
-        } else if (category === 'tv') {
-          item = await getTVShow(itemId);
-          allItems = await getAllTVShows();
+        setDetails({
+            name: item.Name,
+            description: item.Description,
+            releaseYear: item.ReleaseYear,
+            genre: item.Genres,
+            id: item.ID,
+        });
+
+        // Fetch all items based on category
+        let allItems = [];
+        switch(category) {
+            case 'game':
+                allItems = await getAllGames();
+                break;
+            case 'movie':
+                allItems = await getAllMovies();
+                break;
+            case 'tv':
+                allItems = await getAllTVShows();
+                break;
         }
-        if (item) {
-          setDetails({
-            name: item.gameName,
-            description: item.description,
-            releaseYear: item.releaseYear,
-            genre: item.genre,
-            id: item.id,
-          });
-        } else {
-          console.error(`${category} not found`);
-        }
-        const allNames = allItems.map(i => i.gameName);
-        setIncorrectNames(allNames.filter(name => name !== item.gameName));
-      } catch (error) {
+
+        console.log(`Loaded ${allItems.length} items for ${category}`);
+
+        // Create array of all names, including the correct one
+        const names = allItems
+            .map(i => i.Name)
+            .filter(name => name && typeof name === 'string');
+
+        setIncorrectNames(names);
+
+    } catch (error) {
         console.error(`Error loading ${category} data:`, error);
-      }
-    };
-    loadData();
-  }, [itemId, category]);
+    }
+};
+loadData();
+}, [itemId, category]);
 
-  useEffect(() => {
-    const data = {
-      correctName: details.name,
-      incorrectNames: incorrectNames,
-      level
+useEffect(() => {
+    // Ensure we have names to work with
+    if (!incorrectNames.length) {
+        console.warn('No names available for suggestions');
+        return;
+    }
+
+    // Create suggestions object with the correct structure
+    const suggestionsObject = {
+        game: category === 'game' ? incorrectNames : [],
+        movie: category === 'movie' ? incorrectNames : [],
+        tv: category === 'tv' ? incorrectNames : []
     };
+
+    const data = {
+        correctName: details.name,
+        suggestions: suggestionsObject,
+        selectedDescription: category,
+        level
+    };
+
+    console.log('Sending suggestions to parent:', suggestionsObject);
     onDataLoad(data);
-  }, [level, onDataLoad, details.name, incorrectNames]);
+}, [incorrectNames, details.name, category, level, onDataLoad]);
 
   return (
     <ErrorBoundary>

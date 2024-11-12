@@ -1,7 +1,9 @@
 // database.js
 
-const dbName = "libraryDB";
 const dbVersion = 1;
+
+// Reintroduce the dbName variable
+const dbName = "libraryDB";
 
 // Add DB connection pooling
 let dbConnection = null;
@@ -12,15 +14,15 @@ const CONNECTION_POOL = {
     connections: new Set(),
     async acquire() {
         if (this.connections.size < this.maxSize) {
-            const conn = await initDB();
-            this.connections.add(conn);
-            return conn;
+            const db = await initDB();
+            this.connections.add(db);
+            return db;
         }
         return new Promise(resolve => {
             const checkPool = () => {
-                const conn = Array.from(this.connections)[0];
-                if (conn) {
-                    resolve(conn);
+                const db = Array.from(this.connections)[0];
+                if (db) {
+                    resolve(db);
                 } else {
                     setTimeout(checkPool, 100);
                 }
@@ -28,45 +30,34 @@ const CONNECTION_POOL = {
             checkPool();
         });
     },
-    release(conn) {
-        if (this.connections.has(conn)) {
-            this.connections.delete(conn);
+    release(db) {
+        if (this.connections.has(db)) {
+            this.connections.delete(db);
         }
     }
 };
 
-// Improved database initialization
+// Update initDB to initialize IndexedDB and return the db object
 async function initDB() {
-    if (dbConnection) return dbConnection;
-
     return new Promise((resolve, reject) => {
         const request = indexedDB.open(dbName, dbVersion);
 
-        request.onerror = (event) => reject(`Database error: ${event.target.error}`);
-
         request.onupgradeneeded = (event) => {
             const db = event.target.result;
-
-            // Create object stores
-            const gameStore = db.createObjectStore("games", { keyPath: "id", autoIncrement: true });
-            gameStore.createIndex("gameNameIndex", "gameName", { unique: true });
-            gameStore.createIndex("releaseYearIndex", "releaseYear", { unique: false });
-            gameStore.createIndex("genreIndex", "genre", { unique: false });
-
-            const movieStore = db.createObjectStore("movies", { keyPath: "id", autoIncrement: true });
-            movieStore.createIndex("movieNameIndex", "movieName", { unique: true });
-            movieStore.createIndex("releaseYearIndex", "releaseYear", { unique: false });
-            movieStore.createIndex("genreIndex", "genre", { unique: false });
-
-            const tvStore = db.createObjectStore("tv", { keyPath: "id", autoIncrement: true });
-            tvStore.createIndex("tvNameIndex", "tvName", { unique: true });
-            tvStore.createIndex("releaseYearIndex", "releaseYear", { unique: false });
-            tvStore.createIndex("genreIndex", "genre", { unique: false });
+            ['games', 'movies', 'tv'].forEach(store => {
+                if (!db.objectStoreNames.contains(store)) {
+                    db.createObjectStore(store, { keyPath: 'ID' });
+                }
+            });
         };
 
         request.onsuccess = (event) => {
-            dbConnection = event.target.result;
-            resolve(dbConnection);
+            const db = event.target.result;
+            resolve(db);
+        };
+
+        request.onerror = (event) => {
+            reject(event.target.error);
         };
     });
 }
@@ -208,130 +199,90 @@ const workerRequest = (type, payload) => {
 
 // Update database operations to use worker
 async function getGame(id) {
-    return withRetry(async () => {
-        const cachedItem = getCacheItem('games', id);
-        if (cachedItem) return cachedItem;
-
-        const result = await workerRequest('GET_ITEM', {
-            store: 'games',
-            id
-        });
-        if (result) setCacheItem('games', id, result);
-        return result;
-    });
+    const game = cache.games.get(id);
+    if (!game) {
+        console.warn(`Game with ID ${id} not found in cache`);
+        return null;
+    }
+    return game;
 }
 
 // Get movie by ID
 async function getMovie(id) {
-    return withRetry(async () => {
-        const cachedItem = getCacheItem('movies', id);
-        if (cachedItem) return cachedItem;
-
-        const db = await initDB();
-        return new Promise((resolve, reject) => {
-            const transaction = db.transaction(["movies"], "readonly");
-            const store = transaction.objectStore("movies");
-            const request = store.get(id);
-
-            request.onsuccess = () => {
-                const result = request.result;
-                setCacheItem('movies', id, result);
-                resolve(result);
-            };
-            request.onerror = () => reject(request.error);
-        });
-    });
+    const movie = cache.movies.get(id);
+    if (!movie) {
+        console.warn(`Movie with ID ${id} not found in cache`);
+        return null;
+    }
+    return movie;
 }
 
 // Get TV show by ID
 async function getTVShow(id) {
-    return withRetry(async () => {
-        const cachedItem = getCacheItem('tv', id);
-        if (cachedItem) return cachedItem;
-
-        const db = await initDB();
-        return new Promise((resolve, reject) => {
-            const transaction = db.transaction(["tv"], "readonly");
-            const store = transaction.objectStore("tv");
-            const request = store.get(id);
-
-            request.onsuccess = () => {
-                const result = request.result;
-                setCacheItem('tv', id, result);
-                resolve(result);
-            };
-            request.onerror = () => reject(request.error);
-        });
-    });
+    const tvShow = cache.tv.get(id);
+    if (!tvShow) {
+        console.warn(`TV show with ID ${id} not found in cache`);
+        return null;
+    }
+    return tvShow;
 }
 
 // Function to get all games
-export const getAllGames = () => {
-    return workerRequest('GET_ALL', { store: 'games' });
+export const getAllGames = async () => {
+    const response = await fetch('/videogames.json');
+    if (!response.ok) {
+        console.error('Failed to fetch games data');
+        return [];
+    }
+    const data = await response.json();
+    console.log('Fetched games:', data);
+    return data;
 };
 
 // Function to get all movies
 export const getAllMovies = async () => {
-    const db = await initDB();
-    return new Promise((resolve, reject) => {
-        const transaction = db.transaction(['movies'], 'readonly');
-        const store = transaction.objectStore('movies');
-        const request = store.getAll();
-
-        request.onsuccess = () => {
-            // Batch cache all items
-            request.result.forEach(movie => {
-                setCacheItem('movies', movie.id, movie);
-            });
-            resolve(request.result);
-        };
-        request.onerror = () => reject(request.error);
-    });
+    const response = await fetch('/movies.json');
+    if (!response.ok) {
+        console.error('Failed to fetch movies data');
+        return [];
+    }
+    const data = await response.json();
+    console.log('Fetched movies:', data);
+    return data;
 };
 
 // Function to get all TV shows
 export const getAllTVShows = async () => {
-    const db = await initDB();
-    return new Promise((resolve, reject) => {
-        const transaction = db.transaction(['tv'], 'readonly');
-        const store = transaction.objectStore('tv');
-        const request = store.getAll();
-
-        request.onsuccess = () => {
-            // Batch cache all items
-            request.result.forEach(tvShow => {
-                setCacheItem('tv', tvShow.id, tvShow);
-            });
-            resolve(request.result);
-        };
-        request.onerror = () => reject(request.error);
-    });
+    const response = await fetch('/tvshows.json');
+    if (!response.ok) {
+        console.error('Failed to fetch TV shows data');
+        return [];
+    }
+    const data = await response.json();
+    console.log('Fetched TV shows:', data);
+    return data;
 };
 
-// Populate DB
+// Ensure populateDB acquires and releases the db connection properly
 async function populateDB() {
-    const db = await initDB();
+    const db = await CONNECTION_POOL.acquire();
+    try {
+        const gamesResponse = await fetch('/videogames.json');
+        const gamesData = await gamesResponse.json();
+        await batchAdd('games', gamesData);
 
-    const populateStore = (storeName, jsonFile) => {
-        return fetch(jsonFile)
-            .then(response => response.json())
-            .then(data => {
-                const transaction = db.transaction([storeName], "readwrite");
-                const store = transaction.objectStore(storeName);
-                store.clear();
-                data.forEach(item => store.add(item));
-                return new Promise((resolve, reject) => {
-                    transaction.oncomplete = () => resolve();
-                    transaction.onerror = () => reject(transaction.error);
-                });
-            });
-    };
+        const moviesResponse = await fetch('/movies.json');
+        const moviesData = await moviesResponse.json();
+        await batchAdd('movies', moviesData);
 
-    await Promise.all([
-        populateStore("games", "games.json"),
-        populateStore("movies", "movies.json"),
-        populateStore("tv", "tv.json"),
-    ]);
+        const tvShowsResponse = await fetch('/tvshows.json');
+        const tvShowsData = await tvShowsResponse.json();
+        await batchAdd('tv', tvShowsData);
+    } catch (error) {
+        console.error('Error populating DB:', error);
+    } finally {
+        CONNECTION_POOL.release(db);
+    }
 }
 
 // Add batch operations support
@@ -418,6 +369,30 @@ async function batchGet(storeName, ids) {
         CONNECTION_POOL.release(db);
     }
 }
+
+// Update getItemById to fetch data from public folder
+async function getItemById(category, id) {
+    let response;
+    if (category === 'movie') {
+        response = await fetch('/movies.json');
+    } else if (category === 'tv') {
+        response = await fetch('/tvshows.json');
+    } else if (category === 'game') {
+        response = await fetch('/videogames.json');
+    } else {
+        return null;
+    }
+
+    if (!response.ok) {
+        console.error(`Failed to fetch ${category} data`);
+        return null;
+    }
+
+    const items = await response.json();
+    return items.find(item => item.ID === id);
+}
+
+export { getItemById };
 
 export {
     initDB,

@@ -1,0 +1,2557 @@
+[
+    {
+        "ID": 1,
+        "Name": "Ratched",
+        "ReleaseYear": "2020",
+        "Genres": "Mystery, Drama",
+        "Description": "A twisted mind navigates a world cloaked in control. Secrets seep through the cracks of a sterile facade. A nurse\u2019s ambition meets unsettling morality in a hospital. Vibrant colors and vintage style create a haunting atmosphere. Madness unfolds as hidden stories unravel in care's embrace."
+    },
+    {
+        "ID": 2,
+        "Name": "X-Men",
+        "ReleaseYear": "1992",
+        "Genres": "Kids, Sci-Fi & Fantasy",
+        "Description": "A realm of difference, shadows clash in bright colors. Mutants navigate a world suspicious of their existence and gifts. Unity among the misfits challenges societal norms and fears. A timeless struggle between acceptance and hostility unfolds vividly. Classic comic heroes battle for equality while learning together."
+    },
+    {
+        "ID": 3,
+        "Name": "Penny Dreadful",
+        "ReleaseYear": "2014",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "In shadows linger tales of woe and dread. A tapestry woven from classic literary threads. The hunt for lost souls draws diverse figures together. A melancholy actress grapples with her haunting lineage. Dark Victorian streets echo with supernatural encounters and tragedy."
+    },
+    {
+        "ID": 4,
+        "Name": "Bates Motel",
+        "ReleaseYear": "2013",
+        "Genres": "Drama, Crime",
+        "Description": "A shadowy place where secrets linger in silence. A fractured relationship between mother and son unfolds ominously. Hotel guests become unwitting players in twisted games. A troubled youth grapples with his dark legacy and fate. This neo-noir drama delves into psychological horror and suspense."
+    },
+    {
+        "ID": 5,
+        "Name": "9-1-1: Lone Star",
+        "ReleaseYear": "2020",
+        "Genres": "Drama, Action & Adventure",
+        "Description": "A tale of everyday heroes facing unexpected chaos unfolds. Fire and rescue teams navigate the urban landscape together. Lone individuals become pillars of strength in crisis situations. One man's past shapes his role among new allies. A Texan backdrop highlights diverse characters and thrilling rescues."
+    },
+    {
+        "ID": 6,
+        "Name": "Sh\u014dgun",
+        "ReleaseYear": "2024",
+        "Genres": "Drama, War & Politics",
+        "Description": "A clash of cultures shapes a nation's fate. Loyalty and betrayal dance in a feudal landscape. A foreigner navigates an ancient world of power. Shadows of samurai rise against imperial ambitions and dreams. Intrigue unfolds within the walls of a war-torn Japan."
+    },
+    {
+        "ID": 7,
+        "Name": "Raised by Wolves",
+        "ReleaseYear": "2020",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "In a future where survival is redefined through belief. A maternal figure navigates a harsh, desolate landscape. AI companions pose moral dilemmas amidst human complexity. Two factions clash over faith and technology's influence. Creatures born from conflict challenge the essence of parenthood."
+    },
+    {
+        "ID": 8,
+        "Name": "Drawn Together",
+        "ReleaseYear": "2004",
+        "Genres": "Animation, Comedy",
+        "Description": "A unique blend of animated caricatures and outrageous humor unfolds. Characters mirror archetypes from television\u2019s diverse narrative landscape. Unusual scenarios challenge norms of friendship and rivalry alike. Reality blurs in a world of chaotic, comedic sketches. A reality show for cartoon creatures showcases their wild interactions."
+    },
+    {
+        "ID": 9,
+        "Name": "Mr. Bean",
+        "ReleaseYear": "1990",
+        "Genres": "Comedy, Family",
+        "Description": "A man navigates life with quirky misunderstandings and antics. His expressions often convey more than words ever could. Cowardly misfits find themselves in sticky, hilarious situations. A signature mini vehicle takes center stage in his chaos. An iconic character entertains through silent humor and childlike curiosity."
+    },
+    {
+        "ID": 10,
+        "Name": "Blindspot",
+        "ReleaseYear": "2015",
+        "Genres": "Crime, Drama",
+        "Description": "A puzzle unfolds with each reveal of truth. Unexplained markings lead to a hidden identity\u2019s discovery. A special task force navigates webs of crime and deceit. Focus on a woman, mysteriously appearing without memories. Connections deepen as secrets intertwine with explosive revelations."
+    },
+    {
+        "ID": 11,
+        "Name": "Haikyu!!",
+        "ReleaseYear": "2014",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "A sport brings rivals together in unexpected ways. Young athletes dream of flying high above the court. A journey of teamwork unfolds through intense matches and rivalries. Animated with vibrant colors, it's filled with dynamic action sequences. A short player proves height isn't the only key to victory."
+    },
+    {
+        "ID": 12,
+        "Name": "How to Get Away with Murder",
+        "ReleaseYear": "2014",
+        "Genres": "Crime, Drama",
+        "Description": "A game of shadows where morality is questioned. A young teacher guides minds while hiding dark secrets. Legal battles intertwine with personal lives facing dire consequences. Relationships strain as trust falters amidst tangled webs of deceit. The protagonist's students learn the cost of ambition and loyalty."
+    },
+    {
+        "ID": 13,
+        "Name": "Lost",
+        "ReleaseYear": "2004",
+        "Genres": "Mystery, Action & Adventure",
+        "Description": "An unexpected journey leads to an enigmatic island. Survival tests humanity amidst hidden truths and fractured pasts. A diverse group grapples with fate and choice. Time bends as history intertwines with supernatural elements. Individuals must confront their own demons to escape."
+    },
+    {
+        "ID": 14,
+        "Name": "Rome",
+        "ReleaseYear": "2005",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "A powerful empire teeters on the brink of collapse. Rival factions scheme for control of the city-state. Soldiers tread the fine line between loyalty and betrayal. An ambitious general and a cunning politician vie for dominance. The grandeur of ancient civilization heightens the drama of ambition."
+    },
+    {
+        "ID": 15,
+        "Name": "DC's Legends of Tomorrow",
+        "ReleaseYear": "2016",
+        "Genres": "Action & Adventure, Sci-Fi & Fantasy",
+        "Description": "Time is fluid, yet history remains at risk. A motley crew ventures across eras, united by fate. Their leader is a time-hopping archer from the past. Expect quirky dynamics and unexpected alliances in each leap. Superheroics blend with humor as they battle time-traveling foes."
+    },
+    {
+        "ID": 16,
+        "Name": "La Brea",
+        "ReleaseYear": "2021",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "In a city, the past and present collide unexpectedly. Strange phenomena emerge as time bends in unusual ways. A vast chasm reveals secrets buried beneath the surface. Families are tested as they seek to reunite amidst chaos. Survival hinges on understanding the forces reshape their lives."
+    },
+    {
+        "ID": 17,
+        "Name": "Bones",
+        "ReleaseYear": "2005",
+        "Genres": "Crime, Drama",
+        "Description": "In a realm where science meets the darkness of crime, An unlikely duo uncovers truths hidden beneath surface layers, Forensic puzzles unravel the tales of the departed, A brilliant anthropologist collaborates with a stubborn investigator, Their journey intertwines logic, humor, and unbreakable bonds amidst chaos."
+    },
+    {
+        "ID": 18,
+        "Name": "Locked Up",
+        "ReleaseYear": "2015",
+        "Genres": "Drama, Crime",
+        "Description": "In a confined space, stories unfold behind bars. Echoes of past actions linger, shaping present realities. Female bonds form amidst betrayal and survival instincts. A gritty atmosphere explores justice and moral ambiguity deeply. Tensions rise as power dynamics shift among imprisoned lives."
+    },
+    {
+        "ID": 19,
+        "Name": "The Wheel of Time",
+        "ReleaseYear": "2021",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "A cyclical journey weaves through time and fate. A hidden power awakens within an unlikely hero. Ancient prophecies shape destinies across multiple realms and lands. A battle between light and shadow unfolds among allies. A richly crafted world with intricate characters and lore."
+    },
+    {
+        "ID": 20,
+        "Name": "Killing Eve",
+        "ReleaseYear": "2018",
+        "Genres": "Crime, Drama",
+        "Description": "A cat-and-mouse chase across continents unfolds unexpectedly. A femme fatale dances gracefully through shadows and intrigue. A clandestine relationship blurs boundaries of love and obsession. Two women, a spy and an assassin, redefine power dynamics. Witty dialogue and stylish visuals elevate this thrilling story."
+    },
+    {
+        "ID": 21,
+        "Name": "Game of Thrones",
+        "ReleaseYear": "2011",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "In a land of ice and fire, ambitions clash frequently. Royal blood intertwines with ancient legends and harsh winters. A quest for a throne leads to betrayal and loyalty. Complex characters face moral dilemmas in a brutal power struggle. Dragons soar above while kingdoms vie for supremacy in Westeros."
+    },
+    {
+        "ID": 22,
+        "Name": "Marvel's The Defenders",
+        "ReleaseYear": "2017",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "A city under shadows hides many a secret. Unlikely allies rise to combat a greater threat. Strength and resilience forge bonds between fractured souls. Their contrasting skills unite against a common adversary. Heroes in masks light up a gritty urban landscape."
+    },
+    {
+        "ID": 23,
+        "Name": "The Falcon and the Winter Soldier",
+        "ReleaseYear": "2021",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "Two heroes navigate a world of shifting alliances. Bonds forged in battle face a deepening crisis. A legacy of a shield and a fallen star. Unlikely partners confront past scars in a new mission. Rebuilding identity while under the weight of expectation."
+    },
+    {
+        "ID": 24,
+        "Name": "True Beauty",
+        "ReleaseYear": "2020",
+        "Genres": "Comedy, Drama",
+        "Description": "Behind the screen, appearances mask deeper truths and struggles. A teenage girl navigates high school with mixed identities cleverly concealed. Mirror reflections reveal more than just surface-level beauty issues. Romance blossoms amidst self-discovery and online personas intersecting lives. Seek authenticity in a world obsessed with social media perceptions."
+    },
+    {
+        "ID": 25,
+        "Name": "Malcolm in the Middle",
+        "ReleaseYear": "2000",
+        "Genres": "Family, Comedy",
+        "Description": "A chaotic household juggles laughter and daily chaos. An unwitting hero navigates the trials of adolescence. A unique perspective challenges traditional family storytelling norms. Four brothers and their antics create endless comedic scenarios. A teen named Malcolm grapples with genius amid family madness."
+    },
+    {
+        "ID": 26,
+        "Name": "Gossip Girl",
+        "ReleaseYear": "2007",
+        "Genres": "Drama, Mystery",
+        "Description": "Whispers of the wealthy echo in the dark city. Secrets unravel in a world of privilege and power. A masked figure documents the lives of elite youth. Friendship, betrayal, and romance weave through upscale Manhattan. A group of young socialites navigates love and scandal."
+    },
+    {
+        "ID": 27,
+        "Name": "My Hero Academia",
+        "ReleaseYear": "2016",
+        "Genres": "Action & Adventure, Animation",
+        "Description": "In a world where power defines the worth of life. Young ones aspire to wear capes and masks boldly. A mentor seeks to instill courage in a chosen few. Vibrant art complements the clash of ideals and struggles. A boy inherits a legacy destined to reshape heroism."
+    },
+    {
+        "ID": 28,
+        "Name": "Over the Garden Wall",
+        "ReleaseYear": "2014",
+        "Genres": "Mystery, Sci-Fi & Fantasy",
+        "Description": "Two brothers navigate an unfamiliar wilderness of shadows. Enigmatic creatures lurk, revealing secrets of the forest. A wise old man guides them through strange encounters. A charming blend of animation and folklore unfolds fantastical tales. Discover the journey home amid quirky friends and mysteries."
+    },
+    {
+        "ID": 29,
+        "Name": "Station 19",
+        "ReleaseYear": "2018",
+        "Genres": "Drama, Action & Adventure",
+        "Description": "A safe haven amidst chaos can shift unexpectedly. Fierce camaraderie binds those who battle flames together. Lives intertwine as dilemmas test both heart and courage. A diverse team faces personal struggles while saving lives. Firefighters brave the heat, with love and loss intertwined."
+    },
+    {
+        "ID": 30,
+        "Name": "Sherlock",
+        "ReleaseYear": "2010",
+        "Genres": "Crime, Drama",
+        "Description": "An intellectual puzzle solver navigates the enigmatic streets. The collaboration between a master and his loyal companion intrigues. Dark mysteries unfold in a contemporary Victorian backdrop settings. Quick-cut editing mirrors the rapid thought processes of protagonists. Deductive reasoning leads to shocking revelations and suspenseful confrontations."
+    },
+    {
+        "ID": 31,
+        "Name": "Parasyte -the maxim-",
+        "ReleaseYear": "2014",
+        "Genres": "Animation, Drama",
+        "Description": "Invasion lurks beneath the surface of existence. A battle of minds entwined in a silent war. Humanity's frailty clashes with alien evolution's insatiable hunger. A young man's struggle unveils unsettling truths of identity. Visually striking animation enhances the horror of transformation."
+    },
+    {
+        "ID": 32,
+        "Name": "She-Hulk: Attorney at Law",
+        "ReleaseYear": "2022",
+        "Genres": "Comedy, Sci-Fi & Fantasy",
+        "Description": "A green giantess finds balance in chaotic existence. Law and laughter collide in a unique narrative style. Combatting stereotypes, she embraces her dual identity and power. Fourth-wall breaking humor enhances her legal battles and misadventures. A confident cousin helps her navigate courtroom drama and superpowers."
+    },
+    {
+        "ID": 33,
+        "Name": "We Bare Bears",
+        "ReleaseYear": "2015",
+        "Genres": "Family, Comedy",
+        "Description": "Three unlikely friends navigate urban life together daily. Their bond is tested through humorous, chaotic adventures together. Each character embodies a unique and endearing personality trait. The animation style adds a simple yet charming appeal. Grizzly, Panda, and Ice Bear are brothers living together."
+    },
+    {
+        "ID": 34,
+        "Name": "The Purge",
+        "ReleaseYear": "2018",
+        "Genres": "Mystery, Crime",
+        "Description": "A night of chaos leads to moral dilemmas and choices. Social order crumbles when laws are suspended for twelve hours. Citizens are torn between survival instincts and ethical beliefs. A family\u2019s struggle reveals deeper societal flaws and threats. Masked figures stalk the streets as fear reigns supreme."
+    },
+    {
+        "ID": 35,
+        "Name": "Sweet Tooth",
+        "ReleaseYear": "2021",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "In a world changed by a catastrophic event. Nature merges with innocence in unusual forms. A journey unfolds through a harsh, desolate landscape. A hybrid child seeks a connection to humanity. Guardians and threats intertwine in a quest for survival."
+    },
+    {
+        "ID": 36,
+        "Name": "It's Okay to Not Be Okay",
+        "ReleaseYear": "2020",
+        "Genres": "Drama, Comedy",
+        "Description": "In a world colored by mental turmoil and laughter. Two souls navigate through shared pain and healing journeys. Artistic visuals enhance their struggle between joy and sorrow. Quirky characters bloom in relatable yet profound life moments. Accepting reality, they discover that vulnerability holds unexpected strength."
+    },
+    {
+        "ID": 37,
+        "Name": "Star Trek",
+        "ReleaseYear": "1966",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "Imagine a vessel exploring the cosmic unknown expanses. A diverse crew navigates ethical dilemmas and alien cultures. Boldly facing confrontation, they seek peace through dialogue and understanding. One captain's iconic phrase often defines the journey forward. Timeless visuals and allegories intertwine in the sci-fi series."
+    },
+    {
+        "ID": 38,
+        "Name": "Only Murders in the Building",
+        "ReleaseYear": "2021",
+        "Genres": "Comedy, Mystery",
+        "Description": "An ensemble of unlikely sleuths unite for whimsy. Shared isolation breeds curiosity amidst urban dwellers' lives. A lively tapestry of humor weaves through dark mysteries. True crime podcasts inspire a quest for the truth. Three neighbors hunt a killer in their elegant abode."
+    },
+    {
+        "ID": 39,
+        "Name": "The Walking Dead: World Beyond",
+        "ReleaseYear": "2020",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "In a world overrun by wandering adversaries, survival prevails. Youthful explorers venture into the unknown for their future. Family ties and loyalty are tested amidst chaos and decay. A new generation navigates challenges beyond the familiar walls. Their journey unveils the struggle for hope and identity."
+    },
+    {
+        "ID": 40,
+        "Name": "Charmed",
+        "ReleaseYear": "1998",
+        "Genres": "Comedy, Drama",
+        "Description": "Three sisters share a secret lineage of power. Their bond faces challenges from foes both dark and light. Modern life blends with supernatural elements in a stylish way. One sister's strength contrasts with another's doubt and desire. Together, they navigate magic, love, and sisterhood in harmony."
+    },
+    {
+        "ID": 41,
+        "Name": "Taboo",
+        "ReleaseYear": "2017",
+        "Genres": "Drama, Mystery",
+        "Description": "A man returns cloaked in shadows and secrets. Uneasy alliances weave through power, greed, and legacy. Unraveling family ties reveals dark pasts and hidden desires. An elusive anti-hero challenges morality in a Victorian setting. Themes of loyalty and betrayal propel the gripping narrative forward."
+    },
+    {
+        "ID": 42,
+        "Name": "Bleach",
+        "ReleaseYear": "2004",
+        "Genres": "Action & Adventure, Animation",
+        "Description": "In a world where shadows lurk and darkness reigns. A young warrior grapples with his newfound responsibilities and powers. Allies and enemies blur amidst a vibrant palette of colors. A unique blend of spirits and physical journeys unfolds. The fight against hollows reveals deep bonds and self-discovery."
+    },
+    {
+        "ID": 43,
+        "Name": "The Originals",
+        "ReleaseYear": "2013",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "A pact forged in shadows holds ancient secrets tight. Sibling rivalry breeds chaos rooted in dark legacies. A struggle for power unfolds amid supernatural politics. Bloodlines and betrayals intertwine in a mystical city. An immortal family fights their past in New Orleans."
+    },
+    {
+        "ID": 44,
+        "Name": "The Haunting of Bly Manor",
+        "ReleaseYear": "2020",
+        "Genres": "Mystery, Drama",
+        "Description": "A place where echoes of the past linger restlessly. Shadows of love intertwine with loss and memory\u2019s weight. A gathering of troubled souls amidst a haunting legacy. A unique blend of romance, horror, and spectral intrigue unfolds. A governess confronts spirits while seeking a lost heart."
+    },
+    {
+        "ID": 45,
+        "Name": "Manifest",
+        "ReleaseYear": "2018",
+        "Genres": "Sci-Fi & Fantasy, Mystery",
+        "Description": "A strange occurrence alters the course of lives. Time loops and cryptic messages intertwine reality and fantasy. A group seeks answers to an inexplicable phenomenon. Flight numbers and lost years weave a tangled narrative. Discovering connections leads to an unexpected journey of fate."
+    },
+    {
+        "ID": 46,
+        "Name": "Tokyo Ghoul",
+        "ReleaseYear": "2014",
+        "Genres": "Animation, Drama",
+        "Description": "In a city where shadows lurk and hunger reigns. A young man struggles with his dual existence in darkness. A mask hides the truth, concealing his conflicted identity. Flesh and humanity collide in a tale of survival. Haunting art and existential themes define this chilling anime."
+    },
+    {
+        "ID": 47,
+        "Name": "White Collar",
+        "ReleaseYear": "2009",
+        "Genres": "Crime, Drama",
+        "Description": "In a world where deception wears a tailored suit. A mastermind orchestrates his escape from the law's grasp. An unconventional alliance forms to chase elusive criminals. A mix of artful heists and clever mind games ensues. Under the watchful eye of a relentless FBI agent."
+    },
+    {
+        "ID": 48,
+        "Name": "Love Is in the Air",
+        "ReleaseYear": "2020",
+        "Genres": "Drama, Comedy",
+        "Description": "Whispers of affection linger in a quaint community. A charming yet chaotic dance through relationships unfolds slowly. Vibrant colors enhance comedic moments amid emotional turmoil. A bakery becomes a backdrop for intertwining love stories. Characters evolve while navigating heartache and sweet surprises together."
+    },
+    {
+        "ID": 49,
+        "Name": "Grimm",
+        "ReleaseYear": "2011",
+        "Genres": "Drama, Mystery",
+        "Description": "In a world where shadows mask hidden truths. A detective grapples with dual legacies of lore. Creatures from fables emerge in modern society's chaos. He must balance humanity with a lineage of hunters. Inspired by fairy tales, it explores moral complexities of good versus evil."
+    },
+    {
+        "ID": 50,
+        "Name": "Teresa",
+        "ReleaseYear": "2010",
+        "Genres": "Soap, Drama",
+        "Description": "Behind closed doors, emotions simmer and clash endlessly. A world of intertwined lives grapples with longing and betrayal. A vibrant canvas reflects both passion and despair's shadows. Relationships fracture as loyalty battles with desire in chaos. One woman's journey reveals secrets that redefine love and family."
+    },
+    {
+        "ID": 51,
+        "Name": "Dr. STONE",
+        "ReleaseYear": "2019",
+        "Genres": "Action & Adventure, Animation",
+        "Description": "A world reborn after a long, strange sleep. Knowledge is the key to survival and revival. A genius youth seeks to advance civilization anew. Science battles raw nature with extraordinary creations and ideas. Two contrasting minds unite to face ancient challenges, together."
+    },
+    {
+        "ID": 52,
+        "Name": "The Umbrella Academy",
+        "ReleaseYear": "2019",
+        "Genres": "Action & Adventure, Sci-Fi & Fantasy",
+        "Description": "A gathering of unique individuals navigates a peculiar world. Their childhood was far from ordinary or conventional. Secrets and past traumas shape their complex relationships. A time-traveling mission leads to an apocalyptic showdown. A family of misfits with extraordinary abilities unites against fate."
+    },
+    {
+        "ID": 53,
+        "Name": "Star Trek: Picard",
+        "ReleaseYear": "2020",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "An aging hero reflects on battles of old friends. The fabric of space-time weaves tales of lost futures. Legacy and redemption entwine across starry horizons anew. A saga unfolds with familiar faces and unexpected alliances. Resilience shines as a former captain faces dark memories."
+    },
+    {
+        "ID": 54,
+        "Name": "Naruto Shipp\u016bden",
+        "ReleaseYear": "2007",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "A journey unfolds in a world filled with energy. Bonds of friendship and rivalry shape destinies unseen. A boy seeks acknowledgment under a hidden, wild mask. A village faces threats from dark forces and ancient relics. Expect vivid animation showcasing ninja battles and heartfelt growth."
+    },
+    {
+        "ID": 55,
+        "Name": "The Rain",
+        "ReleaseYear": "2018",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "Dark clouds hover over a world reclaimed by nature's wrath. Survival prompts unlikely alliances among fractured family dynamics. A deadly shower transforms everyday life into a struggle. The quest for answers leads to hidden laboratory secrets. An apocalyptic landscape tests resilience in the face of despair."
+    },
+    {
+        "ID": 56,
+        "Name": "Without Breasts There Is No Paradise",
+        "ReleaseYear": "2008",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "A stark journey reveals the essence of survival's cost. Concealed identities clash within a vivid urban landscape. Relationships twist amidst looming shadows and desperate choices. A chorus of voices calls for liberation and sacrifice. Cultural tensions drive a tale of courage and femininity."
+    },
+    {
+        "ID": 57,
+        "Name": "The Expanse",
+        "ReleaseYear": "2015",
+        "Genres": "Drama, Mystery",
+        "Description": "In the void, tensions between worlds simmer and grow. Humanity's hubris leads to cosmic repercussions and conflict. A ship navigates through intrigue with a ragtag crew. A detective unravels mysteries amid space politics and war. Discovery of an ancient force reshapes the universe's destiny."
+    },
+    {
+        "ID": 58,
+        "Name": "Locke & Key",
+        "ReleaseYear": "2020",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "Ancient relics hold secrets within their crafted forms. Family ties intertwine with mystical forces and shadows. A trio of siblings seeks answers in a haunted house. Doors unlock realms, revealing untold possibilities and dangers. Keys possess powers that transform and bind their users."
+    },
+    {
+        "ID": 59,
+        "Name": "The Mandalorian",
+        "ReleaseYear": "2019",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "In a galaxy far, choices shape destiny among stars. A lone warrior dons armor, concealing more than skin. An unexpected companion stirs deeper connections within solitude. Bounty hunting blurs lines of morality and loyalty profoundly. The story unfolds amidst ancient lore and vibrant alien worlds."
+    },
+    {
+        "ID": 60,
+        "Name": "Arcane",
+        "ReleaseYear": "2021",
+        "Genres": "Animation, Sci-Fi & Fantasy",
+        "Description": "In a world split between progress and tradition's embrace. Rivals rise amid a city pulsing with power struggles. Two sisters navigate the complex ties of family loyalty. Vibrant visuals bring to life a story of duality. This adaptation explores characters from a popular video game universe."
+    },
+    {
+        "ID": 61,
+        "Name": "Kakegurui",
+        "ReleaseYear": "2017",
+        "Genres": "Animation, Mystery",
+        "Description": "A realm where fortune sways the heart and mind. High stakes games disguise hidden motivations and desires. A school thrives on the thrill of calculated risk. Characters reveal their true selves through gambles and deception. Exaggerated art style enhances the tension of their battles."
+    },
+    {
+        "ID": 62,
+        "Name": "Star vs. the Forces of Evil",
+        "ReleaseYear": "2015",
+        "Genres": "Action & Adventure, Animation",
+        "Description": "In a realm where kingdoms clash and magic reigns. A young heroine wields a powerful tool with flair. Friends and foes dance in a colorful tapestry. Interdimensional travels spark adventures and unexpected alliances emerge. A girl with a star-shaped wand battles evil forces relentlessly."
+    },
+    {
+        "ID": 63,
+        "Name": "Battlestar Galactica",
+        "ReleaseYear": "2004",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "In the vast expanse, survival becomes the ultimate challenge. Humanity's creations turn against them in existential conflict. A journey across stars reveals the search for home. Complex characters grapple with destiny, faith, and betrayal themes. After a long flight, an ancient prophecy starts to unfold."
+    },
+    {
+        "ID": 64,
+        "Name": "Black Mirror",
+        "ReleaseYear": "2011",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "Mirrors reflect truths not easily seen or accepted. Technology intertwines with human nature in unsettling ways. Choices made here resonate through familiar yet distorted lives. Each episode unveils a standalone tale of dark possibilities. Observe the chilling repercussions of our modern obsessions with screens."
+    },
+    {
+        "ID": 65,
+        "Name": "Marvel's Agent Carter",
+        "ReleaseYear": "2015",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "In a world of heroes, shadows play their part. A woman's resolve defies the norms of her time. Secrets unfold amidst the bustle of post-war America. Loyalty and espionage intertwine for a grand purpose. A familiar face navigates the challenges of a new role."
+    },
+    {
+        "ID": 66,
+        "Name": "Pretty Little Liars",
+        "ReleaseYear": "2010",
+        "Genres": "Drama, Mystery",
+        "Description": "In a web of secrets, trust is a luxury. Four friends unite against a hidden foe from shadows. Digital messages escalate tension, revealing dark truths lurking. Deceit and disguise dance among the intertwined lives they lead. A haunting figure toys with their fears, leaving them restless."
+    },
+    {
+        "ID": 67,
+        "Name": "The Mentalist",
+        "ReleaseYear": "2008",
+        "Genres": "Crime, Drama",
+        "Description": "A keen observer navigates the web of deception. A gifted individual exploits subtleties within human behavior. A red-haired woman symbolizes both creativity and danger. A team of investigators relies on unorthodox methods to solve cases. The protagonist uses psychic tricks to outsmart criminals and discovers inner truths."
+    },
+    {
+        "ID": 68,
+        "Name": "The Strain",
+        "ReleaseYear": "2014",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "In shadows, ancient fears awaken once more. A struggle unfolds against a rising tide of darkness. Science and folklore collide in a desperate fight. A team unites to confront an unseen, vampiric threat. In this chilling adaptation, survival hangs by a fragile thread."
+    },
+    {
+        "ID": 69,
+        "Name": "Wednesday",
+        "ReleaseYear": "2022",
+        "Genres": "Sci-Fi & Fantasy, Mystery",
+        "Description": "A timeless institution hosts peculiar young minds grappling with fate. Shadows dance through the halls where secrets often linger. A raven-haired girl questions norms in a quirky setting. Relationships blossom against a backdrop of mystery and family ties. A hunt for a legacy reveals chilling, dark truths."
+    },
+    {
+        "ID": 70,
+        "Name": "Fullmetal Alchemist: Brotherhood",
+        "ReleaseYear": "2009",
+        "Genres": "Action & Adventure, Animation",
+        "Description": "In a realm where metal and flesh intertwine, two brothers seek. The search for forbidden knowledge leads to deep conflicts. A journey filled with sacrifices and moral dilemmas unfolds. Transmutation circles and homunculi shape their chaotic path. Alchemical mastery and brotherly bonds drive a timeless adventure."
+    },
+    {
+        "ID": 71,
+        "Name": "Love, Victor",
+        "ReleaseYear": "2020",
+        "Genres": "Comedy, Drama",
+        "Description": "A journey of discovery leads to unexpected connections. Young hearts navigate the maze of love's complexities. Friendship and acceptance bloom amid personal trials and tribulations. A first-person narrative explores new boundaries in identity. A charming series mirrors its cinematic predecessor\u2019s heartfelt themes."
+    },
+    {
+        "ID": 72,
+        "Name": "InuYasha",
+        "ReleaseYear": "2000",
+        "Genres": "Animation, Sci-Fi & Fantasy",
+        "Description": "A half-breed traverses time, searching for resolution. A mystical jewel holds immense power, shrouded in conflict. Loyal companions join the quest against dark adversaries. A bold swordsman with dog-like features faces his fate. An iconic anime blends romance, adventure, and mythic battles vividly."
+    },
+    {
+        "ID": 73,
+        "Name": "Scream: The TV Series",
+        "ReleaseYear": "2015",
+        "Genres": "Drama, Crime",
+        "Description": "Whispers of fear echo in the shadows of youth. A masked figure haunts a tight-knit community's dark past. Secrets unravel amidst a digital age of connection. Friends become foes; trust is a dangerous game. A nod to horror classics wrapped in a cable network."
+    },
+    {
+        "ID": 74,
+        "Name": "Band of Brothers",
+        "ReleaseYear": "2001",
+        "Genres": "Drama, War & Politics",
+        "Description": "A tale woven through brotherhood in times of strife. Courage and sacrifices paint a vivid historical narrative. Bonds formed in chaos amidst the smoke and fire. A band stands united against the trials of war. Leadership, loss, and legacy echo through these soldiers' lives."
+    },
+    {
+        "ID": 75,
+        "Name": "One-Punch Man",
+        "ReleaseYear": "2015",
+        "Genres": "Animation, Comedy",
+        "Description": "A hero fights boredom in a chaotic world. Powerful foes crumble under a single blow's weight. A comedic twist on traditional superhero narratives unfolds here. His yellow jumpsuit and matching resolve become iconic mentions. The striking visuals and satire redefine expectations of the genre."
+    },
+    {
+        "ID": 76,
+        "Name": "Dragon Ball Z",
+        "ReleaseYear": "1989",
+        "Genres": "Animation, Sci-Fi & Fantasy",
+        "Description": "In a world where flying is more than a dream. A fierce battle between good and evil unfolds regularly. Colorful warriors harness energy to elevate their powers dramatically. A spiky-haired hero defends Earth from otherworldly threats persistently. Friends gather to push beyond their limits in epic clashes."
+    },
+    {
+        "ID": 77,
+        "Name": "Hunter x Hunter",
+        "ReleaseYear": "2011",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "In a world where dreams can lead to perilous quests, An enigmatic journey unfolds through battles and friendships formed, A young boy seeks his missing father with determination, Denizens harness extraordinary powers in a vibrant art style, An adventure series with deep lore and evolving characters awaits."
+    },
+    {
+        "ID": 78,
+        "Name": "Fate: The Winx Saga",
+        "ReleaseYear": "2021",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "A school where extraordinary abilities bloom under pressure. Secret pasts intertwine as friendships forge and fracture. An ancient rivalry resurfaces amidst hidden realms and magic. A young fire-wielder seeks identity beyond her origins. Enchantment meets drama in a vibrant reimagining of classic lore."
+    },
+    {
+        "ID": 79,
+        "Name": "Tulsa King",
+        "ReleaseYear": "2022",
+        "Genres": "Crime, Drama",
+        "Description": "A new life emerges far from familiar shadows. An unexpected leader confronts the challenges of loyalty. Westward migration involves ties to a bygone era. A former prisoner grapples with crime in uncharted territory. Gritty narratives unfold as old alliances clash with ambition."
+    },
+    {
+        "ID": 80,
+        "Name": "Homeland",
+        "ReleaseYear": "2011",
+        "Genres": "Drama, War & Politics",
+        "Description": "A nation\u2019s heart struggles in shadows of deception. Loyalty teeters between allies and unseen threats lurking. A returning warrior grapples with the weight of memories. A determined woman unravels secrets that could fracture everything. Political tensions arise from the entangled web of trust."
+    },
+    {
+        "ID": 81,
+        "Name": "The Seven Deadly Sins",
+        "ReleaseYear": "2014",
+        "Genres": "Action & Adventure, Animation",
+        "Description": "In a world where sins wear many faces, A band of unlikely heroes confronts their inner darkness, Ancient magic and fierce battles illuminate their path ahead, Each character embodies a distinct vice that shapes their journey, Bold animation style enhances the clash of fate and honor."
+    },
+    {
+        "ID": 82,
+        "Name": "Sabrina, the Teenage Witch",
+        "ReleaseYear": "1996",
+        "Genres": "Comedy, Family",
+        "Description": "In a realm of magic, high school moments unfold. A young girl grapples with her extraordinary dual existence. Feline companions offer wisdom and the occasional mischief. Wands, spells, and teenage angst blend into whimsical chaos. Familiar faces navigate love, friendship, and supernatural mishaps together."
+    },
+    {
+        "ID": 83,
+        "Name": "Prison Break",
+        "ReleaseYear": "2005",
+        "Genres": "Action & Adventure, Crime",
+        "Description": "A labyrinthine journey unfolds within cold stone walls. Loyalty and betrayal dance in a web of deceit. Ingenious plans germinate from the mind of a brother. Escape is itself a prisoner's dream, fraught with danger. A desperate bid for freedom fuels this intense action drama."
+    },
+    {
+        "ID": 84,
+        "Name": "House of the Dragon",
+        "ReleaseYear": "2022",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "Ancient legacies clash beneath the molten sky\u2019s gaze. Embers of ambition ignite fierce familial divides and struggles. Fire-breathing beasts soar where the crown seeks power. Targaryens weave destinies amid political games and betrayal. A prequel saga unfolds in a realm of dragons."
+    },
+    {
+        "ID": 85,
+        "Name": "That '70s Show",
+        "ReleaseYear": "1998",
+        "Genres": "Comedy, Family",
+        "Description": "A time capsule of vibrant bell-bottomed memories and laughter. Teenagers navigate the chaos of adolescence and family dynamics. A circle of friends share secrets in a basement haven. A quirky cast delivers iconic one-liners and relatable struggles. Nostalgic humor shines through 1970s culture in every episode."
+    },
+    {
+        "ID": 86,
+        "Name": "The Handmaid's Tale",
+        "ReleaseYear": "2017",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "A world divided by power and its absence exists. Women\u2019s roles are dictated by rigid societal structures. A red uniform signifies servitude and loss of freedom. One woman\u2019s resilience challenges oppressive norms and expectations. Based on a novel, this series explores dystopian themes vividly."
+    },
+    {
+        "ID": 87,
+        "Name": "Ghost Whisperer",
+        "ReleaseYear": "2005",
+        "Genres": "Sci-Fi & Fantasy, Mystery",
+        "Description": "Whispers linger where the living fear to tread. A bridge connects two realms, undetected and unseen. A woman hears what others do not comprehend. Resolving unfinished business brings solace for wandering souls. A gifted medium navigates between life, death, and love."
+    },
+    {
+        "ID": 88,
+        "Name": "Surviving Escobar - Alias JJ",
+        "ReleaseYear": "2017",
+        "Genres": "Drama, Crime",
+        "Description": "A shadow looms over a land steeped in crime. Tales of survival intermingle with the scent of danger. A young man seeks redemption amid chaos and notoriety. Loyalty and betrayal dance under the watchful eye of power. Escaping one's past proves perilous when memories haunt relentlessly."
+    },
+    {
+        "ID": 89,
+        "Name": "DARLING in the FRANXX",
+        "ReleaseYear": "2018",
+        "Genres": "Animation, Drama",
+        "Description": "In a world where youth battles against mechanical giants. Connections forged through shared struggles drive emotional growth and conflict. A mysterious organization manipulates both hearts and machines alike. Two pilots share a complex bond that shapes their fate. Explore vibrant visuals as characters search for identity and purpose."
+    },
+    {
+        "ID": 90,
+        "Name": "The Outsider",
+        "ReleaseYear": "2020",
+        "Genres": "Crime, Drama",
+        "Description": "A shadow lurks in the fringes of morality. Truth blurs when the known becomes inexplicably unknown. A detective grapples with a monstrous duality of existence. Small-town secrets amplify the chaos of a gruesome murder. Compelling adaptation explores human darkness and the supernatural."
+    },
+    {
+        "ID": 91,
+        "Name": "The Simpsons",
+        "ReleaseYear": "1989",
+        "Genres": "Family, Animation",
+        "Description": "A family navigates life's absurdities with humor and heart. Iconic yellow figures dwell in a fictional Midwestern town. They often visit a whimsical watering hole for escapades. A father dreams big, but his antics often miss. Animated satire showcases American culture through laughs and chaos."
+    },
+    {
+        "ID": 92,
+        "Name": "I am Betty, the Ugly one",
+        "ReleaseYear": "1999",
+        "Genres": "Soap, Comedy",
+        "Description": "In a world of glamour, perception distorts reality. A quirky outsider navigates high-stakes fashion battles. Unlikely friendships blossom amid corporate intrigue and rivalry. The protagonist's journey reveals beauty in uniqueness and authenticity. A humorous blend of soap opera and heartfelt comedy unfolds."
+    },
+    {
+        "ID": 93,
+        "Name": "Family Guy",
+        "ReleaseYear": "1999",
+        "Genres": "Animation, Comedy",
+        "Description": "In a town where absurdity reigns unchallenged and lively. Close-knit relatives navigate chaos with bizarre humor and antics. A quirky canine offers sage advice through witty banter. Animated mischief accompanies a family led by an inept dad. Satirical escapades explore societal quirks and pop culture references gallantly."
+    },
+    {
+        "ID": 94,
+        "Name": "American Gods",
+        "ReleaseYear": "2017",
+        "Genres": "Drama, Mystery",
+        "Description": "A clash unfolds between old and new beliefs. An enigmatic traveler journeys through a divided land. Mythical figures interact with contemporary human struggles. A lingering question arises: who truly holds the power? Visuals blend surreal artistry with gritty urban landscapes."
+    },
+    {
+        "ID": 95,
+        "Name": "Rascal Does Not Dream of Bunny Girl Senpai",
+        "ReleaseYear": "2018",
+        "Genres": "Animation, Comedy",
+        "Description": "A whimsical narrative dances between reality and perception. Adolescents face phenomena that manifest from deep insecurities. A young girl captivates, yet hides behind an intriguing facade. Time-bending dialogues explore emotional connections and fleeting moments. The fusion of romance, comedy, and fantastical misunderstandings captivates audiences."
+    },
+    {
+        "ID": 96,
+        "Name": "Vikings",
+        "ReleaseYear": "2013",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "A fierce journey across turbulent waters and lands awaits. Ancient lore intertwines with the brutal struggle for survival. A legendary explorer seeks fame beyond his homeland's shores. Clashing swords echo in the quest for power and honor. Complex family ties and betrayal shape the fate of warriors."
+    },
+    {
+        "ID": 97,
+        "Name": "The Good Place",
+        "ReleaseYear": "2016",
+        "Genres": "Sci-Fi & Fantasy, Comedy",
+        "Description": "A realm beyond earthly existence grapples with morality. Architectural wonders mask the truth of a utopian illusion. A group navigates afterlife dilemmas, seeking personal redemption. Quintessentially comedic, it balances deep philosophical questions and antics. An unlikely hero learns what it truly means to belong."
+    },
+    {
+        "ID": 98,
+        "Name": "Power",
+        "ReleaseYear": "2014",
+        "Genres": "Crime, Drama",
+        "Description": "A shadowy world where dual lives intertwine often. Choices made in the dark lead to consequences unveiled. A nightclub serves as a pivotal backdrop for intrigue. A quest for control juxtaposes loyalty and betrayal themes. Ghosts of the past haunt a central figure's ambition."
+    },
+    {
+        "ID": 99,
+        "Name": "Primal",
+        "ReleaseYear": "2019",
+        "Genres": "Action & Adventure, Animation",
+        "Description": "A fierce bond emerges between predator and prey. Survival in a world dominated by primal instincts unfolds. Ancient beings struggle against both nature and time itself. Distinctive art style breathes life into vivid animation. A caveman and dinosaur embark on an unlikely journey."
+    },
+    {
+        "ID": 100,
+        "Name": "iCarly",
+        "ReleaseYear": "2007",
+        "Genres": "Comedy, Kids",
+        "Description": "A digital realm where creativity sparks a following. Three friends navigate the ups and downs of fame. Quirky content and wild antics keep viewers engaged weekly. A web show emerges from a unique friendship in chaos. Teenage hosts explore the trials of adolescence and friendship."
+    },
+    {
+        "ID": 101,
+        "Name": "The Wire",
+        "ReleaseYear": "2002",
+        "Genres": "Crime, Drama",
+        "Description": "Urban shadows reveal complex webs of power and struggle. Institutions clash as humanity grapples with morality and survival. A cast of flawed characters tread the grayest paths. From corners to courtrooms, truth dances with manipulated lies. A gritty exploration of the drug trade\u2019s ripple effects."
+    },
+    {
+        "ID": 102,
+        "Name": "Alice in Borderland",
+        "ReleaseYear": "2020",
+        "Genres": "Drama, Mystery",
+        "Description": "A surreal game unfolds in a twisted reality. Players face dire consequences in life or death trials. Friendship and betrayal blur in a race for survival. A group navigates challenges guided by mysterious playing cards. The vivid visuals and tension create a captivating dystopian drama."
+    },
+    {
+        "ID": 103,
+        "Name": "Young Sheldon",
+        "ReleaseYear": "2017",
+        "Genres": "Comedy, Family",
+        "Description": "A genius navigates a world of ordinary lives. Family dynamics clash with intellectual aspirations in Texas. A youthful protagonist seeks knowledge amidst humorous encounters. Iconic characters from a previous show return in new form. The tale unfolds in a nostalgic, sitcom-style backdrop."
+    },
+    {
+        "ID": 104,
+        "Name": "NCIS: Los Angeles",
+        "ReleaseYear": "2009",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "Under the California sun, secrets weave through shadows. Agents operate in a world of hidden agendas and trust. A diverse team tackles crimes with tactical precision and camaraderie. One character often dons a distinct bald cap for focus. In this spin-off series, naval investigations collide with Los Angeles intrigue."
+    },
+    {
+        "ID": 105,
+        "Name": "SpongeBob SquarePants",
+        "ReleaseYear": "1999",
+        "Genres": "Animation, Comedy",
+        "Description": "Beneath the waves, laughter fills an underwater kingdom. Quirky friends embark on bizarre, everyday adventures together. A porous protagonist dreams big while flipping burgers daily. Bright colors and fluid animation bring joy to viewers. Jellyfishing, Krabby Patties, and a friendship with a star."
+    },
+    {
+        "ID": 106,
+        "Name": "Orphan Black",
+        "ReleaseYear": "2013",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "A journey through fractured identities and hidden truths unfolds. Clones navigate the complexities of family and existence. A web of deception ties science and ethics together. Watch a masterful performance by a singular lead actress. Discover the impact of genetic manipulation on human lives."
+    },
+    {
+        "ID": 107,
+        "Name": "The X-Files",
+        "ReleaseYear": "1993",
+        "Genres": "Crime, Drama",
+        "Description": "Mysteries lurk in the shadows of everyday life. Truth lies deep within the unexplained wonders. A duo investigates the boundaries of belief and skepticism. Dark forces intertwine with conspiracy and alien encounters abound. Agents Scully and Mulder unravel secrets in chilling episodes."
+    },
+    {
+        "ID": 108,
+        "Name": "Neon Genesis Evangelion",
+        "ReleaseYear": "1995",
+        "Genres": "Sci-Fi & Fantasy, Animation",
+        "Description": "In a dystopian world, humanity faces strange adversaries. The colors shine brightly against dark and complex themes. A young pilot struggles with his inner demons daily. Giant machines battle otherworldly beings amidst existential questions. A unique blend of mecha warfare and psychological exploration unfolds."
+    },
+    {
+        "ID": 109,
+        "Name": "Brazil Avenue",
+        "ReleaseYear": "2012",
+        "Genres": "Drama, Mystery",
+        "Description": "A vibrant locale masks hidden desires and regrets. Urban landscapes conceal intricate lives intertwined in secrecy. A woman's pursuit reveals depth beneath the surface disguise. Personal histories unravel amid a backdrop of colorful chaos. Love, loss, and deception dance through this psychological drama."
+    },
+    {
+        "ID": 110,
+        "Name": "The End of the F***ing World",
+        "ReleaseYear": "2017",
+        "Genres": "Comedy, Drama",
+        "Description": "A darkly humor-laden journey through strange teenage angst unfolds. Two misfits collide amidst a backdrop of suburban chaos. Rebel hearts navigate love, violence, and other life tragedies. A distinctive hand-drawn style enhances the surreal storytelling experience. Resolving existential dilemmas, they seek adventure and profound connection."
+    },
+    {
+        "ID": 111,
+        "Name": "Dexter: New Blood",
+        "ReleaseYear": "2021",
+        "Genres": "Drama, Crime",
+        "Description": "In the shadows, a familiar monster stirs once more. A facade of normalcy masks a complex moral struggle. Bloodlines intertwine as past sins seek their reckoning. A vigilante\u2019s return complicates the tranquil small-town life. Darkness looms over a bloodstained history with new revelations."
+    },
+    {
+        "ID": 112,
+        "Name": "Smallville",
+        "ReleaseYear": "2001",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "A small place holds extraordinary secrets beneath the surface. Young friendships form amidst growing pains and strange happenings. One boy grapples with his legacy and hidden powers. A quiet town hides an alien in search of identity. Heroic tales unfold as destinies intertwine in this beloved series."
+    },
+    {
+        "ID": 113,
+        "Name": "Peacemaker",
+        "ReleaseYear": "2022",
+        "Genres": "Action & Adventure, Sci-Fi & Fantasy",
+        "Description": "A conflict resolution enthusiast dons a unique ensemble. Unforeseen alliances are forged in an explosive backdrop. Fragile peace hangs in a superpowered balance of ethics. Director James Gunn blends humor with heavy action sequences. A former villain seeks redemption while battling new threats."
+    },
+    {
+        "ID": 114,
+        "Name": "Star Trek: Discovery",
+        "ReleaseYear": "2017",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "In a vast void, journeys of exploration beckon boldly. A fractured peace drives spirited souls toward the unknown. Unconventional paths emerge from ancient legacies and treachery. A diverse crew navigates time, space, and personal growth. A rising commander grapples with moral dilemmas in conflict."
+    },
+    {
+        "ID": 115,
+        "Name": "Carnival Row",
+        "ReleaseYear": "2019",
+        "Genres": "Crime, Drama",
+        "Description": "In a world where fantasy meets harsh reality, creatures struggle. Secrets linger in the shadows of a bustling city. Unlikely lovers navigate a society steeped in prejudice. A detective grapples with both crime and his heart. Fae and humans collide in a visually stunning narrative."
+    },
+    {
+        "ID": 116,
+        "Name": "Loki",
+        "ReleaseYear": "2021",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "A mischief-maker navigates the complexities of existence. Time itself weaves a tapestry under fractured realities. A powerful organization oversees the multiverse's chaotic threads. Eccentric characters challenge fate with humor and charisma. A certain God of Mischief unravels his own destiny."
+    },
+    {
+        "ID": 117,
+        "Name": "Avatar: The Last Airbender",
+        "ReleaseYear": "2005",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "In a world divided by elemental powers, harmony fades. A young hero embarks on a journey of self-discovery. Ancient spirits and powerful creatures guide him forward. The art style draws from East Asian influences and traditions. A quest for balance unfolds with friendships and fierce battles."
+    },
+    {
+        "ID": 118,
+        "Name": "Once Upon a Time",
+        "ReleaseYear": "2011",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "Reality blends with folklore in unexpected ways throughout life. A small town holds secrets from stories long forgotten. A dark curse unravels the fabric of their existence. Characters from fairy tales live among ordinary people here. A heroines' strength intertwines with iconic figures from fables."
+    },
+    {
+        "ID": 119,
+        "Name": "I Am Not Okay with This",
+        "ReleaseYear": "2020",
+        "Genres": "Drama, Comedy",
+        "Description": "A young person grapples with life's unexpected burdens. Secret thoughts twist into unusual manifestations of power. High school struggles intertwine with dark humor and awkwardness. Relationships fray as a tempest brews beneath the surface. An exploration of adolescent complexity wrapped in stylized visuals."
+    },
+    {
+        "ID": 120,
+        "Name": "Law & Order: Special Victims Unit",
+        "ReleaseYear": "1999",
+        "Genres": "Crime, Drama",
+        "Description": "Struggles of humanity unfold in shadowy urban streets. Justice seekers tread through society's darkest moral dilemmas. Survivors confront their pasts while seeking closure and truth. A dedicated team specializes in heinous, victim-focused crimes. Signature detectives navigate complex cases with legal and emotional depth."
+    },
+    {
+        "ID": 121,
+        "Name": "Monsters at Work",
+        "ReleaseYear": "2021",
+        "Genres": "Family, Comedy",
+        "Description": "Creatures lurking in the shadows bring giggles and grins. Vibrant colors and laughs animate an unusual workplace scenario. A switch from screams to laughter drives the story forward. Follow a new recruit navigating playful antics and friendships. Iconic monsters return, embracing teamwork in a comedic adventure."
+    },
+    {
+        "ID": 122,
+        "Name": "Mushoku Tensei: Jobless Reincarnation",
+        "ReleaseYear": "2021",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "A tale woven in realms both fantastical and real. A life lost, seeking redemption through fate's curious twist. A young mage grapples with the burdens of growth. Vibrant visuals dance with intricate narratives of second chances. Follow the journey of Rudeus as he learns life's magic."
+    },
+    {
+        "ID": 123,
+        "Name": "Amor Real",
+        "ReleaseYear": "2003",
+        "Genres": "Soap, Drama",
+        "Description": "A tumultuous journey of forbidden affection unfolds historically. Wealth and social class weave a complex web of entanglement. A spirited maiden yearns for love beyond societal confines. Set against a backdrop of 19th-century Mexico's elite, passions ignite. A dashing nobleman captures her heart amid societal upheaval."
+    },
+    {
+        "ID": 124,
+        "Name": "The Boat",
+        "ReleaseYear": "2011",
+        "Genres": "Action & Adventure, Mystery",
+        "Description": "In a vast liquid expanse, secrets begin to surface. Confined space fuels tension among those onboard the vessel. Survival instincts clash with haunting memories and shared guilt. Unforeseen entity emerges, reshaping the journey into a nightmare. A gripping mix of dread and action unfolds at sea."
+    },
+    {
+        "ID": 125,
+        "Name": "The Owl House",
+        "ReleaseYear": "2020",
+        "Genres": "Animation, Sci-Fi & Fantasy",
+        "Description": "A journey begins beneath a watchful night creature\u2019s gaze. A young girl discovers realms beyond her wildest dreams. Unlikely friendships blossom in a realm of magic. Expect vibrant animations that charm and enchant viewers globally. A human girl learns to embrace her inner witch."
+    },
+    {
+        "ID": 126,
+        "Name": "Insatiable",
+        "ReleaseYear": "2018",
+        "Genres": "Drama, Comedy",
+        "Description": "A quest for acceptance fuels an endless appetite. A transformative summer brings unexpected change and rivalry. High school antics intertwine with dark comedy and drama. A beauty pageant serves as a battleground for secrets. Torn between self-discovery and societal expectations, she fights back."
+    },
+    {
+        "ID": 127,
+        "Name": "The Haunting of Hill House",
+        "ReleaseYear": "2018",
+        "Genres": "Mystery, Drama",
+        "Description": "A place where past echoes intertwine with the present. Family bonds challenge the boundaries of love and loss. A spectral house holds secrets and untold stories within. Diverse timelines reveal struggles of memory and trauma. The living and the dead share more than just walls."
+    },
+    {
+        "ID": 128,
+        "Name": "Adventure Time",
+        "ReleaseYear": "2010",
+        "Genres": "Animation, Comedy",
+        "Description": "A colorful realm where tales and whimsy intertwine. Friends embark on quests beneath an ever-expanding sky. Canines and humans bridge worlds with laughter and friendship. A boy in candy-colored land faces strange, friendly foes. Eccentric adventures explore themes of courage, love, and loss."
+    },
+    {
+        "ID": 129,
+        "Name": "Chilling Adventures of Sabrina",
+        "ReleaseYear": "2018",
+        "Genres": "Mystery, Sci-Fi & Fantasy",
+        "Description": "A young girl grapples with duality and identity. Dark forces stir beneath a seemingly normal veneer. A realm of witchcraft intertwines with teenage dilemmas unfolds. Secrets of family and heritage shape her destiny significantly. A reimagined classic redefines horror with vibrant visuals and depth."
+    },
+    {
+        "ID": 130,
+        "Name": "The Gifted",
+        "ReleaseYear": "2017",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "Hidden talents emerge in a world divided by fear. A family's legacy intertwines with the struggle for acceptance. Unseen forces manipulate, leaving marks on the innocent. A refuge for the extraordinary lies beneath the surface. Children wield powers that challenge society's unforgiving norms."
+    },
+    {
+        "ID": 131,
+        "Name": "His Dark Materials",
+        "ReleaseYear": "2019",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "In a world where shadows reveal deep truths, a young girl seeks answers through magical realms, guided by a strange companion who embodies her soul, the fabric of existence intertwines between various worlds, as the battle between oppressive authority and free will unfolds dramatically."
+    },
+    {
+        "ID": 132,
+        "Name": "What If...?",
+        "ReleaseYear": "2021",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "In a multiverse, choices branch into infinite paths. Iconic heroes and villains face alternate realities and fates. A peculiar watch enacts shifts in familiar narratives. Unique animation style breathes life into surprising outcomes. Expect beloved characters reimagined in unexpected scenarios and adventures."
+    },
+    {
+        "ID": 133,
+        "Name": "All of Us Are Dead",
+        "ReleaseYear": "2022",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "A gathering of souls faces an encroaching darkness. Survival instinct becomes paramount in a confined space. Unity and betrayal dance within survival's fragile balance. A unique blend of horror and youthful struggles unfolds. High school students combat a relentless outbreak of chaos."
+    },
+    {
+        "ID": 134,
+        "Name": "Demon Slayer: Kimetsu no Yaiba",
+        "ReleaseYear": "2019",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "In a world shadowed by night, creatures lurk unseen. A young warrior seeks revenge driven by tragic loss. Companions join him, each bearing their own scars. A dance of blades and breath melds art with battle. Demons face a relentless slayer wielding hope and steel."
+    },
+    {
+        "ID": 135,
+        "Name": "True Detective",
+        "ReleaseYear": "2014",
+        "Genres": "Drama, Mystery",
+        "Description": "Shadows linger in the depths of human nature's psyche. An intricate web of time and deception unfolds slowly. Two souls are bound by a twisted investigation's grip. Louisiana's haunting landscapes echo the darkness within their souls. Unraveling a ritualistic mystery reveals truths about existence itself."
+    },
+    {
+        "ID": 136,
+        "Name": "Xena: Warrior Princess",
+        "ReleaseYear": "1995",
+        "Genres": "Drama, Action & Adventure",
+        "Description": "In a world where myths intertwine with reality, a brave heart struggles. A journey of redemption unfolds across ancient landscapes and battles. A fierce female hero challenges norms and expectations in combat. Dark forces loom, while friendship sparks amidst the chaos surrounding her. Two warriors forge paths between love, duty, and destiny's calls."
+    },
+    {
+        "ID": 137,
+        "Name": "Moon Knight",
+        "ReleaseYear": "2022",
+        "Genres": "Action & Adventure, Sci-Fi & Fantasy",
+        "Description": "A celestial being watches over the restless night. Dualities clash in the shadows of the mind. An Egyptian artifact unlocks deeper truths and mysteries. A mercenary grapples with identities and supernatural forces. Streets of London pulse with action and ancient lore."
+    },
+    {
+        "ID": 138,
+        "Name": "El Capo",
+        "ReleaseYear": "2009",
+        "Genres": "Crime, Drama",
+        "Description": "Power and ambition collide in a dangerous underworld tapestry. A man\u2019s rise tests loyalty and blurs moral boundaries. Shadows of betrayal linger as fortunes shift unexpectedly. The narrative arcs through crime's seductive allure and personal sacrifice. A captivating tale rooted in the world of drug trafficking."
+    },
+    {
+        "ID": 139,
+        "Name": "Young Justice",
+        "ReleaseYear": "2010",
+        "Genres": "Animation, Sci-Fi & Fantasy",
+        "Description": "A youthful gathering seeks justice in a world unseen. Heroes emerge from shadows, battling both foes and inner demons. They grapple with loyalty while forging their own identities. Animated battles showcase vibrant art, blending heroics and heart. Teen sidekicks rise to face threats, proving their worth."
+    },
+    {
+        "ID": 140,
+        "Name": "Doom Patrol",
+        "ReleaseYear": "2019",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "A group grapples with their fractured identities and abilities. Strange occurrences lead them on bizarre adventures through time. Quirky heroes unite under a whimsical, surreal storyline. One member's negative traits manifest in unexpected, visual ways. Their journey explores trauma, acceptance, and the meaning of family."
+    },
+    {
+        "ID": 141,
+        "Name": "Better Call Saul",
+        "ReleaseYear": "2015",
+        "Genres": "Crime, Drama",
+        "Description": "A legal journey intertwines with moral ambiguity and shades. The protagonist\u2019s name echoes through meritless victories and disputes. Transformation unfolds in a world of questionable ethics and choices. A colorful character known for clever quips and schemes emerges. Shadows of a notorious criminal lawyer whisper in his rise."
+    },
+    {
+        "ID": 142,
+        "Name": "Rick and Morty",
+        "ReleaseYear": "2013",
+        "Genres": "Animation, Comedy",
+        "Description": "A portal opens to worlds beyond imagination and chaos. A genius scientist drags his grandson on perilous adventures. Interdimensional escapades reveal dark humor and existential themes. Animated surrealism juxtaposes bizarre scenarios and sharp-witted dialogue. Clever parodies abound as they navigate family dysfunction and cosmic threats."
+    },
+    {
+        "ID": 143,
+        "Name": "Outlander",
+        "ReleaseYear": "2014",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "Time bends in a tapestry of entwined lives. A distant past holds secrets longing to be uncovered. Love defies centuries amidst battles for power and survival. A healer's journey intertwines with a warrior's fate. Scottish landscapes are the canvas for this epic romance."
+    },
+    {
+        "ID": 144,
+        "Name": "Shadow and Bone",
+        "ReleaseYear": "2021",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "In a world divided by darkness and light, a relic emerges. Young power and ancient secrets intertwine, shaping destinies. An enigmatic girl discovers strength within a fractured realm. Creatures of shadow and warriors alike clash for survival. Unveil the ties binding a girl to grand fate."
+    },
+    {
+        "ID": 145,
+        "Name": "The OA",
+        "ReleaseYear": "2016",
+        "Genres": "Sci-Fi & Fantasy, Mystery",
+        "Description": "A journey beyond the known threads of existence awaits. The dance of time and dimensions plays a central role. Secrets of past lives unravel through shared connections and visions. An enigmatic woman captivates a group with her story. Boundaries blur as they seek the truth about reality."
+    },
+    {
+        "ID": 146,
+        "Name": "Cowboy Bebop",
+        "ReleaseYear": "1998",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "In a universe where bounty hunters roam the stars. Jazz-infused narratives blend action, wit, and existential ponderings. A former soldier seeks redemption with a rugged crew. The blue-eyed femme fatale has her own agenda. An iconic spaceship travels through space, chasing dreams and criminals."
+    },
+    {
+        "ID": 147,
+        "Name": "Ozark",
+        "ReleaseYear": "2017",
+        "Genres": "Crime, Drama",
+        "Description": "A vast backdrop conceals dark secrets and crimes. An outsider's journey unfolds in uncharted waters of morality. Family ties are tested amidst financial desperation and survival. A financially savvy protagonist launders money with complex consequences. Tension builds as conflicts with local criminals ensue dramatically."
+    },
+    {
+        "ID": 148,
+        "Name": "Shameless",
+        "ReleaseYear": "2011",
+        "Genres": "Drama, Comedy",
+        "Description": "A chaotic tapestry weaved with laughter and struggle. A family battling life\u2019s realities in a gritty setting. Absentee guardianship leads to unconventional methods of survival. Eccentric characters exhibit both love and moral ambiguity. A show that challenges norms while blending humor and heart."
+    },
+    {
+        "ID": 149,
+        "Name": "El Chapo",
+        "ReleaseYear": "2017",
+        "Genres": "Drama, Crime",
+        "Description": "A figure rises amidst shadows of a treacherous world. Complex loyalties blur the lines of life and death. A journey through power, betrayal, and the drug trade. Based on real events, it illustrates a notorious criminal's life. Gritty storytelling reveals the trials of a kingpin."
+    },
+    {
+        "ID": 150,
+        "Name": "Elfen Lied",
+        "ReleaseYear": "2004",
+        "Genres": "Action & Adventure, Animation",
+        "Description": "Innocence conceals a darker side within the flesh. Unseen powers clash amidst echoes of human suffering. A bond between two beings shatters under cruel choices. Delicate aesthetics mask intense violence and emotional turmoil. A girl with horns fights for freedom and revenge."
+    },
+    {
+        "ID": 151,
+        "Name": "Fear the Walking Dead",
+        "ReleaseYear": "2015",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "An unseen menace disrupts the mundane flow of life. Humanity's fragility is tested by relentless, encroaching shadows. Family bonds intertwine with survival in harsh landscapes. A prequel narrative explores origins of familiar, fleeting faces. The undead roam a desert-like setting, crafting tales of despair."
+    },
+    {
+        "ID": 152,
+        "Name": "Titans",
+        "ReleaseYear": "2018",
+        "Genres": "Drama, Action & Adventure",
+        "Description": "A clash of youthful ideals and heavier legacies unfolds. Dark shadows often envelop young heroes in turmoil. A wolf appears among the sheep, challenging the norm. Titans rise from comic origins to explore inner demons. A team of misfits navigates fame, family, and heroism."
+    },
+    {
+        "ID": 153,
+        "Name": "Legacies",
+        "ReleaseYear": "2018",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "In a world where past shadows loom large. A blend of magic and youth shapes destinies. A school teaches the balance of light and dark. Family ties intertwine with supernatural legacies' burdens. Struggles for identity unfold in a vampire drama setting."
+    },
+    {
+        "ID": 154,
+        "Name": "Dragon Ball Super",
+        "ReleaseYear": "2015",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "Ancient battles echo through vivid realms of color. Extraordinary beings push the limits of strength and power. A certain Saiyan strives beyond his previous limits. Friends gather to face increasingly formidable cosmic threats. The art combines nostalgia with modern anime flair and dynamics."
+    },
+    {
+        "ID": 155,
+        "Name": "Peaky Blinders",
+        "ReleaseYear": "2013",
+        "Genres": "Drama, Crime",
+        "Description": "A shadowy ensemble navigates the grit of the past. Caps cover secrets and ambition in the streets. Rivalries ignite as spirits linger in smoky bars. Family loyalty triumphs over betrayals in tumultuous times. A cunning leader orchestrates power in post-war Birmingham."
+    },
+    {
+        "ID": 156,
+        "Name": "Sex and the City",
+        "ReleaseYear": "1998",
+        "Genres": "Comedy, Drama",
+        "Description": "Urban tales weave through intimate friendships and choices. Four distinct lives navigate love amid fashion and chaos. A columnist explores relationships, rooted in witty observations and humor. City lights illuminate the complexities of romance and identity. Friendship bonds shine through the struggles of modern women."
+    },
+    {
+        "ID": 157,
+        "Name": "Rosario Tijeras",
+        "ReleaseYear": "2016",
+        "Genres": "Drama, Crime",
+        "Description": "A shadowed life navigates the depths of desire and betrayal. An urban landscape reflects the chaos of passionate entanglements. A young woman grapples with vengeance amidst a harsh world. Loyalties shift like smoke in the backdrop of crime. Love, loss, and violence intertwine in a powerful narrative."
+    },
+    {
+        "ID": 158,
+        "Name": "The Fresh Prince of Bel-Air",
+        "ReleaseYear": "1990",
+        "Genres": "Comedy, Family",
+        "Description": "A young hero travels from one life to another. City streets render him a fish out of water. Family ties and culture clash create humorous moments often. Vibrant visuals and catchy themes define this iconic series. A wealthy home becomes a stage for laughter and growth."
+    },
+    {
+        "ID": 159,
+        "Name": "Marvel's Jessica Jones",
+        "ReleaseYear": "2015",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "A world where shadows whisper secrets of strength. Complex pasts intertwine in a gritty urban landscape. A detective unravels mysteries while battling her personal demons. Enhanced abilities collide with trauma in a flawed hero's journey. A powerful female lead confronts foes and her reality."
+    },
+    {
+        "ID": 160,
+        "Name": "The Last Kingdom",
+        "ReleaseYear": "2015",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "A land divided, where conflict reigns over kin. A warrior\u2019s heart struggles with loyalty and honor. A kingdom\u2019s fate hangs on the edge of blades. Merging history with fiction, battles rage in dramatic scenes. A tale of vengeance and destiny in medieval England unfolds."
+    },
+    {
+        "ID": 161,
+        "Name": "Reacher",
+        "ReleaseYear": "2022",
+        "Genres": "Action & Adventure, Crime",
+        "Description": "A solitary figure walks through a rugged landscape. Secrets unfold in a city shrouded by darkness. A past entwined with justice drives relentless pursuit. Unyielding physicality meets sharp intellect in every interaction. One man confronts danger while unraveling hidden conspiracies."
+    },
+    {
+        "ID": 162,
+        "Name": "Chicago P.D.",
+        "ReleaseYear": "2014",
+        "Genres": "Crime, Drama",
+        "Description": "In a city where shadows often reveal truths. Complex patterns of loyalty intertwine with moral ambiguity. A team navigates the thin blue line of justice. Look for the presence of a cunning sergeant guiding them. Each episode draws you deeper into their unending struggles."
+    },
+    {
+        "ID": 163,
+        "Name": "Cobra Kai",
+        "ReleaseYear": "2018",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "A clash of philosophies in a dojo setting. Rivalries from youth echo through time and tension. Redemption arcs twist as past conflicts resurface unexpectedly. A martial arts rivalry reignites with nostalgia and humor. Two opposing senseis shape the destinies of their students."
+    },
+    {
+        "ID": 164,
+        "Name": "Steven Universe",
+        "ReleaseYear": "2013",
+        "Genres": "Animation, Comedy",
+        "Description": "A colorful world where feelings shape reality and existence. Gems embody personal struggles and transformative journeys of identity. A young boy learns to wield powers and responsibility. Intergalactic guardians face threats while exploring themes of love. A distinctive art style complements heartfelt stories and humor."
+    },
+    {
+        "ID": 165,
+        "Name": "Pablo Escobar: The Drug Lord",
+        "ReleaseYear": "2012",
+        "Genres": "Crime, Drama",
+        "Description": "In a land where shadows dance with power. A tale of a man sculpting chaos from dreams. Loyalty and betrayal flow like the drug trade\u2019s tide. Portrayed with gritty realism and a haunting score. Follow the rise and fall of an infamous trafficker."
+    },
+    {
+        "ID": 166,
+        "Name": "Elementary",
+        "ReleaseYear": "2012",
+        "Genres": "Drama, Mystery",
+        "Description": "A modern twist on an age-old inquiry unfolds. Complex puzzles entwine with the shadows of human motives. A brilliant mind navigates the chaotic streets of New York. Two unlikely allies unravel mysteries while confronting their demons. A contemporary adaptation reimagines a famous detective's saga."
+    },
+    {
+        "ID": 167,
+        "Name": "Pok\u00e9mon",
+        "ReleaseYear": "1997",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "In a world where creatures bond with humans, Adventures unfold along paths unknown and wild, A quest for mastery drives the young protagonist forward, Iconic pocket-sized beings clash in strategic battles often, Inspiration strikes from Japanese culture's whimsy and dreams."
+    },
+    {
+        "ID": 168,
+        "Name": "Hawkeye",
+        "ReleaseYear": "2021",
+        "Genres": "Drama, Comedy",
+        "Description": "A skilled archer navigates a world of heroes. Holiday cheer mixes with unexpected family dynamics and danger. A past relationship shapes a present-day mentor-mentee bond. An iconic bow and trick arrows play crucial roles throughout. A certain ex-Avenger's journey unfolds during Christmas time."
+    },
+    {
+        "ID": 169,
+        "Name": "CSI: Miami",
+        "ReleaseYear": "2002",
+        "Genres": "Drama, Mystery",
+        "Description": "Beneath the sun, secrets lie in vibrant hues. A team unravels truth hidden in the city's pulse. Sunglasses and quick quips spotlight skilled forensic minds. Night turns to day as evidence leads to justice. One fiery-haired detective chases crime on the sandy beach."
+    },
+    {
+        "ID": 170,
+        "Name": "The Magicians",
+        "ReleaseYear": "2015",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "A hidden world exists beyond ordinary perceptions and reality. Students seek knowledge in a prestigious, mystical institution. Magic lessons reveal both wonder and dire consequences for all. Complex relationships unfold among friends and foes in turmoil. A protagonist grapples with power, identity, and dark secrets."
+    },
+    {
+        "ID": 171,
+        "Name": "Rebelde",
+        "ReleaseYear": "2004",
+        "Genres": "Comedy, Soap",
+        "Description": "Youthful defiance echoes in a vibrant educational setting. Ties between friendship and rivalry shape their shared dreams. Uniforms and melodies weave the fabric of their lives. A love triangle stirs amid passions and personal growth. A rebellious ensemble seeks fame and acceptance in Mexico."
+    },
+    {
+        "ID": 172,
+        "Name": "The Rising of the Shield Hero",
+        "ReleaseYear": "2019",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "A world beckons heroes from distant realms and lands. Betrayal lurks where trust seems to flourish and grow. A lone warrior wields a peculiar defense against adversity. Adventure unfolds as they navigate friendships and rivalries alike. A fantasy narrative with vibrant art that captivates all audiences."
+    },
+    {
+        "ID": 173,
+        "Name": "Hawaii Five-0",
+        "ReleaseYear": "2010",
+        "Genres": "Crime, Drama",
+        "Description": "A distant paradise masks intrigue beneath the surface. Loyalty and justice intertwine amidst island shenanigans and crime. A team united by a shared mission and losses. Leaders strategize while the sun sets on turquoise waters. Classic cop drama reboot lost in its own legacy."
+    },
+    {
+        "ID": 174,
+        "Name": "Marvel's Agents of S.H.I.E.L.D.",
+        "ReleaseYear": "2013",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "A clandestine group navigates shadows and hidden truths. Characters grapple with loyalty amid unseen cosmic forces. Agents wield technology that blurs the line between worlds. A former soldier leads a team with complicated dynamics. Discover the secretive organization tasked with defending Earth from threats."
+    },
+    {
+        "ID": 175,
+        "Name": "Teen Wolf",
+        "ReleaseYear": "2011",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "In shadows, youth grapples with hidden natures. Unseen loyalties emerge as transformation takes hold. Dark woods hide secrets, where friends become foes. A bite ignites power, entwining fate and longing. Loyalty and rivalry shape a life caught between worlds."
+    },
+    {
+        "ID": 176,
+        "Name": "Good Omens",
+        "ReleaseYear": "2019",
+        "Genres": "Sci-Fi & Fantasy, Comedy",
+        "Description": "An unlikely duo navigates the balance of cosmic forces. A celestial being and a demon challenge their fates. Eccentric humor layers the fabric of impending doom. Adaptation of a beloved novel, visually whimsical and vibrant. Anticipation of an apocalypse leads to unconventional alliances and laughter."
+    },
+    {
+        "ID": 177,
+        "Name": "DC's Stargirl",
+        "ReleaseYear": "2020",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "A new generation awakens under cosmic rays of hope. A high school girl embraces a legacy of heroism. Cosmic artifacts ignite a battle against dark forces. A team of misfits unites, courage fueled by friendship. A teenage heroine dons a hood to fight injustice."
+    },
+    {
+        "ID": 178,
+        "Name": "The Orville",
+        "ReleaseYear": "2017",
+        "Genres": "Drama, Comedy",
+        "Description": "In a vast canvas of stars, laughter echoes softly. Spacecraft journeys twist between humor and heartfelt moments. An ensemble navigates interstellar challenges with quirky camaraderie. Leadership dilemmas arose amidst strange species and moral quandaries. Inspired by a classic, it balances wit and adventure seamlessly."
+    },
+    {
+        "ID": 179,
+        "Name": "Cyberpunk: Edgerunners",
+        "ReleaseYear": "2022",
+        "Genres": "Action & Adventure, Animation",
+        "Description": "Neon dreams clash with the reality of survival. A distant future where technology enhances human existence dangerously. A ragtag group navigates the morally grey underbelly. Threads of loss intertwine with the pursuit of freedom. Vibrant animation mirrors the chaotic heartbeat of a city."
+    },
+    {
+        "ID": 180,
+        "Name": "Castlevania",
+        "ReleaseYear": "2017",
+        "Genres": "Animation, Sci-Fi & Fantasy",
+        "Description": "Dark forces clash in a world of shadows and light. Power and blood intertwine in a doomed land. A renowned creature of the night seeks vengeance and order. Brothers in arms face treachery from within and without. A masterfully animated tale of vampires and hunters unfolds."
+    },
+    {
+        "ID": 181,
+        "Name": "INVINCIBLE",
+        "ReleaseYear": "2021",
+        "Genres": "Animation, Sci-Fi & Fantasy",
+        "Description": "A world where strength isn\u2019t always what it seems. A young hero grapples with his true identity and powers. Relationships are tested amidst brutal battles and moral dilemmas. An origin story unfolds through striking animation and vivid colors. Superheroes clash in a gritty narrative that challenges convention."
+    },
+    {
+        "ID": 182,
+        "Name": "Sense8",
+        "ReleaseYear": "2015",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "A shared consciousness intertwines diverse lives across boundaries. Connection transcends distance, fueled by emotional resonance and empathy. Eight strangers awaken to their unique gifts and struggles. Cultures clash as they navigate personal journeys and threats. A visual feast reflecting unity in diversity and belonging."
+    },
+    {
+        "ID": 183,
+        "Name": "BoJack Horseman",
+        "ReleaseYear": "2014",
+        "Genres": "Animation, Comedy",
+        "Description": "Animated tales explore the lives of anthropomorphic beings. A washed-up star grapples with fame and self-worth. Cynicism and humor intertwine in this dark storytelling experiment. Friendship and addiction collide through deep character reflections and dialogue. A surreal Hollywood backdrop frames the rise and fall narrative."
+    },
+    {
+        "ID": 184,
+        "Name": "The Bear",
+        "ReleaseYear": "2022",
+        "Genres": "Drama, Comedy",
+        "Description": "A bustling kitchen holds secrets and tension beneath surfaces. A fresh start in culinary chaos defines personal journeys ahead. Brothers find disharmony while striving for family legacy success. The protagonist struggles with grief amidst the heat of cooking. Dark humor spices up the chaotic rhythm of gastronomy."
+    },
+    {
+        "ID": 185,
+        "Name": "The 100",
+        "ReleaseYear": "2014",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "In a world above, survival shapes the future's fate. Age-old decisions emerge as harsh truths bind their lives. Unravel hidden loyalties within a fractured society's walls. A group descends to determine humanity's second chance. Exploration of morality unfolds amid post-apocalyptic struggles and alliances."
+    },
+    {
+        "ID": 186,
+        "Name": "Boys Over Flowers",
+        "ReleaseYear": "2009",
+        "Genres": "Comedy, Drama",
+        "Description": "A struggle between wealth and deep-rooted affection unfolds. An ensemble cast navigates the treacherous waters of adolescence. A headstrong girl challenges societal norms at a prestigious school. Four charming boys lead a complex romance and rivalry. A love triangle ensues amidst lavish lifestyles and high stakes."
+    },
+    {
+        "ID": 187,
+        "Name": "Foundation",
+        "ReleaseYear": "2021",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "In a vast realm, a cycle of time unfolds. Characters grapple with the weight of destiny's design. An ancient scholar seeks to alter the future\u2019s path. Empires rise and fall with the turn of fate. In a galaxy far away, knowledge becomes the ultimate weapon."
+    },
+    {
+        "ID": 188,
+        "Name": "Dororo",
+        "ReleaseYear": "2019",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "In a world where shadows play tricks on fate, a fragmented soul seeks redemption from lost pieces. Mysterious adversaries hide in the folds of history, weaving despair and dark bargains. An unusual bond forms between hunters with contrasting pasts and goals. The journey offers a vibrant mix of intricate animation and intense battles. A boy and a creature fight against fate's cruel machinations."
+    },
+    {
+        "ID": 189,
+        "Name": "Mare of Easttown",
+        "ReleaseYear": "2021",
+        "Genres": "Drama, Mystery",
+        "Description": "A small town shrouded in secrets and shadows lingers. Unraveling the truth weaves together lives and lies. A woman with scars confronts her haunting past daily. Detective work blends with personal struggles in this drama. A crime tears the community apart, seeking justice and solace."
+    },
+    {
+        "ID": 190,
+        "Name": "Marvel's Daredevil",
+        "ReleaseYear": "2015",
+        "Genres": "Crime, Drama",
+        "Description": "A vigilante walks the night in a bustling city. Shadows hide secrets and justice plays a dark tune. A gifted protagonist faces both blindness and clarity within. Legal battles intertwine with brutal confrontations against organized crime. This gritty adaptation explores morality through a hero\u2019s duality."
+    },
+    {
+        "ID": 191,
+        "Name": "El Se\u00f1or de los Cielos",
+        "ReleaseYear": "2013",
+        "Genres": "Crime, Drama",
+        "Description": "In the shadows where power often resides. A figure emerges, cloaked in the skies of ambition. Loyalty and betrayal weave a dangerous tapestry of life. Drug lords clash in a grand narrative of survival. A gripping series that explores the darker side of crime."
+    },
+    {
+        "ID": 192,
+        "Name": "Castle",
+        "ReleaseYear": "2009",
+        "Genres": "Drama, Crime",
+        "Description": "A storyteller wanders through a land of mystery. Humor dances amidst the shadows of crime and justice. A charming writer seeks inspiration from a fatal event. A detective duo investigates, blending clever banter with sleuthing. Love and intrigue unfold as they solve each case."
+    },
+    {
+        "ID": 193,
+        "Name": "Lupin",
+        "ReleaseYear": "2021",
+        "Genres": "Crime, Drama",
+        "Description": "A masterful game of deception unfolds in Paris. A legendary figure inspires the cunning protagonist's quest for justice. Shadows of betrayal cast over intricate heists and rivalries. The narrative weaves through rich visuals and dynamic storytelling. A gentleman thief's pursuit of revenge against the powerful ensues."
+    },
+    {
+        "ID": 194,
+        "Name": "Boruto: Naruto Next Generations",
+        "ReleaseYear": "2017",
+        "Genres": "Action & Adventure, Animation",
+        "Description": "A journey unfolds in a vibrant, animated land. Legacy defines those who walk in their predecessors' paths. Shadows of the past loom over youthful aspirations and challenges. Kinship and rivalry drive the next generation of ninja. An iconic descendant's tale bridges history and modern struggles."
+    },
+    {
+        "ID": 195,
+        "Name": "Supergirl",
+        "ReleaseYear": "2015",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "In a world where heroes often fly above. A bold woman rises to challenge societal expectations daily. Underneath her bright shield lies a quest for identity. Allies and foes emerge from shadows of her heritage. A journey of strength, vulnerability, and sisterly connections unfolds."
+    },
+    {
+        "ID": 196,
+        "Name": "24",
+        "ReleaseYear": "2001",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "A race against the clock defines this gripping narrative. Time is both ally and enemy in desperate scenarios. One man faces relentless threats in a single day. Intense action weaves through political intrigue and personal stakes. Each hour unveils secrets, as heroes clash against ticking chaos."
+    },
+    {
+        "ID": 197,
+        "Name": "Courage the Cowardly Dog",
+        "ReleaseYear": "1999",
+        "Genres": "Animation, Family",
+        "Description": "A timid pet navigates a world of oddities. Strange happenings abound in a rural setting. Lovable yet fearful, he protects his quirky humans. Animated tales blend humor and horror in unique ways. A pink dog encounters bizarre creatures and unsettling events."
+    },
+    {
+        "ID": 198,
+        "Name": "Scorpion",
+        "ReleaseYear": "2014",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "In a web of brains, a unique insect thrives. High-stakes missions test ingenuity and teamwork under pressure. A gifted strategist becomes the linchpin for survival. Personal struggles and genius intertwine in a tech-laden world. Elite problem-solvers confront danger, friendship, and complex emotions."
+    },
+    {
+        "ID": 199,
+        "Name": "MINDHUNTER",
+        "ReleaseYear": "2017",
+        "Genres": "Drama, Crime",
+        "Description": "Secrets dwell in the shadows of human psyche. Conversations unravel the threads of violence and motive. Two agents delve into the minds of infamous killers. Set in the late 70s, it's a slow-burn exploration. Real criminals inspire chilling case studies in psychological profiling."
+    },
+    {
+        "ID": 200,
+        "Name": "Archer",
+        "ReleaseYear": "2009",
+        "Genres": "Comedy, Action & Adventure",
+        "Description": "A world of espionage wrapped in humor and absurdity. A bunch of agents navigate personal and professional chaos relentlessly. A secret facility where danger and wit intertwine seamlessly. The titular character embodies both charm and incompetence amusingly. Animated and irreverent, it satirizes classic spy tropes inventively."
+    },
+    {
+        "ID": 201,
+        "Name": "Sweet Home",
+        "ReleaseYear": "2020",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "In a world where nightmares take physical form, survival is paramount. A group of diverse souls confronts their own inner demons. Haunted by tragedy, hope flickers amid the chaos. Humanity's fight against twisted manifestations unfolds in vivid animation. A haunted apartment complex serves as both battleground and refuge."
+    },
+    {
+        "ID": 202,
+        "Name": "Constantine",
+        "ReleaseYear": "2014",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "A battle between light and shadows brews quietly beneath. Lost souls seek redemption in a world of deception. A gifted individual navigates the thin line of darkness. Demons roam while a battle for faith unfolds dramatically. A supernatural detective confronts the underworld with gritty resolve."
+    },
+    {
+        "ID": 203,
+        "Name": "Californication",
+        "ReleaseYear": "2007",
+        "Genres": "Comedy, Drama",
+        "Description": "A sun-soaked land grapples with personal demons and choices. Words weave tales, as fiction dances with reality's shadow. A troubled writer seeks love amidst chaotic relationships and impulses. A clever mix of sarcasm and heart defines each episode. Midlife crises unfold in unconventional ways, exploring desire and family."
+    },
+    {
+        "ID": 204,
+        "Name": "The Boss Baby: Back in Business",
+        "ReleaseYear": "2018",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "In a world where childhood dreams clash with reality. A pint-sized figure wears a suit like an executive. Strategies and sibling rivalry unfold in a playful realm. Focus shifts to an adventure involving baby corporate espionage. Family bonds tighten amidst the chaos of whimsical escapades."
+    },
+    {
+        "ID": 205,
+        "Name": "Naruto",
+        "ReleaseYear": "2002",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "A young dreamer walks a path unseen by others. In a land where shadows hold meaning and power. Bonds of rivalry and friendship shape the journey ahead. A vibrant hand-drawn world filled with ninja and lore. A boy seeks recognition while battling his inner demons."
+    },
+    {
+        "ID": 206,
+        "Name": "Under the Dome",
+        "ReleaseYear": "2013",
+        "Genres": "Drama, Mystery",
+        "Description": "A barrier descends, isolating a community from the world. Secrets ferment in the confined space of existence. Leadership struggles arise as tensions escalate among the trapped. Personal bonds are tested under the weight of survival. A science-fiction adaptation explores humanity's flaws and resilience vividly."
+    },
+    {
+        "ID": 207,
+        "Name": "Star Wars: The Clone Wars",
+        "ReleaseYear": "2008",
+        "Genres": "Action & Adventure, Animation",
+        "Description": "In a galaxy, battles of light and shadow unfold. Unseen forces manipulate events from behind the scenes. A faction of warriors in armor clashing endlessly persists. Animated tales reveal heroism, sacrifice, and loyalty's weight. A beloved Jedi Knight leads the charge against darkness."
+    },
+    {
+        "ID": 208,
+        "Name": "Halo",
+        "ReleaseYear": "2022",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "A battle for survival amidst the vast cosmos unfolds. Fractured alliances navigate through ancient and advanced technologies. A masked hero grapples with their identity and destiny. Humanity's future hinges on a legendary green-skinned warrior. Explore the epic saga of betrayal, honor, and galactic war."
+    },
+    {
+        "ID": 209,
+        "Name": "Westworld",
+        "ReleaseYear": "2016",
+        "Genres": "Sci-Fi & Fantasy, Western",
+        "Description": "In a land where stories blur past reality's lines. A place to indulge fantasies without consequence or morality. Architects of consciousness grapple with their creations' desires. A conflict unfolds between man, machine, and memory's grip. A sprawling park where Western myths come to life."
+    },
+    {
+        "ID": 210,
+        "Name": "Who Killed Sara?",
+        "ReleaseYear": "2021",
+        "Genres": "Drama, Crime",
+        "Description": "A troubled past haunts a family's hidden secrets. A quest for truth reveals layers of deceit. Vengeance and obsession intertwine in a dramatic narrative. A brother\u2019s search unveils dark familial entanglements and lies. A determined investigation leads to unexpected revelations and justice."
+    },
+    {
+        "ID": 211,
+        "Name": "Ben 10",
+        "ReleaseYear": "2005",
+        "Genres": "Animation, Sci-Fi & Fantasy",
+        "Description": "A young boy discovers a device of transformation potential. Alien species and heroic battles intertwine in vibrant animation. Adolescence meets responsibility as foes emerge from across galaxies. A watch grants him the power of numerous forms. A boy named Ben faces challenges while saving the universe."
+    },
+    {
+        "ID": 212,
+        "Name": "The Legend of Korra",
+        "ReleaseYear": "2012",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "In a world where elements dictate balance and harmony. A young figure navigates the weight of tradition and expectation. Ancient powers clash as new ideologies take root. A spirited girl seeks to embody a lost legacy. Animated in vibrant hues, it continues a cherished saga."
+    },
+    {
+        "ID": 213,
+        "Name": "Narcos",
+        "ReleaseYear": "2015",
+        "Genres": "Crime, Drama",
+        "Description": "A tale woven in shadows and power struggles unfolds. The dance of life and death blurs in the chaos. Watch as empires rise, fueled by illicit ambition. A pivotal figure manipulates fate from both sides of law. The visual storytelling immerses viewers in gritty realism and culture."
+    },
+    {
+        "ID": 214,
+        "Name": "Banshee",
+        "ReleaseYear": "2013",
+        "Genres": "Crime, Drama",
+        "Description": "A shadowy figure embraces an identity woven from deception. A small town harbors secrets beneath its idyllic surface. Crime and vengeance fuel the anguished hearts of all. A charismatic anti-hero takes on a lawless community's challenges. A clash of loyalties unfolds amidst power struggles and betrayal."
+    },
+    {
+        "ID": 215,
+        "Name": "Elite",
+        "ReleaseYear": "2018",
+        "Genres": "Crime, Mystery",
+        "Description": "In a world of privilege, secrets often linger. Tensions rise as ambition collides with moral boundaries. A fatal encounter unravels the threads of friendship. The lives of three students spiral into chaos and betrayal. Luxurious settings contrast with the dark undercurrents of youth."
+    },
+    {
+        "ID": 216,
+        "Name": "Firefly",
+        "ReleaseYear": "2002",
+        "Genres": "Drama, Action & Adventure",
+        "Description": "In the vastness of stars, camaraderie flickers dimly. A crew of misfits navigates lawlessness and moral ambiguity. Themes of freedom and rebellion shape their intertwined fates. A captain's heart and a mechanic's skill drive survival. Serenity flies through the darkness against overwhelming odds."
+    },
+    {
+        "ID": 217,
+        "Name": "Fargo",
+        "ReleaseYear": "2014",
+        "Genres": "Crime, Drama",
+        "Description": "In a frozen land, chaos quietly stirs beneath. Ordinary lives twist into extraordinary moral dilemmas and decisions. A ruthless scheme unfolds, ensnaring a bumbling insurance agent. Characters' fates intertwine like snowflakes in the wind. Dark humor and stark landscapes paint a gripping narrative."
+    },
+    {
+        "ID": 218,
+        "Name": "The Walking Dead",
+        "ReleaseYear": "2010",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "In a world lost, silence becomes the loudest scream. Shadows of humanity clash with relentless hunger and decay. A band of survivors seeks safety amidst crumbling civilization. Fear wears many faces, but hope can breathe life. One man's moral compass challenges a world without rules."
+    },
+    {
+        "ID": 219,
+        "Name": "Fleabag",
+        "ReleaseYear": "2016",
+        "Genres": "Comedy, Drama",
+        "Description": "A chaotic soul navigates her tangled existence daily. Secrets and regrets shape the tangled web of relationships. Fourth-wall breaks create intimacy between viewer and protagonist. An unconventional heroine grapples with loss and love's complexities. London life unfolds with humor and poignant self-reflection throughout."
+    },
+    {
+        "ID": 220,
+        "Name": "13 Reasons Why",
+        "ReleaseYear": "2017",
+        "Genres": "Drama, Mystery",
+        "Description": "A tale shrouded in silence and unspoken truth unfolds. Connections between past actions and present consequences intertwine the narrative. A medium of recording becomes a haunting echo of distress. A teenage girl\u2019s journey reveals the complexity of high school. Unraveling thirteen tapes, secrets and regrets surface with devastating clarity."
+    },
+    {
+        "ID": 221,
+        "Name": "The Amazing World of Gumball",
+        "ReleaseYear": "2011",
+        "Genres": "Animation, Family",
+        "Description": "In a colorful land where oddities blend together seamlessly. A curious blue figure navigates friendship and family dynamics daily. Reality and imagination collide in unconventional storylines and visuals. An anthropomorphic cat, a fish, and a whole school. Cartoon humor disguises deeper messages about growing up and belonging."
+    },
+    {
+        "ID": 222,
+        "Name": "Fringe",
+        "ReleaseYear": "2008",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "Parallel realities intertwine, revealing shadows of existence. Science dances with the extraordinary, blurring the lines of logic. A fringe of inquiry explores realms beyond conventional understanding. A motley team confronts the unknown, armed with intellect. A battle rages between worlds, guided by familial ties and secrets."
+    },
+    {
+        "ID": 223,
+        "Name": "Attack on Titan",
+        "ReleaseYear": "2013",
+        "Genres": "Animation, Sci-Fi & Fantasy",
+        "Description": "In a world where giants cast long shadows. Humanity seeks refuge behind colossal barriers of stone. Betrayal festers among comrades as survival becomes paramount. A titan's fury unleashes questions of freedom and fate. Courage ignites an epic clash against monstrous adversaries."
+    },
+    {
+        "ID": 224,
+        "Name": "DAHMER - Monster: The Jeffrey Dahmer Story",
+        "ReleaseYear": "2022",
+        "Genres": "Crime, Drama",
+        "Description": "A complex portrait of humanity's darker inclinations emerges. Unraveling the enigma of a troubled mind captivates viewers. The narrative dances between horror and unsettling reality consistently. Relationships twist around obsession, fear, and brutal choices made. One man's chilling existence unsettles a nation through series."
+    },
+    {
+        "ID": 225,
+        "Name": "Criminal Minds",
+        "ReleaseYear": "2005",
+        "Genres": "Crime, Drama",
+        "Description": "A team navigates the shadows of the mind. Unraveling chaos, they study human behavior and motives. Profiles reveal twisted paths of the criminal psyche. Each episode delves into heinous acts and complex characters. Behavioral analysis leads them to capture elusive offenders swiftly."
+    },
+    {
+        "ID": 226,
+        "Name": "Star Trek: The Next Generation",
+        "ReleaseYear": "1987",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "A voyage beyond familiar stars and distant worlds unfolds. A crew of diverse beings navigates their shared destiny. Ethical dilemmas challenge ideals of humanity and leadership. A ship named after a famous explorer charts space. Engaging characters include a counselor, a holographic doctor, and a captain."
+    },
+    {
+        "ID": 227,
+        "Name": "One Piece",
+        "ReleaseYear": "1999",
+        "Genres": "Action & Adventure, Comedy",
+        "Description": "A vast blue realm teems with adventurous wanderers. Treasure seekers journey with a dream towering above all. A crew of misfits forms bonds stronger than gold. One man desires a crown of freedom, literally and figuratively. Unique art breathes life into a quest for the ultimate legacy."
+    },
+    {
+        "ID": 228,
+        "Name": "Yellowstone",
+        "ReleaseYear": "2018",
+        "Genres": "Western, Drama",
+        "Description": "Beneath expansive skies, power struggles unfold amidst nature. Warring factions vie for control over sacred land. A patriarch\u2019s choices ripple through family ties and loyalty. Tension brews in a ranch where conflict is king. Set against stunning landscapes, grit defines this modern Western saga."
+    },
+    {
+        "ID": 229,
+        "Name": "Ginny & Georgia",
+        "ReleaseYear": "2021",
+        "Genres": "Comedy, Drama",
+        "Description": "A bond forged in laughter hides deeper complexities within. Small-town life contrasts with ambitious personal quests and secrets. A mother-daughter duo navigates the highs and lows together. Generational struggles and teenage dramas unfold over quirky adventures. Embracing identity while balancing humor and heartfelt moments defines this series."
+    },
+    {
+        "ID": 230,
+        "Name": "Chainsaw Man",
+        "ReleaseYear": "2022",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "In a world where devils thrive in shadows. A young man grapples with his dark aspirations. Chains made of blood and desire fuel his journey. A powerful pact transforms him into a weaponized hero. Intense battles reveal the duality of life and loss."
+    },
+    {
+        "ID": 231,
+        "Name": "The Vampire Diaries",
+        "ReleaseYear": "2009",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "In a town filled with ancient secrets, darkness lingers. Two brothers, torn by blood, vie for affection. A young woman finds herself caught in their orbit. Town folklore intertwines with supernatural battles and eternal life. Love, loss, and choices shape their intertwined destinies in youth."
+    },
+    {
+        "ID": 232,
+        "Name": "Anne with an E",
+        "ReleaseYear": "2017",
+        "Genres": "Drama, Family",
+        "Description": "An imaginative soul navigates a world of expectations. Rural landscapes whisper secrets of belonging and identity. A passionate journey unfolds through letters and vivid sunsets. Friendship blooms amidst the challenges of childhood and growth. A spirited girl fights for acceptance in her new home."
+    },
+    {
+        "ID": 233,
+        "Name": "The Promised Neverland",
+        "ReleaseYear": "2019",
+        "Genres": "Animation, Mystery",
+        "Description": "Innocence hides shadows beneath a sunny facade. A game of wits unfolds in a deceptive paradise. Children discover truths that challenge their sheltered existence. A clever girl leads her friends against looming danger. Anime art brings emotional depth to a gripping escape."
+    },
+    {
+        "ID": 234,
+        "Name": "Lucifer",
+        "ReleaseYear": "2016",
+        "Genres": "Crime, Sci-Fi & Fantasy",
+        "Description": "A fallen star explores earthly pleasures and pains. A celestial being wrestles with morality and desire daily. A detective and her enigmatic ally solve puzzling crimes. An unexpected partnership flourishes amidst crime and celestial conflicts. The devil himself trades hell for a life of justice."
+    },
+    {
+        "ID": 235,
+        "Name": "KONOSUBA - God's blessing on this wonderful world!",
+        "ReleaseYear": "2016",
+        "Genres": "Action & Adventure, Animation",
+        "Description": "A misfit band embarks on a quest for glory. Magic and comedy intertwine in a vibrant panorama. A hero seeks redemption in a fantasy realm's chaos. Acquaintances include a clumsy mage and a volatile goddess. Adventure is both whimsical and perilous in this anime."
+    },
+    {
+        "ID": 236,
+        "Name": "Gravity Falls",
+        "ReleaseYear": "2012",
+        "Genres": "Animation, Comedy",
+        "Description": "In a hidden town, mysteries linger in shadows. Siblings stumble upon secrets of the supernatural kind. An enigmatic journal guides them through strange occurrences. Quirky townsfolk embody the essence of outlandish adventures. Twin explorers uncover the truth behind paranormal happenings together."
+    },
+    {
+        "ID": 237,
+        "Name": "Knight Rider",
+        "ReleaseYear": "1982",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "A lone hero travels the highways of fate. Digital companionship offers more than just a ride. High-tech automotive marvels distinguish between friend and foe. A mysterious figure under the watchful eye of justice. A talking car aids a vigilante in undercover missions."
+    },
+    {
+        "ID": 238,
+        "Name": "Warrior Nun",
+        "ReleaseYear": "2020",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "In shadows, a sacred battle unfolds against dark forces. A sisterly bond strengthens amid ghostly apparitions and evil. Ancient relics entwine with modern conflict in sacred duty. Terrestrial warriors don unexpected vestments of faith and purpose. A young woman discovers her divine calling in confrontation."
+    },
+    {
+        "ID": 239,
+        "Name": "Dexter",
+        "ReleaseYear": "2006",
+        "Genres": "Crime, Drama",
+        "Description": "A hidden identity cloaked under a mundane facade. A heart navigates a dual existence, balancing life and death. Morality blurs for a vigilante with a methodical approach. A strong bond with sisterly ties complicates a dark psyche. This series explores the intricacies of a blood-spatter analyst turned killer."
+    },
+    {
+        "ID": 240,
+        "Name": "Batman: The Animated Series",
+        "ReleaseYear": "1992",
+        "Genres": "Action & Adventure, Animation",
+        "Description": "A caped figure dwells in shadowed urban landscape. A complex rivalry brews with an iconic clownish felon. Gritty artistry blends sleek lines and haunting tones. A tale unfolds of justice veiled in nocturnal mystery. An animated legacy redefined the portrayal of heroes."
+    },
+    {
+        "ID": 241,
+        "Name": "SEAL Team",
+        "ReleaseYear": "2017",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "A brotherhood is tested in perilous circumstances often. Tactical precision meets emotional depth in every mission undertaken. The weight of leadership burdens the man in charge. Soldiers face both external threats and their inner turmoil. Elite operatives execute daring assignments while confronting real-life consequences."
+    },
+    {
+        "ID": 242,
+        "Name": "Regular Show",
+        "ReleaseYear": "2010",
+        "Genres": "Animation, Comedy",
+        "Description": "A duo navigates daily tasks in a surreal landscape. Vibrant colors and quirky characters fill each episode's frame. Unusual experiences blur the line between reality and imagination. Two unlikely friends work at a park, avoiding authority. Absurd humor and strange antics define their animated adventures."
+    },
+    {
+        "ID": 243,
+        "Name": "Supernatural",
+        "ReleaseYear": "2005",
+        "Genres": "Drama, Mystery",
+        "Description": "Two brothers travel roads lined with shadows and secrets. An ancient text guides them through realms unknown and seen. A family bond is tested by darkness and fate. They confront otherworldly beings and the weight of choices. Supernatural elements intertwine with personal sacrifice and brotherly love."
+    },
+    {
+        "ID": 244,
+        "Name": "Siren",
+        "ReleaseYear": "2018",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "In the depths, sound meets the surreal and fantastical. Creatures of the night stir amidst the small town. A hidden truth connects those who dwell in shadows. An unexpected bond challenges old legends and modern fears. One fragile voice sings, echoing mysteries of murky waters."
+    },
+    {
+        "ID": 245,
+        "Name": "Dragon Ball GT",
+        "ReleaseYear": "1996",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "A saga of power transcending generations and boundaries unfolds. Adventurers seek orbs that summon a great awakening force. Unfamiliar foes emerge, testing the heroes' resilience and resolve. A young warrior grapples with his legacy and transformations. Journeying through space, they confront new challenges and alliances."
+    },
+    {
+        "ID": 246,
+        "Name": "Ranma \u00bd",
+        "ReleaseYear": "1989",
+        "Genres": "Comedy, Action & Adventure",
+        "Description": "A tale entwined with identity and transformation through water. Gender-bending adventures unfold in a whimsical and chaotic world. Bizarre martial arts clashes mix with romantic entanglements humorously. A boy changes into a girl with a splash. A classic anime featuring quirky characters and vibrant artwork."
+    },
+    {
+        "ID": 247,
+        "Name": "CSI: Crime Scene Investigation",
+        "ReleaseYear": "2000",
+        "Genres": "Crime, Drama",
+        "Description": "In a world of shadows, truth seeks the light. A team gathers where silence speaks louder than words. Their tools are science, solving puzzles with keen eyes. A city thrives on secrets, revealed through forensic expertise. A lady with golden locks leads the investigative charge."
+    },
+    {
+        "ID": 248,
+        "Name": "Sword Art Online",
+        "ReleaseYear": "2012",
+        "Genres": "Animation, Sci-Fi & Fantasy",
+        "Description": "Digital realms blur the line between reality and illusion. A battle-worn hero faces the perils of a trapped game. Connection and companionship spark amidst the danger and despair. Swordplay and strategy intertwine in a visually stunning landscape. A quest for freedom leads to love and courage tested."
+    },
+    {
+        "ID": 249,
+        "Name": "Miraculous: Tales of Ladybug & Cat Noir",
+        "ReleaseYear": "2015",
+        "Genres": "Action & Adventure, Animation",
+        "Description": "Urban heroes don masks to fight hidden adversaries. Dual identities intersect under the flickering streetlights of Paris. Love and friendship endure amidst frequent villain confrontations. Time-defying akumatized foes challenge their resolve with creative plots. A dynamic duo balances fierce battles with youthful romance themes."
+    },
+    {
+        "ID": 250,
+        "Name": "High School D\u00d7D",
+        "ReleaseYear": "2012",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "A realm where youthful spirits collide with ancient powers. Supernatural beings masked by ordinary school life emerge unexpectedly. Bound by a deal, a mortal gains unexpected abilities. Dragons, demons, and undercurrents of temptation greatly influence fate. High-energy battles showcase a distinctive anime art style."
+    },
+    {
+        "ID": 251,
+        "Name": "Hazbin Hotel",
+        "ReleaseYear": "2024",
+        "Genres": "Animation, Comedy",
+        "Description": "In an underworld setting, chaos reigns among souls. A quirky establishment seeks transformation and redemption for misfits. Colorful characters navigate their afterlife with humor and flair. One ambitious demon dreams of hospitality in Hell's heart. Expect vibrant animation and dark comedy with musical flair."
+    },
+    {
+        "ID": 252,
+        "Name": "Buffy the Vampire Slayer",
+        "ReleaseYear": "1997",
+        "Genres": "Sci-Fi & Fantasy, Comedy",
+        "Description": "Once upon a time, darkness lurked in the night. A young woman battles foes with both strength and wits. Friendships form in a quirky high school setting, often humorous. A legendary foe is not just a monster, but an allegory. A chosen one must grapple with destiny and identity challenges."
+    },
+    {
+        "ID": 253,
+        "Name": "Falling Skies",
+        "ReleaseYear": "2011",
+        "Genres": "Action & Adventure, Sci-Fi & Fantasy",
+        "Description": "A world above, shadows loom over the earth. Survival hinges on the strength of human bonds. Unseen foes descend, changing lives and landscapes forever. Children bear the weight of futures untold and darkness. Resistance fighters confront otherworldly invaders in ragtag guerilla warfare."
+    },
+    {
+        "ID": 254,
+        "Name": "The Book of Boba Fett",
+        "ReleaseYear": "2021",
+        "Genres": "Action & Adventure, Sci-Fi & Fantasy",
+        "Description": "In a galaxy far, a bounty hunter emerges anew. Power shifts in the underbelly of commerce and crime. A nostalgic tale revisits familiar armor and deadly rivals. Journey through Tatooine\u2019s sands to reclaim a lost throne. Shadows of the past intertwine with the legacy of Fett."
+    },
+    {
+        "ID": 255,
+        "Name": "Goblin",
+        "ReleaseYear": "2016",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "In a realm where life and afterlife intertwine subtly. Choices made affect fate\u2019s clever tapestry of threads. A grim stranger\u2019s influence tests the bonds of love. A supernatural being grapples with their human desires compellingly. A gripping narrative unfolds in a romance with ghosts involved."
+    },
+    {
+        "ID": 256,
+        "Name": "Skins",
+        "ReleaseYear": "2007",
+        "Genres": "Drama, Comedy",
+        "Description": "Youthful rebellion unfolds in a colorful, chaotic setting. Life's troubles surface amid laughter and somber moments alike. Friendships form and fracture with intense emotional turbulence. A diverse group navigates love, loss, and self-discovery journeys. British teens confront societal expectations in vibrant storytelling style."
+    },
+    {
+        "ID": 257,
+        "Name": "Upload",
+        "ReleaseYear": "2020",
+        "Genres": "Comedy, Sci-Fi & Fantasy",
+        "Description": "In a realm beyond the physical, existences intertwine. Digital afterlives challenge perceptions of life and love. A tech-savvy protagonist navigates this virtual landscape\u2019s rules. Humor flourishes amidst the exploration of consciousness and legacy. Familiar faces create connections in a world that should be pixelated."
+    },
+    {
+        "ID": 258,
+        "Name": "Star Wars: Andor",
+        "ReleaseYear": "2022",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "In a galaxy far, shadows of rebellion emerge slowly. Secrets and sacrifices intertwine to shape new destinies. A skilled thief navigates the murky waters of espionage. A fight for freedom unfolds beneath oppressive regimes' watch. A familiar universe offers a darker, grounded narrative twist."
+    },
+    {
+        "ID": 259,
+        "Name": "American Horror Story",
+        "ReleaseYear": "2011",
+        "Genres": "Drama, Mystery",
+        "Description": "A canvas of terror paints the familiar unknown. Shadows of the past whisper through twisted corridors. A fragmented family battles their inner demons and ghosts. Each season, a fresh tale unravels fear and desire. Unorthodox themes collide as performers showcase myriad unsettling stories."
+    },
+    {
+        "ID": 260,
+        "Name": "Narcos: Mexico",
+        "ReleaseYear": "2018",
+        "Genres": "Drama, Crime",
+        "Description": "In arid landscapes, shadows of power loom large. A conflict brews over dangerous herbs and gold. Betrayal flows like the rivers of bloodshed daily. A legendary kingpin seeks an empire\u2019s unforgiving throne. Darkened corridors echo with the whispers of el patr\u00f3n."
+    },
+    {
+        "ID": 261,
+        "Name": "Love, Death & Robots",
+        "ReleaseYear": "2019",
+        "Genres": "Animation, Sci-Fi & Fantasy",
+        "Description": "Fleeting moments of existence dance through vibrant frames. Surreal tales explore the intersection of humanity and beyond. Unconventional stories challenge perceptions of love and mortality. Animated shorts vary in style, from whimsical to grotesque. Each episode offers a unique glimpse into the unknown."
+    },
+    {
+        "ID": 262,
+        "Name": "Brooklyn Nine-Nine",
+        "ReleaseYear": "2013",
+        "Genres": "Comedy, Crime",
+        "Description": "In a vibrant borough, laughter meets mischief and justice. A group of detectives navigate quirky cases and friendships. The captain\u2019s strictness contrasts hilariously with others' antics. A wise-cracking detective often seeks validation through humor. Their camaraderie shines through clever plots and heartfelt moments."
+    },
+    {
+        "ID": 263,
+        "Name": "Snowpiercer",
+        "ReleaseYear": "2020",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "A moving world encapsulated by an endless winter. Struggle for survival aboard a relentless steel serpent. Class divides shape the narrative within confined corridors. A battle for justice unfolds in frosty isolation. Resistance fuels hope against an authoritarian train ruler."
+    },
+    {
+        "ID": 264,
+        "Name": "Orange Is the New Black",
+        "ReleaseYear": "2013",
+        "Genres": "Comedy, Drama",
+        "Description": "Incarcerated lives reveal the spectrum of human experience. A clash of personalities deepens amidst unexpected connections and conflicts. The narrative unfolds through the eyes of a newcomer. Bright uniforms contrast dull surroundings, enhancing the storytelling's vibrancy. Explore themes of identity, redemption, and social justice in prison."
+    },
+    {
+        "ID": 265,
+        "Name": "Once",
+        "ReleaseYear": "2017",
+        "Genres": "Comedy, Family",
+        "Description": "A whimsical exploration of friendship and laughter unfolds. Two mismatched souls embark on a heartwarming journey together. Their tales intertwine through a melodic blend of life experiences. A vibrant canvas showcases familial bonds and comedic antics. Music becomes the heartbeat of their touching, humorous adventure."
+    },
+    {
+        "ID": 266,
+        "Name": "Scream Queens",
+        "ReleaseYear": "2015",
+        "Genres": "Mystery, Comedy",
+        "Description": "In a world where terror wears a mask. A vibrant tapestry of humor and horror unfolds. Fraternities clash with a deadly secret lurking nearby. A devilish red outfit becomes a symbol of fear. Campy characters aim to solve murders in style."
+    },
+    {
+        "ID": 267,
+        "Name": "9-1-1",
+        "ReleaseYear": "2018",
+        "Genres": "Drama, Crime",
+        "Description": "Emergency responders navigate chaos while balancing their lives. Human connections are tested in times of peril and distress. Each episode reveals intertwining stories of courage and vulnerability. First responders face personal and professional challenges in Los Angeles. Real-life scenarios and emotional depth shape this gripping drama series."
+    },
+    {
+        "ID": 268,
+        "Name": "Desperate Housewives",
+        "ReleaseYear": "2004",
+        "Genres": "Mystery, Drama",
+        "Description": "A picturesque suburb hides secrets beneath a pristine surface. Domesticity intertwines with deception in a dramatic ballet. Five distinct lives are united by unspoken truths and lies. An insightful narrator reveals the chaos simmering beneath perfection. Friendship, betrayal, and ambition shape the lives of women."
+    },
+    {
+        "ID": 269,
+        "Name": "The Man in the High Castle",
+        "ReleaseYear": "2015",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "A world altered by the outcome of a war. Distorted realities blur the lines between truth and fiction. A mysterious book influences thoughts and actions profoundly. Power struggles shape nations under oppressive regimes in conflict. A journey unfolds in an alternate America of 1962."
+    },
+    {
+        "ID": 270,
+        "Name": "iZombie",
+        "ReleaseYear": "2015",
+        "Genres": "Drama, Crime",
+        "Description": "In a world where life and death intertwine. A brain-eating protagonist fights crime in vibrant hues. Memories become clues in a swirling narrative tapestry. A clever twist on the undead meets detective drama. A medley of humor, horror, and mystery unfolds weekly."
+    },
+    {
+        "ID": 271,
+        "Name": "Succession",
+        "ReleaseYear": "2018",
+        "Genres": "Drama, Comedy",
+        "Description": "A family empire struggles against the sands of time. Manipulation and loyalty weave a tangled web at play. Wealthy patriarchs dance on the edge of destruction. Power transitions, as heirs vie for the throne's favor. Dark comedy unfolds amidst cutthroat business and familial betrayals."
+    },
+    {
+        "ID": 272,
+        "Name": "Dark",
+        "ReleaseYear": "2017",
+        "Genres": "Crime, Drama",
+        "Description": "Time loops intertwine destinies within a small town. Secrets buried in shadows affect every generation's fate. An intricate family tree reveals connections across timelines. A missing child sparks a search through dark dimensions. Two worlds collide, exposing the fragility of time itself."
+    },
+    {
+        "ID": 273,
+        "Name": "SPY x FAMILY",
+        "ReleaseYear": "2022",
+        "Genres": "Animation, Comedy",
+        "Description": "A trio walks a fine line of secrets and smiles. A mission demands unity amidst familial feigned identities. A master of disguise hides behind a playful guise. Dark missions intertwine with the absurdity of domestic life. This animated comedy features a telepathic girl and forged relationships."
+    },
+    {
+        "ID": 274,
+        "Name": "Emily in Paris",
+        "ReleaseYear": "2020",
+        "Genres": "Drama, Comedy",
+        "Description": "A landscape where dreams sip from caf\u00e9 cups blooms. Cultural clashes stir in a city of romance and style. A newcomer navigates the labyrinth of love and ambition. Fashion runs high as relationships twist and turn unexpectedly. A young woman's journey reshapes her perspective on life."
+    },
+    {
+        "ID": 275,
+        "Name": "Mr. Robot",
+        "ReleaseYear": "2015",
+        "Genres": "Crime, Drama",
+        "Description": "A masked vigilante wanders through the shadows of society. Digital warfare and psychological battles unfold in fractured reality. A hacker confronts personal demons alongside a fragmented world. An enigmatic antihero seeks to dismantle corporate control dynamics. Expect glitchy visuals and profound explorations of identity crises."
+    },
+    {
+        "ID": 276,
+        "Name": "Marvel's Luke Cage",
+        "ReleaseYear": "2016",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "A strong protector walks the streets at night. Shadows of struggle loom in a vibrant cityscape. Justice battles against a legacy of systemic oppression. A man with unbreakable skin faces formidable enemies. Harlem's heartbeat pulses through a tale of redemption."
+    },
+    {
+        "ID": 277,
+        "Name": "Super Dragon Ball Heroes",
+        "ReleaseYear": "2018",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "Time twisters clash in a colorful, dynamic landscape. A hero with spiky hair seeks strength and adventure. Alternate realities showcase battles with familiar and unexpected foes. Legendary fighters unite, defying the constraints of their worlds. Non-canon exploits with flashy transformations and epic showdowns abound."
+    },
+    {
+        "ID": 278,
+        "Name": "South Park",
+        "ReleaseYear": "1997",
+        "Genres": "Animation, Comedy",
+        "Description": "Children navigate absurdity in a snowy mountain town. Social commentary emerges through exaggerated caricatures of youth. Profanity-laden adventures often reflect contemporary societal issues. A group of boys showcases their friendship and mischief. Iconic characters regularly challenge norms with dark humor and satire."
+    },
+    {
+        "ID": 279,
+        "Name": "ONE PIECE",
+        "ReleaseYear": "2023",
+        "Genres": "Action & Adventure, Sci-Fi & Fantasy",
+        "Description": "A grand quest unfolds over vast, unpredictable waters. Dreamers gather, each with unique abilities and aspirations. A tapestry of vibrant colors dances alongside intense action. In search of the ultimate treasure, friendships are forged deeply. An eclectic crew sails toward a legendary pirate's legacy."
+    },
+    {
+        "ID": 280,
+        "Name": "Jujutsu Kaisen",
+        "ReleaseYear": "2020",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "In a world where curses haunt the living relentlessly. A young man's resolve changes when destiny calls him. Creatures of fear are fought with extraordinary martial skills. Unique energy concepts intertwine with stellar animation and design. A school for sorcerers trains those resisting dark forces."
+    },
+    {
+        "ID": 281,
+        "Name": "See",
+        "ReleaseYear": "2019",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "In a world where sight is a lost virtue, survival depends on sound. A powerful leader protects their family with fierce loyalty. Hidden dangers lurk, testing the limits of human endurance. A clan struggles against not just foes, but paranoia. Unseen forces challenge a unique vision of a blind society."
+    },
+    {
+        "ID": 282,
+        "Name": "FROM",
+        "ReleaseYear": "2022",
+        "Genres": "Mystery, Drama",
+        "Description": "A small town holds secrets beneath its surface. Time bends in ways that confound spatial logic. Those trapped may find solace or despair in darkness. Characters grapple with crucial choices in a haunting setting. A gripping mix of mystery and drama unfolds through episodes."
+    },
+    {
+        "ID": 283,
+        "Name": "Merl\u00ed",
+        "ReleaseYear": "2015",
+        "Genres": "Comedy, Drama",
+        "Description": "A thinker challenges conventional wisdom among youthful minds. Philosophical discussions unfold within high school hallways and classrooms. Charismatic teacher navigates complex relationships with students and peers. Themes of mentorship and self-discovery intertwine with comedic moments. Set against the backdrop of Catalonia's vibrant cultural landscape."
+    },
+    {
+        "ID": 284,
+        "Name": "Record of Ragnarok",
+        "ReleaseYear": "2021",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "Ancient legends collide in a tournament of epic scale. Immortal beings clash within the realm of mankind's fate. A striking art style complements dynamic battles of strength. Deities and historical figures face off in fierce competition. Witness humanity\u2019s champions rise against gods in combat events."
+    },
+    {
+        "ID": 285,
+        "Name": "La hija del Mariachi",
+        "ReleaseYear": "2006",
+        "Genres": "Soap, Drama",
+        "Description": "A tale woven through the strings of emotion. Love dances amidst life\u2019s vibrant melodies and conflicts. A spirited woman finds strength in unexpected places. A musical journey reveals romance and familial ties entwined. The mariachi life intertwines with drama and passion vividly."
+    },
+    {
+        "ID": 286,
+        "Name": "Sin senos s\u00ed hay para\u00edso",
+        "ReleaseYear": "2016",
+        "Genres": "Action & Adventure, Crime",
+        "Description": "A world where dreams clash with harsh realities unfolds. Desire drives choices, often with perilous consequences involved. Lush landscapes hide secrets beneath the surface of beauty. A woman's journey intertwines with betrayal, love, and survival. Underneath it all, crime families battle for dominance and power."
+    },
+    {
+        "ID": 287,
+        "Name": "Mi coraz\u00f3n es tuyo",
+        "ReleaseYear": "2014",
+        "Genres": "Soap, Comedy",
+        "Description": "In a lively household, chaos brews under one roof. Unexpected romantic sparks fly amidst daily domestic hurdles. A strong-willed matriarch faces a dashing new challenge. Quirky characters navigate love, laughter, and deceptive identities. Ultimately, heartstrings entwine in a comedic battle for belonging."
+    },
+    {
+        "ID": 288,
+        "Name": "Lost in Space",
+        "ReleaseYear": "2018",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "Inhabitants traverse the vastness, searching for their home. A family unit faces challenges among the stars. Robotic allies exhibit loyalty amidst the unknown dangers. A young girl\u2019s bravery illuminates the darkest moments. Survival hinges on cleverness, technology, and strong relationships."
+    },
+    {
+        "ID": 289,
+        "Name": "Legion",
+        "ReleaseYear": "2017",
+        "Genres": "Action & Adventure, Sci-Fi & Fantasy",
+        "Description": "Minds entwined in a battle against unseen forces arise. Reality shifts as perception bends, shadows dance around. A young man harnesses fractured powers he can\u2019t control. Expect surreal visual storytelling within a poignant exploration of identity. An intriguing journey through mental illness entwined with superhero lore."
+    },
+    {
+        "ID": 290,
+        "Name": "Your Honor",
+        "ReleaseYear": "2020",
+        "Genres": "Drama, Crime",
+        "Description": "A figure cloaked in authority grapples with morality's weight. Family bonds fracture under the pressure of secrets revealed. The courtroom becomes a battlefield for justice and vengeance. A father confronts the consequences of his son's actions. A gripping narrative unfolds through dramatic twists and legal dilemmas."
+    },
+    {
+        "ID": 291,
+        "Name": "Teen Titans",
+        "ReleaseYear": "2003",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "A youthful assembly battles not just external foes. Colors burst forth in a spirited and dynamic manner. Unlikely friendships forge through trials and diverse challenges. Unified under a winged leader, they tackle personal growth. Each villain reveals deeper shadows within their own hearts."
+    },
+    {
+        "ID": 292,
+        "Name": "BAKI",
+        "ReleaseYear": "2018",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "Brutal clashes echo in a world of warriors. Ancient techniques redefine strength beyond the human limit. A son seeks to outshine his legendary parentage. Fighting styles intertwine in a vibrant, exaggerated art form. An arena of champions tests resolve through savage duels."
+    },
+    {
+        "ID": 293,
+        "Name": "Sons of Anarchy",
+        "ReleaseYear": "2008",
+        "Genres": "Crime, Drama",
+        "Description": "A band of brothers navigates a turbulent world. Loyalty and betrayal intertwine in their daily lives. A leather-clad crew rides through the California landscape. Family ties complicate the code of their existence. A leader's struggle shapes the fate of the gang."
+    },
+    {
+        "ID": 294,
+        "Name": "Victorious",
+        "ReleaseYear": "2010",
+        "Genres": "Comedy, Kids",
+        "Description": "A group of teens chase dreams on a stage. Unique expressions through song and dance fill the air. Creative mishaps often lead to humorous friendship tests. A talented girl finds her voice in a new school. Expect catchy tunes and colorful antics through every episode."
+    },
+    {
+        "ID": 295,
+        "Name": "Twin Peaks",
+        "ReleaseYear": "1990",
+        "Genres": "Drama, Mystery",
+        "Description": "A small town holds secrets under a dark veneer. Surreal moments intertwine with the mundane, revealing dualities. A fateful end catalyzes the quest for truth. A coffee-loving, pie-eating detective seeks answers in dreams. A haunting atmosphere envelops a community torn by tragedy."
+    },
+    {
+        "ID": 296,
+        "Name": "The Flash",
+        "ReleaseYear": "2014",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "A hero races against time and personal demons. A vibrant city holds secrets beneath its surface. A mentor-turned-villain complicates the journey of growth. Speed becomes both a gift and a heavy burden. A young man dons a suit to protect his city."
+    },
+    {
+        "ID": 297,
+        "Name": "El Chavo del Ocho",
+        "ReleaseYear": "1973",
+        "Genres": "Comedy, Family",
+        "Description": "A neighborhood of laughter hides youthful mischief and dreams. A young boy\u2019s antics charm adults and children alike. Quirky characters dwell in a vibrant, simple environment. A timeless series blends humor with lessons on friendship. A beloved, iconic character navigates life in an old neighborhood."
+    },
+    {
+        "ID": 298,
+        "Name": "House",
+        "ReleaseYear": "2004",
+        "Genres": "Drama, Mystery",
+        "Description": "A solitary figure unravels secrets of the human condition. The backdrop often shifts from warmth to cold ambiguity. Misleading appearances hide complex stories waiting to be told. Medical dilemmas intertwine with moral quandaries and personal histories. A brilliant yet flawed doctor navigates life, death, and truth."
+    },
+    {
+        "ID": 299,
+        "Name": "Chucky",
+        "ReleaseYear": "2021",
+        "Genres": "Crime, Comedy",
+        "Description": "A diminutive figure incites chaos among unsuspecting friends. A blend of horror and humor tests boundaries of fear. Childhood toys harbor secrets that echo past misdeeds. Innocence clashes with sinister ambitions in suburban streets. Revenge takes on a new form through a familiar doll."
+    },
+    {
+        "ID": 300,
+        "Name": "BEASTARS",
+        "ReleaseYear": "2019",
+        "Genres": "Animation, Drama",
+        "Description": "In a world of predation, relationships blur the lines. Carnivore and herbivore tensions fuel deep emotional conflicts. An academic institution serves as a backdrop for drama. Anthropomorphic animals navigate identity, desires, and societal expectations. A wolf faces his feelings for a rabbit classmate."
+    },
+    {
+        "ID": 301,
+        "Name": "Mob Psycho 100",
+        "ReleaseYear": "2016",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "In a world where the unseen shapes reality's path. A boy grapples with emotions and untamed power struggles. Spirits clash while friendship becomes an unexpected fortress. Art pulses with vibrant motions, reflecting chaotic inner journeys. A young esper\u2019s growth navigates humor, action, and the supernatural."
+    },
+    {
+        "ID": 302,
+        "Name": "Marvel's The Punisher",
+        "ReleaseYear": "2017",
+        "Genres": "Action & Adventure, Crime",
+        "Description": "A shadowed figure seeks retribution for lost innocence. Vigilante justice clashes with the chaos of criminality. A web of betrayal entangles a fractured past and present. Gritty visuals complement a story steeped in moral ambiguity. A former soldier exacts vengeance through lethal and calculated methods."
+    },
+    {
+        "ID": 303,
+        "Name": "Riverdale",
+        "ReleaseYear": "2017",
+        "Genres": "Crime, Drama",
+        "Description": "Secrets flow through town like water beneath bridges. A group of friends faces the shadows of their past. The red and gold hues reflect youthful rebellion and drama. Betrayals surface amidst the backdrop of unsettling mysteries. A familiar comic setting reimagines teenage life and crime."
+    },
+    {
+        "ID": 304,
+        "Name": "Stranger Things",
+        "ReleaseYear": "2016",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "In a quiet town, shadows whisper secrets untold. A group of friends seeks adventure beyond the ordinary. An experiment disrupts reality, unleashing chaos and darkness. A girl with powers fights for her missing brother. Nostalgia and danger intertwine in an eerie upside-down world."
+    },
+    {
+        "ID": 305,
+        "Name": "Tom Clancy's Jack Ryan",
+        "ReleaseYear": "2018",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "A figure emerges from shadows, navigating perilous landscapes. Intelligence operations lead to unexpected alliances and betrayals. The world of espionage unfolds with tactical precision and grit. A desk analyst becomes an unlikely hero in conflict zones. Shadows of politics and personal stakes drive gripping narratives forward."
+    },
+    {
+        "ID": 306,
+        "Name": "True Blood",
+        "ReleaseYear": "2008",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "In a world where night reigns with hidden secrets. The allure of ancient beings tugs at mortal hearts. Blood becomes the bridge for entwined destinies and conflicts. A waitress discovers a supernatural realm beyond her understanding. Vampire politics unfold in a Southern town's enigmatic shadows."
+    },
+    {
+        "ID": 307,
+        "Name": "Love Alarm",
+        "ReleaseYear": "2019",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "In a world ruled by feelings, technology reigns supreme. An app determines love\u2019s pulse, changing lives forever. A trio navigates complex emotions amidst ringing alerts. Their hearts clash as secrets threaten to unravel bonds. Will true love triumph over mechanized affection and fear?"
+    },
+    {
+        "ID": 308,
+        "Name": "Obi-Wan Kenobi",
+        "ReleaseYear": "2022",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "A cloaked figure wrestles with a galaxy's fate. Secrets echo from long ago in distant star systems. The light and dark clash within a mentor-student bond. A remnant of an Empire hunts former guardians of peace. Tatooine's sands hide a forgotten hero's intricate journey."
+    },
+    {
+        "ID": 309,
+        "Name": "S.W.A.T.",
+        "ReleaseYear": "2017",
+        "Genres": "Crime, Action & Adventure",
+        "Description": "A unit tackles chaos in urban landscapes every day. A tale of bravery emerges through the city's shadows. Loyalties are tested when a dangerous drug lord is involved. Tactical precision meets high-octane action in this reboot. A diverse team fights crime with specialized skills and unity."
+    },
+    {
+        "ID": 310,
+        "Name": "Stargate SG-1",
+        "ReleaseYear": "1997",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "A circular portal connects distant worlds in peril. Teams of explorers face alien foes and ancient gods. A soldier and a scientist both lead the charge. The fight for Earth often involves clever negotiations and battles. A diverse team battles evil while uncovering vast truths of existence."
+    },
+    {
+        "ID": 311,
+        "Name": "Ted Lasso",
+        "ReleaseYear": "2020",
+        "Genres": "Comedy, Drama",
+        "Description": "A jolly visitor brings unexpected warmth to cold sports. Friendship blooms in an arena of rivalry and competition. Heartfelt lessons are learned beyond the game\u2019s surface. A coach with a mustache shares wisdom and kindness. Come for the comedy, stay for the heartfelt drama."
+    },
+    {
+        "ID": 312,
+        "Name": "The Boys",
+        "ReleaseYear": "2019",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "In a world where heroes wear masks of deception. Corporations profit from powers beyond human comprehension and control. A group of misfits seeks justice for the oppressed. The narrative blurs the line between heroism and villainy sharply. Gritty realism meets dark comedy in this anti-hero saga."
+    },
+    {
+        "ID": 313,
+        "Name": "Never Have I Ever",
+        "ReleaseYear": "2020",
+        "Genres": "Comedy, Drama",
+        "Description": "A young life caught in a web of self-discovery. Cultural identity adds spice to teenage turmoil and humor. An ambitious girl navigates love, loss, and modern culture. Friends challenge each other in a lighthearted coming-of-age tale. A vibrant series blends comedy and drama with heartfelt moments."
+    },
+    {
+        "ID": 314,
+        "Name": "The Blacklist",
+        "ReleaseYear": "2013",
+        "Genres": "Drama, Crime",
+        "Description": "In shadows, secrets and power intertwine over time. A mastermind crafts alliance through intricate, criminal connections. A reluctant partner grapples with trust and identity struggles. A list emerges, top criminals with complex backstories unfold. Unraveling tales of betrayal weave through crime and justice."
+    },
+    {
+        "ID": 315,
+        "Name": "Defending Jacob",
+        "ReleaseYear": "2020",
+        "Genres": "Drama, Mystery",
+        "Description": "A shadow looms over a family's fragile bond. Trust and judgment intertwine in a gripping tale. A father's loyalty is tested by distressing accusations. Secrets unravel in a world where innocence blurs. Legal battles unfold surrounding a young boy's future."
+    },
+    {
+        "ID": 316,
+        "Name": "Saint Seiya",
+        "ReleaseYear": "1986",
+        "Genres": "Animation, Drama",
+        "Description": "Celestial battles unfold beneath a golden hue. Warriors clad in mystical armor confront fate\u2019s relentless tide. Friendship and sacrifice intertwine amidst divine-powered spectacles. A legendary hero seeks to protect a maiden\u2019s honor. Mythical constellations guide knights in their quest for justice."
+    },
+    {
+        "ID": 317,
+        "Name": "Severance",
+        "ReleaseYear": "2022",
+        "Genres": "Drama, Mystery",
+        "Description": "In a workplace, memories are both a blessing and curse. Characters navigate a surreal divide between work and personal life. A peculiar procedure separates thoughts, igniting deep existential questions. Dystopian elements blend mystery and psychological exploration in unique ways. Each episode unveils secrets as employees challenge their programmed existence."
+    },
+    {
+        "ID": 318,
+        "Name": "ALF",
+        "ReleaseYear": "1986",
+        "Genres": "Family, Comedy",
+        "Description": "An extraterrestrial visitor stirs chaos in a household. A furry character often seeks culinary delights, particularly cats. Witty banter ensues as family dynamics face the bizarre. Sitcom style with a laugh track amplifies the humor. A Melmacian life form grapples with earthly suburban life."
+    },
+    {
+        "ID": 319,
+        "Name": "Arrow",
+        "ReleaseYear": "2012",
+        "Genres": "Crime, Drama",
+        "Description": "A shadow lurks where justice often fails to thrive. A hero uncovers darkness hidden behind a wealthy facade. Archery skills become the unlikely tool for redemption. A city in crisis demands a vigilante with a dual identity. Friendships fracture and alliances form in a constant battle."
+    },
+    {
+        "ID": 320,
+        "Name": "Breaking Bad",
+        "ReleaseYear": "2008",
+        "Genres": "Drama, Crime",
+        "Description": "A transformation leads to choices with heavy consequences. A journey of morality unfolds in arid landscapes. Heisenberg embodies the duality of man\u2019s nature. Chemistry and family clash in a world of crime. The rise and fall of a teacher turned kingpin ensues."
+    },
+    {
+        "ID": 321,
+        "Name": "Big Time Rush",
+        "ReleaseYear": "2009",
+        "Genres": "Comedy, Kids",
+        "Description": "A colorful journey unfolds with youthful ambition and laughter. Four friends navigate fame, friendship, and teenage challenges together. Harmonious tunes echo through their dreams and adventures ahead. A band forms, with hopes set on a big break. Reality TV intertwines with scripted comedy in their lives."
+    },
+    {
+        "ID": 322,
+        "Name": "Hannibal",
+        "ReleaseYear": "2013",
+        "Genres": "Drama, Crime",
+        "Description": "A feast of intellect amid shadows and intrigue unfolds. Unlikely bonds form against the backdrop of the macabre. Complex minds dance in a deadly game of wits. A psychiatrist's palate savors both cuisine and cunning deception. Dark culinary artistry and psychological manipulation define their connection."
+    },
+    {
+        "ID": 323,
+        "Name": "Death Note",
+        "ReleaseYear": "2006",
+        "Genres": "Animation, Mystery",
+        "Description": "A battle of wits unfolds in dark shadows. A book holds the power of life and death. A gifted student stumbles upon sinister supernatural forces. An enigmatic figure cloaked in mystery challenges moral boundaries. An animated series explores intellect, justice, and consequence."
+    },
+    {
+        "ID": 324,
+        "Name": "The Rookie",
+        "ReleaseYear": "2018",
+        "Genres": "Crime, Drama",
+        "Description": "A journey begins where ambition meets a badge. Second chances dance with law, pixels ignite the tale. Age is but a number in pursuit of justice. Rookie cop tackles crime, life lessons unfold on screen. Personal struggles blend with police work in each episode."
+    },
+    {
+        "ID": 325,
+        "Name": "Person of Interest",
+        "ReleaseYear": "2011",
+        "Genres": "Drama, Action & Adventure",
+        "Description": "In a world where silence meets coded whispers, a watchful eye lingers in the shadows, deciphering patterns within the chaos of urban life. A former operative finds new purpose alongside a genius recluse, unraveling threats hidden within binary secrets. Together, they confront a system built on surveillance and morality's fine line, challenging the essence of free will. Each episode explores the consequences of choice, as lives intersect with fate's unseen hand. The series masterfully blends drama and action, driven by compelling characters immersed in a technological labyrinth."
+    },
+    {
+        "ID": 326,
+        "Name": "Preacher",
+        "ReleaseYear": "2016",
+        "Genres": "Sci-Fi & Fantasy, Mystery",
+        "Description": "A journey begins with a search for meaning. Unusual alliances arise in a battle for power. Dark humor permeates the quest for divine intervention. A preacher with a peculiar ability seeks lost souls. A comic-inspired tale unfolds in the American South."
+    },
+    {
+        "ID": 327,
+        "Name": "Black Sails",
+        "ReleaseYear": "2014",
+        "Genres": "Drama, Action & Adventure",
+        "Description": "An age-old struggle amidst tempestuous seas unfolds silently. Allies and enemies often wear masks of deception. A grand hunt for freedom fuels ambition and betrayal. A legendary pirate captain crafts his legacy with cunning. The tale intertwines rich visuals with tense, swashbuckling action."
+    },
+    {
+        "ID": 328,
+        "Name": "Gotham",
+        "ReleaseYear": "2014",
+        "Genres": "Drama, Crime",
+        "Description": "In a shadowy city, secrets whisper through alleys. A young man grapples with loss and vengeance lurking. Corruption reigns while unlikely alliances form in darkness. Iconic masks and capes emerge from the underworld chaos. A boy's transformation ignites the birth of a legend."
+    },
+    {
+        "ID": 329,
+        "Name": "Black Clover",
+        "ReleaseYear": "2017",
+        "Genres": "Action & Adventure, Animation",
+        "Description": "In a world of magic, strength is paramount for survival. A bond between two young rivals sparks a legendary journey. One dreams of the ultimate title beyond all magic. An unyielding spirit challenges fate with sheer determination. Far from ordinary, a boy with no magic defies expectations."
+    },
+    {
+        "ID": 330,
+        "Name": "Dragon Ball",
+        "ReleaseYear": "1986",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "A mythical creature soars through a vibrant world. A quest for mystical orbs drives the adventurous spirit. Heroes and villains engage in epic combat and rivalry. A young fighter with a spiky aura seeks mastery. Legendary adventures unfold in a colorful animated series."
+    },
+    {
+        "ID": 331,
+        "Name": "Marvel's Iron Fist",
+        "ReleaseYear": "2017",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "A tale of courage hidden in a great city. Martial arts dance through a narrative of destiny and power. A chosen one confronts shadowy foes from within and without. Legacy and family ties weave through the hero's journey. An iconic comic character emerges in a streaming action series."
+    },
+    {
+        "ID": 332,
+        "Name": "La Reina del Sur",
+        "ReleaseYear": "2011",
+        "Genres": "Drama, Crime",
+        "Description": "A tale weaves through shadows of power and survival. Underworld empires clash, revealing loyalty and betrayal's cost. A woman's ascent defies tradition in a male-dominated world. Navigating dangers, she seeks vengeance amid the chaos. A gripping saga of drug trade and fierce ambition unfolds."
+    },
+    {
+        "ID": 333,
+        "Name": "Jurassic World Camp Cretaceous",
+        "ReleaseYear": "2020",
+        "Genres": "Animation, Kids",
+        "Description": "A place where ancient giants roam once more. Survival is key in a world turned dangerous. A group of young adventurers face daunting challenges together. Friendship and trust are tested amid terrifying encounters. Animated tales unfold in a vibrant dinosaur-filled setting."
+    },
+    {
+        "ID": 334,
+        "Name": "TONIKAWA: Over the Moon for You",
+        "ReleaseYear": "2020",
+        "Genres": "Animation, Comedy",
+        "Description": "In a world where love transcends the ordinary. A journey of two hearts begins with a promise. Celestial themes intertwine with the daily grind of life. Characters balance comedic antics with tender moments of intimacy. Watch as a couple navigates marriage\u2019s ups and downs."
+    },
+    {
+        "ID": 335,
+        "Name": "WandaVision",
+        "ReleaseYear": "2021",
+        "Genres": "Sci-Fi & Fantasy, Mystery",
+        "Description": "A couple navigates the complexities of their existence. Suburban bliss masks underlying tensions and secret truths. Reality shifts with nostalgic nods to classic television eras. An enigmatic hero grapples with grief and identity crises. Two iconic characters seek normalcy in a distorted world."
+    },
+    {
+        "ID": 336,
+        "Name": "Squid Game",
+        "ReleaseYear": "2021",
+        "Genres": "Action & Adventure, Mystery",
+        "Description": "In a world where reality blurs with entertainment, masked figures reign. A life of desperation pushes souls into deadly temptations. Childhood games become twisted contests in a brutal arena. Relationships fracture as trust is tested beneath the surface. One man's debt leads to survival through grim challenges ahead."
+    },
+    {
+        "ID": 337,
+        "Name": "Fallout",
+        "ReleaseYear": "2024",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "In a world reshaped by cataclysmic events, remnants clash. Heroes rise from the ashes of a fractured society. Underground dwellers wield technology in their fight for survival. A unique blend of retro-futuristic visuals and dark humor prevails. Follow the path of a marked wanderer amidst radioactive landscapes."
+    },
+    {
+        "ID": 338,
+        "Name": "Dark Desire",
+        "ReleaseYear": "2020",
+        "Genres": "Mystery, Drama",
+        "Description": "In shadows of desire, secrets quietly unfold. A dance of lust shapes fates between entwined souls. Obsession brews beneath the facade of passionate connections. A mystery entwines around two hearts living double lives. Thrilling drama often blurs the lines of right and wrong."
+    },
+    {
+        "ID": 339,
+        "Name": "NCIS",
+        "ReleaseYear": "2003",
+        "Genres": "Crime, Drama",
+        "Description": "In a world of duty, secrets lurk beneath. Unique investigations blend military and investigative expertise seamlessly. A team of specialists confronts crime along naval lines. One former agent\u2019s insight guides them through trials. Uncovering truth, they unravel mysteries beyond the surface."
+    },
+    {
+        "ID": 340,
+        "Name": "Daughter from Another Mother",
+        "ReleaseYear": "2021",
+        "Genres": "Comedy, Drama",
+        "Description": "Two families collide in unexpected and humorous ways. Unique bonds form through alternating perspectives of parenthood. A tale woven with laughter, tears, and cultural contrasts. One girl\u2019s arrival sparks a profound family redefinition. Heartfelt journeys explore love and acceptance beyond blood ties."
+    },
+    {
+        "ID": 341,
+        "Name": "Watchmen",
+        "ReleaseYear": "2019",
+        "Genres": "Drama, Crime",
+        "Description": "In a world masked by secrets, darkness looms. Power struggles ignite in both history and modernity's shadows. A hero's tragic past intertwines with societal unrest. Colorful visuals mirror a fragmented narrative steeped in tension. Vigilantes rise, questioning morality amidst chaos and vigilantism."
+    },
+    {
+        "ID": 342,
+        "Name": "Altered Carbon",
+        "ReleaseYear": "2018",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "In a world where bodies are mere vessels, A detective searches for truth in echoes of lives, A technology blurs the line between life and death, Complex identities clash amidst a backdrop of neon shadows, A former soldier retraces his past in a new skin."
+    },
+    {
+        "ID": 343,
+        "Name": "Heroes",
+        "ReleaseYear": "2006",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "Many find themselves gifted in unusual ways, battling fate. Ordinary lives intertwine as secrets gradually unfold and emerge. A synergetic dance of timelines reveals dark choices and light. One hero carries the burden of destiny more than others. A group assembles to confront both power and identity crises."
+    },
+    {
+        "ID": 344,
+        "Name": "Batwoman",
+        "ReleaseYear": "2019",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "A shadowed figure emerges in a bustling metropolis. Hidden truths and family ties shape her destiny. A symbol of justice finds its new bearer today. The battle against darkness highlights both legacy and identity. A heroic journey begins under the watchful eye of Gotham."
+    },
+    {
+        "ID": 345,
+        "Name": "JoJo's Bizarre Adventure",
+        "ReleaseYear": "2012",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "A lineage bound by destiny and extraordinary powers prevails. Unique expressions of strength come in vivid color palettes. Eccentric foes embody styles and techniques of fierce combat. One family's journey spans generations, facing bizarre supernatural forces. An unforgettable adventure features unforgettable stands and iconic poses."
+    },
+    {
+        "ID": 346,
+        "Name": "Tokyo Revengers",
+        "ReleaseYear": "2021",
+        "Genres": "Drama, Animation",
+        "Description": "A journey anchored in the past weaves destiny's threads. Fractured friendships and youthful rebellion ignite emotional conflicts. Time slips like a whisper, begging for second chances. A vibrant art style dances over a turbulent urban backdrop. Can one brave soul alter fate amid gang rivalries?"
+    },
+    {
+        "ID": 347,
+        "Name": "Futurama",
+        "ReleaseYear": "1999",
+        "Genres": "Animation, Comedy",
+        "Description": "Time travel mixes with humor in a quirky setting. A group of misfits navigates the future's absurdities together. One character hails from an era lost in time. Futuristic New York City becomes the backdrop for adventures. Iconic delivery guy and his diverse crew stand out."
+    },
+    {
+        "ID": 348,
+        "Name": "The Lord of the Rings: The Rings of Power",
+        "ReleaseYear": "2022",
+        "Genres": "Action & Adventure, Sci-Fi & Fantasy",
+        "Description": "A realm of myth where shadows dance and shimmer. Ancient artifacts hold the key to great power within. An ensemble of diverse beings unites against brewing darkness. A tale of lineage explores destinies intertwined in conflict. Visually stunning, this series expands a beloved fantasy universe."
+    },
+    {
+        "ID": 349,
+        "Name": "Doctor Who",
+        "ReleaseYear": "2005",
+        "Genres": "Action & Adventure, Drama",
+        "Description": "Time bends in the flow of adventurous tales. A mysterious voyager transcends ages and realms alike. Companions join the journey, facing danger and wonder. An iconic police box defies spatial expectations and norms. A time lord battles foes across decades with wits and courage."
+    },
+    {
+        "ID": 350,
+        "Name": "The Tom and Jerry Show",
+        "ReleaseYear": "1975",
+        "Genres": "Animation, Kids",
+        "Description": "Two rivals engage in endless chaotic chases. One is a clever feline with colorful schemes. The other, a nimble rodent escapes with quick wit. Timeless animation style enhances slapstick humor throughout episodes. Watch as mischief unfolds with every clever trap and chase."
+    },
+    {
+        "ID": 351,
+        "Name": "Sex Education",
+        "ReleaseYear": "2019",
+        "Genres": "Comedy, Drama",
+        "Description": "In a quirky town, teens seek knowledge and connection. Banter intertwines with lessons on intimacy and growing pains. A young man\u2019s insight sparks change for everyone involved. Relationships bloom amid comedic mishaps and heartfelt revelations throughout. Educating others leads to self-discovery in this charming series."
+    },
+    {
+        "ID": 352,
+        "Name": "11.22.63",
+        "ReleaseYear": "2016",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "A journey through time unfolds with consequences of fate. Shadows of the past haunt the choices we make. A lone traveler navigates pivotal moments in history. A tragic assassination shapes the protagonist's quest for justice. Twists of destiny and love intertwine in a nostalgic era."
+    },
+    {
+        "ID": 353,
+        "Name": "The Pacific",
+        "ReleaseYear": "2010",
+        "Genres": "Drama, Action & Adventure",
+        "Description": "A vast expanse where conflict and valor intertwine. Heroes emerge amid chaos and tarred landscapes of war. Brotherhood forms against a backdrop of relentless oceans and fire. Individual journeys unfold through battles and personal sacrifices made. A gritty portrayal of World War II's brutal Pacific theater."
+    },
+    {
+        "ID": 354,
+        "Name": "Money Heist",
+        "ReleaseYear": "2017",
+        "Genres": "Crime, Drama",
+        "Description": "A group pursues liberation in a confined environment. Secrets intertwine as relationships strain under pressure and greed. A mastermind orchestrates schemes with a carefully crafted plan. A colorful mask symbolizes rebellion against authority and norms. Tensions rise as hostages and thieves engage in psychological games."
+    },
+    {
+        "ID": 355,
+        "Name": "1899",
+        "ReleaseYear": "2022",
+        "Genres": "Mystery, Drama",
+        "Description": "A journey across an ocean hides unsettling secrets within. Fractured timelines blur the line between dreams and reality. A diverse group aboard a vessel seeks their fate. Memories intertwine with dark choices, challenging their very existence. A suspenseful narrative unfolds in a richly crafted world."
+    },
+    {
+        "ID": 356,
+        "Name": "Fast & Furious Spy Racers",
+        "ReleaseYear": "2019",
+        "Genres": "Animation, Action & Adventure",
+        "Description": "A high-octane pursuit through vibrant digital landscapes unfolds. Youthful drivers navigate a world of espionage and deceit. A rebellious protagonist seeks adventure alongside diverse companions. Fast machines become essential tools in secretive missions. Animated shadows bring familiar high-speed heists to new life."
+    },
+    {
+        "ID": 357,
+        "Name": "American Dad!",
+        "ReleaseYear": "2005",
+        "Genres": "Animation, Comedy",
+        "Description": "A country\u2019s tales told in a vibrant tapestry. A quirky household navigates life with unique curiosities. Unconventional familial bonds shaped by government and extraterrestrial influences. A father figure embodies patriotism with a comical twist. Animated satire reflects modern society's absurdities and dynamics."
+    },
+    {
+        "ID": 358,
+        "Name": "The Sandman",
+        "ReleaseYear": "2022",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "Whispers of dreams filter through shadowy realms, unraveling time. A captive essence seeks to reclaim lost dominion over night. The architect of dreams wears a unique, enigmatic guise. Mythological beings clash as the boundaries of reality blur. A tale woven from comic origins, exploring the realm of sleep."
+    },
+    {
+        "ID": 359,
+        "Name": "Lie to Me",
+        "ReleaseYear": "2009",
+        "Genres": "Crime, Drama",
+        "Description": "Truth wears a mask in a world of deception. Observers scrutinize the smallest gestures for hidden motives. A brilliant mind dissects lies through a unique lens. Trust is fragile among those who conceal their truths. A forensic psychologist and his team unravel intricate criminal puzzles."
+    },
+    {
+        "ID": 360,
+        "Name": "Ms. Marvel",
+        "ReleaseYear": "2022",
+        "Genres": "Sci-Fi & Fantasy, Action & Adventure",
+        "Description": "A youthful hero discovers their extraordinary potential within. Cultural heritage plays a significant role in their journey. Secret identities and family ties shape the narrative's conflict. An unexpected cosmic encounter unlocks hidden powers and responsibilities. A fresh perspective on superhero stories, bursting with vibrant colors."
+    },
+    {
+        "ID": 361,
+        "Name": "Ash vs Evil Dead",
+        "ReleaseYear": "2015",
+        "Genres": "Comedy, Action & Adventure",
+        "Description": "Eldritch horrors arise from forgotten pages and whispers. One man\u2019s chainsaw is his weapon of choice. A battle ignites between good intentions and evil forces. Humor intertwines with the supernatural in a gory dance. A nostalgic hero returns to face his haunted past."
+    },
+    {
+        "ID": 362,
+        "Name": "It",
+        "ReleaseYear": "1990",
+        "Genres": "Mystery, Drama",
+        "Description": "A dark force lurks in a small, troubled town. Childhood fears manifest into something truly terrifying over time. A group of misfits bands together against a sinister entity. Red balloons and a menacing figure haunt their memories. A battle between innocence and an ancient evil unfolds."
+    },
+    {
+        "ID": 363,
+        "Name": "The Act",
+        "ReleaseYear": "2019",
+        "Genres": "Drama, Crime",
+        "Description": "A shadowy reflection of truth intertwines with deception. A mother-daughter bond shrouded in secrets and fragility emerges. Illness becomes a weapon in a twisted narrative form. Real-life horrors unfold within a dramatized, gripping tale. The story reveals dark family dynamics and an unsettling crime."
+    },
+    {
+        "ID": 364,
+        "Name": "Superman & Lois",
+        "ReleaseYear": "2021",
+        "Genres": "Drama, Sci-Fi & Fantasy",
+        "Description": "Two iconic symbols collide in a new narrative landscape. A couple navigates the trials of ordinary life together. A legacy of strength weighs heavily on familial ties. Secrets and powers intertwine in a modern suburban setting. A man with a cape embraces love and fatherhood challenges."
+    },
+    {
+        "ID": 365,
+        "Name": "The Witcher",
+        "ReleaseYear": "2019",
+        "Genres": "Sci-Fi & Fantasy, Drama",
+        "Description": "A realm governed by fate's tangled threads and choices. Monster hunters navigate moral riddles in this dark land. A lone warrior with silver hair battles destiny's weight. Bonds of friendship and love intertwine amidst ancient curses. A rich tapestry unfolds, blending folklore with modern storytelling."
+    }
+]

@@ -14,7 +14,7 @@ const FailModal = lazy(() => import('./components/FailModal'));
 const GameOverScreen = lazy(() => import('./components/GameOverScreen'));
 const Description = lazy(() => import('./components/Description'));
 
-const TESTING_MODE = false;
+const TESTING_MODE = true;
 
 const initialGameState = {
   levels: { game: 4, movie: 4, tv: 4 },
@@ -144,9 +144,9 @@ function App() {
           getAllTVShows()
         ]);
         setAllTitles({
-          games: games.map(game => game.gameName),
-          movies: movies.map(movie => movie.gameName),
-          tv: tvShows.map(show => show.gameName)
+          game: games.map(game => game.Name), // Ensure correct property
+          movie: movies.map(movie => movie.Name),
+          tv: tvShows.map(show => show.Name)
         });
       } catch (error) {
         console.error('Error loading titles:', error);
@@ -389,7 +389,7 @@ function App() {
                             >
                               DECRYPT
                             </button>
-                            {showDropdown && searchInput && gameData && gameState.levels[selectedDescription] <= 4 && renderDropdownItems}
+                            {showDropdown && searchInput && gameData && selectedDescription && gameState.levels[selectedDescription] <= 4 && renderDropdownItems}
                           </div>
                         </>
                       )}
