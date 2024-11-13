@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import CountdownTimer from './CountdownTimer';
 
 const GameOverScreen = ({ gameState, category }) => (
-  <div className="text-center p-8 border border-white/20 rounded-md bg-zinc-950/50">
+  <div className="text-center p-8 border border-white/30 rounded-md bg-zinc-950/50">
     <h2 className="text-base sm:text-lg font-bold text-white/90">
       {category.charAt(0).toUpperCase() + category.slice(1)} Cypher Completed
     </h2>
