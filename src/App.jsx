@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback, Suspense, lazy, useMemo, memo } from 'react';
 import LoadingScreen from './core/LoadingScreen.jsx';
 import ErrorBoundary from './ErrorBoundary.jsx';
-import { getAllGames, getAllMovies, getAllTVShows } from './database';
+import { getAllGames, getAllMovies, getAllTVShows, preloadCache } from './database';
 import CategoryButtons from './components/CategoryButtons';
 import StatsModal from './components/StatsModal';
 import { updateStats } from './utils/statsManager';
@@ -27,10 +27,12 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const preloadData = async () => {
+      await preloadCache();
       setIsLoading(false);
-    }, 0); 
-    return () => clearTimeout(timer);
+    };
+
+    preloadData();
   }, []);
 
   const [selectedDescription, setSelectedDescription] = useState(null);
@@ -62,6 +64,9 @@ function App() {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef(null);
   const [showStatsModal, setShowStatsModal] = useState(false);
+  const [accessibilityMode, setAccessibilityMode] = useState(
+    () => localStorage.getItem('accessibilityMode') === 'true'
+  );
 
   const handleData = useCallback((data) => {
     setGameData(data);
@@ -132,6 +137,15 @@ function App() {
       document.removeEventListener('mousedown', handleClickOutsideMenu);
     };
   }, []);
+
+  useEffect(() => {
+    if (accessibilityMode) {
+      document.body.classList.add('accessibility-mode');
+    } else {
+      document.body.classList.remove('accessibility-mode');
+    }
+    localStorage.setItem('accessibilityMode', accessibilityMode);
+  }, [accessibilityMode]);
 
   const [allTitles, setAllTitles] = useState({ games: [], movies: [], tv: [] });
 
@@ -210,7 +224,7 @@ function App() {
     setIsFlashing(true);
     setSearchInput(''); // Clear input after incorrect guess
     setTimeout(() => setIsFlashing(false), 1000);
-  }, [gameData, searchInput, selectedDescription, updateLocalStorage]);
+  }, [gameData, searchInput, selectedDescription, updateLocalStorage, gameState.attempts]);
 
   const handleCategorySelect = useCallback((category) => {
     setSelectedDescription(category); 
@@ -250,7 +264,10 @@ function App() {
   }
 
   return (
-      <ErrorBoundary>
+    <ErrorBoundary>
+      {isLoading ? (
+        <LoadingScreen />
+      ) : (
         <Suspense fallback={<LoadingScreen />}>
           <ErrorBoundary>
             <div className="relative min-h-screen bg-zinc-950 bg-gradient-to-b from-zinc-950 to-zinc-950 text-white font-mono scrollbar-gutter-stable">
@@ -318,7 +335,18 @@ function App() {
                                 >
                                   Project Info
                                 </button>
-                              </li>                      
+                              </li> 
+                              <li>
+                                <button
+                                  onClick={() => {
+                                    setAccessibilityMode(!accessibilityMode);
+                                    setShowMenu(false);
+                                  }}
+                                  className="w-full text-left px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-zinc-800/70 transition-colors duration-200"
+                                >
+                                  {accessibilityMode ? 'Standard Mode' : 'Accessibility Mode'}
+                                </button>
+                              </li>                     
                             </ul>
                           </div>
                         )}
@@ -420,7 +448,8 @@ function App() {
             </div>
           </ErrorBoundary>
         </Suspense>
-      </ErrorBoundary>
+      )}
+    </ErrorBoundary>
   );
 }
 

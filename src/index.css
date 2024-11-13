@@ -2,6 +2,32 @@
 @tailwind base;
 @tailwind components;
 
+@layer base {
+  .accessibility-mode {
+    @apply font-dyslexic !important;
+  }
+  
+  .accessibility-mode * {
+    @apply font-dyslexic !important;
+  }
+  
+  .accessibility-mode .text-white\/70 {
+    @apply text-white;
+  }
+  
+  .accessibility-mode .text-white\/90 {
+    @apply text-white;
+  }
+  
+  .accessibility-mode .border-white\/30 {
+    @apply border-white;
+  }
+  
+  .accessibility-mode .bg-zinc-950 {
+    @apply bg-black;
+  }
+}
+
 @layer components {
   .plotcypher-white-btn {
     @apply w-full sm:w-auto px-6 py-2;

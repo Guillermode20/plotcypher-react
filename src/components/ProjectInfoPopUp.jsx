@@ -40,8 +40,8 @@ const ProjectInfoPopUp = ({ showProjectModal, onClose }) => {
         {/* Scrollable Content */}
         <div className="p-4 overflow-y-auto scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent">
           <div className="text-white/90 space-y-4">
-            <p className="text-xs sm:text-base">Version v0.2.0</p>
-            <p className="text-sm sm:text-base">Changelog: <span className="text-white/70">Added the full database for 365 days of movies, tv, and games!</span></p>
+            <p className="text-xs sm:text-base">Version v0.2.1</p>
+            <p className="text-sm sm:text-base">Changelog: <span className="text-white/70">Added Accessibility Mode with higher contrast and a dyslexia-friendly font :)</span></p>
             <p className="text-sm sm:text-base">Created by Will Hick</p>
             <div className="flex flex-col gap-2 pt-2">
               {/* GitHub Link */}

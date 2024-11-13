@@ -11,6 +11,7 @@ export default {
     extend: {
       fontFamily: {
         mono: ['JetBrains Mono', 'Roboto Mono', 'monospace'],
+        dyslexic: ['OpenDyslexic', 'Arial', 'sans-serif'],
       },
       backgroundImage: {
         'noise': "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjc1IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNhKSIvPjwvc3ZnPg==')",
@@ -51,6 +52,20 @@ export default {
         '30': '30%', // Added for border opacity enhancement
       },
       backgroundColor: {
+        'high-contrast': {
+          950: '#000000',
+        }
+      },
+      textColor: {
+        'high-contrast': {
+          DEFAULT: '#ffffff',
+          secondary: '#ffffff',
+        }
+      },
+      borderColor: {
+        'high-contrast': {
+          DEFAULT: '#ffffff',
+        }
       }
     },
   },

@@ -5,9 +5,6 @@ const dbVersion = 1;
 // Reintroduce the dbName variable
 const dbName = "libraryDB";
 
-// Add DB connection pooling
-let dbConnection = null;
-
 // Add connection pool manager
 const CONNECTION_POOL = {
     maxSize: 5,
@@ -72,13 +69,41 @@ const CACHE_CONFIG = {
 
 // Enhanced cache structure
 const cache = {
+    data: new Map(),
+    maxSize: 1000,
+    ttl: 60 * 60 * 1000, // 1 hour TTL
     games: new Map(),
     movies: new Map(),
     tv: new Map(),
     metadata: {
-        games: new Map(),  // stores timestamps and access counts
+        games: new Map(),
         movies: new Map(),
-        tv: new Map(),
+        tv: new Map()
+    },
+
+    set(key, value) {
+        if (this.data.size >= this.maxSize) {
+            // Remove oldest entry
+            const firstKey = this.data.keys().next().value;
+            this.data.delete(firstKey);
+        }
+
+        this.data.set(key, {
+            value,
+            timestamp: Date.now()
+        });
+    },
+
+    get(key) {
+        const item = this.data.get(key);
+        if (!item) return null;
+
+        if (Date.now() - item.timestamp > this.ttl) {
+            this.data.delete(key);
+            return null;
+        }
+
+        return item.value;
     }
 };
 
@@ -146,19 +171,7 @@ const circuitBreaker = {
     lastFailure: null,
     threshold: 5,
     resetTimeout: 30000,
-    async execute(operation) {
-        if (this.isOpen()) {
-            throw new Error('Circuit breaker is open');
-        }
-        try {
-            const result = await operation();
-            this.reset();
-            return result;
-        } catch (error) {
-            this.recordFailure();
-            throw error;
-        }
-    },
+
     isOpen() {
         if (!this.lastFailure) return false;
         if (Date.now() - this.lastFailure > this.resetTimeout) {
@@ -167,10 +180,12 @@ const circuitBreaker = {
         }
         return this.failures >= this.threshold;
     },
+
     recordFailure() {
         this.failures++;
         this.lastFailure = Date.now();
     },
+
     reset() {
         this.failures = 0;
         this.lastFailure = null;
@@ -180,28 +195,12 @@ const circuitBreaker = {
 // Update the worker initialization
 const dbWorker = new Worker(new URL('./dbWorker.js', import.meta.url));
 
-// Add worker message handler
-const workerRequest = (type, payload) => {
-    return new Promise((resolve, reject) => {
-        const messageHandler = (e) => {
-            if (e.data.type === 'SUCCESS') {
-                resolve(e.data.payload);
-            } else if (e.data.type === 'ERROR') {
-                reject(new Error(e.data.payload));
-            }
-            dbWorker.removeEventListener('message', messageHandler);
-        };
-
-        dbWorker.addEventListener('message', messageHandler);
-        dbWorker.postMessage({ type, payload });
-    });
-};
-
-// Update database operations to use worker
+// Update database operations to use fetchData
 async function getGame(id) {
-    const game = cache.games.get(id);
+    const games = await fetchData('games');
+    const game = games.find(g => g.ID === Number(id));
     if (!game) {
-        console.warn(`Game with ID ${id} not found in cache`);
+        console.warn(`Game with ID ${id} not found`);
         return null;
     }
     return game;
@@ -209,9 +208,10 @@ async function getGame(id) {
 
 // Get movie by ID
 async function getMovie(id) {
-    const movie = cache.movies.get(id);
+    const movies = await fetchData('movies');
+    const movie = movies.find(m => m.ID === Number(id));
     if (!movie) {
-        console.warn(`Movie with ID ${id} not found in cache`);
+        console.warn(`Movie with ID ${id} not found`);
         return null;
     }
     return movie;
@@ -219,71 +219,133 @@ async function getMovie(id) {
 
 // Get TV show by ID
 async function getTVShow(id) {
-    const tvShow = cache.tv.get(id);
-    if (!tvShow) {
-        console.warn(`TV show with ID ${id} not found in cache`);
+    const shows = await fetchData('tv');
+    const show = shows.find(t => t.ID === Number(id));
+    if (!show) {
+        console.warn(`TV show with ID ${id} not found`);
         return null;
     }
-    return tvShow;
+    return show;
 }
 
-// Function to get all games
-export const getAllGames = async () => {
-    const response = await fetch('/videogames.json');
-    if (!response.ok) {
-        console.error('Failed to fetch games data');
-        return [];
+// Add batch size and parallel loading configuration
+const FETCH_CONFIG = {
+    batchSize: 50,
+    maxParallel: 3,
+    retryAttempts: 3,
+    retryDelay: 1000,
+    dataSources: {
+        game: '/data/videogames.json',
+        games: '/data/videogames.json',
+        movie: '/data/movies.json',
+        movies: '/data/movies.json',
+        tv: '/data/tvshows.json',
+        tvshows: '/data/tvshows.json'
     }
-    const data = await response.json();
-    console.log('Fetched games:', data);
-    return data;
 };
 
-// Function to get all movies
-export const getAllMovies = async () => {
-    const response = await fetch('/movies.json');
-    if (!response.ok) {
-        console.error('Failed to fetch movies data');
-        return [];
-    }
-    const data = await response.json();
-    console.log('Fetched movies:', data);
-    return data;
-};
+// Improved data fetching with better category normalization
+const fetchData = async (category) => {
+    // Normalize category name
+    const categoryMap = {
+        games: 'game',
+        movies: 'movie',
+        tvshows: 'tv',
+        tv: 'tv',
+        game: 'game',
+        movie: 'movie'
+    };
 
-// Function to get all TV shows
-export const getAllTVShows = async () => {
-    const response = await fetch('/tvshows.json');
-    if (!response.ok) {
-        console.error('Failed to fetch TV shows data');
-        return [];
-    }
-    const data = await response.json();
-    console.log('Fetched TV shows:', data);
-    return data;
-};
+    const normalizedCategory = categoryMap[category.toLowerCase()] || category;
+    const cacheKey = `${normalizedCategory}_data`;
+    const cachedData = cache.get(cacheKey);
+    const url = FETCH_CONFIG.dataSources[normalizedCategory];
 
-// Ensure populateDB acquires and releases the db connection properly
-async function populateDB() {
-    const db = await CONNECTION_POOL.acquire();
+    console.log(`Attempting to fetch ${normalizedCategory} data from ${url}`);
+
+    if (!url) {
+        console.error(`Invalid category: ${category}`);
+        throw new Error(`Invalid category: ${category}`);
+    }
+
+    if (cachedData) {
+        console.log(`Returning cached ${normalizedCategory} data:`, cachedData.length, 'items');
+        return cachedData;
+    }
+
     try {
-        const gamesResponse = await fetch('/videogames.json');
-        const gamesData = await gamesResponse.json();
-        await batchAdd('games', gamesData);
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 10000);
 
-        const moviesResponse = await fetch('/movies.json');
-        const moviesData = await moviesResponse.json();
-        await batchAdd('movies', moviesData);
+        console.log(`Fetching ${normalizedCategory} data from ${url}`);
+        const response = await fetch(url, {
+            signal: controller.signal,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        clearTimeout(timeoutId);
 
-        const tvShowsResponse = await fetch('/tvshows.json');
-        const tvShowsData = await tvShowsResponse.json();
-        await batchAdd('tv', tvShowsData);
+        if (!response.ok) {
+            throw new Error(`HTTP Error: ${response.status} ${response.statusText}`);
+        }
+
+        const text = await response.text(); // Get response as text first
+        console.log(`Raw ${normalizedCategory} response:`, text.substring(0, 200) + '...'); // Log first 200 chars
+
+        let data;
+        try {
+            data = JSON.parse(text);
+        } catch (e) {
+            console.error(`JSON parse error for ${normalizedCategory}:`, e);
+            throw e;
+        }
+
+        // Log the structure of the data
+        console.log(`${normalizedCategory} data structure:`, {
+            isArray: Array.isArray(data),
+            length: Array.isArray(data) ? data.length : Object.keys(data).length,
+            sampleItem: Array.isArray(data) ? data[0] : Object.values(data)[0]
+        });
+
+        // Ensure data is properly structured and validate items
+        const validData = data.filter(item => {
+            const isValid = item &&
+                typeof item === 'object' &&
+                item.ID &&
+                item.Name &&
+                item.Description &&
+                (item.ReleaseYear || item.Year);
+
+            if (!isValid) {
+                console.warn(`Invalid ${normalizedCategory} item:`, item);
+            }
+            return isValid;
+        });
+
+        // Normalize the data structure
+        const normalizedData = validData.map(item => ({
+            ...item,
+            ReleaseYear: item.ReleaseYear || item.Year // Handle both field names
+        }));
+
+        cache.set(cacheKey, normalizedData);
+        return normalizedData;
+
     } catch (error) {
-        console.error('Error populating DB:', error);
-    } finally {
-        CONNECTION_POOL.release(db);
+        console.error(`Error fetching ${normalizedCategory} data from ${url}:`, error);
+        if (cachedData) {
+            console.log(`Falling back to cached ${normalizedCategory} data`);
+            return cachedData;
+        }
+        return [];
     }
-}
+};
+
+// Updated fetch functions with shared caching logic
+export const getAllGames = () => fetchData('games');
+export const getAllMovies = () => fetchData('movies');
+export const getAllTVShows = () => fetchData('tv');
 
 // Add batch operations support
 async function batchAdd(storeName, items) {
@@ -316,8 +378,8 @@ async function queryByIndex(storeName, indexName, value) {
 async function preloadCache() {
     const stores = ['games', 'movies', 'tv'];
     for (const store of stores) {
-        const items = await queryByIndex(store, 'accessCount', IDBKeyRange.lowerBound(5));
-        items.forEach(item => setCacheItem(store, item.id, item));
+        const items = await fetchData(store);
+        items.forEach(item => setCacheItem(store, item.ID, item));
     }
 }
 
@@ -372,24 +434,80 @@ async function batchGet(storeName, ids) {
 
 // Update getItemById to fetch data from public folder
 async function getItemById(category, id) {
-    let response;
-    if (category === 'movie') {
-        response = await fetch('/movies.json');
-    } else if (category === 'tv') {
-        response = await fetch('/tvshows.json');
-    } else if (category === 'game') {
-        response = await fetch('/videogames.json');
-    } else {
-        return null;
+    const categoryMap = {
+        games: 'game',
+        movies: 'movie',
+        tvshows: 'tv',
+        tv: 'tv',
+        game: 'game',
+        movie: 'movie'
+    };
+
+    const normalizedCategory = categoryMap[category.toLowerCase()];
+    const cacheName = `daily_${normalizedCategory}_${id}`;
+    const cachedItem = cache.get(cacheName);
+
+    if (cachedItem) {
+        console.log(`Cache hit for ${category} ${id}`);
+        return cachedItem;
     }
 
-    if (!response.ok) {
-        console.error(`Failed to fetch ${category} data`);
+    try {
+        // Add category validation
+        if (!FETCH_CONFIG.dataSources[category]) {
+            throw new Error(`Invalid category: ${category}`);
+        }
+
+        const baseUrl = window.location.origin;
+        const dataPath = FETCH_CONFIG.dataSources[category];
+        const url = `${baseUrl}${dataPath.startsWith('/') ? '' : '/'}${dataPath}`;
+
+        console.log(`Fetching ${category} item ${id} from ${url}`);
+
+        const response = await fetch(url, {
+            headers: {
+                'Accept': 'application/json',
+                'Cache-Control': 'no-cache'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const contentType = response.headers.get('content-type');
+        if (!contentType || !contentType.includes('application/json')) {
+            throw new Error(`Expected JSON but received ${contentType}`);
+        }
+
+        const data = await response.json();
+        const item = Array.isArray(data)
+            ? data.find(item => item.ID === Number(id))
+            : Object.values(data).find(item => item.ID === Number(id));
+
+        if (item) {
+            cache.set(cacheName, item);
+            return item;
+        }
+
+        console.warn(`${category} item ${id} not found`);
+        return null;
+
+    } catch (error) {
+        console.error(`Error fetching ${category} item ${id}:`, error);
+        return cachedItem || null;
+    }
+}
+
+// Add to database.js
+async function getDailyItem(category, id) {
+    try {
+        const items = await fetchData(category);
+        return items.find(item => item.ID === Number(id)) || null;
+    } catch (error) {
+        console.error(`Error fetching daily ${category} item:`, error);
         return null;
     }
-
-    const items = await response.json();
-    return items.find(item => item.ID === id);
 }
 
 export { getItemById };
@@ -399,12 +517,12 @@ export {
     getGame,
     getMovie,
     getTVShow,
-    populateDB,
     batchAdd,
     queryByIndex,
     withRetry,
     batchGet,
-    preloadCache,
+    preloadCache,  // Export the preloadCache function
     circuitBreaker,
-    dbWorker  // only if needed by other modules
+    dbWorker,  // only if needed by other modules
+    getDailyItem
 };
