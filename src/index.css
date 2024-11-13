@@ -26,6 +26,10 @@
   .accessibility-mode .bg-zinc-950 {
     @apply bg-black;
   }
+
+  .accessibility-mode .text-white\/50 {
+    @apply text-white;
+  }
 }
 
 @layer components {

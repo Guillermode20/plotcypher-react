@@ -1,7 +1,7 @@
 import { useEffect, useRef, memo } from 'react';
 import PropTypes from 'prop-types';
 
-const InfoPopUp = ({ showInfoModal, onClose }) => {
+const InfoPopUp = ({ showInfoModal, onClose, accessibilityMode, setAccessibilityMode }) => {
   const modalRef = useRef(null);
 
   useEffect(() => {
@@ -55,12 +55,18 @@ const InfoPopUp = ({ showInfoModal, onClose }) => {
         </div>
 
         {/* Fixed Footer */}
-        <div className="p-4 border-t border-white/10">
+        <div className="p-4 border-t border-white/10 flex space-x-2">
           <button
             onClick={onClose}
             className="plotcypher-white-btn"
           >
             Got it!
+          </button>
+          <button
+            onClick={() => setAccessibilityMode(!accessibilityMode)}
+            className="plotcypher-white-btn"
+          >
+            {accessibilityMode ? 'Standard Mode' : 'Accessibility Mode'}
           </button>
         </div>
       </div>
@@ -70,6 +76,8 @@ const InfoPopUp = ({ showInfoModal, onClose }) => {
 InfoPopUp.propTypes = {
   showInfoModal: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,
+  accessibilityMode: PropTypes.bool.isRequired,
+  setAccessibilityMode: PropTypes.func.isRequired,
 };
 
 export default memo(InfoPopUp);

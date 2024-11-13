@@ -438,7 +438,12 @@ function App() {
                 selectedDescription={selectedDescription}
                 gameData={gameData}
               />
-              <InfoPopUp showInfoModal={showInfoModal} onClose={() => setShowInfoModal(false)} />
+              <InfoPopUp
+                showInfoModal={showInfoModal}
+                onClose={() => setShowInfoModal(false)}
+                accessibilityMode={accessibilityMode}
+                setAccessibilityMode={setAccessibilityMode}
+              />
               <ProjectInfoPopUp showProjectModal={showProjectModal} onClose={() => setShowProjectModal(false)} />
               <StatsModal
                 isOpen={showStatsModal}
