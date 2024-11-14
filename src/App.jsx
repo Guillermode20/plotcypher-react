@@ -7,14 +7,16 @@ import StatsModal from './components/StatsModal';
 import { updateStats } from './utils/statsManager';
 import SuggestionsDropdown from './components/SuggestionsDropdown';
 
-const InfoPopUp = lazy(() => import('./components/InfoPopUp'));
-const ProjectInfoPopUp = lazy(() => import('./components/ProjectInfoPopUp'));
-const WinModal = lazy(() => import('./components/WinModal'));
-const FailModal = lazy(() => import('./components/FailModal'));
-const GameOverScreen = lazy(() => import('./components/GameOverScreen'));
-const Description = lazy(() => import('./components/Description'));
+const components = {
+  InfoPopUp: lazy(() => import('./components/InfoPopUp')),
+  ProjectInfoPopUp: lazy(() => import('./components/ProjectInfoPopUp')),
+  WinModal: lazy(() => import('./components/WinModal')),
+  FailModal: lazy(() => import('./components/FailModal')),
+  GameOverScreen: lazy(() => import('./components/GameOverScreen')),
+  Description: lazy(() => import('./components/Description'))
+};
 
-const TESTING_MODE = true;
+const TESTING_MODE = true; // Set to false for production
 
 const initialGameState = {
   levels: { game: 4, movie: 4, tv: 4 },
@@ -28,10 +30,17 @@ function App() {
 
   useEffect(() => {
     const preloadData = async () => {
-      await preloadCache();
-      setIsLoading(false);
+      try {
+        await Promise.all([
+          preloadCache(),
+          // Preload critical assets here
+        ]);
+      } catch (error) {
+        console.error('Failed to preload data:', error);
+      } finally {
+        setIsLoading(false);
+      }
     };
-
     preloadData();
   }, []);
 
@@ -386,9 +395,9 @@ function App() {
                         </div>
                       }>
                         {gameState.gameOverStates[selectedDescription] ? (
-                          <GameOverScreen gameState={gameState} category={selectedDescription} />
+                          <components.GameOverScreen gameState={gameState} category={selectedDescription} />
                         ) : (
-                          <Description
+                          <components.Description
                             onDataLoad={handleData}
                             level={gameState.levels[selectedDescription]}
                             startDate={startDate}
@@ -425,26 +434,26 @@ function App() {
                   )}
                 </div>
               </div>
-              <WinModal 
+              <components.WinModal 
                 isOpen={showWinModal}
                 onClose={() => setShowWinModal(false)}
                 selectedDescription={selectedDescription}
                 gameState={gameState}
                 gameData={gameData}
               />
-              <FailModal
+              <components.FailModal
                 isOpen={showFailModal}
                 onClose={() => setShowFailModal(false)}
                 selectedDescription={selectedDescription}
                 gameData={gameData}
               />
-              <InfoPopUp
+              <components.InfoPopUp
                 showInfoModal={showInfoModal}
                 onClose={() => setShowInfoModal(false)}
                 accessibilityMode={accessibilityMode}
                 setAccessibilityMode={setAccessibilityMode}
               />
-              <ProjectInfoPopUp showProjectModal={showProjectModal} onClose={() => setShowProjectModal(false)} />
+              <components.ProjectInfoPopUp showProjectModal={showProjectModal} onClose={() => setShowProjectModal(false)} />
               <StatsModal
                 isOpen={showStatsModal}
                 onClose={() => setShowStatsModal(false)}
