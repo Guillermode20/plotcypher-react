@@ -29,6 +29,9 @@ Built with:
 - ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss)
 - ![IndexedDB](https://img.shields.io/badge/IndexedDB-003B57?logo=database)
 
+Basic User Analytics with:
+![AWS Lambda & DynamoDB](https://aws.amazon.com/)
+
 ## 🛠️ How to Run
 
 Wanna tinker locally? Here's how:
@@ -62,13 +65,12 @@ npm run preview
 ## Accessibility 
 
 - WCAG 2.1 compliant
-- Screen reader friendly 
+- Screen reader friendly
+- Dyslexia font and high contrast
 
 ## Security
 
-- All completely local
-- No data collected
-- No API calls
+- All API calls through AWS for high security
 
 ## Contributing 
 
