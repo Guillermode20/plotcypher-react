@@ -31,3 +31,14 @@ gptprompts.txt
 output.py
 list.txt
 jsonEditor.py
+
+
+# Terraform files
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+terraform.rc
+.terraformrc
+terraform/.terraform/

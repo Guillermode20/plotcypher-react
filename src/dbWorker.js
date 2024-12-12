@@ -1,9 +1,11 @@
 // src/dbWorker.js
 const dbName = "libraryDB";
 const dbVersion = 1;
+let dbInstance;
 
 const dbOperations = {
     async initDB() {
+        if (dbInstance) return dbInstance;
         return new Promise((resolve, reject) => {
             const request = indexedDB.open(dbName, dbVersion);
 
@@ -29,7 +31,10 @@ const dbOperations = {
                 tvStore.createIndex("genreIndex", "genre", { unique: false });
             };
 
-            request.onsuccess = (event) => resolve(event.target.result);
+            request.onsuccess = (event) => {
+                dbInstance = event.target.result;
+                resolve(dbInstance);
+            };
         });
     },
 
@@ -58,21 +63,11 @@ const dbOperations = {
     }
 };
 
-// Handle messages from main thread
+// Simplify message handler and reuse db instance
 self.onmessage = async (e) => {
     const { type, payload } = e.data;
     try {
-        let result;
-        switch (type) {
-            case 'GET_ITEM':
-                result = await dbOperations.getItem(payload.store, payload.id);
-                break;
-            case 'GET_ALL':
-                result = await dbOperations.getAllItems(payload.store);
-                break;
-            default:
-                throw new Error(`Unknown operation type: ${type}`);
-        }
+        const result = await dbOperations[type.toLowerCase()](payload.store, payload.id);
         self.postMessage({ type: 'SUCCESS', payload: result });
     } catch (error) {
         self.postMessage({ type: 'ERROR', payload: error.message });
