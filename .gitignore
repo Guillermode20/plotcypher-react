@@ -31,3 +31,6 @@ gptprompts.txt
 output.py
 list.txt
 jsonEditor.py
+
+# terraform 
+terraform\.terraform
