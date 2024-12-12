@@ -6,6 +6,7 @@ import CategoryButtons from './components/CategoryButtons';
 import StatsModal from './components/StatsModal';
 import { updateStats } from './utils/statsManager';
 import SuggestionsDropdown from './components/SuggestionsDropdown';
+import { recordVisit } from './utils/visitTracker';
 
 const components = {
   InfoPopUp: lazy(() => import('./components/InfoPopUp')),
@@ -29,19 +30,20 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const preloadData = async () => {
+    const initializeApp = async () => {
       try {
         await Promise.all([
           preloadCache(),
+          recordVisit() // Record the visit
           // Preload critical assets here
         ]);
       } catch (error) {
-        console.error('Failed to preload data:', error);
+        console.error('Failed to initialize app:', error);
       } finally {
         setIsLoading(false);
       }
     };
-    preloadData();
+    initializeApp();
   }, []);
 
   const [selectedDescription, setSelectedDescription] = useState(null);

@@ -45,11 +45,11 @@ resource "aws_iam_role_policy" "lambda_policy" {
 }
 
 resource "aws_lambda_function" "update_visits" {
-  filename         = "lambda/update_visits.zip"
-  function_name    = "update_daily_visits"
-  role            = aws_iam_role.lambda_role.arn
-  handler         = "update_visits.lambda_handler"
-  runtime         = "python3.9"
+  filename      = "lambda/update_visits.zip"
+  function_name = "update_daily_visits"
+  role          = aws_iam_role.lambda_role.arn
+  handler       = "update_visits.lambda_handler"
+  runtime       = "python3.9"
 
   environment {
     variables = {
@@ -57,3 +57,12 @@ resource "aws_lambda_function" "update_visits" {
     }
   }
 }
+
+# Remove the duplicate aws_lambda_permission resource
+# resource "aws_lambda_permission" "api_gateway_permission" {
+#   statement_id  = "AllowAPIGatewayInvoke"
+#   action        = "lambda:InvokeFunction"
+#   function_name = aws_lambda_function.update_visits.function_name
+#   principal     = "apigateway.amazonaws.com"
+#   source_arn    = "${aws_api_gateway_rest_api.visits_api.execution_arn}/*/*"
+# }

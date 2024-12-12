@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "eu-west-2" # Replace with your desired region
+  region = var.aws_region  # Updated to use the aws_region variable
 }
 
 resource "aws_dynamodb_table" "daily_user_visits" {
