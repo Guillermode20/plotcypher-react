@@ -34,3 +34,14 @@ jsonEditor.py
 
 # terraform 
 terraform\.terraform
+terraform\.terraform\providers\registry.terraform.io\hashicorp\aws\5.80.0\windows_amd64\terraform-provider-aws_v5.80.0_x5.exe
+
+# Terraform files
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+terraform.rc
+.terraformrc
+.terraform/
