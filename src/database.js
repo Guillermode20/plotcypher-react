@@ -4,27 +4,29 @@ const dbVersion = 1;
 const dbName = "libraryDB";
 
 // Connection pool manager
-// 
 const CONNECTION_POOL = {
     maxSize: 5,
     connections: [],
+    waiting: [],
     async acquire() {
         if (this.connections.length < this.maxSize) {
-            const db = await initDB();
-            this.connections.push(db);
-            return db;
+            try {
+                const db = await initDB();
+                this.connections.push(db);
+                return db;
+            } catch (error) {
+                console.error("Error initializing database:", error);
+                throw error;
+            }
         }
-        return new Promise(resolve => {
-            const interval = setInterval(() => {
-                if (this.connections.length) {
-                    clearInterval(interval);
-                    resolve(this.connections[0]);
-                }
-            }, 100);
-        });
+        return new Promise(resolve => this.waiting.push(resolve));
     },
     release(db) {
         this.connections = this.connections.filter(conn => conn !== db);
+        if (this.waiting.length) {
+            const resolve = this.waiting.shift();
+            resolve(this.connections[0]);
+        }
     }
 };
 
@@ -53,55 +55,88 @@ const CACHE_CONFIG = {
     preloadChunkSize: 50
 };
 
-// LRU cache implementation
+// LRU cache implementation using Map and doubly linked list
 class LRUCache {
     constructor(maxSize) {
         this.maxSize = maxSize;
         this.cache = new Map();
+        this.head = null;
+        this.tail = null;
     }
+
+    _moveToHead(key) {
+        const node = this.cache.get(key);
+        if (node === this.head) return;
+
+        if (node.prev) node.prev.next = node.next;
+        if (node.next) node.next.prev = node.prev;
+
+        if (node === this.tail) this.tail = node.prev;
+
+        node.prev = null;
+        node.next = this.head;
+        if (this.head) this.head.prev = node;
+        this.head = node;
+        if (!this.tail) this.tail = node;
+    }
+
     get(key) {
         if (!this.cache.has(key)) return null;
-        const value = this.cache.get(key);
-        this.cache.delete(key);
-        this.cache.set(key, value);
-        return value;
+        const node = this.cache.get(key);
+        this._moveToHead(key);
+        return node.value;
     }
+
     set(key, value) {
-        if (this.cache.size >= this.maxSize) {
-            this.cache.delete(this.cache.keys().next().value);
+        if (this.cache.has(key)) {
+            const node = this.cache.get(key);
+            node.value = value;
+            this._moveToHead(key);
+            return;
         }
-        this.cache.set(key, value);
+
+        const newNode = { key, value, prev: null, next: this.head };
+        if (this.head) this.head.prev = newNode;
+        this.head = newNode;
+        if (!this.tail) this.tail = newNode;
+        this.cache.set(key, newNode);
+
+        if (this.cache.size > this.maxSize) {
+            this.cache.delete(this.tail.key);
+            this.tail = this.tail.prev;
+            if (this.tail) this.tail.next = null;
+            if (this.tail === null) this.head = null;
+        }
+    }
+
+    delete(key) {
+        if (!this.cache.has(key)) return;
+        const node = this.cache.get(key);
+        if (node.prev) node.prev.next = node.next;
+        if (node.next) node.next.prev = node.prev;
+        if (node === this.head) this.head = node.next;
+        if (node === this.tail) this.tail = node.prev;
+        this.cache.delete(key);
+    }
+
+    clear() {
+        this.cache.clear();
+        this.head = null;
+        this.tail = null;
     }
 }
 
 // Cached data stores
 const cache = {
-    games: new LRUCache(1000),
-    movies: new LRUCache(1000),
-    tv: new LRUCache(1000),
-    metadata: {
-        games: new Map(),
-        movies: new Map(),
-        tv: new Map()
-    }
+    games: new LRUCache(CACHE_CONFIG.maxSize),
+    movies: new LRUCache(CACHE_CONFIG.maxSize),
+    tv: new LRUCache(CACHE_CONFIG.maxSize),
 };
 
 // Cache item operations
 function setCacheItem(store, id, item) {
-    const cacheStore = cache[store];
-    const metadataStore = cache.metadata[store];
-    if (cacheStore.size >= CACHE_CONFIG.maxSize) {
-        const oldest = [...metadataStore.entries()]
-            .sort(([, a], [, b]) => {
-                const scoreA = a.accessCount / (Date.now() - a.timestamp);
-                const scoreB = b.accessCount / (Date.now() - b.timestamp);
-                return scoreA - scoreB;
-            })[0][0];
-        cacheStore.delete(oldest);
-        metadataStore.delete(oldest);
-    }
-    cacheStore.set(id, item);
-    metadataStore.set(id, {
+    cache[store].set(id, {
+        value: item,
         timestamp: Date.now(),
         accessCount: 0,
         version: CACHE_CONFIG.version
@@ -109,17 +144,15 @@ function setCacheItem(store, id, item) {
 }
 
 function getCacheItem(store, id) {
-    const item = cache[store].get(id);
-    if (!item) return null;
-    const metadata = cache.metadata[store].get(id);
-    if (Date.now() - metadata.timestamp > CACHE_CONFIG.expirationTime) {
+    const cachedItem = cache[store].get(id);
+    if (!cachedItem) return null;
+    if (Date.now() - cachedItem.timestamp > CACHE_CONFIG.expirationTime) {
         cache[store].delete(id);
-        cache.metadata[store].delete(id);
         return null;
     }
-    metadata.accessCount++;
-    metadata.timestamp = Date.now();
-    return item;
+    cachedItem.accessCount++;
+    cachedItem.timestamp = Date.now();
+    return cachedItem.value;
 }
 
 // Retry mechanism
@@ -157,6 +190,17 @@ const circuitBreaker = {
     reset() {
         this.failures = 0;
         this.lastFailure = null;
+    },
+    async execute(operation) {
+        if (this.isOpen()) {
+            throw new Error("Circuit breaker is open");
+        }
+        try {
+            return await operation();
+        } catch (error) {
+            this.recordFailure();
+            throw error;
+        }
     }
 };
 
@@ -175,6 +219,10 @@ const FETCH_CONFIG = {
         tv: '/data/tvshows.json'
     }
 };
+
+function normalizeItem(item) {
+    return { ...item, ReleaseYear: item.ReleaseYear || item.Year };
+}
 
 async function fetchData(category) {
     const categoryMap = {
@@ -201,10 +249,11 @@ async function fetchData(category) {
         const text = await response.text();
         const data = JSON.parse(text);
         const validData = data.filter(item => item && typeof item === 'object' && item.ID && item.Name && item.Description && (item.ReleaseYear || item.Year));
-        const normalizedData = validData.map(item => ({ ...item, ReleaseYear: item.ReleaseYear || item.Year }));
+        const normalizedData = validData.map(normalizeItem);
         cache[normalizedCategory].set('data', normalizedData);
         return normalizedData;
-    } catch {
+    } catch (error) {
+        console.error(`Error fetching ${normalizedCategory} data:`, error);
         if (cachedData) return cachedData;
         return [];
     }
@@ -217,13 +266,15 @@ export const getAllTVShows = () => fetchData('tv');
 // Batch operations
 async function batchAdd(storeName, items) {
     const db = await initDB();
-    const transaction = db.transaction([storeName], "readwrite");
-    const store = transaction.objectStore(storeName);
-    return Promise.all(items.map(item => new Promise((resolve, reject) => {
-        const request = store.add(item);
-        request.onsuccess = () => resolve(request.result);
-        request.onerror = () => reject(request.error);
-    })));
+    return new Promise((resolve, reject) => {
+        const transaction = db.transaction([storeName], "readwrite");
+        const store = transaction.objectStore(storeName);
+        const requests = items.map(item => store.add(item));
+        Promise.all(requests.map(req => new Promise((res, rej) => {
+            req.onsuccess = () => res(req.result);
+            req.onerror = () => rej(req.error);
+        }))).then(resolve).catch(reject);
+    });
 }
 
 async function queryByIndex(storeName, indexName, value) {
@@ -241,27 +292,23 @@ async function queryByIndex(storeName, indexName, value) {
 // Preload cache
 async function preloadCache() {
     const stores = ['games', 'movies', 'tv'];
-    for (const store of stores) {
+    await Promise.all(stores.map(async store => {
         const items = await fetchData(store);
         items.forEach(item => setCacheItem(store, item.ID, item));
-    }
+    }));
 }
 
 // Cache management
 export const clearCache = () => {
-    ['games', 'movies', 'tv'].forEach(store => {
-        cache[store].clear();
-        cache.metadata[store].clear();
-    });
+    ['games', 'movies', 'tv'].forEach(store => cache[store].clear());
 };
 
 export const getCacheStats = () => ({
     size: {
-        games: cache.games.size,
-        movies: cache.movies.size,
-        tv: cache.tv.size
+        games: cache.games.cache.size,
+        movies: cache.movies.cache.size,
+        tv: cache.tv.cache.size
     },
-    metadata: cache.metadata
 });
 
 // Batch get

@@ -25,6 +25,11 @@ const initialGameState = {
   gameOverStates: { game: false, movie: false, tv: false }
 };
 
+function parseLocalStorageValue(key, fallback) {
+  const value = localStorage.getItem(key);
+  return (!value || value === 'undefined') ? fallback : JSON.parse(value);
+}
+
 function App() {
   const startDate = '2024-11-11';
   const [isLoading, setIsLoading] = useState(true);
@@ -57,11 +62,11 @@ function App() {
     const today = new Date().toDateString();
     
     if (lastDate !== today) return initialGameState;
-    
+
     return {
-      levels: JSON.parse(localStorage.getItem('levels')) || initialGameState.levels,
-      attempts: JSON.parse(localStorage.getItem('attempts')) || initialGameState.attempts,
-      gameOverStates: JSON.parse(localStorage.getItem('gameOverStates')) || initialGameState.gameOverStates
+      levels: parseLocalStorageValue('levels', initialGameState.levels),
+      attempts: parseLocalStorageValue('attempts', initialGameState.attempts),
+      gameOverStates: parseLocalStorageValue('gameOverStates', initialGameState.gameOverStates)
     };
   });
   const dropdownRef = useRef(null);
@@ -241,34 +246,30 @@ function App() {
     setSelectedDescription(category); 
   }, []);
 
-  const debouncedSetSearchInput = useMemo(() => {
-    let timeoutId;
-    return (value) => {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => setSearchInput(value), 5); 
-    };
+  const handleInputChange = useCallback((e) => {
+    setSearchInput(e.target.value);
+    setShowDropdown(true);
   }, []);
 
-  const handleInputChange = useCallback((e) => {
-    const value = e.target.value;
-    e.target.value = value;
-    debouncedSetSearchInput(value);
-    setShowDropdown(true);
-  }, [debouncedSetSearchInput]);
+  const handleSelectItem = useCallback((item) => {
+    setSearchInput(item);
+    setShowDropdown(false);
+  }, []);
 
-  const renderDropdownItems = useMemo(() => (
-    <SuggestionsDropdown 
-      suggestions={allTitles} 
-      searchInput={searchInput} 
-      selectedDescription={selectedDescription} 
-      onSelect={(item) => {
-        debouncedSetSearchInput(item);
-        setSearchInput(item);
-        setShowDropdown(false);
-      }} 
-      dropdownDirection={dropdownDirection} 
-    />
-  ), [allTitles, searchInput, selectedDescription, debouncedSetSearchInput, dropdownDirection]);
+  // Move dropdown rendering logic to a memoized value
+  const renderDropdown = useMemo(() => {
+    if (!showDropdown || !searchInput || !selectedDescription) return null;
+    
+    return (
+      <SuggestionsDropdown 
+        suggestions={allTitles} 
+        searchInput={searchInput}
+        selectedDescription={selectedDescription}
+        onSelect={handleSelectItem}
+        dropdownDirection={dropdownDirection}
+      />
+    );
+  }, [showDropdown, searchInput, selectedDescription, allTitles, handleSelectItem, dropdownDirection]);
 
   if (isLoading) {
     return <LoadingScreen />;
@@ -428,7 +429,7 @@ function App() {
                             >
                               DECRYPT
                             </button>
-                            {showDropdown && searchInput && gameData && selectedDescription && gameState.levels[selectedDescription] <= 4 && renderDropdownItems}
+                            {renderDropdown}
                           </div>
                         </>
                       )}
